@@ -4,10 +4,20 @@ This section contains the canonical definition of the AI Flywheel methodology. T
 
 ## Table of Contents
 
-- [Formal Definition](ai-flywheel-definition.md) — Defines the AI Flywheel, its three execution layers, and the central concept of the moving determinism boundary.
-- [Principles](principles.md) — Defines the seven principles that characterize an AI Flywheel.
-- [Lifecycle](lifecycle.md) — Defines the recurring execution and improvement cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse.
+- [Formal Definition](ai-flywheel-definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the two core boundaries.
+- [Principles](principles.md) — Defines the eight principles that characterize an AI Flywheel, beginning with bounded autonomy under human authority.
+- [Lifecycle](lifecycle.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied continuously.
 - [Conformance](conformance.md) — Defines the requirements a system should satisfy to be described as implementing the AI Flywheel methodology.
+- [Architecture and Diagrams](../architecture/README.md) — Visualizes the runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
+
+## Conceptual Model
+
+The specification separates four ideas that should not be collapsed into one sequence:
+
+1. **Human authority and governance** define the boundaries within which the Flywheel may operate.
+2. **Procedural SOP, AI reasoning, and deterministic capability** work together during execution.
+3. **The Flywheel lifecycle** turns execution evidence into validated and persistent learning.
+4. **The Moving Determinism Boundary** determines where learned responsibility should live, while the **Authority Boundary** determines what the AI is permitted to decide or change autonomously.
 
 ## Scope
 
