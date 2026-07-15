@@ -11,6 +11,7 @@
 
 | AI Flywheel Principle | GenericAgent | Metis | MOSS | MASFly | Ralph | Reflexion |
 |---|---|---|---|---|---|---|
+| Autonomy Bounded by Human Authority | TBD | TBD | TBD | TBD | TBD | TBD |
 | AI Is the Operator | Strong | Partial | Partial | Partial | Strong | Partial |
 | Moving Determinism Boundary | Partial | Strong | Partial | Limited | Limited | Limited |
 | SOP as Operational Control Plane | Strong | Partial | Limited | Strong | Partial | Limited |
@@ -21,11 +22,17 @@
 
 ## Current Interpretation
 
-The matrix suggests substantial prior art for nearly every individual principle. That is expected and should be treated as a strength of the research rather than a problem to hide.
+The matrix suggests substantial prior art for nearly every individual principle already studied. That is expected and should be treated as a strength of the research rather than a problem to hide.
 
-The most important unresolved comparison is whether any existing framework explicitly treats **deterministic code, procedural guidance, and AI reasoning as separate but movable responsibility layers**, then uses execution evidence to decide which layer should change.
+The new human-authority principle should remain **TBD** until each framework is reviewed specifically for delegated autonomy, approval requirements, uncertainty escalation, governance over self-modification, and whether the AI can expand its own authority.
 
-That question is examined most directly in the [Moving Determinism Boundary dossier](principles/02-moving-determinism-boundary.md) and the [Evolution Routing dossier](principles/05-evolution-routing.md).
+The most important unresolved comparison is whether any existing framework explicitly combines:
+
+- human-authorized autonomy with explicit authority and uncertainty boundaries,
+- deterministic capability, procedural guidance, and AI reasoning as distinct but movable responsibilities,
+- and execution evidence that determines where a persistent improvement should live.
+
+These questions are examined most directly in the [Human Authority dossier](principles/01-human-authority.md), [Moving Determinism Boundary dossier](principles/03-moving-determinism-boundary.md), and [Evolution Routing dossier](principles/06-evolution-routing.md).
 
 ## Framework Dossiers
 
