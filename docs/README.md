@@ -2,41 +2,22 @@
 
 This directory separates the **canonical methodology** from the **research used to evaluate its origins, relationships, and differentiation**.
 
-## Specification
+## Table of Contents
 
-The specification defines what the AI Flywheel is.
+- [AI Flywheel Specification](specification/README.md) — The canonical definition of the methodology, including its principles, lifecycle, and conformance criteria.
+- [AI Flywheel Research](research/README.md) — Supporting analysis of prior art, related frameworks, principle-level comparisons, and differentiation hypotheses.
 
-- [Formal definition](specification/ai-flywheel-definition.md)
-- [Principles](specification/principles.md)
-- [Lifecycle](specification/lifecycle.md)
-- [Conformance criteria](specification/conformance.md)
+## Documentation Structure
 
-## Research
+The documentation follows a folder-based hierarchy:
 
-The research collection examines related frameworks and prior art. It is supporting analysis rather than part of the normative definition.
+- Every documentation folder contains a `README.md` that represents that section.
+- When a section contains multiple documents, its `README.md` provides a summary and table of contents.
+- When a topic requires only one document, the topic should be contained directly in that folder's `README.md` rather than creating a separate single-purpose Markdown file.
+- Cross-document references use standard Markdown links in the form `[text](url)`.
 
-- [Prior-art overview](research/prior-art-overview.md)
-- [Framework comparison matrix](research/framework-comparison-matrix.md)
+## Canonical and Research Separation
 
-### Principle Research Dossiers
+The canonical specification should be understandable without reference to any competing or predecessor framework. Comparative claims belong in the [research section](research/README.md) and should be backed by primary sources before being treated as conclusions.
 
-- [Principle 1: AI Is the Operator](research/principles/01-ai-as-operator.md)
-- [Principle 2: Moving Determinism Boundary](research/principles/02-moving-determinism-boundary.md)
-- [Principle 3: SOP as Operational Control Plane](research/principles/03-sop-control-plane.md)
-- [Principle 4: Outcome Evidence](research/principles/04-outcome-evidence.md)
-- [Principle 5: Evolution Routing](research/principles/05-evolution-routing.md)
-- [Principle 6: Persistent Operational Learning](research/principles/06-persistent-learning.md)
-- [Principle 7: Compounding Reuse](research/principles/07-compounding-reuse.md)
-
-### Framework Research Dossiers
-
-- [GenericAgent](research/frameworks/genericagent.md)
-- [Metis](research/frameworks/metis.md)
-- [MOSS](research/frameworks/moss.md)
-- [MASFly](research/frameworks/masfly.md)
-- [Ralph](research/frameworks/ralph.md)
-- [Reflexion](research/frameworks/reflexion.md)
-
-## Documentation Rule
-
-The canonical specification should be understandable without reference to any competing or predecessor framework. Comparative claims belong in the research collection and should be backed by primary sources before being treated as conclusions.
+The [specification section](specification/README.md) answers **what the AI Flywheel is**. The [research section](research/README.md) examines **how it relates to established work and where its strongest differentiation may exist**.
