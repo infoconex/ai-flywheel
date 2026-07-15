@@ -16,13 +16,15 @@ This research collection asks a narrower and more defensible set of questions:
 
 ## Working Research Thesis
 
-The strongest candidate for meaningful differentiation is not any single capability such as self-reflection, tool creation, code generation, memory, or iterative execution.
+The strongest candidate for meaningful differentiation is not any single capability such as self-reflection, tool creation, code generation, memory, human approval, or iterative execution.
 
 The central research question is whether existing work explicitly combines:
 
-- a three-layer responsibility model of deterministic code, procedural guidance, and AI reasoning,
-- evidence-driven routing of improvements to the appropriate layer,
-- and deliberate movement of behavior across a changing determinism boundary.
+- human-authorized autonomy governed by explicit authority and uncertainty boundaries,
+- a runtime model in which procedural SOP, AI reasoning, and deterministic capability work together,
+- a Moving Determinism Boundary that allows responsibility to shift among those mechanisms after execution produces evidence,
+- evidence-driven routing of improvements to the appropriate persistent destination,
+- and governance that constrains both execution and self-improvement.
 
 This is a research hypothesis, not a concluded novelty claim.
 
@@ -32,13 +34,14 @@ See the [framework comparison matrix](framework-comparison-matrix.md) for the wo
 
 ### Principle Research Dossiers
 
-- [Principle 1: AI Is the Operator](principles/01-ai-as-operator.md)
-- [Principle 2: Moving Determinism Boundary](principles/02-moving-determinism-boundary.md)
-- [Principle 3: SOP as Operational Control Plane](principles/03-sop-control-plane.md)
-- [Principle 4: Outcome Evidence](principles/04-outcome-evidence.md)
-- [Principle 5: Evolution Routing](principles/05-evolution-routing.md)
-- [Principle 6: Persistent Operational Learning](principles/06-persistent-learning.md)
-- [Principle 7: Compounding Reuse](principles/07-compounding-reuse.md)
+- [Principle 1: Autonomy Is Bounded by Human Authority](principles/01-human-authority.md)
+- [Principle 2: AI Is the Operator](principles/02-ai-as-operator.md)
+- [Principle 3: Moving Determinism Boundary](principles/03-moving-determinism-boundary.md)
+- [Principle 4: SOP as Operational Control Plane](principles/04-sop-control-plane.md)
+- [Principle 5: Outcome Evidence](principles/05-outcome-evidence.md)
+- [Principle 6: Evolution Routing](principles/06-evolution-routing.md)
+- [Principle 7: Persistent Operational Learning](principles/07-persistent-learning.md)
+- [Principle 8: Compounding Reuse](principles/08-compounding-reuse.md)
 
 ### Framework Research Dossiers
 
@@ -48,6 +51,21 @@ See the [framework comparison matrix](framework-comparison-matrix.md) for the wo
 - [MASFly](frameworks/masfly.md)
 - [Ralph](frameworks/ralph.md)
 - [Reflexion](frameworks/reflexion.md)
+
+## Additional Research Areas
+
+The addition of human authority introduces adjacent bodies of prior art that should be examined beyond agent frameworks alone:
+
+- human-in-the-loop and human-on-the-loop systems,
+- adaptive automation and function allocation,
+- AI governance and delegated authority,
+- approval and escalation systems,
+- autonomic computing,
+- supervisory control,
+- safety constraints on self-modifying systems,
+- and human-machine teaming.
+
+These areas may contain closer conceptual precedent for the Governance Policy, Authority Boundary, and uncertainty-based escalation than the six agent frameworks currently in the comparison matrix.
 
 ## Research Standard
 
