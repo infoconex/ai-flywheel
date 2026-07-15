@@ -4,23 +4,24 @@
 
 ## Research Objective
 
-Evaluate MASFly as prior art for SOP-driven agent organization, monitored execution, and experience-informed adaptation.
+Evaluate MASFly as prior art for SOP-driven agent organization, monitored execution, experience-informed adaptation, and human governance of multi-agent autonomy.
 
 ## Principles to Evaluate
 
-- [AI Is the Operator](../principles/01-ai-as-operator.md)
-- [Moving Determinism Boundary](../principles/02-moving-determinism-boundary.md)
-- [SOP as Operational Control Plane](../principles/03-sop-control-plane.md)
-- [Outcome Evidence](../principles/04-outcome-evidence.md)
-- [Evolution Routing](../principles/05-evolution-routing.md)
-- [Persistent Operational Learning](../principles/06-persistent-learning.md)
-- [Compounding Reuse](../principles/07-compounding-reuse.md)
+- [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
+- [AI Is the Operator](../principles/02-ai-as-operator.md)
+- [Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md)
+- [SOP as Operational Control Plane](../principles/04-sop-control-plane.md)
+- [Outcome Evidence](../principles/05-outcome-evidence.md)
+- [Evolution Routing](../principles/06-evolution-routing.md)
+- [Persistent Operational Learning](../principles/07-persistent-learning.md)
+- [Compounding Reuse](../principles/08-compounding-reuse.md)
 
 ## Working Hypothesis
 
 MASFly appears particularly relevant to dynamic SOP construction, multi-agent orchestration, monitoring, and reuse of successful collaboration patterns.
 
-The key question is whether its evolution concerns agent organization and collaboration rather than deliberate movement of work among deterministic code, procedure, and AI judgment.
+The key questions are whether its evolution concerns agent organization and collaboration rather than deliberate movement of work among deterministic capability, procedure, and AI judgment, and whether its autonomous operation is explicitly bounded by human authority.
 
 ## Evidence to Collect
 
@@ -29,8 +30,9 @@ The key question is whether its evolution concerns agent organization and collab
 - How execution is monitored.
 - What experience is persisted.
 - What kinds of changes can result from failure.
-- Whether deterministic software is itself an evolving responsibility layer.
+- Whether deterministic software is itself an evolving responsibility mechanism.
+- Human approval, escalation, and governance mechanisms.
 
 ## Provisional Position
 
-Treat SOP-driven orchestration and experience-informed adaptation as likely prior art. Investigate whether the AI Flywheel's code-procedure-reasoning responsibility model is materially different.
+Treat SOP-driven orchestration and experience-informed adaptation as likely prior art. Investigate whether the AI Flywheel's runtime responsibility model and human-authority model are materially different.
