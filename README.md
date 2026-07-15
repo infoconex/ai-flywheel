@@ -1,6 +1,6 @@
 # AI Flywheel
 
-> **Status:** Early definition and working specification. This repository will evolve as the methodology, principles, examples, and prior-art analysis are developed.
+> **Status:** Early definition and working specification. The methodology and supporting research will evolve as the model is tested, refined, and compared with related work.
 
 ## Formal Definition
 
@@ -58,17 +58,20 @@ A recurring judgment may become a procedural rule. A stable procedure may become
 
 The Flywheel therefore improves not only what the system knows or what software it contains, but also **where intelligence and responsibility reside within the system**.
 
-## Repository Direction
+## Documentation
 
-Future content is expected to include:
+Start with the [documentation index](docs/README.md).
 
-- A formal AI Flywheel specification
-- Detailed principle definitions
-- Lifecycle and conformance criteria
-- Reference implementations and worked examples
-- Prior-art and framework comparison research
-- Principle-by-principle research dossiers
+Canonical specification documents:
 
----
+- [Formal definition](docs/specification/ai-flywheel-definition.md)
+- [Principles](docs/specification/principles.md)
+- [Lifecycle](docs/specification/lifecycle.md)
+- [Conformance](docs/specification/conformance.md)
 
-*This README is an initial placeholder and will be refined as the AI Flywheel methodology is formalized.*
+Supporting research:
+
+- [Prior-art overview](docs/research/prior-art-overview.md)
+- [Framework comparison matrix](docs/research/framework-comparison-matrix.md)
+
+The specification defines the methodology. The research collection examines related ideas, antecedents, and differentiation without making prior-art discussion part of the canonical definition.
