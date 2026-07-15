@@ -62,16 +62,7 @@ The Flywheel therefore improves not only what the system knows or what software 
 
 Start with the [documentation index](docs/README.md).
 
-Canonical specification documents:
-
-- [Formal definition](docs/specification/ai-flywheel-definition.md)
-- [Principles](docs/specification/principles.md)
-- [Lifecycle](docs/specification/lifecycle.md)
-- [Conformance](docs/specification/conformance.md)
-
-Supporting research:
-
-- [Prior-art overview](docs/research/prior-art-overview.md)
-- [Framework comparison matrix](docs/research/framework-comparison-matrix.md)
+- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, and conformance criteria.
+- [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
 
 The specification defines the methodology. The research collection examines related ideas, antecedents, and differentiation without making prior-art discussion part of the canonical definition.
