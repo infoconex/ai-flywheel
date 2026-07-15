@@ -4,23 +4,24 @@
 
 ## Research Objective
 
-Evaluate the Ralph loop as prior art for repeated autonomous execution, observation of work state, failure recovery, and iterative progress toward a goal.
+Evaluate the Ralph loop as prior art for repeated autonomous execution, observation of work state, failure recovery, iterative progress toward a goal, and bounded human oversight.
 
 ## Principles to Evaluate
 
-- [AI Is the Operator](../principles/01-ai-as-operator.md)
-- [Moving Determinism Boundary](../principles/02-moving-determinism-boundary.md)
-- [SOP as Operational Control Plane](../principles/03-sop-control-plane.md)
-- [Outcome Evidence](../principles/04-outcome-evidence.md)
-- [Evolution Routing](../principles/05-evolution-routing.md)
-- [Persistent Operational Learning](../principles/06-persistent-learning.md)
-- [Compounding Reuse](../principles/07-compounding-reuse.md)
+- [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
+- [AI Is the Operator](../principles/02-ai-as-operator.md)
+- [Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md)
+- [SOP as Operational Control Plane](../principles/04-sop-control-plane.md)
+- [Outcome Evidence](../principles/05-outcome-evidence.md)
+- [Evolution Routing](../principles/06-evolution-routing.md)
+- [Persistent Operational Learning](../principles/07-persistent-learning.md)
+- [Compounding Reuse](../principles/08-compounding-reuse.md)
 
 ## Working Hypothesis
 
 Ralph is expected to overlap strongly with autonomous iterative execution and persistence of work products, especially in software development.
 
-The important distinction to investigate is between a loop that repeatedly advances a task and a flywheel that changes the persistent operating system used to perform future recurring tasks.
+The important distinction to investigate is between a loop that repeatedly advances a task and a Flywheel that changes the persistent operating system used to perform future recurring tasks while remaining within explicit human-defined authority boundaries.
 
 ## Evidence to Collect
 
@@ -29,8 +30,9 @@ The important distinction to investigate is between a loop that repeatedly advan
 - How failure is interpreted.
 - Whether the loop changes its own procedure or tools.
 - Whether learning transfers to future processes beyond the current goal.
-- Whether responsibility is explicitly allocated among code, procedure, and reasoning.
+- Whether responsibility is explicitly allocated among deterministic capability, procedure, and reasoning.
+- How human authorization, intervention, approval, or escalation is handled.
 
 ## Provisional Position
 
-A repeated autonomous loop alone is not sufficient differentiation for the AI Flywheel. The comparison should focus on persistent operational evolution across repeated executions.
+A repeated autonomous loop alone is not sufficient differentiation for the AI Flywheel. The comparison should focus on persistent operational evolution, moving responsibility, and governance across repeated executions.
