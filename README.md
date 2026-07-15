@@ -6,69 +6,70 @@
 
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
-The system deliberately distributes responsibility across three execution layers:
+A human authorizes the Flywheel to operate and defines the boundaries of that authority. Once authorized, the AI operates autonomously within those boundaries until it reaches a condition requiring human judgment or human approval.
 
-1. **Deterministic code** for work that can be made reliably repeatable.
-2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed, how known conditions should be handled, and how exceptions should be governed.
-3. **AI reasoning** for situations requiring interpretation, judgment, adaptation, or handling of conditions that cannot yet be reliably reduced to deterministic logic.
+During execution, the Flywheel combines:
 
-These execution layers operate within explicit **human-defined authority boundaries**. The AI should act autonomously when it has sufficient evidence and authority, request human judgment when uncertainty is too high, and request human approval when a proposed action or learning exceeds its delegated authority.
+1. **Deterministic capability** for reliable, repeatable operations.
+2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed and when escalation is required.
+3. **AI reasoning** for orchestration, interpretation, judgment, adaptation, and ambiguity.
 
-Each execution produces evidence about the effectiveness of the system. The AI evaluates the outcome, identifies weaknesses or failures, determines which layer should change, determines whether it is authorized to make that change, applies or proposes the appropriate improvement, preserves validated learning, and uses the improved system in future executions.
+These are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution produces evidence.
 
 The core cycle is:
 
-**Execute → Observe → Evaluate → Classify → Determine Authority → Adapt → Validate → Approve if Required → Persist → Reuse**
+**Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
-The result is a compounding system in which repeated execution progressively improves reliability, capability, efficiency, and appropriately bounded autonomy.
+Governance applies throughout the cycle, determining whether actions and changes are authorized, require human approval, require human judgment, or are prohibited.
 
 ## High-Level Principles
 
-### 1. AI Is the Operator, Not Merely the Assistant
+### 1. Autonomy Is Bounded by Human Authority
+
+A human authorizes the Flywheel and defines its authority boundaries. The AI then operates autonomously within those boundaries and escalates only when uncertainty or authority requires human involvement.
+
+### 2. AI Is the Operator, Not Merely the Assistant
 
 The AI executes the operational process and can create, invoke, interpret, and improve the capabilities it uses to perform the work.
 
-### 2. Work Is Distributed Across a Moving Determinism Boundary
+### 3. Work Is Distributed Across a Moving Determinism Boundary
 
-Responsibility is deliberately divided among deterministic code, procedural SOPs, and AI reasoning. As experience accumulates, work can move between these layers.
+Responsibility is deliberately divided among deterministic capability, procedural SOPs, and AI reasoning. As evidence accumulates, responsibility can move between these mechanisms.
 
-### 3. The SOP Is an Operational Control Plane
+### 4. The SOP Is an Operational Control Plane
 
-The SOP is a machine-consumable operational contract that defines the intended outcome, normal execution path, available capabilities, known failure handling, evidence requirements, escalation rules, authority constraints, and conditions requiring AI or human judgment.
+The SOP is a machine-consumable operational contract that defines the intended outcome, normal execution path, available capabilities, known failure handling, evidence requirements, and escalation conditions.
 
-### 4. Execution Must Produce Outcome Evidence
+### 5. Execution Must Produce Outcome Evidence
 
-The system learns from observed outcomes rather than AI confidence alone. Executions should produce enough evidence to determine what happened, whether the intended result occurred, and where assumptions or behavior failed.
+The system learns from observed outcomes rather than AI confidence alone. Executions should produce enough evidence to determine what happened and whether the intended result occurred.
 
-### 5. Failure Determines Where the System Evolves
+### 6. Failure Determines Where the System Evolves
 
-Failures are classified to determine the appropriate place for improvement. The response may be a code change, an SOP change, improved validation, retained AI reasoning, or a shift in responsibility between layers.
+After execution is evaluated, the Flywheel determines where the resulting learning should live: deterministic capability, procedural knowledge, reasoning knowledge, validation, or governance.
 
-### 6. Learning Must Change a Persistent Operational Asset
+### 7. Learning Must Change a Persistent Operational Asset
 
-Useful learning must survive the current execution. It should become improved code, a new or modified tool, an SOP update, a reusable lesson, a validation rule, or persistent guidance for future reasoning.
+Useful learning must survive the current execution in a form that can influence future operation.
 
-### 7. Improvement Must Compound Through Reuse
+### 8. Improvement Must Compound Through Reuse
 
-The output of one cycle becomes part of the operating system of the next. Repeated execution should progressively reduce repeated problem-solving and unnecessary human intervention while preserving AI judgment and human authority where they remain necessary.
+The output of one cycle becomes part of the operating system of the next, progressively reducing repeated failure, repeated reasoning, and unnecessary human intervention.
 
-### 8. Autonomy Is Bounded by Human Authority
+## The Two Core Boundaries
 
-The AI should operate autonomously within explicit authority boundaries. It must request human judgment when evidence is insufficient or ambiguous and request human approval when a proposed action or learning is consequential or exceeds delegated authority. Human decisions should become evidence that can improve future operation when appropriate.
+The **Moving Determinism Boundary** determines where work and learning should live among deterministic capability, procedural knowledge, and AI reasoning.
 
-## The Central Idea
+The **Authority Boundary** determines what the AI is permitted to decide, execute, change, or persist autonomously.
 
-The defining idea of the AI Flywheel is the continuous optimization of the boundary between **deterministic automation**, **procedural instruction**, and **AI reasoning** using evidence generated by execution, while preserving an explicit **authority boundary** around what the AI may decide or change autonomously.
-
-A recurring judgment may become a procedural rule. A stable procedure may become deterministic code. A brittle hard-coded rule may move back into procedure or AI judgment. A repeated human decision may become a reusable policy or escalation rule when humans explicitly delegate that authority.
-
-The Flywheel therefore improves not only what the system knows or what software it contains, but also **where intelligence and responsibility reside within the system and where human authority must remain**.
+The determinism boundary can move as the system learns. The authority boundary is governed by humans.
 
 ## Documentation
 
 Start with the [documentation index](docs/README.md).
 
-- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, and conformance criteria.
+- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, governance model, and conformance criteria.
+- [AI Flywheel Architecture](docs/architecture/README.md) — Starting diagrams for the runtime model, learning model, governance, and escalation.
 - [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
 
 The specification defines the methodology. The research collection examines related ideas, antecedents, and differentiation without making prior-art discussion part of the canonical definition.
