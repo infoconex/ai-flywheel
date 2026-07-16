@@ -84,9 +84,12 @@ The intended operating pattern is:
 
 The objective is not to remove humans from the process. It is to preserve human authority while allowing the Flywheel to operate independently wherever human participation is unnecessary.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
+- **Next Principle:** [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md)
+
+## Related Documents
+
 - [Governance and Escalation](../../architecture/governance-and-escalation.md)
 - [Core Boundaries](../../architecture/boundaries.md)
-- [Principle 2: AI Is the Operator](02-ai-as-operator.md)
