@@ -90,4 +90,4 @@ The first boundary governs **where intelligence and responsibility reside**. The
 - [Runtime Architecture](runtime-view.md)
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
-- [AI Flywheel Formal Definition](../specification/ai-flywheel-definition.md)
+- [AI Flywheel Formal Definition](../specification/definition.md)
