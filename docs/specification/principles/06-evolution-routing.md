@@ -32,7 +32,7 @@ Use this destination when the system lacks a reliable way to determine whether a
 
 Use this destination when the evidence shows that authority, approval requirements, prohibited actions, or escalation rules should change.
 
-A governance change requires human authorization.
+A governance change requires human authorization under [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md).
 
 ## The Evolution Routing Rule
 
@@ -66,7 +66,7 @@ For example:
 
 **Deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle.
 
-This is how the Moving Determinism Boundary changes over time.
+This is how [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) changes responsibility allocation over time.
 
 ## Adaptation Must Be Validated
 
@@ -74,10 +74,16 @@ Choosing a destination is not enough.
 
 The resulting change should be validated before it becomes part of future operation, with the rigor of validation matched to the consequence and type of change.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
+- **Previous Principle:** [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
+- **Next Principle:** [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md)
+
+## Related Documents
+
 - [Learning Architecture](../../architecture/learning-view.md)
-- [Principle 3: Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 5: Outcome Evidence](05-outcome-evidence.md)
-- [Principle 7: Persistent Operational Learning](07-persistent-learning.md)
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md)
