@@ -1,94 +1,62 @@
-# Principle 7: Learning Must Change a Persistent Operational Asset
+# Research: Learning Must Change a Persistent Operational Asset
 
-Useful learning must survive the current execution.
+> Canonical principle: [Principle 7: Learning Must Change a Persistent Operational Asset](../../specification/principles/07-persistent-learning.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-7-learning-must-change-a-persistent-operational-asset).
+## Research Objective
 
-## Purpose
+Determine how existing systems transform execution experience into durable assets that future operation can actually use, and identify what distinguishes operational learning from simple storage of conversations, logs, or historical records.
 
-A system does not meaningfully improve if every lesson disappears when the current context ends.
+## Current Evidence
 
-When execution produces a reusable lesson, that learning should change something durable that future executions can inherit.
+Persistent learning is strongly represented across the reviewed frameworks, but the persistent artifact differs.
 
-The persistent asset should match the type of learning identified through Evolution Routing.
+- [GenericAgent](../frameworks/genericagent.md) persists SOPs, skills, tools, facts, indexes, and session-derived memory.
+- [Metis](../frameworks/metis.md) persists plans, facts, pitfalls, and validated code tools.
+- [MOSS](../frameworks/moss.md) persists source-level improvements to the agent substrate and retains evolution history and candidate artifacts.
+- [MASFly](../frameworks/masfly.md) persists successful collaboration patterns and failure-oriented supervisory experience.
+- [Ralph](../frameworks/ralph.md) persists learning mainly in repository-local artifacts such as code, tests, specifications, plans, and `AGENT.md`.
+- [Reflexion](../frameworks/reflexion.md) persists verbal reflections that condition later attempts.
 
-## Forms of Persistent Learning
+The broad requirement that learning survive a single context or task is therefore established. The unresolved questions concern what qualifies as an **operational asset**, how it is validated, how it is scoped, and whether different asset types can evolve into one another.
 
-A lesson may become:
+## Related Ideas and Historical Provenance to Trace
 
-- improved code,
-- a new tool or deterministic capability,
-- a modification to an existing capability,
-- an SOP update,
-- a known-failure rule,
-- a new validation check,
-- durable reasoning guidance,
-- a reusable example or heuristic,
-- a persistent memory or knowledge artifact,
-- or an approved Governance Policy change.
+Research should establish dates and primary sources for:
 
-The specific storage technology is implementation-dependent. The requirement is that the learning be durable and available to the future process that needs it.
+- continual and lifelong learning,
+- episodic and semantic agent memory,
+- procedural memory and skill acquisition,
+- knowledge-base revision,
+- persistent agent skill libraries,
+- experience replay and case-based reasoning,
+- self-modifying software,
+- organizational learning and lessons-learned systems,
+- and durable operational knowledge in runbooks and automation platforms.
 
-## Persistence Is More Than Storage
+## Open Research Questions
 
-Saving a log or conversation does not automatically create operational learning.
+1. What minimum property makes a stored artifact **operational learning** rather than archived history?
+2. Must the asset be automatically retrievable by future execution, or is human-mediated reuse sufficient?
+3. How should persistent learning be scoped so a correct lesson is not applied outside the context in which it is valid?
+4. What validation should be required before a learned asset becomes active?
+5. When does persistence require human approval?
+6. Can a persistent asset be automatically invalidated or rolled back when later evidence contradicts it?
+7. How should provenance be retained so the system knows why a persistent rule or capability exists?
+8. Can one persistent asset type be converted into another, such as memory becoming SOP guidance or procedure becoming code?
+9. How should contradictory persistent lessons be reconciled?
+10. Can human decisions become durable operational assets without being overgeneralized?
 
-For learning to become part of the Flywheel, the persistent asset should be usable by future execution.
+## Evidence Still Needed
 
-For example:
+- Formal distinctions between stored memory and actionable operational knowledge.
+- Systems that validate learned artifacts before activating them.
+- Research on scoping, provenance, invalidation, and rollback of persistent AI learning.
+- Examples of automated conversion between different persistent asset types.
+- Models in which human judgments become reusable operational guidance.
+- Historical establishment dates for persistent agent learning mechanisms most relevant to the Flywheel.
 
-- a lesson in a log becomes useful when it is converted into a rule the AI can retrieve,
-- a repeated workaround becomes useful when it is added to the SOP,
-- a stable procedure becomes useful when it is implemented as a reusable capability,
-- and a human judgment becomes useful when it is captured as durable guidance or an authorized policy change.
+## Current Research Position
 
-## Learning Should Be Scoped Appropriately
+Persistent memory, skills, source changes, and reusable procedures are all established mechanisms.
 
-Not every lesson should apply everywhere.
-
-Persistent learning should carry enough context to determine where it is valid, such as:
-
-- a particular process,
-- customer,
-- environment,
-- tool,
-- failure class,
-- or governance scope.
-
-Overgeneralized learning can make the Flywheel worse rather than better.
-
-## Persistence Requires Validation and Authority
-
-Before an improvement becomes part of future operation, it should be validated appropriately.
-
-The system must also be authorized to persist the change.
-
-A code modification, procedural update, or reasoning-memory change may be autonomous when permitted by governance. A change that expands authority or modifies protected policy requires human approval.
-
-## Persistent Assets Can Evolve Again
-
-Persistence does not make a learning permanent or unquestionable.
-
-Future evidence may show that an asset should be:
-
-- refined,
-- replaced,
-- rolled back,
-- invalidated,
-- or moved to a different operating mechanism.
-
-A procedural rule may later become code. A brittle code path may move back into procedure or reasoning. Persistent learning remains subject to the Flywheel itself.
-
-## Operational Intent
-
-The principle creates continuity across executions:
-
-**Experience → validated learning → persistent operational asset → future reuse**
-
-That continuity is what allows the Flywheel to become more capable rather than repeatedly solving the same problems from scratch.
-
-## Related Documents
-
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
-- [Principle 8: Compounding Reuse](08-compounding-reuse.md)
-- [Learning Architecture](../../architecture/learning-view.md)
+The AI Flywheel should therefore not claim persistence itself as novel. The stronger research question is whether the methodology's persistent-learning requirement is distinctive because the asset is selected through Evolution Routing, validated before reuse, governed by authority, and remains eligible to evolve again when later evidence shows that a different mechanism should own the behavior.
