@@ -2,6 +2,12 @@
 
 > **Research status:** Primary-source review completed for the currently available public paper and official repository as of July 15, 2026. Comparative conclusions remain working interpretations.
 
+## Established / First Public Date
+
+**May 21, 2026** — used here as the earliest verified public establishment date for MOSS because the canonical [MOSS paper](https://arxiv.org/abs/2605.22794) was first submitted to arXiv on that date.
+
+No earlier official public release was established from the primary sources reviewed for this dossier.
+
 ## Research Objective
 
 Evaluate MOSS as prior art for evidence-driven self-modification, persistent improvement of deployed agent software, validation and rollback of autonomous changes, and human approval of consequential self-evolution.
