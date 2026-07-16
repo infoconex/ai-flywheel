@@ -73,7 +73,7 @@ A mature AI Flywheel should reduce repeated reasoning, repeated failure, and unn
 
 ## Related Documents
 
-- [Formal Definition](../ai-flywheel-definition.md)
+- [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Conformance Criteria](../conformance/README.md)
 - [Architecture and Diagrams](../../architecture/README.md)
