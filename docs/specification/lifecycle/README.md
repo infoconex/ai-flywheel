@@ -4,6 +4,8 @@ The AI Flywheel operates as a recurring eight-stage cycle:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
+![AI Flywheel lifecycle](../../assets/ai-flywheel-lifecycle.svg)
+
 The lifecycle turns operational experience into validated improvements that future executions can reuse.
 
 ## Before the Cycle: Human Authorization
