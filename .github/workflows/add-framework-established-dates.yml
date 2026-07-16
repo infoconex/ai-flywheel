@@ -77,3 +77,5 @@ No earlier official public release was established from the primary sources revi
           git add docs/research/frameworks/*.md
           git commit -m "Add established dates to framework research"
           git push origin docs/initial-documentation
+
+# Triggered for framework date normalization.
