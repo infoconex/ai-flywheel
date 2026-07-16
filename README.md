@@ -6,6 +6,8 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 > **A loop repeats. A flywheel compounds.**
 
+![AI Flywheel lifecycle](docs/assets/ai-flywheel-lifecycle.svg)
+
 ## Why AI Flywheel?
 
 AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
