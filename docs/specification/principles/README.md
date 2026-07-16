@@ -22,7 +22,7 @@ The principles form a coherent operating model rather than eight independent fea
 ## Related Documents
 
 - [Formal Definition](../ai-flywheel-definition.md)
-- [Lifecycle](../lifecycle.md)
-- [Conformance Criteria](../conformance.md)
+- [Lifecycle](../lifecycle/README.md)
+- [Conformance Criteria](../conformance/README.md)
 - [Architecture and Diagrams](../../architecture/README.md)
 - [Framework Comparison Research](../../research/framework-comparison-matrix.md)
