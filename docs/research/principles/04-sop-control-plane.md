@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 4
-summary: "Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational role proposed by the"
+summary: "Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational."
 principle_number: 4
 principle_id: "sop-control-plane"
 canonical_source: "../../specification/principles/04-sop-control-plane.md"

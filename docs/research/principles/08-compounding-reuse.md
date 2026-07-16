@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 8
-summary: "Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements across code, procedure,"
+summary: "Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements."
 principle_number: 8
 principle_id: "compounding-reuse"
 canonical_source: "../../specification/principles/08-compounding-reuse.md"

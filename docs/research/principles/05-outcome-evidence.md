@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 5
-summary: "Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide how the operating syst"
+summary: "Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide."
 principle_number: 5
 principle_id: "outcome-evidence"
 canonical_source: "../../specification/principles/05-outcome-evidence.md"

@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 7
-summary: "Determine how existing systems transform execution experience into durable assets that future operation can actually use, and identify what distinguishes operational learning from simple storage of conversations, logs, or historical records"
+summary: "Determine how existing systems transform execution experience into durable assets that future operation can actually use, and identify what distinguishes operational learning from simple storage of conversations, logs."
 principle_number: 7
 principle_id: "persistent-learning"
 canonical_source: "../../specification/principles/07-persistent-learning.md"

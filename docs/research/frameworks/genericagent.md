@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 3
-summary: "January 16, 2026 — used here as the earliest verified public establishment date for GenericAgent because the official GenericAgent repository identifies that date as the V1.0 public release. The later technical report was first submitted on"
+summary: "January 16, 2026 — used here as the earliest verified public establishment date for GenericAgent because the official GenericAgent repository identifies that date as the V1.0 public release. The later technical report."
 framework_name: "GenericAgent"
 last_reviewed: "2026-07-16"
 tags:

@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 4
-summary: "Determine how closely Metis approaches the AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from the AI Flywheel's br"
+summary: "Determine how closely Metis approaches the AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from."
 framework_name: "Metis"
 last_reviewed: "2026-07-16"
 tags:

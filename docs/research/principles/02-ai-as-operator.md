@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 2
-summary: "Determine how established the pattern is in which AI directly performs operational work, consumes procedures, invokes tools, creates capabilities for its own later use, and carries a process forward without requiring a human to execute each"
+summary: "Determine how established the pattern is in which AI directly performs operational work, consumes procedures, invokes tools, creates capabilities for its own later use, and carries a process forward without requiring a."
 principle_number: 2
 principle_id: "ai-as-operator"
 canonical_source: "../../specification/principles/02-ai-as-operator.md"

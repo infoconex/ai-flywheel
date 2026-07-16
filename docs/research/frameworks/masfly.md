@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 6
-summary: "Evaluate MASFly as prior art for SOP-driven multi-agent system construction, monitored execution, experience-informed adaptation, runtime intervention, and persistent reuse of successful and failed collaboration experience."
+summary: "Evaluate MASFly as prior art for SOP-driven multi-agent system construction, monitored execution, experience-informed adaptation, runtime intervention, and persistent reuse of successful and failed collaboration."
 framework_name: "MASFly"
 last_reviewed: "2026-07-16"
 tags:

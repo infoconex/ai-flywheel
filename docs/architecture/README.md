@@ -5,7 +5,7 @@ section: "architecture"
 status: "canonical"
 canonical: true
 order: 1
-summary: "This section explains how the AI Flywheel fits together structurally. It separates the runtime model, the post-execution learning model, governance and escalation, and the two boundaries that shape where responsibility resides and what the"
+summary: "This section explains how the AI Flywheel fits together structurally. It separates the runtime model, the post-execution learning model, governance and escalation, and the two boundaries that shape where responsibility."
 last_reviewed: "2026-07-16"
 tags:
   - "overview"

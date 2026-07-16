@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 6
-summary: "Determine whether existing systems explicitly diagnose execution weaknesses and select among multiple persistent adaptation destinations, rather than assuming that every failure should be handled through one dominant mechanism such as retry"
+summary: "Determine whether existing systems explicitly diagnose execution weaknesses and select among multiple persistent adaptation destinations, rather than assuming that every failure should be handled through one dominant."
 principle_number: 6
 principle_id: "evolution-routing"
 canonical_source: "../../specification/principles/06-evolution-routing.md"

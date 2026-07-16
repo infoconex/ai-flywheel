@@ -5,7 +5,7 @@ section: "research"
 status: "active-research"
 canonical: false
 order: 1
-summary: "Determine which parts of the AI Flywheel's human-authority model are established ideas, which are already implemented in related agent systems, and whether the specific combination of delegated autonomy, separate authority and uncertainty b"
+summary: "Determine which parts of the AI Flywheel's human-authority model are established ideas, which are already implemented in related agent systems, and whether the specific combination of delegated autonomy, separate."
 principle_number: 1
 principle_id: "human-authority"
 canonical_source: "../../specification/principles/01-human-authority.md"
