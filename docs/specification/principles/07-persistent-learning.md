@@ -8,7 +8,7 @@ A system does not meaningfully improve if every lesson disappears when the curre
 
 When execution produces a reusable lesson, that learning should change something durable that future executions can inherit.
 
-The persistent asset should match the type of learning identified through Evolution Routing.
+The persistent asset should match the type of learning identified through [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md).
 
 ## Forms of Persistent Learning
 
@@ -61,7 +61,7 @@ Before an improvement becomes part of future operation, it should be validated a
 
 The system must also be authorized to persist the change.
 
-A code modification, procedural update, or reasoning-memory change may be autonomous when permitted by governance. A change that expands authority or modifies protected policy requires human approval.
+A code modification, procedural update, or reasoning-memory change may be autonomous when permitted by governance. A change that expands authority or modifies protected policy requires human approval under [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md).
 
 ## Persistent Assets Can Evolve Again
 
@@ -75,7 +75,7 @@ Future evidence may show that an asset should be:
 - invalidated,
 - or moved to a different operating mechanism.
 
-A procedural rule may later become code. A brittle code path may move back into procedure or reasoning. Persistent learning remains subject to the Flywheel itself.
+A procedural rule may later become code. A brittle code path may move back into procedure or reasoning. Persistent learning remains subject to [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md).
 
 ## Operational Intent
 
@@ -83,9 +83,16 @@ A procedural rule may later become code. A brittle code path may move back into 
 
 That continuity is what allows the Flywheel to become more capable rather than repeatedly solving the same problems from scratch.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
-- [Principle 8: Compounding Reuse](08-compounding-reuse.md)
+- **Previous Principle:** [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
+- **Next Principle:** [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md)
+
+## Related Documents
+
 - [Learning Architecture](../../architecture/learning-view.md)
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md)
