@@ -60,7 +60,7 @@ A failed execution may reveal a weakness in:
 - validation,
 - or governance assumptions.
 
-The evidence allows the Flywheel to determine which type of weakness occurred.
+The evidence allows the Flywheel to determine which type of weakness occurred. That classification is the basis of [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md).
 
 ## Human Decisions Are Evidence
 
@@ -82,9 +82,14 @@ Outcome evidence is the input to the post-execution learning process.
 
 Without reliable evidence, adaptation risks optimizing the system based on assumptions rather than reality.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
+- **Previous Principle:** [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md)
+- **Next Principle:** [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
+
+## Related Documents
+
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Lifecycle](../lifecycle.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
