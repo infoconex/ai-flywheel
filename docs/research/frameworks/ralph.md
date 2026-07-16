@@ -2,6 +2,12 @@
 
 > **Research status:** Primary-source review completed for Geoffrey Huntley's canonical description and selected follow-up material as of July 15, 2026. Ralph is a technique rather than a formally versioned software framework, so implementations vary substantially.
 
+## Established / First Public Date
+
+**July 14, 2025** — used here as the earliest verified public establishment date for Ralph in this research because Geoffrey Huntley's canonical article, [Ralph Wiggum as a "software engineer"](https://ghuntley.com/ralph/), is dated July 14, 2025.
+
+Ralph is a technique rather than a single formal academic framework. Earlier experiments, posts, or informal usage may predate the canonical article, but an earlier primary public source has not yet been established in this research.
+
 ## Research Objective
 
 Evaluate the Ralph loop as prior art for repeated autonomous execution, persistent project context, deterministic backpressure, iterative failure recovery, and human-guided improvement of the loop itself.
