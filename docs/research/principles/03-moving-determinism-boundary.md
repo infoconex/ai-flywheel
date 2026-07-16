@@ -1,44 +1,85 @@
-# Principle 3 Research: Moving Determinism Boundary
+# Principle 3: Work Is Distributed Across a Moving Determinism Boundary
 
-## Principle Under Review
+The AI Flywheel deliberately distributes responsibility among deterministic capability, procedural guidance, and AI reasoning.
 
-Responsibility is deliberately divided among deterministic capability, procedural guidance, and AI reasoning, and behavior may move between those mechanisms as evidence accumulates.
+See the concise [principles specification](../../specification/principles.md#principle-3-work-is-distributed-across-a-moving-determinism-boundary).
 
-See the canonical [principles specification](../../specification/principles.md#principle-3-work-is-distributed-across-a-moving-determinism-boundary).
+## The Three Operating Mechanisms
 
-## Prior-Art Question
+### Deterministic Capability
 
-Do existing systems explicitly treat deterministic capability, procedural knowledge, and AI reasoning as distinct operating mechanisms whose responsibilities can be reassigned over time based on execution evidence?
+Code, tools, scripts, services, or other executable mechanisms should own work that can be made reliably repeatable.
 
-## Working Assessment
+Deterministic capability is preferred when the expected behavior is sufficiently stable, testable, and predictable.
 
-This is one of the strongest candidates for a distinctive AI Flywheel contribution, but it requires especially careful research.
+### Procedural Guidance
 
-Related systems may already move recurring plans into code, crystallize successful behavior into reusable skills, rewrite source, or use textual memory. The key question is whether they formalize the broader responsibility boundary and allow movement in multiple directions.
+The SOP should own repeatable operational knowledge that benefits from explicit instruction but still requires orchestration, contextual interpretation, or flexible execution.
 
-## Comparison Dimensions
+Procedural guidance describes how the process should work without requiring every decision to be hard-coded.
 
-For each framework, determine whether it:
+### AI Reasoning
 
-1. distinguishes deterministic execution from AI judgment,
-2. distinguishes procedural guidance from both code and reasoning,
-3. recognizes that all three may participate together during execution,
-4. defines criteria for moving behavior between mechanisms after evidence is evaluated,
-5. supports movement in more than one direction,
-6. uses observed outcomes to trigger reassignment,
-7. treats responsibility allocation itself as an object of optimization.
+AI reasoning should own work that requires interpretation, judgment, adaptation, synthesis, or handling of conditions that cannot yet be reduced reliably to deterministic behavior.
 
-## Frameworks to Compare
+## These Are Not Lifecycle Stages
 
-- [GenericAgent](../frameworks/genericagent.md)
-- [Metis](../frameworks/metis.md)
-- [MOSS](../frameworks/moss.md)
-- [MASFly](../frameworks/masfly.md)
-- [Ralph](../frameworks/ralph.md)
-- [Reflexion](../frameworks/reflexion.md)
+The three mechanisms are not sequential steps that occur before or after one another.
 
-## Potential Differentiation
+They work together during execution.
 
-A possible AI Flywheel distinction is the explicit optimization of **where intelligence and responsibility reside** rather than only improving the intelligence, memory, or software itself.
+The SOP guides the process. AI reasoning interprets and orchestrates the work. Deterministic capabilities perform reliable repeatable operations when invoked.
 
-This remains a research hypothesis until the relevant literature and implementations are examined in depth.
+A single execution may move between AI reasoning and deterministic tools many times while following the same procedure.
+
+## The Boundary Moves
+
+The allocation of responsibility is not permanent.
+
+Execution evidence may show that a responsibility should move.
+
+Examples include:
+
+- a recurring AI judgment becoming a documented procedural rule,
+- a stable procedural step becoming deterministic code,
+- a brittle hard-coded rule moving back into procedural guidance,
+- or an overly rigid procedure moving back toward AI reasoning because the environment requires more judgment.
+
+The Flywheel therefore improves not only the implementation of the work but also **where the work belongs**.
+
+## Direction of Movement
+
+The Moving Determinism Boundary is explicitly bidirectional.
+
+A common maturation path is:
+
+**AI reasoning → procedural guidance → deterministic capability**
+
+But increased determinism is not always an improvement.
+
+Evidence may justify movement in the opposite direction when deterministic behavior has become brittle or assumptions have changed.
+
+The governing objective is not maximum automation. It is the best allocation of responsibility for reliability and adaptability.
+
+## The Core Question
+
+After learning from execution, the Flywheel should repeatedly ask:
+
+> **Should the AI still reason about this, should the SOP provide better guidance, or has this become predictable enough to move into deterministic capability?**
+
+That question makes responsibility allocation itself something the system can improve over time.
+
+## Relationship to Evolution Routing
+
+The Moving Determinism Boundary describes **where responsibility can reside**.
+
+Evolution Routing determines **where a particular learning should be applied** after execution evidence is evaluated.
+
+Together they allow the system to change both its behavior and the mechanism responsible for that behavior.
+
+## Related Documents
+
+- [Runtime Architecture](../../architecture/runtime-view.md)
+- [Learning Architecture](../../architecture/learning-view.md)
+- [Core Boundaries](../../architecture/boundaries.md)
+- [Principle 6: Evolution Routing](06-evolution-routing.md)
