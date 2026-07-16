@@ -2,6 +2,24 @@
 
 These eight principles define the expected behavior of an AI Flywheel implementation. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse interact as one operating model.
 
+## Principle Document Structure
+
+Each principle document uses a common structure so readers can consistently distinguish explanation from normative requirements and understand how each principle relates to operation, lifecycle, evidence, and conformance.
+
+The standard sections are:
+
+1. **Purpose** — why the principle exists and what problem it addresses.
+2. **Normative Requirements** — the canonical requirements an implementation must satisfy.
+3. **Operational Model** — how the principle works in practice, including principle-specific concepts and mechanisms.
+4. **Lifecycle Relationship** — where the principle participates in the AI Flywheel lifecycle.
+5. **Evidence of Implementation** — observable evidence that can support a conformance assessment.
+6. **Non-Conforming Patterns** — common implementations that resemble the principle but do not satisfy it.
+7. **Relationships to Other Principles** — important dependencies and interactions within the methodology.
+
+Principle-specific subsections may appear inside the Operational Model where additional detail is needed. Governance and authority are addressed explicitly wherever they materially affect the principle rather than being repeated mechanically in every document.
+
+The normative requirements remain authoritative. Evidence examples and non-conforming patterns help assess those requirements but do not create independent specification requirements.
+
 ## Table of Contents
 
 1. [Autonomy Is Bounded by Human Authority](01-human-authority.md) — Human authorization establishes the boundaries within which the Flywheel operates autonomously and defines when human judgment or approval is required.
@@ -23,6 +41,6 @@ The principles form a coherent operating model rather than eight independent fea
 
 - [Formal Definition](../definition.md)
 - [Lifecycle](../lifecycle/README.md)
-- [Conformance Criteria](../conformance/README.md)
+- [Conformance](../conformance/README.md)
 - [Architecture and Diagrams](../../architecture/README.md)
 - [Framework Comparison Research](../../research/frameworks/framework-comparison-matrix.md)
