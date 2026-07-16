@@ -2,6 +2,12 @@
 
 > **Research status:** Primary-source review completed for the public paper as of July 15, 2026. No official implementation repository was identified in the paper or public project search, so the paper is treated as the canonical source.
 
+## Established / First Public Date
+
+**February 14, 2026** — used here as the earliest verified public establishment date for MASFly because the canonical [MAS-on-the-Fly paper](https://arxiv.org/abs/2602.13671) was first submitted to arXiv on that date.
+
+No earlier official project release or implementation repository was identified in the primary-source review completed for this dossier.
+
 ## Research Objective
 
 Evaluate MASFly as prior art for SOP-driven multi-agent system construction, monitored execution, experience-informed adaptation, runtime intervention, and persistent reuse of successful and failed collaboration experience.
