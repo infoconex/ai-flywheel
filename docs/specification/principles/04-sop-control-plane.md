@@ -18,6 +18,14 @@ The SOP should make the intended process explicit enough that the AI can underst
 - how results should be validated,
 - and when escalation is required.
 
+## Persistence and Availability
+
+The operational procedure must survive individual execution contexts and remain directly available to future AI operation.
+
+Process knowledge that exists only in transient conversation history is not sufficient for this role. The Flywheel should not have to rediscover the same known procedure on every execution.
+
+The specific storage or representation is implementation-dependent; the requirement is that procedural guidance is durable, machine-consumable, and available when future execution needs it.
+
 ## What the SOP Should Define
 
 A useful AI Flywheel SOP may contain:
