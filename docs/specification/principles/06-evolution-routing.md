@@ -83,7 +83,3 @@ The resulting change should be validated before it becomes part of future operat
 ## Related Documents
 
 - [Learning Architecture](../../architecture/learning-view.md)
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
-- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
-- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md)
