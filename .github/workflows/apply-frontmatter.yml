@@ -1,0 +1,267 @@
+name: Apply frontmatter migration
+
+on:
+  push:
+    branches:
+      - docs/initial-documentation
+    paths:
+      - '.github/workflows/apply-frontmatter.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: docs/initial-documentation
+          fetch-depth: 0
+
+      - name: Apply frontmatter to Markdown files
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import re
+
+          TODAY = "2026-07-16"
+
+          principle_ids = {
+              "01-human-authority.md": (1, "human-authority"),
+              "02-ai-as-operator.md": (2, "ai-as-operator"),
+              "03-moving-determinism-boundary.md": (3, "moving-determinism-boundary"),
+              "04-sop-control-plane.md": (4, "sop-control-plane"),
+              "05-outcome-evidence.md": (5, "outcome-evidence"),
+              "06-evolution-routing.md": (6, "evolution-routing"),
+              "07-persistent-learning.md": (7, "persistent-learning"),
+              "08-compounding-reuse.md": (8, "compounding-reuse"),
+          }
+          lifecycle_ids = {
+              "01-execute.md": (1, "execute"),
+              "02-observe.md": (2, "observe"),
+              "03-evaluate.md": (3, "evaluate"),
+              "04-classify.md": (4, "classify"),
+              "05-adapt.md": (5, "adapt"),
+              "06-validate.md": (6, "validate"),
+              "07-persist.md": (7, "persist"),
+              "08-reuse.md": (8, "reuse"),
+          }
+          conformance_ids = {
+              "01-human-authority.md": (1, "human-authority"),
+              "02-ai-executes-process.md": (2, "ai-executes-process"),
+              "03-runtime-responsibilities.md": (3, "runtime-responsibilities"),
+              "04-persistent-operational-procedure.md": (4, "persistent-operational-procedure"),
+              "05-outcome-evidence.md": (5, "outcome-evidence"),
+              "06-evaluation-and-classification.md": (6, "evaluation-and-classification"),
+              "07-improvement-routing.md": (7, "improvement-routing"),
+              "08-governance-enforcement.md": (8, "governance-enforcement"),
+              "09-persistent-learning.md": (9, "persistent-learning"),
+              "10-compounding-reuse.md": (10, "compounding-reuse"),
+          }
+          architecture_order = {
+              "runtime-view.md": (1, "runtime", "execution"),
+              "learning-view.md": (2, "learning", "learning"),
+              "governance-and-escalation.md": (3, "governance", "governance"),
+              "boundaries.md": (4, "boundaries", "governance"),
+          }
+          framework_order = {
+              "prior-art-overview.md": 1,
+              "framework-comparison-matrix.md": 2,
+              "genericagent.md": 3,
+              "metis.md": 4,
+              "moss.md": 5,
+              "masfly.md": 6,
+              "ralph.md": 7,
+              "reflexion.md": 8,
+          }
+          frontmatter_order = {
+              "README.md": 1,
+              "schema.md": 2,
+              "document-types.md": 3,
+              "maintenance.md": 4,
+              "examples.md": 5,
+          }
+
+          def first_h1(text, fallback):
+              match = re.search(r"^#\s+(.+?)\s*$", text, re.MULTILINE)
+              return match.group(1).strip() if match else fallback
+
+          def first_summary(text, title):
+              lines = text.splitlines()
+              paragraphs = []
+              current = []
+              in_code = False
+              for line in lines:
+                  if line.startswith("```"):
+                      in_code = not in_code
+                      continue
+                  if in_code:
+                      continue
+                  stripped = line.strip()
+                  if not stripped:
+                      if current:
+                          paragraphs.append(" ".join(current))
+                          current = []
+                      continue
+                  if stripped.startswith("#") or stripped.startswith(">") or stripped.startswith("-") or re.match(r"^\d+\.\s", stripped):
+                      continue
+                  current.append(stripped)
+              if current:
+                  paragraphs.append(" ".join(current))
+              summary = paragraphs[0] if paragraphs else title
+              summary = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", summary)
+              summary = re.sub(r"[*_`]", "", summary)
+              return summary[:240].rstrip()
+
+          def tags_for(path, doc_type):
+              tags = []
+              if doc_type in {"principle", "principle-research"}:
+                  tags.append("principles")
+              if doc_type in {"framework-research", "comparison", "prior-art", "principle-research", "research-overview"}:
+                  tags.append("research")
+              if doc_type == "architecture":
+                  tags.append("architecture")
+              if doc_type == "lifecycle-stage":
+                  tags.append("lifecycle")
+              if doc_type == "conformance-criterion":
+                  tags.append("conformance")
+              if "frontmatter" in path.parts:
+                  tags.extend(["documentation", "frontmatter"])
+              if path.name == "README.md":
+                  tags.append("overview")
+              return list(dict.fromkeys(tags))
+
+          def classify(path, title, summary):
+              p = path.as_posix()
+              name = path.name
+              meta = {
+                  "title": title,
+                  "document_type": "guide",
+                  "section": "root",
+                  "status": "provisional",
+                  "canonical": False,
+                  "order": 0,
+                  "summary": summary,
+                  "last_reviewed": TODAY,
+              }
+
+              if p == "README.md":
+                  meta.update(document_type="overview", section="root", status="provisional", canonical=False, order=0)
+              elif p == "docs/README.md":
+                  meta.update(document_type="overview", section="root", status="canonical", canonical=True, order=1)
+              elif p.startswith("docs/frontmatter/"):
+                  meta.update(section="root", status="canonical", canonical=True, order=frontmatter_order.get(name, 99))
+                  meta["document_type"] = "overview" if name == "README.md" else "guide"
+              elif p == "docs/specification/README.md":
+                  meta.update(document_type="overview", section="specification", status="canonical", canonical=True, order=1)
+              elif p == "docs/specification/ai-flywheel-definition.md":
+                  meta.update(document_type="definition", section="specification", status="canonical", canonical=True, order=2)
+              elif p == "docs/specification/principles/README.md":
+                  meta.update(document_type="overview", section="specification", status="canonical", canonical=True, order=3)
+              elif p.startswith("docs/specification/principles/") and name in principle_ids:
+                  number, pid = principle_ids[name]
+                  meta.update(document_type="principle", section="specification", status="canonical", canonical=True, order=number,
+                              principle_number=number, principle_id=pid)
+              elif p == "docs/specification/lifecycle/README.md":
+                  meta.update(document_type="overview", section="specification", status="canonical", canonical=True, order=4)
+              elif p.startswith("docs/specification/lifecycle/") and name in lifecycle_ids:
+                  number, sid = lifecycle_ids[name]
+                  meta.update(document_type="lifecycle-stage", section="specification", status="canonical", canonical=True, order=number,
+                              stage_number=number, stage_id=sid)
+              elif p == "docs/specification/conformance/README.md":
+                  meta.update(document_type="overview", section="specification", status="canonical", canonical=True, order=5)
+              elif p.startswith("docs/specification/conformance/") and name in conformance_ids:
+                  number, cid = conformance_ids[name]
+                  meta.update(document_type="conformance-criterion", section="specification", status="canonical", canonical=True, order=number,
+                              criterion_number=number, criterion_id=cid, required=True)
+              elif p == "docs/specification/conformance/non-conforming-patterns.md":
+                  meta.update(document_type="guide", section="specification", status="canonical", canonical=True, order=11)
+              elif p == "docs/specification/conformance/evaluation-checklist.md":
+                  meta.update(document_type="guide", section="specification", status="canonical", canonical=True, order=12)
+              elif p == "docs/architecture/README.md":
+                  meta.update(document_type="overview", section="architecture", status="canonical", canonical=True, order=1)
+              elif p.startswith("docs/architecture/") and name in architecture_order:
+                  order, view, scope = architecture_order[name]
+                  meta.update(document_type="architecture", section="architecture", status="canonical", canonical=True, order=order,
+                              architecture_view=view, scope=scope)
+              elif p == "docs/research/README.md":
+                  meta.update(document_type="research-overview", section="research", status="active-research", canonical=False, order=1)
+              elif p == "docs/research/principles/README.md":
+                  meta.update(document_type="research-overview", section="research", status="active-research", canonical=False, order=1)
+              elif p.startswith("docs/research/principles/") and name in principle_ids:
+                  number, pid = principle_ids[name]
+                  meta.update(document_type="principle-research", section="research", status="active-research", canonical=False, order=number,
+                              principle_number=number, principle_id=pid,
+                              canonical_source=f"../../specification/principles/{name}", research_started="2026-07-15")
+              elif p == "docs/research/frameworks/README.md":
+                  meta.update(document_type="research-overview", section="research", status="active-research", canonical=False, order=2)
+              elif p == "docs/research/frameworks/prior-art-overview.md":
+                  meta.update(document_type="prior-art", section="research", status="active-research", canonical=False, order=1,
+                              research_scope="AI Flywheel principles and related self-evolving agent methodologies", research_cutoff=TODAY)
+              elif p == "docs/research/frameworks/framework-comparison-matrix.md":
+                  meta.update(document_type="comparison", section="research", status="active-research", canonical=False, order=2,
+                              comparison_type="principle-overlap", scoring_scale="0-3", maximum_score=24, framework_count=6)
+              elif p.startswith("docs/research/frameworks/") and name in framework_order:
+                  framework_name = path.stem
+                  display = {"genericagent":"GenericAgent", "metis":"Metis", "moss":"MOSS", "masfly":"MASFly", "ralph":"Ralph", "reflexion":"Reflexion"}.get(framework_name, framework_name)
+                  meta.update(document_type="framework-research", section="research", status="active-research", canonical=False,
+                              order=framework_order[name], framework_name=display)
+              return meta
+
+          def render_yaml(meta):
+              ordered_keys = [
+                  "title", "document_type", "section", "status", "canonical", "order", "summary",
+                  "principle_number", "principle_id", "canonical_source", "research_started",
+                  "framework_name", "stage_number", "stage_id", "criterion_number", "criterion_id", "required",
+                  "architecture_view", "scope", "comparison_type", "scoring_scale", "maximum_score", "framework_count",
+                  "research_scope", "research_cutoff", "last_reviewed", "tags"
+              ]
+              lines = ["---"]
+              for key in ordered_keys:
+                  if key not in meta:
+                      continue
+                  value = meta[key]
+                  if isinstance(value, bool):
+                      lines.append(f"{key}: {'true' if value else 'false'}")
+                  elif isinstance(value, (int, float)):
+                      lines.append(f"{key}: {value}")
+                  elif isinstance(value, list):
+                      lines.append(f"{key}:")
+                      for item in value:
+                          lines.append(f"  - {json.dumps(str(item), ensure_ascii=False)}")
+                  else:
+                      lines.append(f"{key}: {json.dumps(str(value), ensure_ascii=False)}")
+              lines.append("---")
+              return "\n".join(lines) + "\n\n"
+
+          changed = []
+          for path in sorted(Path(".").rglob("*.md")):
+              if ".git" in path.parts:
+                  continue
+              text = path.read_text(encoding="utf-8")
+              if text.startswith("---\n"):
+                  continue
+              title = first_h1(text, path.stem.replace("-", " ").title())
+              summary = first_summary(text, title)
+              meta = classify(path, title, summary)
+              meta["tags"] = tags_for(path, meta["document_type"])
+              path.write_text(render_yaml(meta) + text, encoding="utf-8")
+              changed.append(path.as_posix())
+
+          print(f"Updated {len(changed)} Markdown files")
+          for item in changed:
+              print(item)
+
+      - name: Commit frontmatter migration
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '*.md' 'docs/**/*.md'
+          git commit -m "Apply frontmatter metadata across documentation"
+          git push origin HEAD:docs/initial-documentation
