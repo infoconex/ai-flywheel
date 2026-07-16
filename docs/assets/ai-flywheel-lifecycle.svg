@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">AI Flywheel lifecycle</title>
+  <desc id="desc">A circular eight-stage lifecycle showing Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, surrounded by Governance. Reuse feeds the next Execute cycle.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2f6feb"/>
+    </marker>
+    <style>
+      .bg { fill: #ffffff; }
+      .outer { fill: none; stroke: #57606a; stroke-width: 4; stroke-dasharray: 12 10; }
+      .flow { fill: none; stroke: #2f6feb; stroke-width: 8; marker-end: url(#arrow); }
+      .node { fill: #f6f8fa; stroke: #2f6feb; stroke-width: 4; }
+      .stage { font: 700 30px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #24292f; text-anchor: middle; dominant-baseline: middle; }
+      .label { font: 700 34px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #57606a; text-anchor: middle; }
+      .center-title { font: 700 48px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #24292f; text-anchor: middle; }
+      .center-sub { font: 400 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #57606a; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="1200" rx="32"/>
+  <circle class="outer" cx="600" cy="600" r="520"/>
+  <text class="label" x="600" y="70">GOVERNANCE APPLIES THROUGHOUT</text>
+
+  <path class="flow" d="M655 205 A405 405 0 0 1 930 330"/>
+  <path class="flow" d="M965 385 A405 405 0 0 1 995 665"/>
+  <path class="flow" d="M970 720 A405 405 0 0 1 790 950"/>
+  <path class="flow" d="M730 980 A405 405 0 0 1 455 980"/>
+  <path class="flow" d="M395 950 A405 405 0 0 1 220 720"/>
+  <path class="flow" d="M195 665 A405 405 0 0 1 225 385"/>
+  <path class="flow" d="M260 330 A405 405 0 0 1 535 205"/>
+  <path class="flow" d="M590 190 A415 415 0 0 1 655 205"/>
+
+  <g>
+    <rect class="node" x="500" y="130" width="200" height="92" rx="24"/>
+    <text class="stage" x="600" y="176">EXECUTE</text>
+  </g>
+  <g>
+    <rect class="node" x="820" y="260" width="220" height="92" rx="24"/>
+    <text class="stage" x="930" y="306">OBSERVE</text>
+  </g>
+  <g>
+    <rect class="node" x="900" y="545" width="230" height="92" rx="24"/>
+    <text class="stage" x="1015" y="591">EVALUATE</text>
+  </g>
+  <g>
+    <rect class="node" x="780" y="840" width="240" height="92" rx="24"/>
+    <text class="stage" x="900" y="886">CLASSIFY</text>
+  </g>
+  <g>
+    <rect class="node" x="480" y="980" width="240" height="92" rx="24"/>
+    <text class="stage" x="600" y="1026">ADAPT</text>
+  </g>
+  <g>
+    <rect class="node" x="180" y="840" width="240" height="92" rx="24"/>
+    <text class="stage" x="300" y="886">VALIDATE</text>
+  </g>
+  <g>
+    <rect class="node" x="70" y="545" width="230" height="92" rx="24"/>
+    <text class="stage" x="185" y="591">PERSIST</text>
+  </g>
+  <g>
+    <rect class="node" x="160" y="260" width="220" height="92" rx="24"/>
+    <text class="stage" x="270" y="306">REUSE</text>
+  </g>
+
+  <text class="center-title" x="600" y="565">AI FLYWHEEL</text>
+  <text class="center-sub" x="600" y="620">Validated learning becomes</text>
+  <text class="center-sub" x="600" y="660">the next operating state</text>
+</svg>

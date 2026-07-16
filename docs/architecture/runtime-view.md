@@ -53,4 +53,4 @@ The result of execution is not learning by itself. Execution must first produce 
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [AI Flywheel Lifecycle](../specification/lifecycle.md)
+- [AI Flywheel Lifecycle](../specification/lifecycle/README.md)
