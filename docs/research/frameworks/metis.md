@@ -2,6 +2,12 @@
 
 > **Research status:** Primary-source review completed for the public paper as of July 15, 2026. No official implementation repository was identified in the paper or public project search, so the paper is treated as the canonical source.
 
+## Established / First Public Date
+
+**June 23, 2026** — used here as the earliest verified public establishment date for Metis because the canonical [Metis paper](https://arxiv.org/abs/2606.24151) was first submitted to arXiv on that date.
+
+No earlier official project release, source-code repository, or standalone project publication was identified in the primary-source review completed for this dossier.
+
 ## Research Objective
 
 Determine how closely Metis approaches the AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from the AI Flywheel's broader three-part responsibility and governance architecture.
