@@ -1,19 +1,13 @@
-# Framework Research Dossiers
+# Framework and Prior-Art Research
 
-This section examines related agent frameworks and methodologies individually. Each dossier is intended to function as a research record rather than only a high-level summary.
+This section examines related agent frameworks and methodologies individually and comparatively. It contains the framework-oriented prior-art overview, cross-framework comparison matrix, and detailed framework dossiers.
 
-Each framework page includes:
+## Comparative Research
 
-- the canonical paper, official site, or primary defining source,
-- an official implementation repository when one is available,
-- additional recommended reading relevant to comparison,
-- a detailed description of the framework and its architecture,
-- its execution, learning, persistence, validation, and governance mechanisms,
-- a completed evidence checklist based on the research questions previously identified,
-- direct comparison with the AI Flywheel,
-- and remaining questions that may require additional primary-source research.
+- [Prior-Art and Comparative Research Overview](prior-art-overview.md) — Summarizes the major areas of overlap, the strongest current differentiation hypotheses, and adjacent bodies of prior art that still need investigation.
+- [Framework Comparison Matrix](framework-comparison-matrix.md) — Provides a principle-by-principle similarity comparison across the frameworks currently under review.
 
-## Table of Contents
+## Framework Research Dossiers
 
 - [GenericAgent](genericagent.md) — Examines autonomous execution, layered memory, skill crystallization, reusable SOPs, executable capability creation, and compounding reuse.
 - [Metis](metis.md) — Examines the deliberate choice between textual and executable memory, including selective promotion of recurring procedural plans into callable code.
@@ -24,15 +18,18 @@ Each framework page includes:
 
 ## Research Standard
 
-The dossiers prioritize primary sources such as:
+Each framework dossier should include, where available:
 
-- original research papers,
-- author-maintained project pages,
-- official source repositories,
-- and documentation published by the framework authors.
+- the canonical paper, official site, or primary defining source,
+- an official implementation repository,
+- the earliest verified public publication or release date and the basis for that date,
+- additional recommended reading relevant to comparison,
+- a detailed description of the framework and its architecture,
+- its execution, learning, persistence, validation, and governance mechanisms,
+- a completed evidence checklist,
+- direct comparison with the AI Flywheel,
+- and remaining questions requiring additional primary-source research.
 
-Secondary material is included only when it provides useful implementation context, historical context, or a relevant comparison that is not sufficiently covered by the primary source.
+The dossiers prioritize original research papers, author-maintained project pages, official source repositories, and documentation published by the framework authors.
 
-When a research question cannot be answered responsibly from the available primary sources, the dossier should say that the mechanism is **not established** rather than infer that it does or does not exist.
-
-For the principle-oriented view, see the [principle research dossiers](../principles/README.md). For a condensed cross-framework view, see the [framework comparison matrix](../framework-comparison-matrix.md).
+For the principle-oriented research view, see the [principle research dossiers](../principles/README.md).
