@@ -6,7 +6,7 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 > **A loop repeats. A flywheel compounds.**
 
-![AI Flywheel lifecycle](docs/assets/ai-flywheel-lifecycle.svg)
+![AI Flywheel lifecycle](docs/assets/ai-flywheel-lifecycle-color.svg)
 
 ## Why AI Flywheel?
 
