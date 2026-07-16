@@ -88,6 +88,3 @@ It allows operational knowledge to survive individual context windows and provid
 ## Related Documents
 
 - [Runtime Architecture](../../architecture/runtime-view.md)
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
-- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
