@@ -7,7 +7,7 @@ Governance and escalation are related but distinct architectural concerns.
 **Escalation** is the runtime mechanism used when the Flywheel reaches one of those boundaries.
 
 ```mermaid
-flowchart LR
+flowchart TD
     P[Proposed Action or Decision] --> G{Governance Gate}
     G -->|Authorized| A[Act Autonomously]
     G -->|Approval Required| AP[Request Human Permission]
