@@ -1,3 +1,16 @@
+---
+title: "AI Flywheel Principles"
+document_type: "overview"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 3
+summary: "These eight principles define the expected behavior of an AI Flywheel implementation. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse interact as one ope"
+last_reviewed: "2026-07-16"
+tags:
+  - "overview"
+---
+
 # AI Flywheel Principles
 
 These eight principles define the expected behavior of an AI Flywheel implementation. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse interact as one operating model.

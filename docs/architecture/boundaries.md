@@ -1,3 +1,18 @@
+---
+title: "Core Boundaries"
+document_type: "architecture"
+section: "architecture"
+status: "canonical"
+canonical: true
+order: 4
+summary: "The AI Flywheel architecture contains two different boundaries that should not be confused: the Moving Determinism Boundary and the Authority Boundary."
+architecture_view: "boundaries"
+scope: "governance"
+last_reviewed: "2026-07-16"
+tags:
+  - "architecture"
+---
+
 # Core Boundaries
 
 The AI Flywheel architecture contains two different boundaries that should not be confused: the **Moving Determinism Boundary** and the **Authority Boundary**.

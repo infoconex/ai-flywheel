@@ -1,3 +1,18 @@
+---
+title: "Principle 4: The SOP Is an Operational Control Plane"
+document_type: "principle"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 4
+summary: "The SOP is a persistent, machine-consumable operational contract that guides how the AI Flywheel performs its work."
+principle_number: 4
+principle_id: "sop-control-plane"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+---
+
 # Principle 4: The SOP Is an Operational Control Plane
 
 The SOP is a persistent, machine-consumable operational contract that guides how the AI Flywheel performs its work.

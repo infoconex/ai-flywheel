@@ -1,3 +1,18 @@
+---
+title: "Principle 2: AI Is the Operator, Not Merely the Assistant"
+document_type: "principle"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 2
+summary: "The AI Flywheel is designed around AI performing the operational work itself rather than only producing instructions for a human to execute."
+principle_number: 2
+principle_id: "ai-as-operator"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+---
+
 # Principle 2: AI Is the Operator, Not Merely the Assistant
 
 The AI Flywheel is designed around AI performing the operational work itself rather than only producing instructions for a human to execute.

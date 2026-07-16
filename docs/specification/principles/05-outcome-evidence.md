@@ -1,3 +1,18 @@
+---
+title: "Principle 5: Execution Must Produce Outcome Evidence"
+document_type: "principle"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 5
+summary: "The AI Flywheel learns from observed results rather than AI confidence alone."
+principle_number: 5
+principle_id: "outcome-evidence"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+---
+
 # Principle 5: Execution Must Produce Outcome Evidence
 
 The AI Flywheel learns from observed results rather than AI confidence alone.

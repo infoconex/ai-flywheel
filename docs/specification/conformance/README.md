@@ -1,3 +1,16 @@
+---
+title: "AI Flywheel Conformance Criteria"
+document_type: "overview"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 5
+summary: "A system described as implementing the AI Flywheel should satisfy all ten required conformance criteria defined in this section."
+last_reviewed: "2026-07-16"
+tags:
+  - "overview"
+---
+
 # AI Flywheel Conformance Criteria
 
 A system described as implementing the AI Flywheel should satisfy all ten required conformance criteria defined in this section.

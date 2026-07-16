@@ -1,3 +1,17 @@
+---
+title: "Framework and Prior-Art Research"
+document_type: "research-overview"
+section: "research"
+status: "active-research"
+canonical: false
+order: 2
+summary: "This section examines related agent frameworks and methodologies individually and comparatively. It contains the framework-oriented prior-art overview, cross-framework comparison matrix, and detailed framework dossiers."
+last_reviewed: "2026-07-16"
+tags:
+  - "research"
+  - "overview"
+---
+
 # Framework and Prior-Art Research
 
 This section examines related agent frameworks and methodologies individually and comparatively. It contains the framework-oriented prior-art overview, cross-framework comparison matrix, and detailed framework dossiers.

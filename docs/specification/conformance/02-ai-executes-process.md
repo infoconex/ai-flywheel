@@ -1,3 +1,19 @@
+---
+title: "Criterion 2: AI Executes the Process"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 2
+summary: "The AI performs meaningful operational work rather than only producing instructions for a human operator."
+criterion_number: 2
+criterion_id: "ai-executes-process"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 2: AI Executes the Process
 
 The AI performs meaningful operational work rather than only producing instructions for a human operator.

@@ -1,3 +1,18 @@
+---
+title: "Stage 2: Observe"
+document_type: "lifecycle-stage"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 2
+summary: "The system captures evidence about what actually occurred during execution."
+stage_number: 2
+stage_id: "observe"
+last_reviewed: "2026-07-16"
+tags:
+  - "lifecycle"
+---
+
 # Stage 2: Observe
 
 The system captures evidence about what actually occurred during execution.

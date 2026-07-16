@@ -1,3 +1,21 @@
+---
+title: "Research: Work Is Distributed Across a Moving Determinism Boundary"
+document_type: "principle-research"
+section: "research"
+status: "active-research"
+canonical: false
+order: 3
+summary: "Determine whether existing systems explicitly treat deterministic capability, procedural guidance, and AI reasoning as distinct operating mechanisms whose responsibilities can move over time based on execution evidence."
+principle_number: 3
+principle_id: "moving-determinism-boundary"
+canonical_source: "../../specification/principles/03-moving-determinism-boundary.md"
+research_started: "2026-07-15"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+  - "research"
+---
+
 # Research: Work Is Distributed Across a Moving Determinism Boundary
 
 > Canonical principle: [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../../specification/principles/03-moving-determinism-boundary.md)

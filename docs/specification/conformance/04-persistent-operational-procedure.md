@@ -1,3 +1,19 @@
+---
+title: "Criterion 4: A Persistent Operational Procedure Exists"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 4
+summary: "The process uses durable procedural guidance or an SOP that defines how the work is performed."
+criterion_number: 4
+criterion_id: "persistent-operational-procedure"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 4: A Persistent Operational Procedure Exists
 
 The process uses durable procedural guidance or an SOP that defines how the work is performed.

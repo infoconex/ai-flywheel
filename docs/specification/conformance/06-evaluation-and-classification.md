@@ -1,3 +1,19 @@
+---
+title: "Criterion 6: Outcomes Are Evaluated and Classified"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 6
+summary: "The system determines whether the intended result occurred and identifies weaknesses, uncertainty, or learning opportunities revealed by the outcome."
+criterion_number: 6
+criterion_id: "evaluation-and-classification"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 6: Outcomes Are Evaluated and Classified
 
 The system determines whether the intended result occurred and identifies weaknesses, uncertainty, or learning opportunities revealed by the outcome.

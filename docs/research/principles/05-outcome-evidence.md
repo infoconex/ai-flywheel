@@ -1,3 +1,21 @@
+---
+title: "Research: Execution Must Produce Outcome Evidence"
+document_type: "principle-research"
+section: "research"
+status: "active-research"
+canonical: false
+order: 5
+summary: "Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide how the operating syst"
+principle_number: 5
+principle_id: "outcome-evidence"
+canonical_source: "../../specification/principles/05-outcome-evidence.md"
+research_started: "2026-07-15"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+  - "research"
+---
+
 # Research: Execution Must Produce Outcome Evidence
 
 > Canonical principle: [Principle 5: Execution Must Produce Outcome Evidence](../../specification/principles/05-outcome-evidence.md)

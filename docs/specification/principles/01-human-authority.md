@@ -1,3 +1,18 @@
+---
+title: "Principle 1: Autonomy Is Bounded by Human Authority"
+document_type: "principle"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 1
+summary: "A human authorizes the AI Flywheel to operate and defines the boundaries of that authority. Once authorized, the Flywheel operates autonomously until it reaches a condition requiring human judgment or human approval."
+principle_number: 1
+principle_id: "human-authority"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+---
+
 # Principle 1: Autonomy Is Bounded by Human Authority
 
 A human authorizes the AI Flywheel to operate and defines the boundaries of that authority. Once authorized, the Flywheel operates autonomously until it reaches a condition requiring human judgment or human approval.

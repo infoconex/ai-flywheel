@@ -1,3 +1,19 @@
+---
+title: "Criterion 8: Governance Is Enforced During Action and Adaptation"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 8
+summary: "Human-defined authority boundaries constrain both operational execution and persistent self-improvement."
+criterion_number: 8
+criterion_id: "governance-enforcement"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 8: Governance Is Enforced During Action and Adaptation
 
 Human-defined authority boundaries constrain both operational execution and persistent self-improvement.

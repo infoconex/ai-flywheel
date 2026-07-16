@@ -1,3 +1,18 @@
+---
+title: "Principle 7: Learning Must Change a Persistent Operational Asset"
+document_type: "principle"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 7
+summary: "Useful learning must survive the current execution."
+principle_number: 7
+principle_id: "persistent-learning"
+last_reviewed: "2026-07-16"
+tags:
+  - "principles"
+---
+
 # Principle 7: Learning Must Change a Persistent Operational Asset
 
 Useful learning must survive the current execution.

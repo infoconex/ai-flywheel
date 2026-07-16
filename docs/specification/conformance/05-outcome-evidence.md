@@ -1,3 +1,19 @@
+---
+title: "Criterion 5: Execution Produces Outcome Evidence"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 5
+summary: "The process captures enough evidence to evaluate actual outcomes rather than relying solely on model confidence or completion status."
+criterion_number: 5
+criterion_id: "outcome-evidence"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 5: Execution Produces Outcome Evidence
 
 The process captures enough evidence to evaluate actual outcomes rather than relying solely on model confidence or completion status.

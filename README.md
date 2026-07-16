@@ -1,3 +1,16 @@
+---
+title: "AI Flywheel"
+document_type: "overview"
+section: "root"
+status: "provisional"
+canonical: false
+order: 0
+summary: "The AI Flywheel is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed."
+last_reviewed: "2026-07-16"
+tags:
+  - "overview"
+---
+
 # AI Flywheel
 
 > **Status:** Early definition and working specification. The methodology and supporting research will evolve as the model is tested, refined, and compared with related work.

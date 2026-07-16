@@ -1,3 +1,18 @@
+---
+title: "Learning Architecture"
+document_type: "architecture"
+section: "architecture"
+status: "canonical"
+canonical: true
+order: 2
+summary: "The learning view explains what happens after execution and how evidence changes future operation."
+architecture_view: "learning"
+scope: "learning"
+last_reviewed: "2026-07-16"
+tags:
+  - "architecture"
+---
+
 # Learning Architecture
 
 The learning view explains what happens **after execution** and how evidence changes future operation.

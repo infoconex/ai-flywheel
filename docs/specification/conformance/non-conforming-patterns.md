@@ -1,3 +1,15 @@
+---
+title: "Non-Conforming Patterns"
+document_type: "guide"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 11
+summary: "The following patterns may contain useful elements of the AI Flywheel but are not sufficient by themselves to satisfy the complete methodology."
+last_reviewed: "2026-07-16"
+tags:
+---
+
 # Non-Conforming Patterns
 
 The following patterns may contain useful elements of the AI Flywheel but are not sufficient by themselves to satisfy the complete methodology.

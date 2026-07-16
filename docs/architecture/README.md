@@ -1,3 +1,16 @@
+---
+title: "AI Flywheel Architecture"
+document_type: "overview"
+section: "architecture"
+status: "canonical"
+canonical: true
+order: 1
+summary: "This section explains how the AI Flywheel fits together structurally. It separates the runtime model, the post-execution learning model, governance and escalation, and the two boundaries that shape where responsibility resides and what the"
+last_reviewed: "2026-07-16"
+tags:
+  - "overview"
+---
+
 # AI Flywheel Architecture
 
 This section explains how the AI Flywheel fits together structurally. It separates the runtime model, the post-execution learning model, governance and escalation, and the two boundaries that shape where responsibility resides and what the AI is authorized to do.

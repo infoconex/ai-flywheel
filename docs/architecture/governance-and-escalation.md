@@ -1,3 +1,18 @@
+---
+title: "Governance and Escalation"
+document_type: "architecture"
+section: "architecture"
+status: "canonical"
+canonical: true
+order: 3
+summary: "Governance and escalation are related but distinct architectural concerns."
+architecture_view: "governance"
+scope: "governance"
+last_reviewed: "2026-07-16"
+tags:
+  - "architecture"
+---
+
 # Governance and Escalation
 
 Governance and escalation are related but distinct architectural concerns.

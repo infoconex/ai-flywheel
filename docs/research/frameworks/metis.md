@@ -1,3 +1,17 @@
+---
+title: "Metis Research Dossier"
+document_type: "framework-research"
+section: "research"
+status: "active-research"
+canonical: false
+order: 4
+summary: "Determine how closely Metis approaches the AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from the AI Flywheel's br"
+framework_name: "Metis"
+last_reviewed: "2026-07-16"
+tags:
+  - "research"
+---
+
 # Metis Research Dossier
 
 > **Research status:** Primary-source review completed for the public paper as of July 15, 2026. No official implementation repository was identified in the paper or public project search, so the paper is treated as the canonical source.

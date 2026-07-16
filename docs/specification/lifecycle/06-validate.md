@@ -1,3 +1,18 @@
+---
+title: "Stage 6: Validate"
+document_type: "lifecycle-stage"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 6
+summary: "The proposed improvement is tested against appropriate evidence before it is trusted for future use."
+stage_number: 6
+stage_id: "validate"
+last_reviewed: "2026-07-16"
+tags:
+  - "lifecycle"
+---
+
 # Stage 6: Validate
 
 The proposed improvement is tested against appropriate evidence before it is trusted for future use.

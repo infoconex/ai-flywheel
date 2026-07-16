@@ -1,3 +1,18 @@
+---
+title: "Stage 8: Reuse"
+document_type: "lifecycle-stage"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 8
+summary: "Future executions begin with the improved operating system created by previous Flywheel cycles."
+stage_number: 8
+stage_id: "reuse"
+last_reviewed: "2026-07-16"
+tags:
+  - "lifecycle"
+---
+
 # Stage 8: Reuse
 
 Future executions begin with the improved operating system created by previous Flywheel cycles.

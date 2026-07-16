@@ -1,3 +1,17 @@
+---
+title: "Frontmatter Schema"
+document_type: "guide"
+section: "root"
+status: "canonical"
+canonical: true
+order: 2
+summary: "This document defines the approved field vocabulary for AI Flywheel documentation frontmatter."
+last_reviewed: "2026-07-16"
+tags:
+  - "documentation"
+  - "frontmatter"
+---
+
 # Frontmatter Schema
 
 This document defines the approved field vocabulary for AI Flywheel documentation frontmatter.

@@ -1,3 +1,17 @@
+---
+title: "MOSS Research Dossier"
+document_type: "framework-research"
+section: "research"
+status: "active-research"
+canonical: false
+order: 5
+summary: "Evaluate MOSS as prior art for evidence-driven self-modification, persistent improvement of deployed agent software, validation and rollback of autonomous changes, and human approval of consequential self-evolution."
+framework_name: "MOSS"
+last_reviewed: "2026-07-16"
+tags:
+  - "research"
+---
+
 # MOSS Research Dossier
 
 > **Research status:** Primary-source review completed for the currently available public paper and official repository as of July 15, 2026. Comparative conclusions remain working interpretations.

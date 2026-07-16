@@ -1,3 +1,17 @@
+---
+title: "Frontmatter Maintenance Rules"
+document_type: "guide"
+section: "root"
+status: "canonical"
+canonical: true
+order: 4
+summary: "This document defines how frontmatter should be maintained after adoption."
+last_reviewed: "2026-07-16"
+tags:
+  - "documentation"
+  - "frontmatter"
+---
+
 # Frontmatter Maintenance Rules
 
 This document defines how frontmatter should be maintained after adoption.

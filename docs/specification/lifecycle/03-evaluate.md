@@ -1,3 +1,18 @@
+---
+title: "Stage 3: Evaluate"
+document_type: "lifecycle-stage"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 3
+summary: "The AI compares the observed outcome with the intended outcome and applicable success criteria."
+stage_number: 3
+stage_id: "evaluate"
+last_reviewed: "2026-07-16"
+tags:
+  - "lifecycle"
+---
+
 # Stage 3: Evaluate
 
 The AI compares the observed outcome with the intended outcome and applicable success criteria.

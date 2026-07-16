@@ -1,3 +1,19 @@
+---
+title: "Criterion 7: Improvements Are Routed to the Appropriate Destination"
+document_type: "conformance-criterion"
+section: "specification"
+status: "canonical"
+canonical: true
+order: 7
+summary: "The system determines which persistent mechanism should own a validated improvement."
+criterion_number: 7
+criterion_id: "improvement-routing"
+required: true
+last_reviewed: "2026-07-16"
+tags:
+  - "conformance"
+---
+
 # Criterion 7: Improvements Are Routed to the Appropriate Destination
 
 The system determines which persistent mechanism should own a validated improvement.

@@ -1,3 +1,17 @@
+---
+title: "Ralph Research Dossier"
+document_type: "framework-research"
+section: "research"
+status: "active-research"
+canonical: false
+order: 7
+summary: "Evaluate the Ralph loop as prior art for repeated autonomous execution, persistent project context, deterministic backpressure, iterative failure recovery, and human-guided improvement of the loop itself."
+framework_name: "Ralph"
+last_reviewed: "2026-07-16"
+tags:
+  - "research"
+---
+
 # Ralph Research Dossier
 
 > **Research status:** Primary-source review completed for Geoffrey Huntley's canonical description and selected follow-up material as of July 15, 2026. Ralph is a technique rather than a formally versioned software framework, so implementations vary substantially.

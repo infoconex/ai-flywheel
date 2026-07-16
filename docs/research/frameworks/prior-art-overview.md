@@ -1,3 +1,18 @@
+---
+title: "Prior-Art and Comparative Research Overview"
+document_type: "prior-art"
+section: "research"
+status: "active-research"
+canonical: false
+order: 1
+summary: "The AI Flywheel should not claim novelty merely because individual implementation techniques appear new in combination."
+research_scope: "AI Flywheel principles and related self-evolving agent methodologies"
+research_cutoff: "2026-07-16"
+last_reviewed: "2026-07-16"
+tags:
+  - "research"
+---
+
 # Prior-Art and Comparative Research Overview
 
 > **Research status:** Working analysis. This collection is intended to separate evidence-backed comparison from the canonical AI Flywheel specification. Comparative conclusions should be treated as provisional until supported by primary sources.
