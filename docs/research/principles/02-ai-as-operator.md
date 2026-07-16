@@ -1,89 +1,57 @@
-# Principle 2: AI Is the Operator, Not Merely the Assistant
+# Research: AI Is the Operator, Not Merely the Assistant
 
-The AI Flywheel is designed around AI performing the operational work itself rather than only producing instructions for a human to execute.
+> Canonical principle: [Principle 2: AI Is the Operator, Not Merely the Assistant](../../specification/principles/02-ai-as-operator.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-2-ai-is-the-operator-not-merely-the-assistant).
+## Research Objective
 
-## Purpose
+Determine how established the pattern is in which AI directly performs operational work, consumes procedures, invokes tools, creates capabilities for its own later use, and carries a process forward without requiring a human to execute each generated artifact.
 
-Traditional AI assistance often stops at recommendation or generation:
+## Current Evidence
 
-- the AI writes code and a human runs it,
-- the AI suggests a procedure and a human follows it,
-- the AI analyzes a problem and a human performs the resulting action.
+The current framework review shows substantial prior art for AI acting as an operator rather than only an advisor.
 
-The AI Flywheel changes that relationship.
+- [GenericAgent](../frameworks/genericagent.md) provides strong evidence: the agent directly controls tools, creates scripts and capabilities, and later reuses them.
+- [Ralph](../frameworks/ralph.md) repeatedly places a coding agent in direct control of project modification, testing, and iterative progress.
+- [Metis](../frameworks/metis.md) equips an executor with retrieved text memories and callable code tools, but its primary research contribution is memory representation rather than operator ownership.
+- [MOSS](../frameworks/moss.md) delegates source changes to coding agents while retaining an autonomous evolution pipeline around them.
+- [MASFly](../frameworks/masfly.md) dynamically assembles and supervises AI agents that perform the task.
+- [Reflexion](../frameworks/reflexion.md) uses an AI actor that repeatedly attempts tasks using feedback-informed memory.
 
-The AI becomes the operator of the process. It uses the available procedure, invokes deterministic capabilities, interprets results, handles exceptions, evaluates outcomes, and participates in improving the system used for future execution.
+The broad idea that AI can execute tools and act autonomously is therefore well established. The narrower research question is what it means for AI to **own execution continuity and improvement of the operating process itself**.
 
-## What the AI May Operate
+## Related Ideas and Historical Provenance to Trace
 
-Within its authorized scope, the AI may:
+Research should establish dates and primary sources for:
 
-- follow and interpret the SOP,
-- invoke existing tools and deterministic capabilities,
-- create new capabilities when needed,
-- reason between tool calls,
-- inspect execution results,
-- recover from known failures,
-- request human judgment or approval when required,
-- and propose or apply authorized improvements to persistent operational assets.
+- autonomous software agents,
+- tool-using language models,
+- reason-and-act agent architectures,
+- computer-use agents,
+- autonomous coding agents,
+- AI-generated tools consumed by AI,
+- agents that build persistent capabilities for their own later use,
+- and systems in which AI owns the recurring operational process rather than a single task attempt.
 
-The exact capabilities available depend on the implementation and Governance Policy.
+## Open Research Questions
 
-## The AI Owns Execution Continuity
+1. When did the pattern of AI creating a capability and later invoking that capability itself first appear in published work?
+2. Is there established terminology for the distinction between **AI as assistant** and **AI as process operator**?
+3. How often do existing agent frameworks own only task execution versus the full cycle of execution, evaluation, adaptation, and reuse?
+4. Does operator status require the AI to control execution continuity after failures, or is tool invocation alone sufficient?
+5. What distinguishes an AI operator from a conventional workflow engine with LLM steps?
+6. Are persistent agent-owned tools or procedures already formalized as a specific architectural pattern?
+7. How should operator autonomy be bounded when the AI can create new capabilities dynamically?
 
-The AI should not stop simply because one deterministic action fails.
+## Evidence Still Needed
 
-It should use the available evidence and procedural guidance to determine the next appropriate action, including whether to:
+- Early primary sources on autonomous agents and tool-use agents.
+- Examples where AI-generated code becomes a persistent AI-operated capability.
+- Systems that distinguish one-shot task execution from ownership of a recurring process.
+- Evidence showing whether AI can improve the process it operates, not merely execute it.
+- Historical establishment dates for the major operator-related patterns.
 
-- retry,
-- use a different capability,
-- reason through an exception,
-- gather more evidence,
-- escalate,
-- or classify the failure for later adaptation.
+## Current Research Position
 
-This makes the AI responsible for carrying the process forward within its delegated authority.
+AI acting directly on tools and environments should be treated as established prior art, not as an independent novelty claim.
 
-## Human Authority Remains Above AI Operation
-
-AI operation does not imply unlimited autonomy.
-
-Humans define the authority boundary. The AI operates inside it.
-
-The intended relationship is:
-
-> **Humans authorize and govern. The AI operates.**
-
-Routine execution should not require continuous human participation, but the Flywheel must escalate when human judgment or permission is required.
-
-## Operational Implication
-
-A process does not fully implement this principle when AI only creates an artifact that a human must routinely execute manually.
-
-The stronger pattern is:
-
-**AI creates or obtains a capability → AI invokes it → AI interprets the result → AI continues the process**
-
-That shift is foundational because the evidence generated by execution becomes directly available to the same system responsible for learning and improvement.
-
-## Relationship to the Flywheel
-
-Making AI the operator connects execution directly to adaptation.
-
-The AI is positioned to observe:
-
-- what the procedure expected,
-- what the deterministic capability actually did,
-- what evidence was produced,
-- where the process failed,
-- and what should change before the next execution.
-
-Without AI operation, much of that operational experience remains outside the Flywheel and must be manually translated back into the system.
-
-## Related Documents
-
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
-- [Runtime Architecture](../../architecture/runtime-view.md)
-- [Principle 5: Outcome Evidence](05-outcome-evidence.md)
+The stronger AI Flywheel research question is whether operator status is integrated with the rest of the methodology: bounded human authority, persistent procedure, outcome evidence, explicit evolution routing, and reuse of improved operational assets.
