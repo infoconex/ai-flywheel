@@ -10,6 +10,14 @@ Different failures have different causes. Treating every failure as a prompt pro
 
 The Flywheel therefore classifies the weakness and routes the resulting learning to the most appropriate persistent destination.
 
+## Required Classification and Routing
+
+The Flywheel must do more than label an outcome successful or failed.
+
+When execution reveals a reusable weakness, uncertainty, or learning opportunity, the system should identify the nature of the issue well enough to make an intentional adaptation decision. It should not apply the same response to every failure or persist learning without first determining which mechanism should own the correction.
+
+The routing decision itself is part of the methodology.
+
 ## Possible Adaptation Destinations
 
 ### Deterministic Capability
