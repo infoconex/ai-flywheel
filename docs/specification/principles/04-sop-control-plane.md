@@ -48,6 +48,8 @@ The SOP may instruct the AI to invoke deterministic capabilities for work that s
 
 As the Flywheel learns, a procedural step may become stable enough to move into deterministic implementation. The SOP then changes from describing how to perform the work to describing when and why the deterministic capability should be used.
 
+This movement is governed by [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md).
+
 ## Relationship to Governance
 
 The Governance Policy sits above the SOP.
@@ -56,7 +58,7 @@ The SOP defines **how the work should be performed**.
 
 The Governance Policy defines **what the Flywheel is authorized to do**.
 
-The SOP may define escalation conditions, but it may not expand the AI's authority or override a governance restriction.
+The SOP may define escalation conditions, but it may not expand the AI's authority or override a governance restriction. This authority model is defined by [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md).
 
 ## The SOP Evolves
 
@@ -69,7 +71,7 @@ Execution evidence may reveal that the SOP is:
 - missing a validation step,
 - or requiring unnecessary AI reasoning.
 
-When the appropriate correction is procedural, the SOP should be updated so future executions inherit the improved guidance.
+When the appropriate correction is procedural, the SOP should be updated so future executions inherit the improved guidance. The choice of where a correction belongs is governed by [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md).
 
 ## Operational Intent
 
@@ -77,10 +79,15 @@ The SOP acts as the persistent bridge between human-defined process knowledge an
 
 It allows operational knowledge to survive individual context windows and provides a stable place for known behavior to accumulate without forcing that behavior prematurely into deterministic code.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
+- **Previous Principle:** [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
+- **Next Principle:** [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
+
+## Related Documents
+
 - [Runtime Architecture](../../architecture/runtime-view.md)
 - [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
-- [Principle 3: Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
