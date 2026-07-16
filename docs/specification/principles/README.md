@@ -25,4 +25,4 @@ The principles form a coherent operating model rather than eight independent fea
 - [Lifecycle](../lifecycle/README.md)
 - [Conformance Criteria](../conformance/README.md)
 - [Architecture and Diagrams](../../architecture/README.md)
-- [Framework Comparison Research](../../research/framework-comparison-matrix.md)
+- [Framework Comparison Research](../../research/frameworks/framework-comparison-matrix.md)
