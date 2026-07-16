@@ -7,7 +7,6 @@ This directory separates the **canonical methodology** from the **research used 
 - [AI Flywheel Specification](specification/README.md) — Defines the methodology, principles, lifecycle, governance model, and conformance criteria.
 - [AI Flywheel Architecture](architecture/README.md) — Provides starting diagrams for the runtime model, learning model, governance gates, escalation, and the two core boundaries.
 - [AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It is supporting analysis rather than part of the normative definition.
-- [Frontmatter Reference](frontmatter/README.md) — Defines the proposed metadata schema, document-type conventions, examples, and maintenance rules for repository documentation.
 
 ## Documentation Model
 
@@ -16,8 +15,6 @@ The documentation intentionally separates three questions:
 1. **What is the AI Flywheel?** See the [specification](specification/README.md).
 2. **How does the model fit together?** See the [architecture diagrams](architecture/README.md).
 3. **How does it relate to existing work?** See the [research section](research/README.md).
-
-Repository documentation conventions, including proposed frontmatter usage, are maintained separately from the methodology itself.
 
 ## Documentation Rule
 
