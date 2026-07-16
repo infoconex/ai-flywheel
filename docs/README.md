@@ -4,7 +4,7 @@ This directory separates the **canonical methodology** from the **research used 
 
 ## Documentation Sections
 
-- [AI Flywheel Specification](specification/README.md) — Defines the methodology, principles, lifecycle, governance model, and conformance criteria.
+- [AI Flywheel Specification](specification/README.md) — Defines the methodology, principles, lifecycle, governance model, and conformance assessment.
 - [AI Flywheel Architecture](architecture/README.md) — Provides starting diagrams for the runtime model, learning model, governance gates, escalation, and the two core boundaries.
 - [AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It is supporting analysis rather than part of the normative definition.
 
