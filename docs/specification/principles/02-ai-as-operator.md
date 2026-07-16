@@ -87,4 +87,3 @@ Without AI operation, much of that operational experience remains outside the Fl
 ## Related Documents
 
 - [Runtime Architecture](../../architecture/runtime-view.md)
-- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
