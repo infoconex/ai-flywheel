@@ -101,7 +101,7 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 
 Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
 
-- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, governance model, and conformance criteria.
+- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, governance model, and conformance assessment.
 - [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
 - [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
 
