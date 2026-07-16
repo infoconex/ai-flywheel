@@ -58,7 +58,7 @@ Compounding depends on **correct reuse**, not indiscriminate reuse.
 
 As the Flywheel becomes more capable, human authority remains in force.
 
-Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself.
+Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself under [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md).
 
 Likewise, new evidence may justify reducing autonomy or increasing escalation when risk or uncertainty increases.
 
@@ -72,9 +72,14 @@ A mature AI Flywheel should require less repeated effort to achieve comparable w
 
 **Better execution → better evidence → better learning → better operating assets → better future execution**
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
-- [Principle 7: Persistent Operational Learning](07-persistent-learning.md)
-- [Lifecycle](../lifecycle.md)
+- **Previous Principle:** [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md)
+
+## Related Documents
+
+- [Lifecycle](../lifecycle/README.md)
 - [Learning Architecture](../../architecture/learning-view.md)
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md)
