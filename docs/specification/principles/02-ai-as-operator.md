@@ -44,6 +44,12 @@ It should use the available evidence and procedural guidance to determine the ne
 
 This makes the AI responsible for carrying the process forward within its delegated authority.
 
+## Required Operational Behavior
+
+For this principle to be satisfied, AI must perform meaningful portions of the operational process directly.
+
+Routine operation should not depend on a human manually executing each instruction, running each generated capability, or repeatedly telling the AI to continue. Once authorized, the Flywheel should continue operating within its delegated authority until the work completes or an actual authority or uncertainty boundary requires escalation.
+
 ## Human Authority Remains Above AI Operation
 
 AI operation does not imply unlimited autonomy.
