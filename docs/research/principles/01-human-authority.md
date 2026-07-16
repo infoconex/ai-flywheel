@@ -1,45 +1,93 @@
-# Principle 1 Research: Autonomy Is Bounded by Human Authority
-
-## Principle Under Review
+# Principle 1: Autonomy Is Bounded by Human Authority
 
 A human authorizes the AI Flywheel to operate and defines the boundaries of that authority. Once authorized, the Flywheel operates autonomously until it reaches a condition requiring human judgment or human approval.
 
-See the canonical [principles specification](../../specification/principles.md#principle-1-autonomy-is-bounded-by-human-authority).
+See the concise [principles specification](../../specification/principles.md#principle-1-autonomy-is-bounded-by-human-authority).
 
-## Prior-Art Question
+## Purpose
 
-How do existing agent systems define delegated autonomy, governance policies, approval gates, uncertainty escalation, and human authority over self-modification?
+The goal is not to require a human to participate in every execution. The goal is to make autonomy explicit, bounded, and governable.
 
-## Working Assessment
+A human authorizes the system to operate. The AI then performs routine work autonomously within the authority it has been granted.
 
-Human-in-the-loop control, approval workflows, risk-based escalation, and bounded autonomy are established ideas across autonomous systems and AI governance.
+Human involvement occurs when the system reaches a boundary it is not permitted or not able to cross responsibly on its own.
 
-The research question is therefore not whether humans can supervise autonomous systems. The narrower question is whether related frameworks combine human authorization with a Flywheel that is autonomous by default inside explicit boundaries, distinguishes uncertainty from authority, and treats human decisions as evidence that can improve future operation.
+## Governance Policy
 
-## Comparison Dimensions
+A persistent Governance Policy defines the scope of the Flywheel's authority.
 
-For each framework, determine whether it:
+It should define:
 
-1. requires human authorization before autonomous operation,
-2. defines persistent authority boundaries,
-3. distinguishes human judgment from human approval,
-4. defines prohibited actions separately from approval-required actions,
-5. can continue unrelated authorized work while one item is escalated,
-6. treats human decisions as reusable evidence,
-7. prevents the AI from autonomously expanding its own authority,
-8. allows governance to constrain both execution and self-improvement.
+- what the AI may do autonomously,
+- what actions require human approval,
+- what conditions require human judgment,
+- what actions are prohibited,
+- what changes the AI may make to code, procedure, reasoning guidance, validation, or other operational assets,
+- and who has authority to approve particular decisions.
 
-## Frameworks to Compare
+The Governance Policy sits above the SOP. The SOP defines how work should be performed. The Governance Policy defines what the system is permitted to decide, execute, change, or persist while performing that work.
 
-- [GenericAgent](../frameworks/genericagent.md)
-- [Metis](../frameworks/metis.md)
-- [MOSS](../frameworks/moss.md)
-- [MASFly](../frameworks/masfly.md)
-- [Ralph](../frameworks/ralph.md)
-- [Reflexion](../frameworks/reflexion.md)
+The SOP may not override the Governance Policy.
 
-## Potential Differentiation
+## The Two Escalation Boundaries
 
-A possible AI Flywheel distinction is the combination of **autonomy by default within delegated authority**, explicit **uncertainty and authority boundaries**, and a learning mechanism in which human decisions can improve future operation without allowing the AI to grant itself additional authority.
+### Authority Boundary
 
-This remains a research hypothesis until compared rigorously with primary sources and adjacent work in AI governance, autonomous systems, human-machine teaming, and adaptive automation.
+The AI can determine what it recommends, but it is not authorized to take the action.
+
+This requires **human approval**.
+
+### Uncertainty Boundary
+
+The AI does not have enough reliable evidence to determine what should happen.
+
+This requires **human judgment**.
+
+These conditions are deliberately separate. A system can be highly confident about an action it is not authorized to perform, or fully authorized to act while still lacking enough evidence to make a responsible decision.
+
+## Governance Outcomes
+
+A meaningful action or decision should resolve to one of four outcomes:
+
+1. **Authorized** — the AI may proceed autonomously.
+2. **Approval Required** — the AI recommends an action but requires human permission.
+3. **Judgment Required** — the AI requires human reasoning or context to determine the correct action.
+4. **Prohibited** — the action is not permitted under the current Governance Policy.
+
+## Human Decisions Become Evidence
+
+Human involvement should not resolve only the immediate event when the decision contains reusable learning.
+
+A human approval or judgment may reveal:
+
+- a missing SOP rule,
+- a new classification rule,
+- a better validation step,
+- a reusable reasoning guideline,
+- or a possible change to delegated authority.
+
+When appropriate, that learning should be captured so future executions benefit from the decision.
+
+## Authority Cannot Be Self-Granted
+
+A core rule of the AI Flywheel is:
+
+> **The AI may recommend increased autonomy, but it may not grant itself increased autonomy.**
+
+The Flywheel may become more conservative on its own by escalating more often when evidence indicates greater risk or uncertainty.
+
+Expanding the system's authority requires human authorization.
+
+## Operational Intent
+
+The intended operating pattern is:
+
+**Human authorization → autonomous execution → escalation only when authority or uncertainty requires it → human decision captured as evidence when reusable**
+
+The objective is not to remove humans from the process. It is to preserve human authority while allowing the Flywheel to operate independently wherever human participation is unnecessary.
+
+## Related Documents
+
+- [Governance and Escalation](../../architecture/governance-and-escalation.md)
+- [Core Boundaries](../../architecture/boundaries.md)
+- [Principle 2: AI Is the Operator](02-ai-as-operator.md)
