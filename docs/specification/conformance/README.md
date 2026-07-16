@@ -49,7 +49,7 @@ Future versions may introduce maturity classifications based on factors such as 
 
 ## Related Documents
 
-- [Formal Definition](../ai-flywheel-definition.md)
+- [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
 - [Architecture and Diagrams](../../architecture/README.md)
