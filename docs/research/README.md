@@ -6,10 +6,8 @@ The research is organized in two complementary directions: by AI Flywheel princi
 
 ## Table of Contents
 
-- [Prior-Art Overview](prior-art-overview.md) — Summarizes the major areas of overlap and the strongest current differentiation hypotheses.
-- [Framework Comparison Matrix](framework-comparison-matrix.md) — Provides a principle-by-principle comparison across the related frameworks currently under review.
-- [Principle Research Dossiers](principles/README.md) — Examines prior art and differentiation one AI Flywheel principle at a time.
-- [Framework Research Dossiers](frameworks/README.md) — Examines each related framework against the AI Flywheel as a whole.
+- [Principle Research Dossiers](principles/README.md) — Examines prior art, historical lineage, evidence gaps, and differentiation one AI Flywheel principle at a time.
+- [Framework and Prior-Art Research](frameworks/README.md) — Contains the prior-art overview, framework comparison matrix, and detailed dossiers for each related framework.
 
 ## Research Standard
 
