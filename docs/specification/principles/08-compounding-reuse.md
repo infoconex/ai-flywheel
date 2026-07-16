@@ -8,6 +8,14 @@ Persistent learning creates value only when future execution actually uses it.
 
 The AI Flywheel is designed so validated improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to accumulate over time.
 
+## Reuse Must Change Future Operation
+
+Persistence alone does not satisfy this principle.
+
+A later execution should be able to demonstrate that relevant validated learning from earlier execution changed the operating state of the process. That change may appear as different behavior, fewer repeated failures, less unnecessary reasoning, stronger validation, reduced unnecessary human escalation, or more reliable use of an improved capability or procedure.
+
+If improvements are stored but never retrieved, applied, or reflected in later behavior, the Flywheel is not compounding.
+
 ## The Compounding Pattern
 
 The recurring pattern is:
