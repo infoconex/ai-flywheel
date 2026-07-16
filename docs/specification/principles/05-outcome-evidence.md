@@ -15,6 +15,14 @@ Every meaningful execution should produce enough evidence to evaluate:
 - what failed or behaved unexpectedly,
 - and whether the process should change before the next execution.
 
+## Evidence Sufficiency
+
+Outcome evidence must be sufficient to support later evaluation and learning.
+
+A process reaching its final step, completing without an exception, or receiving a confident success statement from the AI is not by itself evidence that the intended result occurred.
+
+Where practical, the Flywheel should preserve enough persistent evidence that a reviewer or later process can determine what happened without relying only on the model's transient memory of the execution.
+
 ## Forms of Evidence
 
 Outcome evidence may include:
