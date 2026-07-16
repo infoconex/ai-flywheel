@@ -1,93 +1,61 @@
-# Principle 5: Execution Must Produce Outcome Evidence
+# Research: Execution Must Produce Outcome Evidence
 
-The AI Flywheel learns from observed results rather than AI confidence alone.
+> Canonical principle: [Principle 5: Execution Must Produce Outcome Evidence](../../specification/principles/05-outcome-evidence.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-5-execution-must-produce-outcome-evidence).
+## Research Objective
 
-## Purpose
+Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide how the operating system itself should change.
 
-A Flywheel cannot improve responsibly if it cannot determine what actually happened.
+## Current Evidence
 
-Every meaningful execution should produce enough evidence to evaluate:
+All six reviewed frameworks use some form of execution feedback, but the type and downstream use differ substantially.
 
-- what actions were taken,
-- what results were produced,
-- whether the intended outcome occurred,
-- what assumptions were violated,
-- what failed or behaved unexpectedly,
-- and whether the process should change before the next execution.
+- [MOSS](../frameworks/moss.md) collects production failure batches and replays them against candidate systems in isolated trials.
+- [Metis](../frameworks/metis.md) analyzes completed execution trajectories and uses them to update memories and identify recurring plans for codification.
+- [Reflexion](../frameworks/reflexion.md) converts evaluator feedback and task trajectories into persistent verbal lessons.
+- [MASFly](../frameworks/masfly.md) uses runtime monitoring, task outcomes, and failure attribution to improve collaboration patterns and supervisory experience.
+- [Ralph](../frameworks/ralph.md) relies heavily on deterministic backpressure such as tests, builds, static analysis, and observable repository state.
+- [GenericAgent](../frameworks/genericagent.md) uses debugging, verification, task experience, and repeated-task evaluation when crystallizing capabilities.
 
-## Forms of Evidence
+Outcome feedback is therefore established prior art. The open question is whether the AI Flywheel's concept of **outcome evidence** can be defined more precisely as evidence sufficient to support evaluation, classification, adaptation, validation, and future governance decisions.
 
-Outcome evidence may include:
+## Related Ideas and Historical Provenance to Trace
 
-- logs,
-- tool outputs,
-- return codes,
-- test results,
-- validation checks,
-- external observations,
-- metrics,
-- state changes,
-- user feedback,
-- human approvals or judgments,
-- and comparisons against explicit success criteria.
+Research should establish authoritative sources and dates for:
 
-The appropriate evidence depends on the process, but the standard remains the same: the system should be able to distinguish an intended outcome from an apparent or assumed success.
+- feedback control and closed-loop systems,
+- observability in software systems,
+- test-driven and evidence-driven software development,
+- reinforcement signals and environment feedback in agents,
+- execution traces and trajectory learning,
+- postmortems and incident evidence,
+- verification and validation of autonomous systems,
+- confidence calibration and abstention,
+- and human judgments or approvals as structured operational evidence.
 
-## Evidence Must Be Grounded in the Outcome
+## Open Research Questions
 
-The AI reporting that it believes a task succeeded is not sufficient evidence.
+1. What minimum evidence must an AI Flywheel execution produce to be considered observable enough for learning?
+2. How should evidence requirements differ by risk, consequence, and type of work?
+3. When is model self-report acceptable evidence, and when must an independent signal be required?
+4. How should partial success and uncertain outcomes be represented?
+5. Should evidence be defined before execution as part of the SOP rather than discovered afterward?
+6. How should human approvals and judgments be retained as evidence without overgeneralizing one decision?
+7. Can evidence quality itself be evaluated and improved by the Flywheel?
+8. How should conflicting evidence sources be reconciled?
+9. Do existing frameworks use evidence specifically to determine **where** learning should persist, rather than only whether performance improved?
 
-Where possible, the result should be checked against an independent signal.
+## Evidence Still Needed
 
-Examples include:
+- Formal definitions of evidence sufficiency in autonomous and adaptive systems.
+- Research on independent validation of AI-generated actions.
+- Examples where evidence requirements are encoded in machine-consumable procedures.
+- Systems that preserve human decisions as reusable structured evidence.
+- Models that use evidence to choose among different adaptation destinations.
+- Historical establishment dates for observability and feedback concepts most directly applicable to the Flywheel.
 
-- verifying that a file was actually created,
-- confirming that a remote system accepted a change,
-- running tests after modifying code,
-- checking that a message was delivered,
-- comparing measured output against expected criteria,
-- or asking a human to judge an outcome that cannot be evaluated automatically.
+## Current Research Position
 
-## Failures Are Evidence
+The principle that systems should learn from observed outcomes rather than confidence alone is strongly established.
 
-Errors, exceptions, rejected actions, unexpected outputs, and unsuccessful validations should be preserved as learning inputs rather than discarded after a retry.
-
-A failed execution may reveal a weakness in:
-
-- deterministic capability,
-- procedural guidance,
-- AI reasoning,
-- validation,
-- or governance assumptions.
-
-The evidence allows the Flywheel to determine which type of weakness occurred.
-
-## Human Decisions Are Evidence
-
-When a human provides approval, judgment, correction, or additional context, that decision may contain information that should influence future execution.
-
-The Flywheel should consider whether the decision reveals a reusable lesson that belongs in:
-
-- the SOP,
-- reasoning guidance,
-- validation,
-- a deterministic capability,
-- or a proposed governance change.
-
-## Evidence Enables Adaptation
-
-Outcome evidence is the input to the post-execution learning process.
-
-The general relationship is:
-
-**Execution → Evidence → Evaluation → Classification → Adaptation**
-
-Without reliable evidence, adaptation risks optimizing the system based on assumptions rather than reality.
-
-## Related Documents
-
-- [Learning Architecture](../../architecture/learning-view.md)
-- [Lifecycle](../../specification/lifecycle.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
+The research value of the AI Flywheel concept may lie in making outcome evidence a required bridge between operation and evolution: evidence is not only a reward signal or log record but the basis for deciding whether the outcome was correct, what failed, where responsibility belongs, what should change, and whether the change can be trusted.
