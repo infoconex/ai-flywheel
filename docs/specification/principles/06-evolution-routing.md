@@ -6,81 +6,85 @@ A failure is diagnostic evidence, not merely a reason to retry.
 
 When execution reveals a weakness, the AI Flywheel should determine **where the correction belongs** before changing the system.
 
-Different failures have different causes. Treating every failure as a prompt problem, code problem, or retry problem creates brittle systems and repeated mistakes.
+Different failures have different causes. Treating every failure as a prompt problem, code problem, memory problem, or retry problem creates brittle systems and repeated mistakes.
 
-The Flywheel therefore classifies the weakness and routes the resulting learning to the most appropriate persistent destination.
+## Normative Requirements
 
-## Required Classification and Routing
+A conforming implementation must satisfy the following requirements:
 
-The Flywheel must do more than label an outcome successful or failed.
+- The system evaluates and classifies meaningful weaknesses, uncertainty, or learning opportunities before selecting a persistent adaptation destination.
+- Different kinds of learning can be routed to different destinations rather than being forced into one fixed mechanism.
+- Supported destinations include, as appropriate, deterministic capability, procedural guidance, reasoning knowledge, validation, and governance.
+- The system can identify when incorrect responsibility allocation is itself the problem and move responsibility across the Moving Determinism Boundary.
+- The selected destination reflects the mechanism best suited to handle the correction reliably without unnecessarily removing adaptability.
+- A proposed adaptation is validated before it becomes trusted future behavior.
+- Governance changes remain subject to human authorization.
 
-When execution reveals a reusable weakness, uncertainty, or learning opportunity, the system should identify the nature of the issue well enough to make an intentional adaptation decision. It should not apply the same response to every failure or persist learning without first determining which mechanism should own the correction.
+## Operational Model
 
-The routing decision itself is part of the methodology.
+### Possible Adaptation Destinations
 
-## Possible Adaptation Destinations
+**Deterministic Capability** — use when the problem is reliably repeatable and can be corrected through code, tools, scripts, services, or another deterministic implementation.
 
-### Deterministic Capability
+**Procedural Guidance** — use when the process is incomplete, ambiguous, incorrectly ordered, or missing known exception handling.
 
-Use this destination when the problem is reliably repeatable and can be corrected through code, tools, scripts, services, or another deterministic implementation.
+**Reasoning Knowledge** — use when the condition requires contextual judgment that should remain adaptable but would benefit from durable guidance, examples, heuristics, or lessons.
 
-### Procedural Guidance
+**Validation** — use when the system lacks a reliable way to determine whether an action or outcome is correct.
 
-Use this destination when the process is incomplete, ambiguous, incorrectly ordered, or missing known exception handling.
+**Governance** — use when evidence shows that authority, approval requirements, prohibited actions, or escalation rules should change. Governance changes require human authorization.
 
-### Reasoning Knowledge
-
-Use this destination when the condition requires contextual judgment that should remain adaptable but would benefit from durable guidance, examples, heuristics, or lessons.
-
-### Validation
-
-Use this destination when the system lacks a reliable way to determine whether an action or outcome is correct.
-
-### Governance
-
-Use this destination when the evidence shows that authority, approval requirements, prohibited actions, or escalation rules should change.
-
-A governance change requires human authorization under [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md).
-
-## The Evolution Routing Rule
-
-The governing rule is:
+### The Evolution Routing Rule
 
 > **Correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability.**
 
-This prevents the system from solving every recurring problem with additional AI reasoning when a more reliable mechanism exists.
+This prevents the system from solving every recurring problem with additional AI reasoning when a more reliable mechanism exists. It also prevents the system from hard-coding behavior that still requires judgment.
 
-It also prevents the system from hard-coding behavior that still requires judgment.
+### Routing Can Move Responsibility
 
-## Examples
+Examples include:
 
-A deterministic implementation bug should normally be corrected in code rather than hidden behind new prompt instructions.
+- **AI reasoning → SOP** when a recurring judgment becomes a known procedure,
+- **SOP → deterministic capability** when a stable procedure becomes reliably automatable,
+- and **deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle.
 
-A missing known exception should normally become procedural guidance rather than forcing the AI to rediscover the response each time.
+## Lifecycle Relationship
 
-A contextual edge case that varies substantially may remain in AI reasoning rather than becoming brittle deterministic logic.
+- **Observe and Evaluate:** evidence establishes what happened and whether the outcome exposed a weakness or opportunity.
+- **Classify:** the system identifies the nature of the issue and asks where the learning should live.
+- **Adapt:** the selected destination receives the proposed correction.
+- **Validate:** the adaptation is tested before being trusted.
+- **Persist and Reuse:** validated and authorized learning becomes part of future operation.
 
-A repeated human approval may reveal a candidate for increased delegated authority, but the AI may only propose that governance change rather than grant the authority itself.
+## Evidence of Implementation
 
-## Evolution Routing Moves the Determinism Boundary
+Evidence supporting this principle may include:
 
-Routing a learning to a different mechanism can change where responsibility resides.
+- classified failures or learning opportunities with identified causes,
+- examples in which different lessons produced different adaptation destinations,
+- records showing why a correction was placed in code, procedure, reasoning guidance, validation, or governance,
+- examples of responsibility moving across the Moving Determinism Boundary,
+- and validation results for proposed adaptations before persistence or reuse.
 
-For example:
+## Non-Conforming Patterns
 
-**AI reasoning → SOP** when a recurring judgment becomes a known procedure.
+This principle is not satisfied when:
 
-**SOP → deterministic capability** when a stable procedure becomes reliably automatable.
+- every failure produces the same response,
+- the system only retries without diagnosis,
+- every lesson is stored only as memory,
+- every failure is treated only as a code defect,
+- every weakness becomes additional prompt text,
+- learning is persisted without determining what mechanism should own it,
+- or the system has no intentional mechanism for changing responsibility allocation when the current placement is wrong.
 
-**Deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle.
+## Relationships to Other Principles
 
-This is how [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) changes responsibility allocation over time.
-
-## Adaptation Must Be Validated
-
-Choosing a destination is not enough.
-
-The resulting change should be validated before it becomes part of future operation, with the rigor of validation matched to the consequence and type of change.
+- [Principle 3](03-moving-determinism-boundary.md) defines where responsibility can reside; this principle determines where a specific learning should be applied.
+- [Principle 5](05-outcome-evidence.md) provides the evidence required for responsible classification and routing.
+- [Principle 7](07-persistent-learning.md) ensures the selected correction becomes a durable operational asset.
+- [Principle 1](01-human-authority.md) governs adaptations that affect authority or protected operational assets.
+- [Principle 8](08-compounding-reuse.md) depends on correctly routed improvements being inherited by future execution.
 
 ## Principle Navigation
 
@@ -91,3 +95,6 @@ The resulting change should be validated before it becomes part of future operat
 ## Related Documents
 
 - [Learning Architecture](../../architecture/learning-view.md)
+- [Stage 4: Classify](../lifecycle/04-classify.md)
+- [Stage 5: Adapt](../lifecycle/05-adapt.md)
+- [Conformance](../conformance/README.md)
