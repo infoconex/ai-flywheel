@@ -119,9 +119,9 @@ The determinism boundary can move as the system learns. The authority boundary i
 ## Related Specification Documents
 
 - [Specification Overview](README.md)
-- [Principles](principles.md)
-- [Lifecycle](lifecycle.md)
-- [Conformance Criteria](conformance.md)
+- [Principles](principles/README.md)
+- [Lifecycle](lifecycle/README.md)
+- [Conformance Criteria](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
 
 For comparative research, see the [research section](../research/README.md).
