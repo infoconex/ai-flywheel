@@ -1,36 +1,83 @@
-# Principle 8 Research: Compounding Reuse
+# Principle 8: Improvement Must Compound Through Reuse
 
-## Principle Under Review
+The output of one Flywheel cycle becomes part of the operating system of the next.
 
-Future executions reuse validated improvements so the operating system becomes progressively more capable over time.
+See the concise [principles specification](../../specification/principles.md#principle-8-improvement-must-compound-through-reuse).
 
-See the canonical [principles specification](../../specification/principles.md#principle-8-improvement-must-compound-through-reuse).
+## Purpose
 
-## Prior-Art Question
+Persistent learning creates value only when future execution actually uses it.
 
-How do existing frameworks accumulate capability across executions rather than merely improve within a single task or context window?
+The AI Flywheel is designed so validated improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to accumulate over time.
 
-## Working Assessment
+## The Compounding Pattern
 
-Compounding reuse is expected to overlap strongly with skill libraries, persistent memory, self-improving agents, and iterative software evolution.
+The recurring pattern is:
 
-The AI Flywheel distinction, if any, is likely to come from what is being compounded: not only knowledge or code, but the optimized allocation of responsibility among deterministic capability, procedure, and AI reasoning while preserving human-defined authority.
+**Execute → produce evidence → learn → improve persistent assets → reuse the improved system → produce better future evidence**
 
-## Comparison Dimensions
+Each cycle begins from a stronger operating state when previous learning has been preserved and reused successfully.
 
-- Does learning survive the current task?
-- Is it automatically reused when authorized?
-- Does repeated use reduce future reasoning or effort?
-- Does it reduce unnecessary repeated human escalation?
-- Can capability regress or be rolled back?
-- Does the system accumulate improvements across different operational assets?
-- Does governance remain effective as autonomy increases?
+## What Should Compound
 
-## Frameworks to Compare
+The Flywheel may accumulate improvements in:
 
-- [GenericAgent](../frameworks/genericagent.md)
-- [Metis](../frameworks/metis.md)
-- [MOSS](../frameworks/moss.md)
-- [MASFly](../frameworks/masfly.md)
-- [Ralph](../frameworks/ralph.md)
-- [Reflexion](../frameworks/reflexion.md)
+- deterministic capabilities,
+- procedural knowledge,
+- reasoning guidance,
+- validation mechanisms,
+- failure-handling rules,
+- reusable evidence,
+- and human-authorized governance.
+
+The value is not merely that the system knows more. The system should become better at performing the work.
+
+## Reduce Repeated Reasoning
+
+When a problem has already been solved reliably, the Flywheel should not force the AI to rediscover the same answer on every execution.
+
+Stable learning should move into the mechanism best suited to reuse it.
+
+Over time, the system should reduce:
+
+- repeated problem-solving,
+- repeated failures,
+- unnecessary tool exploration,
+- unnecessary AI reasoning,
+- and unnecessary human escalation.
+
+This does not mean removing reasoning or humans entirely. It means preserving them for situations where they continue to add value.
+
+## Reuse Must Remain Context-Aware
+
+A previously successful improvement should be reused only when it applies to the current situation.
+
+The Flywheel should preserve enough scope and context around persistent assets to avoid applying a lesson outside the conditions in which it is valid.
+
+Compounding depends on **correct reuse**, not indiscriminate reuse.
+
+## Governance Must Compound Safely
+
+As the Flywheel becomes more capable, human authority remains in force.
+
+Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself.
+
+Likewise, new evidence may justify reducing autonomy or increasing escalation when risk or uncertainty increases.
+
+Capability can compound without allowing authority to expand uncontrolled.
+
+## Compounding Is the Flywheel Effect
+
+The metaphor becomes real when each execution contributes momentum to the next.
+
+A mature AI Flywheel should require less repeated effort to achieve comparable work because prior execution has improved the system itself.
+
+The compounding effect is:
+
+**better execution → better evidence → better learning → better operating assets → better future execution**
+
+## Related Documents
+
+- [Principle 7: Persistent Operational Learning](07-persistent-learning.md)
+- [Lifecycle](../../specification/lifecycle.md)
+- [Learning Architecture](../../architecture/learning-view.md)
