@@ -20,6 +20,14 @@ Procedural guidance describes how the process should work without requiring ever
 
 AI reasoning should own work that requires interpretation, judgment, adaptation, synthesis, or handling of conditions that cannot yet be reduced reliably to deterministic behavior.
 
+## Intentional Responsibility Allocation
+
+A Flywheel implementation should be able to distinguish which responsibilities are owned by deterministic capability, which are governed by procedure, and which remain in AI reasoning.
+
+The distinction does not require rigid technical isolation, but the allocation must be intentional enough that the system can determine where a responsibility currently lives and reconsider that placement when evidence shows it is no longer appropriate.
+
+Treating all behavior as undifferentiated AI reasoning, fixed automation, or transient prompting does not satisfy this principle.
+
 ## These Are Not Lifecycle Stages
 
 The three mechanisms are not sequential steps that occur before or after one another.
