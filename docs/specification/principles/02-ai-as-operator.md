@@ -78,9 +78,13 @@ The AI is positioned to observe:
 
 Without AI operation, much of that operational experience remains outside the Flywheel and must be manually translated back into the system.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
+- **Previous Principle:** [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
+- **Next Principle:** [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md)
+
+## Related Documents
+
 - [Runtime Architecture](../../architecture/runtime-view.md)
-- [Principle 5: Outcome Evidence](05-outcome-evidence.md)
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md)
