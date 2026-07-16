@@ -71,14 +71,19 @@ That question makes responsibility allocation itself something the system can im
 
 The Moving Determinism Boundary describes **where responsibility can reside**.
 
-Evolution Routing determines **where a particular learning should be applied** after execution evidence is evaluated.
+[Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines **where a particular learning should be applied** after execution evidence is evaluated.
 
 Together they allow the system to change both its behavior and the mechanism responsible for that behavior.
 
-## Related Documents
+## Principle Navigation
 
 - [Principles Index](README.md)
+- **Previous Principle:** [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md)
+- **Next Principle:** [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md)
+
+## Related Documents
+
 - [Runtime Architecture](../../architecture/runtime-view.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Boundaries](../../architecture/boundaries.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
