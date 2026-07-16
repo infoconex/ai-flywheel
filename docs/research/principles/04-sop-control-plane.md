@@ -1,87 +1,60 @@
-# Principle 4: The SOP Is an Operational Control Plane
+# Research: The SOP Is an Operational Control Plane
 
-The SOP is a persistent, machine-consumable operational contract that guides how the AI Flywheel performs its work.
+> Canonical principle: [Principle 4: The SOP Is an Operational Control Plane](../../specification/principles/04-sop-control-plane.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-4-the-sop-is-an-operational-control-plane).
+## Research Objective
 
-## Purpose
+Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational role proposed by the AI Flywheel.
 
-The SOP is more than documentation written for a human reader.
+## Current Evidence
 
-It provides persistent operational guidance that the AI can use directly during execution.
+Persistent procedural artifacts are well represented in the current framework research.
 
-The SOP should make the intended process explicit enough that the AI can understand:
+- [GenericAgent](../frameworks/genericagent.md) explicitly stores reusable Task Skills / SOPs in persistent memory and uses them to unlock and repeat capabilities.
+- [MASFly](../frameworks/masfly.md) uses structured SOP cases to generate task-specific multi-agent operating procedures.
+- [Ralph](../frameworks/ralph.md) relies on specifications, plans, and `AGENT.md` as persistent AI-readable operational guidance.
+- [Metis](../frameworks/metis.md) stores execution plans as a distinct form of text memory and can promote recurring plans into code.
+- [MOSS](../frameworks/moss.md) has a defined evolution pipeline but does not make an SOP the central adaptation or execution abstraction.
+- [Reflexion](../frameworks/reflexion.md) primarily uses reflective memory rather than a persistent operating procedure.
 
-- what outcome is expected,
-- what capabilities are available,
-- how normal execution should proceed,
-- what known exceptions may occur,
-- what evidence should be produced,
-- how results should be validated,
-- and when escalation is required.
+The use of persistent procedure is therefore established. The unresolved question is whether the SOP can be distinguished from general memory or prompting by the breadth of operational responsibility it carries.
 
-## What the SOP Should Define
+## Related Ideas and Historical Provenance to Trace
 
-A useful AI Flywheel SOP may contain:
+Research should identify dates and authoritative sources for:
 
-- process objectives and success criteria,
-- normal execution flow,
-- available deterministic capabilities and how to use them,
-- known conditions and exceptions,
-- known failure-handling procedures,
-- expected evidence and logging,
-- validation requirements,
-- conditions requiring AI judgment,
-- and escalation conditions.
+- standard operating procedures in automated systems,
+- machine-readable runbooks and operational playbooks,
+- workflow engines and business process management,
+- policy-as-code and configuration-as-code,
+- agent plans and skill libraries,
+- executable specifications,
+- runbook automation in operations and SRE,
+- procedural memory in cognitive architectures,
+- and persistent AI instruction artifacts used across context windows.
 
-The SOP should provide enough structure for reliable operation without attempting to eliminate all AI judgment.
+## Open Research Questions
 
-## Relationship to AI Reasoning
+1. Is **operational control plane** established terminology for a machine-consumable procedure, or is a different term more precise?
+2. Which existing systems use one persistent artifact to define objectives, capability use, normal execution, known exceptions, evidence requirements, validation, and escalation?
+3. Is the distinction between a **Governance Policy** and an **SOP** already formalized elsewhere as authority versus operational procedure?
+4. When does an SOP become too broad and effectively turn into executable workflow code?
+5. What parts of an SOP should remain declarative versus interpreted by AI?
+6. How should conflicting instructions between procedure, persistent memory, and runtime reasoning be resolved?
+7. How should an SOP evolve safely from execution evidence?
+8. Can a procedure specify when AI judgment is required without attempting to encode the judgment itself?
+9. How should SOP versions be validated and rolled back?
 
-The SOP guides AI reasoning but does not replace it.
+## Evidence Still Needed
 
-The AI interprets the procedure in the context of the current execution, invokes capabilities as needed, and handles situations that cannot be completely specified in advance.
+- Primary sources on runbook automation and machine-readable operational procedures.
+- Examples where procedures explicitly define evidence and validation expectations, not only execution steps.
+- Systems that formally separate operational procedure from authority policy.
+- Evidence of AI autonomously updating procedures from execution outcomes.
+- Historical establishment dates for the closest SOP, runbook, and workflow concepts.
 
-A strong SOP reduces unnecessary reasoning about known operational behavior while preserving flexibility for genuinely uncertain conditions.
+## Current Research Position
 
-## Relationship to Deterministic Capability
+Persistent machine-consumable procedures, plans, and skills are clear prior art.
 
-The SOP may instruct the AI to invoke deterministic capabilities for work that should not be repeatedly reasoned through.
-
-As the Flywheel learns, a procedural step may become stable enough to move into deterministic implementation. The SOP then changes from describing how to perform the work to describing when and why the deterministic capability should be used.
-
-## Relationship to Governance
-
-The Governance Policy sits above the SOP.
-
-The SOP defines **how the work should be performed**.
-
-The Governance Policy defines **what the Flywheel is authorized to do**.
-
-The SOP may define escalation conditions, but it may not expand the AI's authority or override a governance restriction.
-
-## The SOP Evolves
-
-Execution evidence may reveal that the SOP is:
-
-- incomplete,
-- ambiguous,
-- incorrect,
-- missing an exception,
-- missing a validation step,
-- or requiring unnecessary AI reasoning.
-
-When the appropriate correction is procedural, the SOP should be updated so future executions inherit the improved guidance.
-
-## Operational Intent
-
-The SOP acts as the persistent bridge between human-defined process knowledge and autonomous AI execution.
-
-It allows operational knowledge to survive individual context windows and provides a stable place for known behavior to accumulate without forcing that behavior prematurely into deterministic code.
-
-## Related Documents
-
-- [Runtime Architecture](../../architecture/runtime-view.md)
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md)
-- [Principle 3: Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 6: Evolution Routing](06-evolution-routing.md)
+The current differentiation hypothesis is that the AI Flywheel gives the SOP a specific architectural role: it is the persistent operational contract that connects AI reasoning, deterministic capabilities, known failure handling, evidence, validation, and escalation while remaining subordinate to a separate human-authorized Governance Policy.
