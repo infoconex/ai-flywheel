@@ -1,83 +1,64 @@
-# Principle 8: Improvement Must Compound Through Reuse
+# Research: Improvement Must Compound Through Reuse
 
-The output of one Flywheel cycle becomes part of the operating system of the next.
+> Canonical principle: [Principle 8: Improvement Must Compound Through Reuse](../../specification/principles/08-compounding-reuse.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-8-improvement-must-compound-through-reuse).
+## Research Objective
 
-## Purpose
+Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements across code, procedure, reasoning, validation, and governed autonomy as one integrated operating system.
 
-Persistent learning creates value only when future execution actually uses it.
+## Current Evidence
 
-The AI Flywheel is designed so validated improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to accumulate over time.
+All reviewed frameworks demonstrate some form of reuse, but they compound different things.
 
-## The Compounding Pattern
+- [GenericAgent](../frameworks/genericagent.md) directly recalls learned skills and capabilities so repeated tasks can become much cheaper to execute.
+- [Metis](../frameworks/metis.md) reuses text memory and validated code tools and explicitly evaluates repeated-task efficiency.
+- [MOSS](../frameworks/moss.md) promotes validated source-level improvements into the running production system so future interactions inherit the change.
+- [MASFly](../frameworks/masfly.md) reuses successful collaboration patterns and failure experience when constructing and supervising later multi-agent systems.
+- [Ralph](../frameworks/ralph.md) compounds progress and project-local learning through persistent repository artifacts, although transfer beyond the current project is limited.
+- [Reflexion](../frameworks/reflexion.md) reuses stored reflections across subsequent attempts to improve later behavior.
 
-The recurring pattern is:
+Compounding reuse is therefore clearly established in multiple forms. The open question is whether the AI Flywheel combines those forms into a broader compounding operating model.
 
-**Execute → produce evidence → learn → improve persistent assets → reuse the improved system → produce better future evidence**
+## Related Ideas and Historical Provenance to Trace
 
-Each cycle begins from a stronger operating state when previous learning has been preserved and reused successfully.
+Research should establish dates and authoritative sources for:
 
-## What Should Compound
+- learning curves and experience effects,
+- continual and lifelong agent learning,
+- reusable skill libraries,
+- case-based reasoning,
+- experience replay,
+- cumulative software automation,
+- self-improving and self-evolving agents,
+- organizational learning and compounding process improvement,
+- and systems that reduce repeated human intervention through learned delegation.
 
-The Flywheel may accumulate improvements in:
+## Open Research Questions
 
-- deterministic capabilities,
-- procedural knowledge,
-- reasoning guidance,
-- validation mechanisms,
-- failure-handling rules,
-- reusable evidence,
-- and human-authorized governance.
+1. How should the Flywheel effect be measured quantitatively?
+2. Should compounding be measured through success rate, execution cost, token usage, latency, human intervention, failure recurrence, or some combination?
+3. Has another methodology explicitly compounded improvements across multiple operational asset types rather than one dominant memory or code mechanism?
+4. Can increased determinism reduce reasoning cost without harming adaptability?
+5. How can the system distinguish productive compounding from accumulated technical debt or bad learned behavior?
+6. What rollback and invalidation mechanisms are needed so compounding remains reversible?
+7. How should the system measure whether a human escalation has become unnecessarily repetitive?
+8. Can reuse safely reduce future human involvement while preserving the rule that authority cannot be self-expanded?
+9. How transferable should learning be across processes, environments, customers, or domains?
+10. Does a useful formal measure of **Flywheel momentum** already exist in adjacent research?
 
-The value is not merely that the system knows more. The system should become better at performing the work.
+## Evidence Still Needed
 
-## Reduce Repeated Reasoning
+- Longitudinal studies of self-improving agents across many repeated executions.
+- Metrics for measuring accumulated operational capability rather than single-task performance.
+- Evidence comparing project-local reuse with cross-process reuse.
+- Systems that compound code, procedure, reasoning guidance, and validation together.
+- Research on regression, rollback, and negative transfer in persistent agent systems.
+- Historical establishment dates for the most relevant compounding-learning concepts.
 
-When a problem has already been solved reliably, the Flywheel should not force the AI to rediscover the same answer on every execution.
+## Current Research Position
 
-Stable learning should move into the mechanism best suited to reuse it.
+The idea that persistent learning should be reused is established prior art.
 
-Over time, the system should reduce:
+The current AI Flywheel differentiation hypothesis is about **what compounds and how**: repeated execution improves the operating system itself by accumulating validated changes across multiple mechanisms while continually reconsidering where responsibility belongs and preserving human authority as capability grows.
 
-- repeated problem-solving,
-- repeated failures,
-- unnecessary tool exploration,
-- unnecessary AI reasoning,
-- and unnecessary human escalation.
-
-This does not mean removing reasoning or humans entirely. It means preserving them for situations where they continue to add value.
-
-## Reuse Must Remain Context-Aware
-
-A previously successful improvement should be reused only when it applies to the current situation.
-
-The Flywheel should preserve enough scope and context around persistent assets to avoid applying a lesson outside the conditions in which it is valid.
-
-Compounding depends on **correct reuse**, not indiscriminate reuse.
-
-## Governance Must Compound Safely
-
-As the Flywheel becomes more capable, human authority remains in force.
-
-Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself.
-
-Likewise, new evidence may justify reducing autonomy or increasing escalation when risk or uncertainty increases.
-
-Capability can compound without allowing authority to expand uncontrolled.
-
-## Compounding Is the Flywheel Effect
-
-The metaphor becomes real when each execution contributes momentum to the next.
-
-A mature AI Flywheel should require less repeated effort to achieve comparable work because prior execution has improved the system itself.
-
-The compounding effect is:
-
-**better execution → better evidence → better learning → better operating assets → better future execution**
-
-## Related Documents
-
-- [Principle 7: Persistent Operational Learning](07-persistent-learning.md)
-- [Lifecycle](../../specification/lifecycle.md)
-- [Learning Architecture](../../architecture/learning-view.md)
+The strongest evidence for or against that hypothesis will come from longitudinal comparisons with self-evolving agent frameworks rather than one-time benchmark performance.
