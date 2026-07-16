@@ -34,4 +34,4 @@ The dossiers use four broad states:
 - **Open:** a research question that has not been answered sufficiently.
 - **Not established:** the reviewed sources do not currently demonstrate the mechanism; this does not prove that no implementation exists.
 
-For framework-by-framework evidence, see the [framework research dossiers](../frameworks/README.md) and [framework comparison matrix](../framework-comparison-matrix.md).
+For framework-by-framework evidence, see the [framework and prior-art research section](../frameworks/README.md) and [framework comparison matrix](../frameworks/framework-comparison-matrix.md).
