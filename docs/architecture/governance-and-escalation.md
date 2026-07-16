@@ -93,4 +93,4 @@ Where practical, escalation should pause only the affected decision or action. O
 - [Runtime Architecture](runtime-view.md)
 - [Learning Architecture](learning-view.md)
 - [Core Boundaries](boundaries.md)
-- [Principle 1: Autonomy Is Bounded by Human Authority](../specification/principles.md#principle-1-autonomy-is-bounded-by-human-authority)
+- [Principle 1: Autonomy Is Bounded by Human Authority](../specification/principles/01-human-authority.md)
