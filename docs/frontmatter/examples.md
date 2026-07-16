@@ -1,3 +1,17 @@
+---
+title: "Frontmatter Examples"
+document_type: principle
+section: specification
+status: canonical
+canonical: true
+order: 3
+summary: "Provides examples of how to use frontmatter for various types of documents"
+last_reviewed: 2026-07-16
+tags:
+  - frontmatter
+  - examples
+---
+
 # Frontmatter Examples
 
 These examples show recommended frontmatter structures for the main document categories in the AI Flywheel repository.
