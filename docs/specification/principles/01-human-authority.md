@@ -52,6 +52,17 @@ A meaningful action or decision should resolve to one of four outcomes:
 3. **Judgment Required** — the AI requires human reasoning or context to determine the correct action.
 4. **Prohibited** — the action is not permitted under the current Governance Policy.
 
+## Governance Must Be Enforced
+
+Governance is not satisfied by documenting authority boundaries that the system does not actually enforce.
+
+The same authority model must constrain both:
+
+- operational actions taken while performing the work,
+- and persistent changes proposed or applied while improving the Flywheel itself.
+
+A conforming implementation therefore must prevent prohibited actions, escalate approval-required actions, request human judgment when unresolved uncertainty requires it, and apply the same controls when changing code, procedure, reasoning guidance, validation, or other persistent operational assets.
+
 ## Human Decisions Become Evidence
 
 Human involvement should not resolve only the immediate event when the decision contains reusable learning.
