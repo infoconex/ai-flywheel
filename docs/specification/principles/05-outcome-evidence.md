@@ -91,5 +91,4 @@ Without reliable evidence, adaptation risks optimizing the system based on assum
 ## Related Documents
 
 - [Learning Architecture](../../architecture/learning-view.md)
-- [Lifecycle](../lifecycle.md)
-- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
+- [Lifecycle](../lifecycle/README.md)
