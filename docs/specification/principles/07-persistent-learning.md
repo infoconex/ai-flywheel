@@ -29,9 +29,9 @@ The specific storage technology is implementation-dependent. The requirement is 
 
 ## Persistence Is More Than Storage
 
-Saving a log or conversation does not automatically create operational learning.
+Saving a log, transcript, or conversation does not automatically create operational learning.
 
-For learning to become part of the Flywheel, the persistent asset should be usable by future execution.
+For learning to become part of the Flywheel, the persistent asset must be usable by future execution. Archived evidence may support learning, but the lesson itself must be converted into an operational form that can influence later behavior when relevant.
 
 For example:
 
