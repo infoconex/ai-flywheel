@@ -2,6 +2,12 @@
 
 > **Research status:** Primary-source review completed for the currently available public materials as of July 15, 2026. Comparative conclusions remain working interpretations rather than claims of equivalence or novelty.
 
+## Established / First Public Date
+
+**January 16, 2026** — used here as the earliest verified public establishment date for GenericAgent because the [official GenericAgent repository](https://github.com/lsdefine/GenericAgent) identifies that date as the **V1.0 public release**. The later [technical report](https://arxiv.org/abs/2604.17091) was first submitted on **April 18, 2026**.
+
+This distinction matters because the project was publicly released before the research paper formally documented it.
+
 ## Research Objective
 
 Determine which AI Flywheel principles are substantially represented by GenericAgent and identify where its self-evolution model differs from the AI Flywheel's explicit runtime responsibility, evolution-routing, and governance models.
