@@ -21,7 +21,7 @@ The specification version describes the maturity of the methodology itself and i
 
 ## Table of Contents
 
-- [Formal Definition](ai-flywheel-definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the two core boundaries.
+- [Formal Definition](definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the two core boundaries.
 - [Principles](principles/README.md) — Defines the eight principles that characterize an AI Flywheel, with a dedicated page for each principle.
 - [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied continuously.
 - [Conformance](conformance/README.md) — Defines the requirements a system should satisfy to be described as implementing the AI Flywheel methodology.
