@@ -1,84 +1,61 @@
-# Principle 6: Failure Determines Where the System Evolves
+# Research: Failure Determines Where the System Evolves
 
-A failure is diagnostic evidence, not merely a reason to retry.
+> Canonical principle: [Principle 6: Failure Determines Where the System Evolves](../../specification/principles/06-evolution-routing.md)
 
-See the concise [principles specification](../../specification/principles.md#principle-6-failure-determines-where-the-system-evolves).
+## Research Objective
 
-## Purpose
+Determine whether existing systems explicitly diagnose execution weaknesses and select among multiple persistent adaptation destinations, rather than assuming that every failure should be handled through one dominant mechanism such as retry, reflection, memory, procedure, or source modification.
 
-When execution reveals a weakness, the AI Flywheel should determine **where the correction belongs** before changing the system.
+## Current Evidence
 
-Different failures have different causes. Treating every failure as a prompt problem, code problem, or retry problem creates brittle systems and repeated mistakes.
+The framework review shows many adaptation mechanisms, but the routing decision is often implicit in the framework architecture.
 
-The Flywheel therefore classifies the weakness and routes the resulting learning to the most appropriate persistent destination.
+- [Metis](../frameworks/metis.md) has the strongest representation-selection mechanism found so far. It distinguishes plans, facts, pitfalls, and code tools, and uses recurrence to decide when procedural plans should be codified.
+- [GenericAgent](../frameworks/genericagent.md) can persist learning as SOPs, skills, scripts, tools, facts, and memory, but a general classification rule for choosing among those destinations is not clearly established.
+- [MOSS](../frameworks/moss.md) has a sophisticated evidence-driven evolution pipeline, but the dominant adaptation destination is source-level code modification.
+- [MASFly](../frameworks/masfly.md) routes successful and failed experience into collaboration procedures and supervisory knowledge.
+- [Ralph](../frameworks/ralph.md) may change code, tests, specifications, plans, or instructions depending on observed failure, but the routing process is informal.
+- [Reflexion](../frameworks/reflexion.md) primarily routes learning into reflective linguistic memory.
 
-## Possible Adaptation Destinations
+The current evidence suggests that **multi-destination adaptation exists**, but an explicit generalized routing rule remains a significant research question.
 
-### Deterministic Capability
+## Related Ideas and Historical Provenance to Trace
 
-Use this destination when the problem is reliably repeatable and can be corrected through code, tools, scripts, services, or another deterministic implementation.
+Research should identify authoritative sources and establishment dates for:
 
-### Procedural Guidance
+- fault diagnosis and root-cause analysis,
+- self-adaptive software,
+- autonomic computing and MAPE-K-style adaptation loops,
+- adaptive control architectures,
+- automated program repair,
+- policy repair and workflow repair,
+- knowledge-base revision,
+- meta-learning systems that choose how to learn,
+- and systems that classify failures before selecting an adaptation mechanism.
 
-Use this destination when the process is incomplete, ambiguous, incorrectly ordered, or missing known exception handling.
+## Open Research Questions
 
-### Reasoning Knowledge
+1. Has another methodology explicitly asked **Where should this learning live?** as a first-class adaptation decision?
+2. Are there systems that route one failure to code, another to procedure, another to reasoning memory, and another to governance?
+3. Is there established terminology for **evolution routing** or an equivalent multi-destination adaptation mechanism?
+4. Has a rule equivalent to **correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability** appeared in prior work?
+5. How should reliability, adaptability, cost, consequence, and recurrence be weighted when choosing an adaptation destination?
+6. Should validation be considered an adaptation destination in its own right?
+7. Should governance changes be part of the same routing model or handled separately?
+8. How can the system detect that its previous routing decision was wrong?
+9. Can routing decisions themselves become persistent learning?
 
-Use this destination when the condition requires contextual judgment that should remain adaptable but would benefit from durable guidance, examples, heuristics, or lessons.
+## Evidence Still Needed
 
-### Validation
+- Primary literature on self-adaptive software and autonomic computing.
+- Examples of explicit adaptation-destination classifiers.
+- Systems that choose between procedural, executable, and reasoning-based corrections.
+- Evidence of reversible routing when a previous mechanization decision proves brittle.
+- Research on routing improvements into validation or governance.
+- Historical establishment dates for the closest multi-destination adaptation models.
 
-Use this destination when the system lacks a reliable way to determine whether an action or outcome is correct.
+## Current Research Position
 
-### Governance
+Learning from failure is clearly established, and several frameworks already persist different kinds of improvements.
 
-Use this destination when the evidence shows that authority, approval requirements, prohibited actions, or escalation rules should change.
-
-A governance change requires human authorization.
-
-## The Evolution Routing Rule
-
-The governing rule is:
-
-> **Correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability.**
-
-This prevents the system from solving every recurring problem with additional AI reasoning when a more reliable mechanism exists.
-
-It also prevents the system from hard-coding behavior that still requires judgment.
-
-## Examples
-
-A deterministic implementation bug should normally be corrected in code rather than hidden behind new prompt instructions.
-
-A missing known exception should normally become procedural guidance rather than forcing the AI to rediscover the response each time.
-
-A contextual edge case that varies substantially may remain in AI reasoning rather than becoming brittle deterministic logic.
-
-A repeated human approval may reveal a candidate for increased delegated authority, but the AI may only propose that governance change rather than grant the authority itself.
-
-## Evolution Routing Moves the Determinism Boundary
-
-Routing a learning to a different mechanism can change where responsibility resides.
-
-For example:
-
-**AI reasoning → SOP** when a recurring judgment becomes a known procedure.
-
-**SOP → deterministic capability** when a stable procedure becomes reliably automatable.
-
-**Deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle.
-
-This is how the Moving Determinism Boundary changes over time.
-
-## Adaptation Must Be Validated
-
-Choosing a destination is not enough.
-
-The resulting change should be validated before it becomes part of future operation, with the rigor of validation matched to the consequence and type of change.
-
-## Related Documents
-
-- [Learning Architecture](../../architecture/learning-view.md)
-- [Principle 3: Moving Determinism Boundary](03-moving-determinism-boundary.md)
-- [Principle 5: Outcome Evidence](05-outcome-evidence.md)
-- [Principle 7: Persistent Operational Learning](07-persistent-learning.md)
+The stronger AI Flywheel differentiation hypothesis is that the **destination decision itself is a formal part of the operating model**. Execution evidence is classified before adaptation so the system can determine which persistent mechanism is actually responsible for the weakness and should therefore own the correction.
