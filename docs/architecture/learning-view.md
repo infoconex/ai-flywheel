@@ -52,4 +52,4 @@ A proposed learning may also encounter an authority boundary. The Flywheel can r
 - [Runtime Architecture](runtime-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [AI Flywheel Lifecycle](../specification/lifecycle.md)
+- [AI Flywheel Lifecycle](../specification/lifecycle/README.md)
