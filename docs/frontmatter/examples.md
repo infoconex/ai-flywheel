@@ -1,15 +1,16 @@
 ---
-title: "Frontmatter Examples"
-document_type: principle
-section: specification
-status: canonical
-canonical: true
-order: 3
-summary: "Provides examples of how to use frontmatter for various types of documents"
+title: "Frontmatter Example"
+document_type: guide
+section: frontmatter
+status: provisional
+canonical: false
+order: 2
+summary: "Provides examples showing the use of frontmatter in different document types"
 last_reviewed: 2026-07-16
 tags:
+  - documentation
+  - metadata
   - frontmatter
-  - examples
 ---
 
 # Frontmatter Examples
