@@ -1,18 +1,3 @@
----
-title: "Principle 8: Improvement Must Compound Through Reuse"
-document_type: "principle"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 8
-summary: "The output of one Flywheel cycle becomes part of the operating system of the next."
-principle_number: 8
-principle_id: "compounding-reuse"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
----
-
 # Principle 8: Improvement Must Compound Through Reuse
 
 The output of one Flywheel cycle becomes part of the operating system of the next.

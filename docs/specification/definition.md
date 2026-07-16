@@ -1,15 +1,3 @@
----
-title: "AI Flywheel Formal Definition"
-document_type: "definition"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 2
-summary: "The AI Flywheel is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed."
-last_reviewed: "2026-07-16"
-tags:
----
-
 # AI Flywheel Formal Definition
 
 ## Definition

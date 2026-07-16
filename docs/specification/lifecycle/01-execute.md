@@ -1,18 +1,3 @@
----
-title: "Stage 1: Execute"
-document_type: "lifecycle-stage"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 1
-summary: "The AI performs the operational work using the current combination of procedural guidance, AI reasoning, and deterministic capability."
-stage_number: 1
-stage_id: "execute"
-last_reviewed: "2026-07-16"
-tags:
-  - "lifecycle"
----
-
 # Stage 1: Execute
 
 The AI performs the operational work using the current combination of procedural guidance, AI reasoning, and deterministic capability.

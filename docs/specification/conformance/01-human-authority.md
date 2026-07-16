@@ -1,19 +1,3 @@
----
-title: "Criterion 1: Human Authority Defines the Scope of Autonomy"
-document_type: "conformance-criterion"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 1
-summary: "The system operates within explicit human-defined authority boundaries."
-criterion_number: 1
-criterion_id: "human-authority"
-required: true
-last_reviewed: "2026-07-16"
-tags:
-  - "conformance"
----
-
 # Criterion 1: Human Authority Defines the Scope of Autonomy
 
 The system operates within explicit human-defined authority boundaries.

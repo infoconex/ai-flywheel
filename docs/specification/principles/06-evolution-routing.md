@@ -1,18 +1,3 @@
----
-title: "Principle 6: Failure Determines Where the System Evolves"
-document_type: "principle"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 6
-summary: "A failure is diagnostic evidence, not merely a reason to retry."
-principle_number: 6
-principle_id: "evolution-routing"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
----
-
 # Principle 6: Failure Determines Where the System Evolves
 
 A failure is diagnostic evidence, not merely a reason to retry.

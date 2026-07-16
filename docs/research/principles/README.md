@@ -1,17 +1,3 @@
----
-title: "Principle Research Dossiers"
-document_type: "research-overview"
-section: "research"
-status: "active-research"
-canonical: false
-order: 1
-summary: "This section does not define the AI Flywheel principles. The canonical principles are maintained in the AI Flywheel specification."
-last_reviewed: "2026-07-16"
-tags:
-  - "research"
-  - "overview"
----
-
 # Principle Research Dossiers
 
 This section does **not** define the AI Flywheel principles. The canonical principles are maintained in the [AI Flywheel specification](../../specification/principles/README.md).

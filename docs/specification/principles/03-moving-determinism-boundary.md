@@ -1,18 +1,3 @@
----
-title: "Principle 3: Work Is Distributed Across a Moving Determinism Boundary"
-document_type: "principle"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 3
-summary: "The AI Flywheel deliberately distributes responsibility among deterministic capability, procedural guidance, and AI reasoning."
-principle_number: 3
-principle_id: "moving-determinism-boundary"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
----
-
 # Principle 3: Work Is Distributed Across a Moving Determinism Boundary
 
 The AI Flywheel deliberately distributes responsibility among deterministic capability, procedural guidance, and AI reasoning.

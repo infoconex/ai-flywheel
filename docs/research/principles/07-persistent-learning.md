@@ -1,21 +1,3 @@
----
-title: "Research: Learning Must Change a Persistent Operational Asset"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 7
-summary: "Determine how existing systems transform execution experience into durable assets that future operation can actually use, and identify what distinguishes operational learning from simple storage of conversations, logs."
-principle_number: 7
-principle_id: "persistent-learning"
-canonical_source: "../../specification/principles/07-persistent-learning.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: Learning Must Change a Persistent Operational Asset
 
 > Canonical principle: [Principle 7: Learning Must Change a Persistent Operational Asset](../../specification/principles/07-persistent-learning.md)

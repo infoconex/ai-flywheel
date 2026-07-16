@@ -1,16 +1,3 @@
----
-title: "AI Flywheel Lifecycle"
-document_type: "overview"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 4
-summary: "The AI Flywheel operates as a recurring eight-stage cycle:"
-last_reviewed: "2026-07-16"
-tags:
-  - "overview"
----
-
 # AI Flywheel Lifecycle
 
 The AI Flywheel operates as a recurring eight-stage cycle:

@@ -1,21 +1,3 @@
----
-title: "Research: Failure Determines Where the System Evolves"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 6
-summary: "Determine whether existing systems explicitly diagnose execution weaknesses and select among multiple persistent adaptation destinations, rather than assuming that every failure should be handled through one dominant."
-principle_number: 6
-principle_id: "evolution-routing"
-canonical_source: "../../specification/principles/06-evolution-routing.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: Failure Determines Where the System Evolves
 
 > Canonical principle: [Principle 6: Failure Determines Where the System Evolves](../../specification/principles/06-evolution-routing.md)

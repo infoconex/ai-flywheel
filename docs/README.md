@@ -1,16 +1,3 @@
----
-title: "AI Flywheel Documentation"
-document_type: "overview"
-section: "root"
-status: "canonical"
-canonical: true
-order: 1
-summary: "This directory separates the canonical methodology from the research used to evaluate its origins, relationships, and differentiation."
-last_reviewed: "2026-07-16"
-tags:
-  - "overview"
----
-
 # AI Flywheel Documentation
 
 This directory separates the **canonical methodology** from the **research used to evaluate its origins, relationships, and differentiation**.

@@ -1,21 +1,3 @@
----
-title: "Research: The SOP Is an Operational Control Plane"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 4
-summary: "Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational."
-principle_number: 4
-principle_id: "sop-control-plane"
-canonical_source: "../../specification/principles/04-sop-control-plane.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: The SOP Is an Operational Control Plane
 
 > Canonical principle: [Principle 4: The SOP Is an Operational Control Plane](../../specification/principles/04-sop-control-plane.md)

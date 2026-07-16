@@ -1,18 +1,3 @@
----
-title: "Stage 7: Persist"
-document_type: "lifecycle-stage"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 7
-summary: "Validated and authorized learning is stored in a durable operational asset so it can survive the current execution."
-stage_number: 7
-stage_id: "persist"
-last_reviewed: "2026-07-16"
-tags:
-  - "lifecycle"
----
-
 # Stage 7: Persist
 
 Validated and authorized learning is stored in a durable operational asset so it can survive the current execution.

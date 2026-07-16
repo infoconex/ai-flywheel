@@ -1,21 +1,3 @@
----
-title: "Research: AI Is the Operator, Not Merely the Assistant"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 2
-summary: "Determine how established the pattern is in which AI directly performs operational work, consumes procedures, invokes tools, creates capabilities for its own later use, and carries a process forward without requiring a."
-principle_number: 2
-principle_id: "ai-as-operator"
-canonical_source: "../../specification/principles/02-ai-as-operator.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: AI Is the Operator, Not Merely the Assistant
 
 > Canonical principle: [Principle 2: AI Is the Operator, Not Merely the Assistant](../../specification/principles/02-ai-as-operator.md)

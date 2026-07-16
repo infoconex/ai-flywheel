@@ -1,17 +1,3 @@
----
-title: "Reflexion Research Dossier"
-document_type: "framework-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 8
-summary: "Evaluate Reflexion as prior art for agents that learn from execution feedback without changing model weights, preserve lessons in linguistic memory, and improve subsequent attempts through reusable reflection."
-framework_name: "Reflexion"
-last_reviewed: "2026-07-16"
-tags:
-  - "research"
----
-
 # Reflexion Research Dossier
 
 > **Research status:** Primary-source review completed for the paper and official implementation repository as of July 15, 2026. Comparative conclusions remain working interpretations.

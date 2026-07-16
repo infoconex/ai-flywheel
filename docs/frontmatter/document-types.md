@@ -1,17 +1,3 @@
----
-title: "Document-Type Conventions"
-document_type: "guide"
-section: "root"
-status: "canonical"
-canonical: true
-order: 3
-summary: "This document defines the recommended frontmatter fields for each major documentation type in the AI Flywheel repository."
-last_reviewed: "2026-07-16"
-tags:
-  - "documentation"
-  - "frontmatter"
----
-
 # Document-Type Conventions
 
 This document defines the recommended frontmatter fields for each major documentation type in the AI Flywheel repository.

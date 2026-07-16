@@ -1,17 +1,3 @@
----
-title: "AI Flywheel Research"
-document_type: "research-overview"
-section: "research"
-status: "active-research"
-canonical: false
-order: 1
-summary: "This section contains supporting research used to examine the AI Flywheel in relation to established ideas, frameworks, and prior art. It is analytical material rather than part of the canonical specification."
-last_reviewed: "2026-07-16"
-tags:
-  - "research"
-  - "overview"
----
-
 # AI Flywheel Research
 
 This section contains supporting research used to examine the AI Flywheel in relation to established ideas, frameworks, and prior art. It is analytical material rather than part of the canonical specification.

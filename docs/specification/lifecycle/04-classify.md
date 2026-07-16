@@ -1,18 +1,3 @@
----
-title: "Stage 4: Classify"
-document_type: "lifecycle-stage"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 4
-summary: "The AI identifies the nature and likely source of any weakness, uncertainty, or learning opportunity revealed by evaluation."
-stage_number: 4
-stage_id: "classify"
-last_reviewed: "2026-07-16"
-tags:
-  - "lifecycle"
----
-
 # Stage 4: Classify
 
 The AI identifies the nature and likely source of any weakness, uncertainty, or learning opportunity revealed by evaluation.

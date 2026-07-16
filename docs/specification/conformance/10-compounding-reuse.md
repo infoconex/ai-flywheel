@@ -1,19 +1,3 @@
----
-title: "Criterion 10: Future Executions Reuse the Improved System"
-document_type: "conformance-criterion"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 10
-summary: "Subsequent executions inherit validated improvements so capability can compound over time."
-criterion_number: 10
-criterion_id: "compounding-reuse"
-required: true
-last_reviewed: "2026-07-16"
-tags:
-  - "conformance"
----
-
 # Criterion 10: Future Executions Reuse the Improved System
 
 Subsequent executions inherit validated improvements so capability can compound over time.

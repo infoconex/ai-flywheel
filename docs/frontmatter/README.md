@@ -1,18 +1,3 @@
----
-title: "Frontmatter Reference"
-document_type: "overview"
-section: "root"
-status: "canonical"
-canonical: true
-order: 1
-summary: "This section defines how YAML frontmatter should be used across the AI Flywheel documentation."
-last_reviewed: "2026-07-16"
-tags:
-  - "documentation"
-  - "frontmatter"
-  - "overview"
----
-
 # Frontmatter Reference
 
 This section defines how YAML frontmatter should be used across the AI Flywheel documentation.

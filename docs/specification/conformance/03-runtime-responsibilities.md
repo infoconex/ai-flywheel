@@ -1,19 +1,3 @@
----
-title: "Criterion 3: Runtime Responsibilities Are Distinguishable"
-document_type: "conformance-criterion"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 3
-summary: "The system distinguishes among deterministic capability, procedural guidance, and AI reasoning as separate operating mechanisms."
-criterion_number: 3
-criterion_id: "runtime-responsibilities"
-required: true
-last_reviewed: "2026-07-16"
-tags:
-  - "conformance"
----
-
 # Criterion 3: Runtime Responsibilities Are Distinguishable
 
 The system distinguishes among deterministic capability, procedural guidance, and AI reasoning as separate operating mechanisms.

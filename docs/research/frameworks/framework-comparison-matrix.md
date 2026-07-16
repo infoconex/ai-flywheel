@@ -1,20 +1,3 @@
----
-title: "Framework Comparison Matrix"
-document_type: "comparison"
-section: "research"
-status: "active-research"
-canonical: false
-order: 2
-summary: "The matrix uses a 0–3 similarity score to represent how closely each framework appears to overlap with each AI Flywheel principle."
-comparison_type: "principle-overlap"
-scoring_scale: "0-3"
-maximum_score: 24
-framework_count: 6
-last_reviewed: "2026-07-16"
-tags:
-  - "research"
----
-
 # Framework Comparison Matrix
 
 > **Research status:** Working primary-source comparison. The six framework dossiers have been reviewed against their currently available canonical papers, official repositories, and author-maintained sources as of July 15, 2026. Scores remain comparative judgments rather than mathematical proof of equivalence.

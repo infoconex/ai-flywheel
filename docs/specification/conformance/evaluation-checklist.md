@@ -1,15 +1,3 @@
----
-title: "Conformance Evaluation Checklist"
-document_type: "guide"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 12
-summary: "Use this checklist to evaluate whether a system satisfies the AI Flywheel conformance criteria."
-last_reviewed: "2026-07-16"
-tags:
----
-
 # Conformance Evaluation Checklist
 
 Use this checklist to evaluate whether a system satisfies the AI Flywheel conformance criteria.

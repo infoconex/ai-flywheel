@@ -1,21 +1,3 @@
----
-title: "Research: Improvement Must Compound Through Reuse"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 8
-summary: "Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements."
-principle_number: 8
-principle_id: "compounding-reuse"
-canonical_source: "../../specification/principles/08-compounding-reuse.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: Improvement Must Compound Through Reuse
 
 > Canonical principle: [Principle 8: Improvement Must Compound Through Reuse](../../specification/principles/08-compounding-reuse.md)

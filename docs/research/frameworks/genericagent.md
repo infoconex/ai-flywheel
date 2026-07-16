@@ -1,17 +1,3 @@
----
-title: "GenericAgent Research Dossier"
-document_type: "framework-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 3
-summary: "January 16, 2026 — used here as the earliest verified public establishment date for GenericAgent because the official GenericAgent repository identifies that date as the V1.0 public release. The later technical report."
-framework_name: "GenericAgent"
-last_reviewed: "2026-07-16"
-tags:
-  - "research"
----
-
 # GenericAgent Research Dossier
 
 > **Research status:** Primary-source review completed for the currently available public materials as of July 15, 2026. Comparative conclusions remain working interpretations rather than claims of equivalence or novelty.

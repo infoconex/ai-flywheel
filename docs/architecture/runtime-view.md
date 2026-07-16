@@ -1,18 +1,3 @@
----
-title: "Runtime Architecture"
-document_type: "architecture"
-section: "architecture"
-status: "canonical"
-canonical: true
-order: 1
-summary: "The runtime view explains how an authorized AI Flywheel performs work during the Execute stage."
-architecture_view: "runtime"
-scope: "execution"
-last_reviewed: "2026-07-16"
-tags:
-  - "architecture"
----
-
 # Runtime Architecture
 
 The runtime view explains how an authorized AI Flywheel performs work during the **Execute** stage.

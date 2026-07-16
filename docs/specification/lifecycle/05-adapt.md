@@ -1,18 +1,3 @@
----
-title: "Stage 5: Adapt"
-document_type: "lifecycle-stage"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 5
-summary: "The Flywheel selects the appropriate improvement target and applies or proposes a change."
-stage_number: 5
-stage_id: "adapt"
-last_reviewed: "2026-07-16"
-tags:
-  - "lifecycle"
----
-
 # Stage 5: Adapt
 
 The Flywheel selects the appropriate improvement target and applies or proposes a change.

@@ -1,21 +1,3 @@
----
-title: "Research: Autonomy Is Bounded by Human Authority"
-document_type: "principle-research"
-section: "research"
-status: "active-research"
-canonical: false
-order: 1
-summary: "Determine which parts of the AI Flywheel's human-authority model are established ideas, which are already implemented in related agent systems, and whether the specific combination of delegated autonomy, separate."
-principle_number: 1
-principle_id: "human-authority"
-canonical_source: "../../specification/principles/01-human-authority.md"
-research_started: "2026-07-15"
-last_reviewed: "2026-07-16"
-tags:
-  - "principles"
-  - "research"
----
-
 # Research: Autonomy Is Bounded by Human Authority
 
 > Canonical principle: [Principle 1: Autonomy Is Bounded by Human Authority](../../specification/principles/01-human-authority.md)

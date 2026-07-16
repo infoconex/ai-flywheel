@@ -1,19 +1,3 @@
----
-title: "Criterion 9: Useful Learning Persists"
-document_type: "conformance-criterion"
-section: "specification"
-status: "canonical"
-canonical: true
-order: 9
-summary: "Validated and authorized improvements survive the current execution in a durable operational asset."
-criterion_number: 9
-criterion_id: "persistent-learning"
-required: true
-last_reviewed: "2026-07-16"
-tags:
-  - "conformance"
----
-
 # Criterion 9: Useful Learning Persists
 
 Validated and authorized improvements survive the current execution in a durable operational asset.
