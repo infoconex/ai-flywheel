@@ -6,8 +6,8 @@ This section contains the canonical definition of the AI Flywheel methodology. T
 
 - [Formal Definition](ai-flywheel-definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the two core boundaries.
 - [Principles](principles/README.md) — Defines the eight principles that characterize an AI Flywheel, with a dedicated page for each principle.
-- [Lifecycle](lifecycle.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied continuously.
-- [Conformance](conformance.md) — Defines the requirements a system should satisfy to be described as implementing the AI Flywheel methodology.
+- [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied continuously.
+- [Conformance](conformance/README.md) — Defines the requirements a system should satisfy to be described as implementing the AI Flywheel methodology.
 - [Architecture and Diagrams](../architecture/README.md) — Visualizes the runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
 
 ## Conceptual Model
