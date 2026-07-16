@@ -86,4 +86,3 @@ Together they allow the system to change both its behavior and the mechanism res
 - [Runtime Architecture](../../architecture/runtime-view.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Boundaries](../../architecture/boundaries.md)
-- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md)
