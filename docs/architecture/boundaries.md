@@ -39,29 +39,29 @@ Examples include:
 - a recurring AI judgment becoming an SOP rule,
 - a stable SOP procedure becoming deterministic code,
 - a brittle deterministic rule moving back toward procedural handling,
-- or a previously codified behavior returning to AI judgment because the environment has become too variable for reliable deterministic treatment.
+- or a previously coded behavior returning to AI judgment because the environment has become too variable for reliable deterministic handling.
 
-The Moving Determinism Boundary is optimized through learning.
+The goal is to improve where responsibility lives as the system learns.
 
 ## Authority Boundary
 
-The Authority Boundary determines **what the AI is permitted to decide, execute, change, or persist autonomously**.
+The Authority Boundary determines **what the AI is allowed to decide, execute, change, or persist on its own**.
 
-This boundary is governed by humans. The AI can propose a change to its delegated authority but cannot expand its own authority.
+This boundary is governed by humans. The AI can propose a change to its authority but cannot expand its own authority.
 
-An action may therefore be well understood and still require human approval.
+An action may be well understood and still require human approval.
 
 The Authority Boundary is expressed through the Governance Policy and enforced through governance gates and escalation.
 
 ## Uncertainty Boundary
 
-The Uncertainty Boundary determines **whether the available evidence is sufficient for the AI to make a responsible autonomous judgment**.
+The Uncertainty Boundary determines **whether the available evidence is enough for the AI to make a responsible decision**.
 
-An action may fall within the AI's delegated authority while still requiring escalation because the evidence is incomplete, contradictory, or too ambiguous.
+An action may fall within the AI's authority while still requiring escalation because the evidence is incomplete, contradictory, or too unclear.
 
-This requires human judgment or additional evidence rather than permission alone.
+This requires human judgment or more evidence rather than permission alone.
 
-The Uncertainty Boundary is not a responsibility-allocation boundary and does not define the AI's authority. It is an escalation boundary based on evidence sufficiency.
+The Uncertainty Boundary does not determine where responsibility lives and does not define the AI's authority. It is an escalation boundary based on whether enough evidence exists.
 
 ## How the Boundaries Interact
 
@@ -77,19 +77,19 @@ A learning cycle may decide that a recurring judgment should become deterministi
 
 Likewise, a human may authorize broad autonomy while the Moving Determinism Boundary still determines that some work should remain in AI reasoning because it is too variable to encode reliably.
 
-A fully authorized action may still require human judgment when the evidence needed to choose among possible actions is insufficient.
+A fully authorized action may still require human judgment when there is not enough evidence to choose among possible actions.
 
 ## Recommended Mental Model
 
 The architecture can be understood in five steps:
 
-1. **Before and during execution:** governance determines what is allowed.
-2. **During execution:** SOP, AI reasoning, and deterministic capability work together; insufficient evidence may trigger the Uncertainty Boundary.
-3. **After execution:** evidence is evaluated and the Flywheel determines where learning should persist.
-4. **Before persistence or reuse:** the improvement is validated and governance requirements are satisfied.
-5. **On the next execution:** the improved system becomes the new starting point.
+1. **Before and during execution:** Governance determines what is allowed.
+2. **During execution:** SOP, AI reasoning, and deterministic capability work together; missing evidence may trigger the Uncertainty Boundary.
+3. **After execution:** Evidence is evaluated and the Flywheel determines where learning should persist.
+4. **Before persistence or reuse:** The improvement is validated and governance requirements are satisfied.
+5. **On the next execution:** The improved system becomes the new starting point.
 
-The Moving Determinism Boundary governs **where intelligence and responsibility reside**. The Authority Boundary governs **where human authority must remain**. The Uncertainty Boundary governs **when evidence is insufficient for responsible autonomous judgment**.
+The Moving Determinism Boundary governs **where intelligence and responsibility live**. The Authority Boundary governs **where human authority must remain**. The Uncertainty Boundary governs **when there is not enough evidence for responsible AI judgment**.
 
 ## Related Documents
 
