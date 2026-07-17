@@ -1,5 +1,7 @@
 # AI Flywheel Examples
 
+![AI Flywheel Examples](../assets/examples.png)
+
 This section contains worked examples showing how the AI Flywheel specification can be applied to concrete operational processes.
 
 Examples are explanatory rather than normative. The canonical requirements remain in the [AI Flywheel Specification](../specification/README.md).
