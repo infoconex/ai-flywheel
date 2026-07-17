@@ -1,36 +1,36 @@
 # Prior-Art and Comparative Research Overview
 
-> **Research status:** Working analysis. This collection is intended to separate evidence-backed comparison from the canonical AI Flywheel specification. Comparative conclusions should be treated as provisional until supported by primary sources.
+> **Research status:** Working analysis. This collection keeps research and comparison separate from the AI Flywheel specification. Conclusions should be treated as working findings until they are supported by primary sources.
 
 ## Purpose
 
-The AI Flywheel should not claim novelty merely because individual implementation techniques appear new in combination.
+The AI Flywheel should not claim novelty simply because familiar techniques appear together in a new combination.
 
-This research collection asks a narrower and more defensible set of questions:
+This research asks a narrower set of questions:
 
 1. Which AI Flywheel principles are already clearly established?
-2. Which principles are partially represented in existing frameworks?
-3. Which combinations of responsibilities or mechanisms appear distinctive?
-4. Which terminology is new versus which underlying ideas are established?
+2. Which principles are partly represented in existing frameworks?
+3. Which combinations of responsibilities or mechanisms appear different?
+4. Which terminology is new, and which underlying ideas are already established?
 5. What claims should be avoided because prior art is too close?
 
-## Working Research Thesis
+## Working Research Question
 
-The strongest candidate for meaningful differentiation is not any single capability such as self-reflection, tool creation, code generation, memory, human approval, or iterative execution.
+The strongest possible difference is not any single capability such as self-reflection, tool creation, code generation, memory, human approval, or iterative execution.
 
-The central research question is whether existing work explicitly combines:
+The main research question is whether existing work combines all of the following into one operating model:
 
-- human-authorized autonomy governed by explicit authority and uncertainty boundaries,
-- a runtime model in which procedural SOP, AI reasoning, and deterministic capability work together,
+- human-authorized autonomy with clear authority and uncertainty boundaries,
+- procedural SOP, AI reasoning, and deterministic capability working together during execution,
 - a Moving Determinism Boundary that allows responsibility to shift among those mechanisms after execution produces evidence,
-- evidence-driven routing of improvements to the appropriate persistent destination,
+- evidence-driven routing of improvements to the right persistent destination,
 - and governance that constrains both execution and self-improvement.
 
-This is a research hypothesis, not a concluded novelty claim.
+This is a research question, not a concluded novelty claim.
 
 ## Comparative Research
 
-See the [framework comparison matrix](framework-comparison-matrix.md) for the working cross-framework view.
+See the [framework comparison matrix](framework-comparison-matrix.md) for the current cross-framework view.
 
 ### Principle Research Dossiers
 
@@ -54,29 +54,29 @@ See the [framework comparison matrix](framework-comparison-matrix.md) for the wo
 
 ## Additional Research Areas
 
-The addition of human authority introduces adjacent bodies of prior art that should be examined beyond agent frameworks alone:
+The addition of human authority means the research should also look beyond agent frameworks into areas such as:
 
 - human-in-the-loop and human-on-the-loop systems,
-- adaptive automation and function allocation,
-- AI governance and delegated authority,
+- adaptive automation and how work is divided between humans and machines,
+- AI governance and authority given to automated systems,
 - approval and escalation systems,
 - autonomic computing,
 - supervisory control,
 - safety constraints on self-modifying systems,
 - and human-machine teaming.
 
-These areas may contain closer conceptual precedent for the Governance Policy, Authority Boundary, and uncertainty-based escalation than the six agent frameworks currently in the comparison matrix.
+These areas may contain closer earlier examples of the Governance Policy, Authority Boundary, and uncertainty-based escalation than the six agent frameworks currently in the comparison matrix.
 
 ## Research Standard
 
-Each dossier should eventually include:
+Each research page should eventually include:
 
 - primary-source citations,
 - the publication or release date,
 - the exact mechanism being compared,
 - quotations only where necessary,
-- explicit separation of fact from interpretation,
-- evidence both for and against differentiation,
+- clear separation of fact from interpretation,
+- evidence both for and against a difference,
 - and a confidence level for each conclusion.
 
-The goal is to produce a credible lineage and differentiation analysis, not to force a novelty claim.
+The goal is to build a credible history and comparison, not to force a novelty claim.
