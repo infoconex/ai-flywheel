@@ -6,16 +6,16 @@ Future executions begin with the improved operating system created by previous F
 
 Reuse is what turns isolated learning into compounding improvement.
 
-Persistence creates durable assets. Reuse makes those assets operational by ensuring later execution actually inherits and applies relevant validated and authorized improvements.
+Persistence creates durable assets. Reuse makes those assets useful by ensuring later execution actually inherits and applies relevant validated and authorized improvements.
 
 ## Inputs
 
 Reuse receives:
 
 - validated and authorized persistent improvements from [Stage 7: Persist](07-persist.md),
-- the context and scope in which each improvement is valid,
+- the context in which each improvement is valid,
 - the current Governance Policy,
-- and a new authorized execution context in which prior learning may be relevant.
+- and a new authorized execution where earlier learning may be relevant.
 
 ## Required Behavior
 
@@ -30,9 +30,9 @@ Reusable improvements may include:
 - better failure handling,
 - and human-authorized governance changes.
 
-Reuse must remain context-aware. A previously successful lesson should be applied only where it remains relevant, valid, and authorized.
+Reuse must match the current situation. A previously successful lesson should be applied only where it remains relevant, valid, and authorized.
 
-The system should be able to demonstrate that prior learning changed later operational behavior. Storing an improvement without retrieving, invoking, or applying it does not create compounding reuse.
+The system should be able to show that earlier learning changed later behavior. Storing an improvement without retrieving, invoking, or applying it does not create compounding reuse.
 
 ## Outputs
 
@@ -49,15 +49,15 @@ Successful reuse may appear as:
 - less repeated tool exploration,
 - stronger validation,
 - more reliable capability use,
-- or reduced unnecessary human escalation.
+- or less unnecessary human escalation.
 
 ## Governance Considerations
 
-Human decisions can produce reusable learning, but reuse does not allow the AI to grant itself additional authority.
+Human decisions can produce reusable learning, but reuse does not allow the AI to grant itself more authority.
 
-A repeated approval pattern may justify a proposal for a Governance Policy change, but expanding delegated authority still requires human authorization.
+A repeated approval pattern may justify a proposal for a Governance Policy change, but expanding the AI's authority still requires human authorization.
 
-Previously authorized learning must also be reused within its current scope. A change in context, risk, or governance may make earlier learning inapplicable or require renewed approval.
+Previously authorized learning must also be reused within its current scope. A change in context, risk, or governance may make earlier learning no longer applicable or may require renewed approval.
 
 ## Failure and Exit Conditions
 
@@ -69,7 +69,7 @@ The Flywheel should not reuse an improvement when:
 - the asset cannot be reliably retrieved or executed,
 - or reuse would create unacceptable uncertainty or risk.
 
-When reused behavior produces new evidence showing that the improvement is weak, stale, or misplaced, the new execution begins another Flywheel cycle rather than treating persisted learning as permanently correct.
+When reused behavior produces new evidence showing that the improvement is weak, stale, or in the wrong place, the new execution begins another Flywheel cycle rather than treating persisted learning as permanently correct.
 
 ## Relationships to Principles
 
@@ -77,7 +77,7 @@ When reused behavior produces new evidence showing that the improvement is weak,
 - [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) ensures there is durable learning available to reuse.
 - [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) helps place learning where it can be reused effectively.
 - [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) ensures reused improvements remain subject to outcome evaluation.
-- [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) prevents compounding capability from becoming uncontrolled authority expansion.
+- [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) prevents improving capability from becoming uncontrolled authority expansion.
 
 ## Stage Navigation
 
