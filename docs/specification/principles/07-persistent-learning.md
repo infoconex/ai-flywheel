@@ -86,11 +86,11 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 5](05-outcome-evidence.md) provides the evidence from which useful learning is derived.
-- [Principle 6](06-evolution-routing.md) determines which persistent asset should own the learning.
-- [Principle 3](03-moving-determinism-boundary.md) allows persisted responsibility to move again when evidence changes.
-- [Principle 1](01-human-authority.md) determines whether the system is authorized to persist a change.
-- [Principle 8](08-compounding-reuse.md) requires future execution to actually use the improved asset.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) provides the evidence from which useful learning is derived.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines which persistent asset should own the learning.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) allows persisted responsibility to move again when evidence changes.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) determines whether the system is authorized to persist a change.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) requires future execution to actually use the improved asset.
 
 ## Principle Navigation
 
