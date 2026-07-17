@@ -23,17 +23,17 @@ A conforming implementation must satisfy these requirements:
 
 Outcome evidence may include:
 
-- logs,
-- tool outputs,
-- return codes,
-- test results,
-- validation checks,
-- external observations,
-- metrics,
-- state changes,
-- user feedback,
-- human approvals or judgments,
-- and comparisons against clear success criteria.
+- Logs
+- Tool outputs
+- Return codes
+- Test results
+- Validation checks
+- External observations
+- Metrics
+- State changes
+- User feedback
+- Human approvals or judgments
+- Comparisons against clear success criteria
 
 The right evidence depends on the process, but the system should be able to tell the difference between the intended result and a result that merely looks plausible.
 
@@ -63,23 +63,23 @@ The relationship is:
 
 Evidence supporting this principle may include:
 
-- execution logs and tool outputs,
-- clear success criteria and validation results,
-- independent checks of external state or outcomes,
-- records showing preservation of failures and unexpected results,
-- examples distinguishing verified success, partial success, failure, and unresolved uncertainty,
-- and records of important human decisions captured as part of the execution evidence.
+- Execution logs and tool outputs
+- Clear success criteria and validation results
+- Independent checks of external state or outcomes
+- Records showing preservation of failures and unexpected results
+- Examples distinguishing verified success, partial success, failure, and unresolved uncertainty
+- Records of important human decisions captured as part of the execution evidence
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- success is inferred only because the AI says the task succeeded,
-- reaching the final step is treated as proof of the intended outcome,
-- lack of an exception is treated as enough validation,
-- failures are discarded after a retry and cannot inform later learning,
-- evidence is too incomplete to determine what actually occurred,
-- or important human decisions affecting the process leave no usable record.
+- Success is inferred only because the AI says the task succeeded
+- Reaching the final step is treated as proof of the intended outcome
+- Lack of an exception is treated as enough validation
+- Failures are discarded after a retry and cannot inform later learning
+- Evidence is too incomplete to determine what actually occurred
+- Important human decisions affecting the process leave no usable record
 
 ## Relationships to Other Principles
 
