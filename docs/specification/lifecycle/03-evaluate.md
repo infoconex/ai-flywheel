@@ -1,6 +1,6 @@
 # Stage 3: Evaluate
 
-The AI compares the observed outcome with the intended outcome and success criteria.
+The AI compares the observed outcome with the intended outcome and applicable success criteria.
 
 ## Purpose
 
@@ -12,21 +12,21 @@ The Flywheel must assess the actual outcome rather than assume success because e
 
 Evaluation receives:
 
-- the observed evidence set from [Stage 2: Observe](02-observe.md),
-- the intended outcome,
-- applicable success criteria,
-- relevant validation requirements,
-- known assumptions and constraints,
-- and any governance rules affecting how uncertainty or high-impact outcomes must be handled.
+- The observed evidence set from [Stage 2: Observe](02-observe.md)
+- The intended outcome
+- Applicable success criteria
+- Relevant validation requirements
+- Known assumptions and constraints
+- Any governance rules affecting how uncertainty or significant outcomes must be handled
 
 ## Required Behavior
 
 The Flywheel should distinguish among outcomes such as:
 
-- verified success,
-- partial success,
-- known failure,
-- and uncertain outcome.
+- Verified success
+- Partial success
+- Known failure
+- Uncertain outcome
 
 Evaluation should use the best available evidence, including independent validation signals where practical.
 
@@ -36,39 +36,39 @@ The Flywheel should ask:
 - Were all required conditions satisfied?
 - Did the process produce unexpected side effects?
 - Were assumptions violated?
-- Is the available evidence enough to make a responsible decision?
+- Is the available evidence sufficient to make a responsible determination?
 
-Uncertainty itself is a valid outcome. The system must not turn missing evidence into unsupported confidence just to keep the lifecycle moving.
+Uncertainty itself is a valid outcome. The system must not convert insufficient evidence into unsupported confidence merely to continue the lifecycle.
 
 ## Outputs
 
 Evaluation produces:
 
-- an assessed outcome,
-- the evidence supporting that assessment,
-- identified gaps or broken assumptions,
-- unresolved uncertainty,
-- and any observed weakness or learning opportunity that should proceed to [Stage 4: Classify](04-classify.md).
+- An assessed outcome
+- The evidence supporting that assessment
+- Identified gaps or violated assumptions
+- Unresolved uncertainty
+- Any observed weakness or learning opportunity that should proceed to [Stage 4: Classify](04-classify.md)
 
-A verified success may still reveal a learning opportunity. A successful result does not mean the process was optimal, efficient, or using the right mix of runtime mechanisms.
+A verified success may still reveal a learning opportunity. A successful result does not imply that the process was optimal, efficient, or appropriately divided across runtime mechanisms.
 
 ## Governance Considerations
 
-When the evidence is not enough for responsible judgment, the Uncertainty Boundary has been reached.
+When evidence is insufficient for responsible autonomous judgment, the Uncertainty Boundary has been reached.
 
-If more evidence can resolve the uncertainty within the AI's authority, the Flywheel should obtain it. If not, the affected decision requires human judgment.
+If additional evidence can resolve the uncertainty within the AI's authority, the Flywheel should obtain it. If not, the affected decision requires human judgment.
 
-A technically clear outcome may still trigger the Authority Boundary when the next action is not allowed without approval.
+A technically clear outcome may still trigger the Authority Boundary when the next action is not allowed autonomously.
 
 ## Failure and Exit Conditions
 
 Evaluation can advance to classification when the system has:
 
-- a supported outcome assessment,
-- a clear uncertain outcome,
-- or a well-enough understood weakness or learning opportunity to classify.
+- A supported outcome assessment
+- An explicit uncertain outcome
+- A sufficiently identified weakness or learning opportunity to classify
 
-The stage should return to observation when more obtainable evidence is required.
+The stage should return to observation when additional obtainable evidence is required.
 
 The stage should escalate when unresolved uncertainty cannot be responsibly resolved within the AI's authority.
 
