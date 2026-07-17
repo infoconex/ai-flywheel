@@ -4,7 +4,7 @@ The AI identifies the type and likely source of any weakness, uncertainty, or le
 
 ## Purpose
 
-Classification prevents the Flywheel from treating every problem the same way or sending every lesson to the same part of the system.
+Classification prevents the Flywheel from treating every problem as the same type of problem or sending every lesson to the same improvement mechanism.
 
 At this stage, the Flywheel asks:
 
@@ -14,55 +14,55 @@ At this stage, the Flywheel asks:
 
 Classification receives:
 
-- the assessed outcome from [Stage 3: Evaluate](03-evaluate.md),
-- the evidence supporting that assessment,
-- identified failures, uncertainty, broken assumptions, or learning opportunities,
-- the current placement of responsibility among deterministic capability, procedural guidance, and AI reasoning,
-- and applicable governance rules.
+- The assessed outcome from [Stage 3: Evaluate](03-evaluate.md)
+- The evidence supporting that assessment
+- Identified failures, uncertainty, broken assumptions, or learning opportunities
+- The current placement of responsibility among deterministic capability, procedural guidance, and AI reasoning
+- Applicable governance constraints
 
 ## Required Behavior
 
 The system should consider whether the issue belongs primarily to:
 
-- deterministic implementation,
-- procedural guidance,
-- missing or weak validation,
-- missing or incomplete reasoning knowledge,
-- runtime reasoning,
-- environmental change,
-- governance or authority,
-- or an incorrect assumption about where responsibility should live.
+- Deterministic implementation
+- Procedural guidance
+- Missing or weak validation
+- Missing or incomplete reasoning knowledge
+- Runtime reasoning
+- Environmental change
+- Governance or authority
+- An incorrect assumption about where responsibility should live
 
 The classification should identify the persistent destination best suited to own the learning, which may include:
 
-- deterministic capability,
-- procedural knowledge,
-- reasoning knowledge,
-- validation,
-- or a proposed governance change.
+- Deterministic capability
+- Procedural knowledge
+- Reasoning knowledge
+- Validation
+- A proposed governance change
 
-Classification must be intentional. The system should not automatically send every failure to code changes, prompt changes, memory, retries, or any other single destination.
+Classification must be intentional. The system should not automatically route every failure to code changes, prompt changes, memory, retries, or any other single destination.
 
-A classification may also determine that no persistent change is justified because the event was temporary, was already handled correctly, or does not have enough supporting evidence.
+A classification may also determine that no persistent change is justified because the event is temporary, already handled correctly, or unsupported by enough evidence.
 
 ## Outputs
 
 Classification produces:
 
-- an identified weakness or learning opportunity,
-- a selected improvement destination or a clear decision that no adaptation is justified,
-- the evidence supporting that decision,
-- and any identified movement of responsibility across the Moving Determinism Boundary.
+- An identified weakness or learning opportunity
+- A selected improvement destination or clear decision that no adaptation is justified
+- The evidence supporting that routing decision
+- Any identified movement of responsibility across the Moving Determinism Boundary
 
-When adaptation is justified, the selected destination becomes the main input to [Stage 5: Adapt](05-adapt.md).
+When adaptation is justified, the selected destination becomes the primary input to [Stage 5: Adapt](05-adapt.md).
 
 ## Governance Considerations
 
-Classification may identify a governance weakness or propose that the AI's authority should change, but classification itself does not authorize more authority.
+Classification may identify a governance weakness or suggest that the AI's authority should change, but classification itself does not authorize an expansion of authority.
 
 A proposed Governance Policy change remains subject to human authorization.
 
-The Flywheel may decide on its own that more conservative behavior or more escalation is appropriate when evidence shows increased risk or uncertainty, as long as that change remains within its existing authority.
+The Flywheel may determine on its own that more conservative behavior or additional escalation is appropriate when evidence shows increased risk or uncertainty, as long as that change remains within existing authority.
 
 ## Failure and Exit Conditions
 
@@ -70,7 +70,7 @@ Classification should return to evaluation or observation when the evidence is t
 
 It should advance to adaptation when a supported improvement destination has been identified.
 
-It may exit without adaptation when the current operating system behaved correctly and no lasting improvement is justified.
+It may exit without adaptation when the current operating system behaved correctly and no durable improvement is justified.
 
 It must not force a change merely to complete the lifecycle.
 
