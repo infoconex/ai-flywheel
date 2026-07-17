@@ -1,5 +1,7 @@
 # AI Flywheel Documentation
 
+![AI Flywheel Documentation](assets/documentation.png)
+
 This directory separates the **AI Flywheel specification** from the **architecture and examples used to explain it**, the **history of how it developed**, and the **research used to compare it with related work**.
 
 ## Documentation Sections
