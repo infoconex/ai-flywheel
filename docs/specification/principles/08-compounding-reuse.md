@@ -31,13 +31,13 @@ Each cycle begins from a stronger operating state when previous learning has bee
 
 The Flywheel may accumulate improvements in:
 
-- deterministic capabilities,
-- procedural knowledge,
-- reasoning guidance,
-- validation mechanisms,
-- failure-handling rules,
-- reusable evidence,
-- and human-authorized governance.
+- Deterministic capabilities
+- Procedural knowledge
+- Reasoning guidance
+- Validation mechanisms
+- Failure-handling rules
+- Reusable evidence
+- Human-authorized governance
 
 The value is not merely that the system knows more. The system should become better at performing the work.
 
@@ -72,24 +72,24 @@ Reuse closes the lifecycle and creates the compounding behavior that gives the A
 
 Evidence supporting this principle may include:
 
-- later executions invoking improved deterministic capabilities created or modified by earlier cycles,
-- updated SOP guidance being applied in future operation,
-- stronger validation or failure-handling rules affecting later behavior,
-- durable reasoning knowledge being retrieved and used,
-- repeated human decisions being turned into reusable guidance where appropriate,
-- measurable reductions in repeated failure, reasoning effort, cost, latency, or unnecessary human intervention,
-- and concrete examples showing that later behavior changed because of learning from earlier execution.
+- Later executions invoking improved deterministic capabilities created or modified by earlier cycles
+- Updated SOP guidance being applied in future operation
+- Stronger validation or failure-handling rules affecting later behavior
+- Durable reasoning knowledge being retrieved and used
+- Repeated human decisions being turned into reusable guidance where appropriate
+- Measurable reductions in repeated failure, reasoning effort, cost, latency, or unnecessary human intervention
+- Concrete examples showing that later behavior changed because of learning from earlier execution
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- improvements are persisted but never used,
-- each execution starts effectively from zero,
-- the system repeatedly solves the same known problem from scratch,
-- the same avoidable failure or human escalation recurs despite validated reusable learning,
-- lessons are reused outside the context where they are valid,
-- or capability growth is treated as permission for the AI to expand its own authority.
+- Improvements are persisted but never used
+- Each execution starts effectively from zero
+- The system repeatedly solves the same known problem from scratch
+- The same avoidable failure or human escalation recurs despite validated reusable learning
+- Lessons are reused outside the context where they are valid
+- Capability growth is treated as permission for the AI to expand its own authority
 
 ## Relationships to Other Principles
 
