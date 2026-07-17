@@ -50,14 +50,6 @@ The dates on this page represent different milestones:
 - **July 2026 — Formalization:** the ideas were organized into the named AI Flywheel methodology and specification structure.
 - **First `v0.1.0` publication — First formal public release:** the first intentionally released version of the documented methodology.
 
-The January 2026 date should not be interpreted as a public publication date unless independently supported by a publicly accessible artifact from that time. It records the development history of the methodology.
-
-## Historical Evidence
-
-Where retained, dated development artifacts such as working notes, prompts, code, procedures, experiments, repository history, or other records may provide additional evidence of how the ideas evolved before formal documentation began.
-
-Such artifacts may help document provenance, but the canonical definition of the methodology is the current [AI Flywheel Specification](specification/README.md), not any individual historical artifact.
-
 ## Related Documents
 
 - [AI Flywheel Specification](specification/README.md)
