@@ -36,10 +36,10 @@ AI reasoning should own work that requires interpretation, judgment, adaptation,
 
 Execution evidence may show that responsibility should move. Examples include:
 
-- a recurring AI judgment becoming a documented procedure,
-- a stable procedural step becoming deterministic code,
-- a brittle hard-coded rule moving back into procedural guidance,
-- or an overly rigid procedure moving back toward AI reasoning because the environment requires more judgment.
+- A recurring AI judgment becoming a documented procedure
+- A stable procedural step becoming deterministic code
+- A brittle hard-coded rule moving back into procedural guidance
+- An overly rigid procedure moving back toward AI reasoning because the environment requires more judgment
 
 A common path is:
 
@@ -64,21 +64,21 @@ The recurring question is:
 
 Evidence supporting this principle may include:
 
-- a clear explanation of which responsibilities are owned by deterministic capability, procedure, and AI reasoning,
-- examples showing different mechanisms working together during one execution,
-- examples of recurring reasoning being moved into procedure or code,
-- examples of brittle deterministic or procedural behavior being moved back toward more flexible handling,
-- and records showing that responsibility placement changes because of evidence rather than fixed design assumptions.
+- A clear explanation of which responsibilities are owned by deterministic capability, procedure, and AI reasoning
+- Examples showing different mechanisms working together during one execution
+- Examples of recurring reasoning being moved into procedure or code
+- Examples of brittle deterministic or procedural behavior being moved back toward more flexible handling
+- Records showing that responsibility placement changes because of evidence rather than fixed design assumptions
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- all behavior is treated as AI reasoning without intentional responsibility placement,
-- all behavior is fixed automation with no role for adaptive judgment,
-- procedural knowledge is indistinguishable from temporary prompting with no durable operational role,
-- the architecture assumes learning can move only toward more determinism,
-- or responsibility cannot move when evidence shows that the current mechanism is wrong.
+- All behavior is treated as AI reasoning without intentional responsibility placement
+- All behavior is fixed automation with no role for adaptive judgment
+- Procedural knowledge is indistinguishable from temporary prompting with no durable operational role
+- The architecture assumes learning can move only toward more determinism
+- Responsibility cannot move when evidence shows that the current mechanism is wrong
 
 ## Relationships to Other Principles
 
