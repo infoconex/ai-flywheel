@@ -26,12 +26,12 @@ A conforming implementation must satisfy these requirements:
 
 A persistent Governance Policy defines the scope of the Flywheel's authority. It should define:
 
-- what the AI may do on its own,
-- what actions require human approval,
-- what conditions require human judgment,
-- what actions are prohibited,
-- what changes the AI may make to code, procedure, reasoning guidance, validation, or other operational assets,
-- and who has authority to approve particular decisions.
+- What the AI may do on its own
+- What actions require human approval
+- What conditions require human judgment
+- What actions are prohibited
+- What changes the AI may make to code, procedure, reasoning guidance, validation, or other operational assets
+- Who has authority to approve particular decisions
 
 The Governance Policy sits above the SOP. The SOP defines how work should be performed. The Governance Policy defines what the system is allowed to decide, execute, change, or persist while doing that work.
 
@@ -78,24 +78,24 @@ This principle applies throughout the lifecycle rather than at one stage.
 
 Evidence supporting this principle may include:
 
-- a persistent Governance Policy or equivalent authority definition that the system can enforce,
-- clear representation of autonomous, approval-required, judgment-required, and prohibited actions,
-- execution records showing approval and judgment escalations,
-- evidence that prohibited actions are blocked,
-- controls governing changes to code, SOPs, reasoning guidance, validation, and other persistent assets,
-- and records showing that authority changes require human authorization.
+- A persistent Governance Policy or equivalent authority definition that the system can enforce
+- Clear representation of autonomous, approval-required, judgment-required, and prohibited actions
+- Execution records showing approval and judgment escalations
+- Evidence that prohibited actions are blocked
+- Controls governing changes to code, SOPs, reasoning guidance, validation, and other persistent assets
+- Records showing that authority changes require human authorization
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- autonomy is effectively unlimited,
-- authority exists only as an informal human expectation,
-- governance is documented but not enforced,
-- the AI can bypass approval requirements during self-improvement,
-- the AI can silently expand its own authority,
-- human intervention occurs without defined escalation conditions,
-- or the SOP or another operational asset can override governance restrictions.
+- Autonomy is effectively unlimited
+- Authority exists only as an informal human expectation
+- Governance is documented but not enforced
+- The AI can bypass approval requirements during self-improvement
+- The AI can silently expand its own authority
+- Human intervention occurs without defined escalation conditions
+- The SOP or another operational asset can override governance restrictions
 
 ## Relationships to Other Principles
 
