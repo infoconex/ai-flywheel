@@ -99,11 +99,11 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 2](02-ai-as-operator.md) depends on bounded authority so the AI can operate independently without implying unlimited autonomy.
-- [Principle 4](04-sop-control-plane.md) defines procedural guidance that remains subordinate to governance.
-- [Principle 6](06-evolution-routing.md) may route a learning to governance, but governance changes require human authorization.
-- [Principle 7](07-persistent-learning.md) requires persistent changes to be both validated and authorized.
-- [Principle 8](08-compounding-reuse.md) allows capability to compound without allowing authority to expand uncontrolled.
+- [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md) depends on bounded authority so the AI can operate independently without implying unlimited autonomy.
+- [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) defines procedural guidance that remains subordinate to governance.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) may route a learning to governance, but governance changes require human authorization.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) requires persistent changes to be both validated and authorized.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) allows capability to compound without allowing authority to expand uncontrolled.
 
 ## Principle Navigation
 
