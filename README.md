@@ -1,74 +1,143 @@
 # AI Flywheel
 
-> **Status:** Early definition and working specification. This repository will evolve as the methodology, principles, examples, and prior-art analysis are developed.
-
-## Formal Definition
+> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`. The methodology and supporting research will continue to evolve as the model is tested, refined, and compared with related work.
 
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
-The system deliberately distributes responsibility across three execution layers:
+> **A loop repeats. A flywheel compounds.**
 
-1. **Deterministic code** for work that can be made reliably repeatable.
-2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed, how known conditions should be handled, and how exceptions should be governed.
-3. **AI reasoning** for situations requiring interpretation, judgment, adaptation, or handling of conditions that cannot yet be reliably reduced to deterministic logic.
+![AI Flywheel lifecycle](docs/assets/ai-flywheel-2.png)
 
-Each execution produces evidence about the effectiveness of those layers. The AI evaluates the outcome, identifies weaknesses or failures, determines which layer should change, applies or recommends the appropriate improvement, preserves the resulting knowledge, and uses the improved system in future executions.
+## Project Status
 
-The core cycle is:
+The current documentation includes:
+
+- The AI Flywheel definition
+- Eight core principles
+- The eight-stage lifecycle
+- Human authority, governance, and boundary models
+- An evidence-based conformance assessment
+- Architecture views of runtime, learning, governance, boundaries, and the complete operating model
+- A complete worked example
+- Standard terminology
+- Prior-art and framework-comparison research
+
+Future work may include:
+
+- Additional worked examples
+- Implementation guidance
+- A reference implementation
+- Conformance evaluation tooling
+- Continued prior-art research
+
+The first repository release is intended to publish **AI Flywheel Specification 0.1 — Draft** as a working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
+
+## Origin and Formalization
+
+The ideas that became the AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
+
+These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the planned `v0.1.0` release marks its first formal public specification release.
+
+See [AI Flywheel History and Development](docs/history.md) for the full timeline.
+
+## Why AI Flywheel?
+
+AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
+
+That creates a new question: what should happen when execution succeeds imperfectly, fails unexpectedly, or reveals a better way to perform the work?
+
+An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the system, validates the improvement, persists it, and reuses it in future execution.
+
+A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, or a proposed governance change. The next execution then begins from the improved operating state rather than starting from the same place again.
+
+That is the flywheel effect: **the output of one cycle improves the system used by the next.**
+
+## How the Flywheel Works
+
+The lifecycle is:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
-The result is a compounding system in which repeated execution progressively improves reliability, capability, efficiency, and autonomy.
+- **Execute** the work using procedural guidance, AI reasoning, and deterministic capabilities.
+- **Observe** evidence about what actually happened.
+- **Evaluate** the outcome against the intended result and success criteria.
+- **Classify** the weakness, uncertainty, or learning opportunity and determine where the learning should live.
+- **Adapt** the right part of the operating system.
+- **Validate** the proposed improvement before trusting it for future use.
+- **Persist** validated and authorized learning in a durable operational asset.
+- **Reuse** the improved system in future execution.
 
-## High-Level Principles
+Governance applies throughout the cycle. Human-defined authority determines whether actions and changes are authorized, require approval, require human judgment, or are prohibited.
 
-### 1. AI Is the Operator, Not Merely the Assistant
+## What Makes an AI Flywheel Different?
 
-The AI executes the operational process and can create, invoke, interpret, and improve the capabilities it uses to perform the work.
+An AI Flywheel is not defined by any single capability such as autonomous execution, memory, reflection, tool creation, code generation, self-modification, or feedback. These mechanisms all have substantial prior art.
 
-### 2. Work Is Distributed Across a Moving Determinism Boundary
+The main idea that may make the AI Flywheel different is how these mechanisms are combined into one operating model:
 
-Responsibility is deliberately divided among deterministic code, procedural SOPs, and AI reasoning. As experience accumulates, work can move between these layers.
+| Characteristic | Traditional Automation | Typical Agent Loop | AI Flywheel |
+|---|---|---|---|
+| Executes work | Yes | Yes | Yes |
+| Uses outcome evidence | Limited | Often | Required |
+| Learns across executions | No | Sometimes | Required |
+| Persists operational learning | No | Sometimes | Required |
+| Chooses where learning should live | No | Framework-dependent | Explicit |
+| Can move responsibility among reasoning, procedure, and deterministic capability | No | Framework-dependent | Explicit |
+| Validates improvements before reuse | Release-dependent | Framework-dependent | Required |
+| Explicitly governs autonomous action and adaptation | External | Framework-dependent | Required |
+| Reuses improvements as part of the next operating state | No | Sometimes | Required |
 
-### 3. The SOP Is an Operational Control Plane
+Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
 
-The SOP is a machine-consumable operational contract that defines the intended outcome, normal execution path, available capabilities, known failure handling, evidence requirements, and conditions requiring AI judgment.
+## What an AI Flywheel Is Not
 
-### 4. Execution Must Produce Outcome Evidence
+A system does not become an AI Flywheel merely because it contains one part of the pattern.
 
-The system learns from observed outcomes rather than AI confidence alone. Executions should produce enough evidence to determine what happened, whether the intended result occurred, and where assumptions or behavior failed.
+- A **retry-only loop** repeats work but does not necessarily learn from it.
+- A **memory-only agent** may retain information without changing the operational system used by future execution.
+- A **self-modifying system** may change code without deciding whether code is the right place for the learning.
+- **Reflection alone** does not create compounding improvement unless the lesson changes a persistent operational asset that future execution can reuse.
+- **Fixed automation** can be highly reliable without having an evidence-driven mechanism for evolving itself.
 
-### 5. Failure Determines Where the System Evolves
+See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for the complete conformance distinctions.
 
-Failures are classified to determine the appropriate place for improvement. The response may be a code change, an SOP change, improved validation, retained AI reasoning, or a shift in responsibility between layers.
+## Core Concepts
 
-### 6. Learning Must Change a Persistent Operational Asset
+### Human Authority Bounds Autonomy
 
-Useful learning must survive the current execution. It should become improved code, a new or modified tool, an SOP update, a reusable lesson, a validation rule, or persistent guidance for future reasoning.
+A human authorizes the Flywheel and defines its authority boundaries. The AI then operates autonomously within those boundaries and escalates only when uncertainty or authority requires human involvement.
 
-### 7. Improvement Must Compound Through Reuse
+### AI Is the Operator
 
-The output of one cycle becomes part of the operating system of the next. Repeated execution should progressively reduce repeated problem-solving and unnecessary human intervention while preserving AI judgment where it remains valuable.
+The AI executes the process and can create, invoke, interpret, and improve the capabilities it uses to perform the work.
 
-## The Central Idea
+### Three Mechanisms Work Together During Execution
 
-The defining idea of the AI Flywheel is the continuous optimization of the boundary between **deterministic automation**, **procedural instruction**, and **AI reasoning** using evidence generated by execution.
+The Flywheel combines:
 
-A recurring judgment may become a procedural rule. A stable procedure may become deterministic code. A brittle hard-coded rule may move back into procedure or AI judgment.
+1. **Deterministic capability** for reliable, repeatable operations.
+2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed and when escalation is required.
+3. **AI reasoning** for orchestration, interpretation, judgment, adaptation, and ambiguity.
 
-The Flywheel therefore improves not only what the system knows or what software it contains, but also **where intelligence and responsibility reside within the system**.
+These are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution produces evidence.
 
-## Repository Direction
+### The Moving Determinism Boundary
 
-Future content is expected to include:
+The **Moving Determinism Boundary** determines where work and learning should live among deterministic capability, procedural knowledge, and AI reasoning. Responsibility can move as evidence accumulates.
 
-- A formal AI Flywheel specification
-- Detailed principle definitions
-- Lifecycle and conformance criteria
-- Reference implementations and worked examples
-- Prior-art and framework comparison research
-- Principle-by-principle research dossiers
+### The Authority Boundary
 
----
+The **Authority Boundary** determines what the AI is permitted to decide, execute, change, or persist autonomously. The determinism boundary can move as the system learns; the authority boundary is governed by humans.
 
-*This README is an initial placeholder and will be refined as the AI Flywheel methodology is formalized.*
+## Explore the Documentation
+
+Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
+
+- [AI Flywheel Specification](docs/specification/README.md) — The definition, principles, lifecycle, terminology, governance model, and conformance assessment.
+- [AI Flywheel History and Development](docs/history.md) — The development timeline from early ideas through formalization and public release.
+- [Core Operating Model](docs/architecture/operating-model.md) — One view showing how human authority, governance, runtime mechanisms, learning, persistence, and reuse fit together.
+- [Worked Example: Software Maintenance Flywheel](docs/examples/software-maintenance-flywheel.md) — A complete execution-to-reuse example, including movement across the Moving Determinism Boundary.
+- [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
+- [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
+
+The specification defines the methodology. The research collection examines related ideas and how the AI Flywheel compares with them without making that research part of the specification.
