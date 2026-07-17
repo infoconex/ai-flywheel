@@ -51,15 +51,15 @@ The specification separates four ideas that should not be collapsed into one seq
 
 ## Principle Reference Convention
 
-Whenever a principle is referenced, the reference should include both the principle number and its full canonical name.
+Whenever a principle is referenced by number, the reference must also include the principle's canonical name.
 
 Use:
 
 > **Principle 1: Autonomy Is Bounded by Human Authority**
 
-Do not use a bare reference such as `Principle 1` or `P1`, including in prose, tables, diagrams, navigation, or related-document lists.
+Do not use a bare numbered reference such as `Principle 1` or `P1`, including in prose, tables, diagrams, navigation, or related-document lists.
 
-This convention keeps cross-references understandable without requiring readers to memorize the principle numbering.
+A principle name may stand alone when the name itself is the clear reference. The rule is intended to prevent readers from having to memorize what a principle number means.
 
 ## Scope
 
