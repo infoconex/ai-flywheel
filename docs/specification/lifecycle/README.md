@@ -14,11 +14,11 @@ Before autonomous operation begins, a human or authorized group defines the scop
 
 That authorization is represented through a Governance Policy defining:
 
-- what the AI may do on its own,
-- what requires approval,
-- what conditions require human judgment,
-- when escalation is required,
-- and what actions are prohibited.
+- What the AI may do on its own
+- What requires approval
+- What conditions require human judgment
+- When escalation is required
+- What actions are prohibited
 
 Human authorization does not require a human to manually start every execution. Once authorized, the Flywheel may operate in response to schedules, events, triggers, requests, or ongoing conditions within the authority it has been given.
 
