@@ -1,5 +1,7 @@
 # AI Flywheel Architecture
 
+![AI Flywheel Architecture](../assets/architecture.png)
+
 This section explains how the AI Flywheel fits together structurally. It separates the complete operating model, runtime model, post-execution learning model, governance and escalation, and the boundaries that shape where responsibility resides and what the AI is authorized to do.
 
 The diagrams are explanatory views intended to evolve with the methodology. They do not independently define normative requirements.
