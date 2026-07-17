@@ -24,19 +24,19 @@ With eight scored principles and a maximum of three points per principle, the ma
 
 | AI Flywheel Principle | GenericAgent | Metis | MOSS | MASFly | Ralph | Reflexion |
 |---|---:|---:|---:|---:|---:|---:|
-| Autonomy Bounded by Human Authority | Limited (1) | None (0) | Partial (2) | None (0) | Limited (1) | None (0) |
-| AI Is the Operator | Strong (3) | Partial (2) | Partial (2) | Partial (2) | Strong (3) | Partial (2) |
-| Moving Determinism Boundary | Partial (2) | Strong (3) | Partial (2) | Limited (1) | Limited (1) | Limited (1) |
-| SOP as Operational Control Plane | Strong (3) | Partial (2) | Limited (1) | Strong (3) | Partial (2) | Limited (1) |
-| Outcome Evidence | Partial (2) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
-| Evolution Routing | Partial (2) | Strong (3) | Partial (2) | Partial (2) | Limited (1) | Partial (2) |
-| Persistent Operational Learning | Strong (3) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
-| Compounding Reuse | Strong (3) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
+| **Principle 1: Autonomy Is Bounded by Human Authority** | Limited (1) | None (0) | Partial (2) | None (0) | Limited (1) | None (0) |
+| **Principle 2: AI Is the Operator, Not Merely the Assistant** | Strong (3) | Partial (2) | Partial (2) | Partial (2) | Strong (3) | Partial (2) |
+| **Principle 3: Work Is Distributed Across a Moving Determinism Boundary** | Partial (2) | Strong (3) | Partial (2) | Limited (1) | Limited (1) | Limited (1) |
+| **Principle 4: The SOP Is an Operational Control Plane** | Strong (3) | Partial (2) | Limited (1) | Strong (3) | Partial (2) | Limited (1) |
+| **Principle 5: Execution Must Produce Outcome Evidence** | Partial (2) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
+| **Principle 6: Failure Determines Where the System Evolves** | Partial (2) | Strong (3) | Partial (2) | Partial (2) | Limited (1) | Partial (2) |
+| **Principle 7: Learning Must Change a Persistent Operational Asset** | Strong (3) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
+| **Principle 8: Improvement Must Compound Through Reuse** | Strong (3) | Strong (3) | Strong (3) | Strong (3) | Partial (2) | Strong (3) |
 | **Total Score** | **19/24 (79.2%)** | **19/24 (79.2%)** | **18/24 (75.0%)** | **17/24 (70.8%)** | **14/24 (58.3%)** | **15/24 (62.5%)** |
 
 ## Human-Authority Scoring Notes
 
-The first principle is scored against the AI Flywheel's full concept of bounded autonomy, not merely whether a human appears somewhere in the workflow.
+**Principle 1: Autonomy Is Bounded by Human Authority** is scored against the AI Flywheel's full concept of bounded autonomy, not merely whether a human appears somewhere in the workflow.
 
 ### GenericAgent — Limited (1)
 
@@ -105,7 +105,7 @@ The stronger question is whether another framework explicitly combines all of th
 - bidirectional movement across the determinism boundary,
 - and compounding reuse of the improved operating system.
 
-These questions are examined most directly in the [Human Authority dossier](../principles/01-human-authority.md), [Moving Determinism Boundary dossier](../principles/03-moving-determinism-boundary.md), and [Evolution Routing dossier](../principles/06-evolution-routing.md).
+These questions are examined most directly in the [Principle 1: Autonomy Is Bounded by Human Authority research dossier](../principles/01-human-authority.md), [Principle 3: Work Is Distributed Across a Moving Determinism Boundary research dossier](../principles/03-moving-determinism-boundary.md), and [Principle 6: Failure Determines Where the System Evolves research dossier](../principles/06-evolution-routing.md).
 
 ## Framework Dossiers
 
