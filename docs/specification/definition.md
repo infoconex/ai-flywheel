@@ -4,15 +4,15 @@
 
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
-A human authorizes the Flywheel to operate and defines the boundaries of that authority. Once authorized, the AI operates autonomously within those boundaries until it reaches a condition requiring human judgment or human approval.
+A human authorizes the Flywheel to operate and defines the limits of that authority. Once authorized, the AI operates on its own within those limits until it reaches a condition requiring human judgment or approval.
 
 During execution, the system combines three operating mechanisms:
 
 1. **Deterministic capability** for work that can be performed reliably and repeatably through code or other deterministic tools.
 2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed, how capabilities should be used, how known conditions should be handled, and when escalation is required.
-3. **AI reasoning** for interpretation, orchestration, judgment, adaptation, ambiguity resolution, and conditions that cannot yet be reliably reduced to deterministic behavior.
+3. **AI reasoning** for interpretation, orchestration, judgment, adaptation, ambiguity, and conditions that cannot yet be handled reliably through deterministic behavior.
 
-These mechanisms are not sequential lifecycle stages. They participate in execution together. After execution produces evidence, the Flywheel evaluates what happened and determines where any resulting learning should persist.
+These mechanisms are not sequential lifecycle stages. They work together during execution. After execution produces evidence, the Flywheel evaluates what happened and determines where any resulting learning should persist.
 
 The core cycle is:
 
@@ -20,18 +20,18 @@ The core cycle is:
 
 Governance applies throughout that cycle. It determines whether an action is authorized, requires human approval, requires human judgment, or is prohibited.
 
-The result is a compounding system in which repeated execution progressively improves reliability, capability, efficiency, and appropriately bounded autonomy.
+The result is a compounding system in which repeated execution improves reliability, capability, efficiency, and safely bounded autonomy over time.
 
 ## Human Authority and Governance
 
 Human authority establishes the scope within which the Flywheel may operate. That authority should be expressed through a persistent **Governance Policy** defining:
 
-- the actions the AI may perform autonomously,
-- the changes the AI may make autonomously,
+- the actions the AI may perform on its own,
+- the changes the AI may make on its own,
 - decisions requiring human approval,
 - conditions requiring human judgment,
 - prohibited actions,
-- applicable risk or consequence thresholds,
+- applicable risk or impact thresholds,
 - and escalation requirements.
 
 Human authority is not a fourth execution layer. It is the source of governance over the system.
@@ -42,13 +42,13 @@ The governing relationship is:
 
 ### Uncertainty Boundary
 
-The AI should request human judgment when available evidence is insufficient, contradictory, or too ambiguous to support a responsible decision.
+The AI should request human judgment when the available evidence is not enough, is contradictory, or is too unclear to support a responsible decision.
 
-The **Uncertainty Boundary** is an evidence-based escalation boundary. Its purpose is to prevent the system from manufacturing certainty when it does not know enough.
+The **Uncertainty Boundary** is an evidence-based escalation boundary. Its purpose is to prevent the system from pretending to be certain when it does not know enough.
 
 ### Authority Boundary
 
-The AI should request human approval when it can identify a preferred action or improvement but has not been granted authority to make that decision or change autonomously.
+The AI should request human approval when it can identify a preferred action or improvement but has not been given authority to make that decision or change on its own.
 
 A core governance rule is:
 
@@ -60,7 +60,7 @@ The Flywheel may become more conservative by escalating more often when unexpect
 
 ### Governance Policy
 
-The Governance Policy defines what the Flywheel is permitted to do and when human authority must be invoked. The SOP may not override the Governance Policy.
+The Governance Policy defines what the Flywheel is allowed to do and when human authority must be involved. The SOP may not override the Governance Policy.
 
 ### Procedural SOP
 
@@ -72,7 +72,7 @@ AI reasoning interprets the situation, follows and applies the SOP, orchestrates
 
 ### Deterministic Capability
 
-Deterministic code and tools perform stable, repeatable, testable operations when the problem is sufficiently understood.
+Deterministic code and tools perform stable, repeatable, testable operations when the problem is understood well enough.
 
 For a visual explanation of these runtime relationships, see the [Core Operating Model](../architecture/operating-model.md) and [Runtime Architecture](../architecture/runtime-view.md).
 
@@ -94,17 +94,17 @@ This distinction is important: deterministic code, procedural SOP, and AI reason
 
 ## The Moving Determinism Boundary
 
-The boundary among deterministic capability, procedural guidance, and AI reasoning is intentionally dynamic.
+The boundary among deterministic capability, procedural guidance, and AI reasoning can move as the system learns.
 
-A recurring judgment may become a procedural rule. A stable procedure may become deterministic code. A brittle deterministic rule may move back into procedure or AI reasoning when the environment proves more variable than expected.
+A recurring judgment may become a procedural rule. A stable procedure may become deterministic code. A brittle deterministic rule may move back into procedure or AI reasoning when the environment is more variable than expected.
 
 The **Moving Determinism Boundary** therefore asks:
 
-> **Where should this responsibility live so that it is handled as reliably as possible without unnecessarily removing adaptability?**
+> **Where should this responsibility live so that it is handled as reliably as possible without removing flexibility that is still needed?**
 
 ## The Two Core Structural Boundaries
 
-The AI Flywheel manages two core structural boundaries that answer different architectural questions. The Uncertainty Boundary described above is a separate evidence-based escalation condition.
+The AI Flywheel manages two core structural boundaries that answer different questions. The Uncertainty Boundary described above is a separate evidence-based escalation condition.
 
 ### Moving Determinism Boundary
 
@@ -112,9 +112,9 @@ Determines **where work and learning belong** among deterministic capability, pr
 
 ### Authority Boundary
 
-Determines **what the AI is permitted to decide, execute, change, or persist autonomously**.
+Determines **what the AI is allowed to decide, execute, change, or persist on its own**.
 
-The determinism boundary can move as the system learns. The authority boundary is governed by humans. The uncertainty boundary determines when available evidence is insufficient for responsible autonomous judgment.
+The determinism boundary can move as the system learns. The authority boundary is governed by humans. The uncertainty boundary determines when the available evidence is not enough for responsible AI judgment.
 
 ## Related Specification Documents
 
