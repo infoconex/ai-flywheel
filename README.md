@@ -32,6 +32,14 @@ Future work may include:
 
 The first repository release is intended to publish the **AI Flywheel Specification 0.1 — Draft** as a coherent working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
 
+## Origin and Formalization
+
+The ideas that became the AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were formally organized into the named AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
+
+These dates describe different milestones: January 2026 marks the beginning of concept development, July 2026 marks formalization of the methodology, and the planned `v0.1.0` release marks its first formal public specification release.
+
+See [AI Flywheel History and Provenance](docs/history.md) for the development timeline and the distinction between concept origin, formalization, and public release.
+
 ## Why AI Flywheel?
 
 AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
@@ -126,6 +134,7 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
 
 - [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, terminology, governance model, and conformance assessment.
+- [AI Flywheel History and Provenance](docs/history.md) — The development timeline from concept development through formalization and public release.
 - [Core Operating Model](docs/architecture/operating-model.md) — One view showing how human authority, governance, runtime mechanisms, learning, persistence, and reuse fit together.
 - [Worked Example: Software Maintenance Flywheel](docs/examples/software-maintenance-flywheel.md) — A complete execution-to-reuse example, including movement across the Moving Determinism Boundary.
 - [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
