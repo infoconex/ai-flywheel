@@ -22,15 +22,15 @@ A conforming implementation must satisfy these requirements:
 
 Within its authorized scope, the AI may:
 
-- follow and interpret the SOP,
-- invoke existing tools and deterministic capabilities,
-- create new capabilities when needed and authorized,
-- reason between tool calls,
-- inspect execution results,
-- recover from known failures,
-- gather more evidence,
-- request human judgment or approval when required,
-- and propose or apply authorized improvements to persistent operational assets.
+- Follow and interpret the SOP
+- Invoke existing tools and deterministic capabilities
+- Create new capabilities when needed and authorized
+- Reason between tool calls
+- Inspect execution results
+- Recover from known failures
+- Gather more evidence
+- Request human judgment or approval when required
+- Propose or apply authorized improvements to persistent operational assets
 
 The exact capabilities available depend on the implementation and Governance Policy.
 
@@ -57,20 +57,20 @@ Human authority remains above AI operation:
 
 Evidence supporting this principle may include:
 
-- execution traces showing the AI directly invoking tools or capabilities,
-- examples of the AI continuing through multiple steps without routine human handoffs,
-- records of exception handling or recovery performed by the AI,
-- examples of AI-created capabilities later invoked by AI,
-- and escalation records showing that humans are involved because of defined authority or uncertainty boundaries rather than normal process continuation.
+- Execution traces showing the AI directly invoking tools or capabilities
+- Examples of the AI continuing through multiple steps without routine human handoffs
+- Records of exception handling or recovery performed by the AI
+- Examples of AI-created capabilities later invoked by AI
+- Escalation records showing that humans are involved because of defined authority or uncertainty boundaries rather than normal process continuation
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when the AI primarily:
 
-- writes instructions that a human must routinely carry out,
-- generates code that only a human operates as part of the normal process,
-- stops after every action for unnecessary human continuation,
-- or provides advice while the actual operating process remains human-owned.
+- Writes instructions that a human must routinely carry out
+- Generates code that only a human operates as part of the normal process
+- Stops after every action for unnecessary human continuation
+- Provides advice while the actual operating process remains human-owned
 
 ## Relationships to Other Principles
 
