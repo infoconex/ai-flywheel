@@ -1,5 +1,7 @@
 # AI Flywheel Specification
 
+![AI Flywheel Specification](../assets/specification.png)
+
 > **Specification Version:** 0.1 — Draft
 
 This section contains the canonical definition of the AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
