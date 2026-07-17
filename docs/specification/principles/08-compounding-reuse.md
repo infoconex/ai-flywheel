@@ -93,11 +93,11 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 7](07-persistent-learning.md) ensures improvements survive long enough to be reused.
-- [Principle 6](06-evolution-routing.md) helps place learning in the mechanism best suited for repeated use.
-- [Principle 3](03-moving-determinism-boundary.md) allows repeated experience to improve where responsibility resides.
-- [Principle 5](05-outcome-evidence.md) ensures reused improvements continue to be evaluated against actual outcomes.
-- [Principle 1](01-human-authority.md) ensures compounding capability does not become uncontrolled authority expansion.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) ensures improvements survive long enough to be reused.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) helps place learning in the mechanism best suited for repeated use.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) allows repeated experience to improve where responsibility resides.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) ensures reused improvements continue to be evaluated against actual outcomes.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) ensures compounding capability does not become uncontrolled authority expansion.
 
 ## Principle Navigation
 
