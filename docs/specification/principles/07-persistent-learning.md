@@ -24,16 +24,16 @@ A conforming implementation must satisfy these requirements:
 
 A lesson may become:
 
-- improved code,
-- a new tool or deterministic capability,
-- a modification to an existing capability,
-- an SOP update,
-- a known-failure rule,
-- a new validation check,
-- durable reasoning guidance,
-- a reusable example or heuristic,
-- a persistent memory or knowledge asset,
-- or an approved Governance Policy change.
+- Improved code
+- A new tool or deterministic capability
+- A modification to an existing capability
+- An SOP update
+- A known-failure rule
+- A new validation check
+- Durable reasoning guidance
+- A reusable example or heuristic
+- A persistent memory or knowledge asset
+- An approved Governance Policy change
 
 The storage technology is up to the implementation. The requirement is that the learning be durable and available to the future process that needs it.
 
@@ -66,23 +66,23 @@ Future evidence may show that an asset should be refined, replaced, rolled back,
 
 Evidence supporting this principle may include:
 
-- durable code, SOP, validation, reasoning, knowledge, or governance changes produced from earlier execution,
-- examples showing that persisted learning remains available after the original context ends,
-- retrieval or invocation mechanisms that make the asset available to future operation,
-- scope or applicability information attached to learned assets,
-- validation and authorization records for persisted changes,
-- and examples of persistent assets later being refined, replaced, rolled back, or moved in response to new evidence.
+- Durable code, SOP, validation, reasoning, knowledge, or governance changes produced from earlier execution
+- Examples showing that persisted learning remains available after the original context ends
+- Retrieval or invocation mechanisms that make the asset available to future operation
+- Scope or applicability information attached to learned assets
+- Validation and authorization records for persisted changes
+- Examples of persistent assets later being refined, replaced, rolled back, or moved in response to new evidence
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- lessons disappear with the current context window,
-- observations are archived but never turned into reusable guidance,
-- raw conversation history is stored but future execution cannot use it,
-- improvements cannot be retrieved or applied by future executions,
-- persisted learning is activated without required validation or authority,
-- or lessons are applied outside the context where they are valid.
+- Lessons disappear with the current context window
+- Observations are archived but never turned into reusable guidance
+- Raw conversation history is stored but future execution cannot use it
+- Improvements cannot be retrieved or applied by future executions
+- Persisted learning is activated without required validation or authority
+- Lessons are applied outside the context where they are valid
 
 ## Relationships to Other Principles
 
