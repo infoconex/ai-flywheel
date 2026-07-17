@@ -1,10 +1,10 @@
 # Governance and Escalation
 
-Governance and escalation are related but distinct architectural concerns.
+Governance and escalation are related but different parts of the architecture.
 
 **Governance** defines the boundaries before and during operation. It answers what the AI may do, what it may change, what requires approval, what is prohibited, and when uncertainty must be escalated.
 
-**Escalation** is the runtime mechanism used when the Flywheel reaches one of those boundaries.
+**Escalation** is what happens when the Flywheel reaches one of those boundaries.
 
 ```mermaid
 flowchart TD
@@ -27,19 +27,19 @@ A meaningful proposed action or decision should resolve to one of four outcomes.
 
 ### Authorized
 
-The AI understands the action and has authority to perform it. The Flywheel continues autonomously.
+The AI understands the action and has authority to perform it. The Flywheel continues on its own.
 
 ### Approval Required
 
-The AI can determine the preferred action but does not have authority to perform it autonomously. The Flywheel requests human permission.
+The AI can determine the preferred action but does not have authority to perform it on its own. The Flywheel requests human permission.
 
 ### Judgment Required
 
-The available evidence is insufficient, contradictory, or too ambiguous for a responsible autonomous decision. The Flywheel requests human judgment.
+The available evidence is not enough, is contradictory, or is too unclear for a responsible AI decision. The Flywheel requests human judgment.
 
 ### Prohibited
 
-The Governance Policy explicitly prevents the action. The Flywheel does not execute it. Changing the governing restriction requires an authorized governance change rather than simply treating the restriction as an ordinary approval request.
+The Governance Policy prevents the action. The Flywheel does not execute it. Changing that restriction requires an authorized governance change rather than treating it as a normal approval request.
 
 ## The Governance Policy
 
@@ -49,17 +49,17 @@ The Governance Policy is the persistent, human-authorized contract that defines 
 - approval requirements,
 - escalation conditions,
 - prohibited actions,
-- risk or consequence thresholds,
+- risk or impact thresholds,
 - authority to change operational assets,
 - and who or what role may authorize particular decisions.
 
-The Governance Policy sits above the SOP in the control hierarchy. The SOP describes how work should be performed; the Governance Policy defines what the Flywheel is permitted to decide, execute, change, or persist while performing that work.
+The Governance Policy sits above the SOP. The SOP describes how work should be performed; the Governance Policy defines what the Flywheel is allowed to decide, execute, change, or persist while performing that work.
 
 The SOP cannot override the Governance Policy.
 
 ## Authority and Uncertainty
 
-Escalation can be triggered for two fundamentally different reasons.
+Escalation can happen for two different reasons.
 
 ### Authority Boundary
 
@@ -83,9 +83,9 @@ A core governance rule is:
 
 The Flywheel may become more conservative on its own by escalating more often when unexpected risk is discovered. Expanding authority requires human authorization.
 
-Human decisions should also become evidence when appropriate. Repeated approvals or judgments may reveal opportunities to improve the SOP, create better classification rules, add deterministic capabilities, or propose changes to delegated authority.
+Human decisions should also become evidence when appropriate. Repeated approvals or judgments may reveal opportunities to improve the SOP, create better classification rules, add deterministic capabilities, or propose changes to the AI's authority.
 
-Where practical, escalation should pause only the affected decision or action. Other work that remains authorized should continue independently rather than unnecessarily stopping the entire Flywheel.
+Where practical, escalation should pause only the affected decision or action. Other authorized work should continue rather than unnecessarily stopping the entire Flywheel.
 
 ## Related Documents
 
