@@ -8,17 +8,17 @@ A system does not meaningfully improve if every lesson disappears when the curre
 
 When execution produces a reusable lesson, that learning should change something durable that future executions can actually use.
 
-## Normative Requirements
+## Requirements
 
-A conforming implementation must satisfy the following requirements:
+A conforming implementation must satisfy these requirements:
 
 - Reusable learning survives the current execution in a durable operational asset.
 - The persistent asset matches the type of learning identified through classification and evolution routing.
-- Saving raw logs, conversations, or historical records alone does not satisfy persistence unless the resulting knowledge becomes operationally available to future execution.
-- Persistent learning is scoped with enough context to avoid applying lessons where they are not valid.
-- Improvements are validated appropriately before becoming part of future operation.
+- Saving raw logs, conversations, or historical records alone does not satisfy persistence unless the resulting knowledge becomes available to future operation.
+- Persistent learning includes enough context to avoid applying lessons where they do not belong.
+- Improvements are validated before becoming part of future operation.
 - The system must be authorized to persist the change.
-- Persistent assets remain revisable, replaceable, reversible, or movable when later evidence shows that the current form is no longer appropriate.
+- Persistent assets can be revised, replaced, rolled back, invalidated, or moved when later evidence shows that the current form is no longer appropriate.
 
 ## Operational Model
 
@@ -32,22 +32,22 @@ A lesson may become:
 - a new validation check,
 - durable reasoning guidance,
 - a reusable example or heuristic,
-- a persistent memory or knowledge artifact,
+- a persistent memory or knowledge asset,
 - or an approved Governance Policy change.
 
-The specific storage technology is implementation-dependent. The requirement is that the learning be durable and available to the future process that needs it.
+The storage technology is up to the implementation. The requirement is that the learning be durable and available to the future process that needs it.
 
 ### Persistence Is More Than Storage
 
-Saving information is not the same as making it operational.
+Saving information is not the same as making it useful to future execution.
 
-A lesson in a log becomes useful when it is converted into guidance the system can retrieve or apply. A repeated workaround becomes useful when it is added to the SOP. A stable procedure becomes useful when it is implemented as a reusable capability. A human judgment becomes useful when it is captured as durable guidance or an authorized policy change.
+A lesson in a log becomes useful when it is turned into guidance the system can retrieve or apply. A repeated workaround becomes useful when it is added to the SOP. A stable procedure becomes useful when it is implemented as a reusable capability. A human judgment becomes useful when it is captured as durable guidance or an authorized policy change.
 
 ### Learning Should Be Scoped Appropriately
 
-Persistent learning should carry enough context to determine where it is valid, such as a particular process, customer, environment, tool, failure class, or governance scope.
+Persistent learning should carry enough context to show where it applies, such as a particular process, customer, environment, tool, failure class, or governance scope.
 
-Overgeneralized learning can make the Flywheel worse rather than better.
+Applying a lesson too broadly can make the Flywheel worse instead of better.
 
 ### Persistent Does Not Mean Permanent
 
@@ -55,18 +55,18 @@ Future evidence may show that an asset should be refined, replaced, rolled back,
 
 ## Lifecycle Relationship
 
-- **Observe through Classify:** execution evidence is interpreted and a reusable lesson is identified.
-- **Adapt:** the system creates or proposes the appropriate improvement.
-- **Validate:** the candidate improvement is tested before activation.
-- **Persist:** validated and authorized learning changes a durable operational asset.
-- **Reuse:** future executions retrieve or apply that asset.
-- **Later cycles:** new evidence may refine, replace, invalidate, roll back, or relocate the persisted learning.
+- **Observe through Classify:** Execution evidence is interpreted and a reusable lesson is identified.
+- **Adapt:** The system creates or proposes the appropriate improvement.
+- **Validate:** The candidate improvement is tested before activation.
+- **Persist:** Validated and authorized learning changes a durable operational asset.
+- **Reuse:** Future executions retrieve or apply that asset.
+- **Later cycles:** New evidence may refine, replace, invalidate, roll back, or move the persisted learning.
 
 ## Evidence of Implementation
 
 Evidence supporting this principle may include:
 
-- durable code, SOP, validation, reasoning, knowledge, or governance changes produced from prior execution,
+- durable code, SOP, validation, reasoning, knowledge, or governance changes produced from earlier execution,
 - examples showing that persisted learning remains available after the original context ends,
 - retrieval or invocation mechanisms that make the asset available to future operation,
 - scope or applicability information attached to learned assets,
@@ -78,11 +78,11 @@ Evidence supporting this principle may include:
 This principle is not satisfied when:
 
 - lessons disappear with the current context window,
-- observations are archived but never converted into reusable operational guidance,
-- raw conversation history is stored but future execution cannot operationally use it,
+- observations are archived but never turned into reusable guidance,
+- raw conversation history is stored but future execution cannot use it,
 - improvements cannot be retrieved or applied by future executions,
 - persisted learning is activated without required validation or authority,
-- or lessons are applied indiscriminately outside the context in which they are valid.
+- or lessons are applied outside the context where they are valid.
 
 ## Relationships to Other Principles
 
