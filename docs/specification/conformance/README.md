@@ -1,5 +1,7 @@
 # AI Flywheel Conformance
 
+![AI Flywheel Conformance](../../assets/conformance.png)
+
 Conformance determines whether an implementation satisfies the AI Flywheel specification.
 
 The conformance section does not define the methodology on its own. The requirements come from the [Formal Definition](../definition.md), [Principles](../principles/README.md), and [Lifecycle](../lifecycle/README.md). Conformance turns those requirements into a practical assessment based on observable evidence.
