@@ -6,18 +6,18 @@ The AI Flywheel learns from observed results rather than AI confidence alone.
 
 A Flywheel cannot improve responsibly if it cannot determine what actually happened.
 
-Execution must therefore produce enough grounded evidence to distinguish an intended outcome from an apparent or assumed success and to support later evaluation, classification, adaptation, and validation.
+Execution must therefore produce enough grounded evidence to distinguish a real outcome from an assumed success and to support later evaluation, classification, adaptation, and validation.
 
-## Normative Requirements
+## Requirements
 
-A conforming implementation must satisfy the following requirements:
+A conforming implementation must satisfy these requirements:
 
-- Every meaningful execution produces evidence sufficient to evaluate what actions were taken, what results were produced, and whether the intended outcome occurred.
-- Evidence is sufficient to identify failures, unexpected behavior, violated assumptions, partial success, or unresolved uncertainty when they occur.
+- Every meaningful execution produces enough evidence to evaluate what actions were taken, what results were produced, and whether the intended outcome occurred.
+- Evidence is sufficient to identify failures, unexpected behavior, broken assumptions, partial success, or unresolved uncertainty when they occur.
 - Task completion, lack of an exception, or AI confidence alone are not treated as proof of success.
 - Independent or externally grounded validation signals are used where practical.
 - Failures and unexpected results are preserved as learning inputs rather than discarded after retry or recovery.
-- Material human approvals, judgments, corrections, or contextual decisions are preserved as evidence when they affect the process or contain reusable learning.
+- Important human approvals, judgments, corrections, or context are preserved as evidence when they affect the process or contain reusable learning.
 
 ## Operational Model
 
@@ -33,27 +33,27 @@ Outcome evidence may include:
 - state changes,
 - user feedback,
 - human approvals or judgments,
-- and comparisons against explicit success criteria.
+- and comparisons against clear success criteria.
 
-The appropriate evidence depends on the process, but the system should be able to distinguish the intended result from a merely plausible result.
+The right evidence depends on the process, but the system should be able to tell the difference between the intended result and a result that merely looks plausible.
 
 ### Evidence Must Be Grounded in the Outcome
 
-Where possible, the result should be checked against an independent signal, such as verifying that a file was actually created, confirming that a remote system accepted a change, running tests after modifying code, checking that a message was delivered, comparing measured output against expected criteria, or obtaining human judgment when an outcome cannot be evaluated automatically.
+Where possible, the result should be checked against an independent signal. Examples include verifying that a file was actually created, confirming that a remote system accepted a change, running tests after modifying code, checking that a message was delivered, comparing measured output against expected criteria, or asking for human judgment when an outcome cannot be evaluated automatically.
 
 ### Failures and Human Decisions Are Evidence
 
-Errors, exceptions, rejected actions, unexpected outputs, unsuccessful validations, and material human decisions may reveal weaknesses in deterministic capability, procedure, AI reasoning, validation, governance, or responsibility allocation.
+Errors, exceptions, rejected actions, unexpected outputs, failed validations, and important human decisions may reveal weaknesses in deterministic capability, procedure, AI reasoning, validation, governance, or responsibility placement.
 
-The evidence becomes the factual basis for deciding what the system should learn rather than allowing adaptation to be driven by assumption.
+The evidence becomes the basis for deciding what the system should learn instead of allowing adaptation to be driven by assumption.
 
 ## Lifecycle Relationship
 
-- **Execute:** actions, outputs, decisions, and state changes generate the raw material for evidence.
-- **Observe:** the system captures the evidence produced by execution.
-- **Evaluate:** evidence is compared with intended outcomes and success criteria.
-- **Classify:** the evidence helps identify the nature and likely source of a weakness or learning opportunity.
-- **Adapt and Validate:** the same evidence may motivate a change and help determine whether the proposed improvement works.
+- **Execute:** Actions, outputs, decisions, and state changes create the raw material for evidence.
+- **Observe:** The system captures the evidence produced by execution.
+- **Evaluate:** Evidence is compared with intended outcomes and success criteria.
+- **Classify:** The evidence helps identify the type and likely source of a weakness or learning opportunity.
+- **Adapt and Validate:** The same evidence may motivate a change and help determine whether the proposed improvement works.
 
 The relationship is:
 
@@ -64,11 +64,11 @@ The relationship is:
 Evidence supporting this principle may include:
 
 - execution logs and tool outputs,
-- explicit success criteria and validation results,
+- clear success criteria and validation results,
 - independent checks of external state or outcomes,
 - records showing preservation of failures and unexpected results,
 - examples distinguishing verified success, partial success, failure, and unresolved uncertainty,
-- and records of material human decisions captured as part of the execution evidence.
+- and records of important human decisions captured as part of the execution evidence.
 
 ## Non-Conforming Patterns
 
@@ -76,10 +76,10 @@ This principle is not satisfied when:
 
 - success is inferred only because the AI says the task succeeded,
 - reaching the final step is treated as proof of the intended outcome,
-- lack of an exception is treated as sufficient validation,
+- lack of an exception is treated as enough validation,
 - failures are discarded after a retry and cannot inform later learning,
 - evidence is too incomplete to determine what actually occurred,
-- or material human decisions affecting the process leave no usable record.
+- or important human decisions affecting the process leave no usable record.
 
 ## Relationships to Other Principles
 
