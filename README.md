@@ -12,23 +12,23 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 The current documentation includes:
 
-- the canonical AI Flywheel definition,
-- eight normative principles,
-- the eight-stage lifecycle,
-- human-authority, governance, and boundary models,
-- an evidence-based conformance assessment,
-- architecture views of runtime, learning, governance, boundaries, and the complete operating model,
-- a complete worked example,
-- canonical terminology,
-- and prior-art and framework-comparison research.
+- The canonical AI Flywheel definition
+- Eight normative principles
+- The eight-stage lifecycle
+- Human authority, governance, and boundary models
+- An evidence-based conformance assessment
+- Architecture views of runtime, learning, governance, boundaries, and the complete operating model
+- A complete worked example
+- Canonical terminology
+- Prior-art and framework-comparison research
 
 Future work may include:
 
-- additional worked examples,
-- implementation guidance,
-- a reference implementation,
-- conformance evaluation tooling,
-- and continued prior-art research.
+- Additional worked examples
+- Implementation guidance
+- A reference implementation
+- Conformance evaluation tooling
+- Continued prior-art research
 
 The first repository release is intended to publish the **AI Flywheel Specification 0.1 — Draft** as a coherent working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
 
