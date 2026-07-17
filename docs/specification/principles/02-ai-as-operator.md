@@ -1,21 +1,21 @@
 # Principle 2: AI Is the Operator, Not Merely the Assistant
 
-The AI Flywheel is designed around AI performing the operational work itself rather than only producing instructions for a human to execute.
+The AI Flywheel is built around AI performing the work itself rather than only producing instructions for a human to execute.
 
 ## Purpose
 
-Traditional AI assistance often stops at recommendation or generation: the AI writes code, suggests a procedure, or analyzes a problem, and a human then performs the work.
+Traditional AI assistance often stops at a recommendation or generated output: the AI writes code, suggests a procedure, or analyzes a problem, and a human then performs the work.
 
-The AI Flywheel changes that relationship. The AI becomes the operator of the process and carries execution forward within its delegated authority.
+The AI Flywheel changes that relationship. The AI becomes the operator of the process and carries execution forward within the authority it has been given.
 
-## Normative Requirements
+## Requirements
 
-A conforming implementation must satisfy the following requirements:
+A conforming implementation must satisfy these requirements:
 
-- AI performs meaningful operational work rather than only advising a human operator.
+- AI performs meaningful work rather than only advising a human operator.
 - AI directly participates in execution by interpreting procedure, invoking capabilities, reasoning between actions, and interpreting results.
 - Once authorized, the AI can continue the process without routine human participation until an escalation condition is reached.
-- The AI owns execution continuity within its delegated authority, including handling exceptions, gathering more evidence, recovering from known failures, or escalating when required.
+- The AI owns execution continuity within its authority, including handling exceptions, gathering more evidence, recovering from known failures, or escalating when required.
 - Routine operation must not depend on a human manually carrying out each instruction or generated artifact.
 
 ## Operational Model
@@ -28,7 +28,7 @@ Within its authorized scope, the AI may:
 - reason between tool calls,
 - inspect execution results,
 - recover from known failures,
-- gather additional evidence,
+- gather more evidence,
 - request human judgment or approval when required,
 - and propose or apply authorized improvements to persistent operational assets.
 
@@ -36,7 +36,7 @@ The exact capabilities available depend on the implementation and Governance Pol
 
 ### Execution Continuity
 
-The AI should not stop simply because one deterministic action fails. It should use available evidence and procedural guidance to determine the next appropriate action, including whether to retry, use a different capability, reason through an exception, gather more evidence, escalate, or classify the failure for later adaptation.
+The AI should not stop simply because one deterministic action fails. It should use the available evidence and procedural guidance to determine the next action. That may mean retrying, using another capability, reasoning through an exception, gathering more evidence, escalating, or classifying the failure for later improvement.
 
 The stronger operating pattern is:
 
@@ -48,20 +48,20 @@ Human authority remains above AI operation:
 
 ## Lifecycle Relationship
 
-- **Execute:** this principle is most directly expressed here; AI performs and carries forward the operational process.
-- **Observe:** because the AI operates the process, execution evidence is directly available to the system responsible for later learning.
-- **Evaluate and Classify:** the AI interprets outcomes and identifies what should happen next.
-- **Adapt through Reuse:** the same operating system that performs work can participate in improving and later reusing the capabilities and guidance it depends on.
+- **Execute:** This principle is most directly expressed here; AI performs and carries forward the process.
+- **Observe:** Because the AI operates the process, execution evidence is directly available to the system responsible for later learning.
+- **Evaluate and Classify:** The AI interprets outcomes and identifies what should happen next.
+- **Adapt through Reuse:** The same operating system that performs work can help improve and later reuse the capabilities and guidance it depends on.
 
 ## Evidence of Implementation
 
 Evidence supporting this principle may include:
 
 - execution traces showing the AI directly invoking tools or capabilities,
-- examples of the AI continuing through multiple operational steps without routine human handoffs,
+- examples of the AI continuing through multiple steps without routine human handoffs,
 - records of exception handling or recovery performed by the AI,
 - examples of AI-created capabilities later invoked by AI,
-- and escalation records showing that human involvement occurs because of defined authority or uncertainty boundaries rather than normal process continuation.
+- and escalation records showing that humans are involved because of defined authority or uncertainty boundaries rather than normal process continuation.
 
 ## Non-Conforming Patterns
 
@@ -75,7 +75,7 @@ This principle is not satisfied when the AI primarily:
 ## Relationships to Other Principles
 
 - [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) defines the authority within which AI operation occurs.
-- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) defines how work performed by the AI is distributed among reasoning, procedure, and deterministic capability.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) defines how work performed by the AI is divided among reasoning, procedure, and deterministic capability.
 - [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) provides the persistent procedure the AI uses to operate.
 - [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) ensures execution produces evidence that can drive learning.
 - [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) depends on the AI actually reusing improved operational assets in later work.
