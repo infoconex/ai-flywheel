@@ -81,12 +81,12 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 1](01-human-authority.md) places the Governance Policy above the SOP.
-- [Principle 2](02-ai-as-operator.md) describes the AI directly consuming and applying the procedure.
-- [Principle 3](03-moving-determinism-boundary.md) determines when responsibility should remain procedural or move elsewhere.
-- [Principle 5](05-outcome-evidence.md) supplies the evidence that can expose procedural weaknesses.
-- [Principle 6](06-evolution-routing.md) determines when a correction belongs in the SOP.
-- [Principle 7](07-persistent-learning.md) requires useful procedural learning to survive the current execution.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) places the Governance Policy above the SOP.
+- [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md) describes the AI directly consuming and applying the procedure.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) determines when responsibility should remain procedural or move elsewhere.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) supplies the evidence that can expose procedural weaknesses.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines when a correction belongs in the SOP.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) requires useful procedural learning to survive the current execution.
 
 ## Principle Navigation
 
