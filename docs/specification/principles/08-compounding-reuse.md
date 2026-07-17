@@ -6,18 +6,18 @@ The output of one Flywheel cycle becomes part of the operating system of the nex
 
 Persistent learning creates value only when future execution actually uses it.
 
-The AI Flywheel is designed so validated and authorized improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to accumulate over time.
+The AI Flywheel is designed so validated and authorized improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to improve over time.
 
-## Normative Requirements
+## Requirements
 
-A conforming implementation must satisfy the following requirements:
+A conforming implementation must satisfy these requirements:
 
 - Later executions inherit relevant validated and authorized improvements from earlier executions.
-- Persisted improvements are operationally reused rather than merely stored.
-- Reuse is context-aware so lessons are applied only where they remain relevant and authorized.
-- The system can demonstrate that prior learning changed later operational behavior.
+- Persisted improvements are actually used rather than merely stored.
+- Reuse considers context so lessons are applied only where they remain relevant and authorized.
+- The system can demonstrate that earlier learning changed later behavior.
 - Repeated execution should reduce unnecessary repeated reasoning, repeated failures, unnecessary tool exploration, or unnecessary human escalation when validated reusable learning already exists.
-- Capability may compound, but delegated authority does not expand without human authorization.
+- Capability may improve over time, but authority does not expand without human authorization.
 
 ## Operational Model
 
@@ -45,26 +45,26 @@ The value is not merely that the system knows more. The system should become bet
 
 When a problem has already been solved reliably, the Flywheel should not force the AI to rediscover the same answer on every execution.
 
-Stable learning should move into the mechanism best suited to reuse it. Over time, the system should reduce repeated problem-solving, repeated failures, unnecessary tool exploration, unnecessary AI reasoning, and unnecessary human escalation.
+Stable learning should move into the mechanism best suited to reuse it. Over time, the system should reduce repeated problem solving, repeated failures, unnecessary tool exploration, unnecessary AI reasoning, and unnecessary human escalation.
 
-### Reuse Must Remain Context-Aware
+### Reuse Must Match the Situation
 
 A previously successful improvement should be reused only when it applies to the current situation.
 
-Compounding depends on **correct reuse**, not indiscriminate reuse.
+Compounding depends on **correct reuse**, not using every lesson everywhere.
 
 ### Governance Must Compound Safely
 
 Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself. New evidence may also justify reducing autonomy or increasing escalation when risk or uncertainty increases.
 
-Capability can compound without allowing authority to expand uncontrolled.
+Capability can improve over time without allowing authority to expand on its own.
 
 ## Lifecycle Relationship
 
-- **Persist:** validated and authorized improvements become durable operational assets.
-- **Reuse:** later execution retrieves, invokes, or applies those improvements.
-- **Execute:** the improved operating system becomes the new starting state.
-- **Observe through Validate:** later evidence determines whether reused improvements remain effective and whether further adaptation is justified.
+- **Persist:** Validated and authorized improvements become durable operational assets.
+- **Reuse:** Later execution retrieves, invokes, or applies those improvements.
+- **Execute:** The improved operating system becomes the new starting state.
+- **Observe through Validate:** Later evidence determines whether reused improvements remain effective and whether more adaptation is justified.
 
 Reuse closes the lifecycle and creates the compounding behavior that gives the AI Flywheel its name.
 
@@ -76,7 +76,7 @@ Evidence supporting this principle may include:
 - updated SOP guidance being applied in future operation,
 - stronger validation or failure-handling rules affecting later behavior,
 - durable reasoning knowledge being retrieved and used,
-- repeated human decisions being converted into reusable guidance where appropriate,
+- repeated human decisions being turned into reusable guidance where appropriate,
 - measurable reductions in repeated failure, reasoning effort, cost, latency, or unnecessary human intervention,
 - and concrete examples showing that later behavior changed because of learning from earlier execution.
 
@@ -88,16 +88,16 @@ This principle is not satisfied when:
 - each execution starts effectively from zero,
 - the system repeatedly solves the same known problem from scratch,
 - the same avoidable failure or human escalation recurs despite validated reusable learning,
-- lessons are reused outside the context in which they are valid,
+- lessons are reused outside the context where they are valid,
 - or capability growth is treated as permission for the AI to expand its own authority.
 
 ## Relationships to Other Principles
 
 - [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) ensures improvements survive long enough to be reused.
 - [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) helps place learning in the mechanism best suited for repeated use.
-- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) allows repeated experience to improve where responsibility resides.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) allows repeated experience to improve where responsibility lives.
 - [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) ensures reused improvements continue to be evaluated against actual outcomes.
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) ensures compounding capability does not become uncontrolled authority expansion.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) ensures improving capability does not become uncontrolled authority expansion.
 
 ## Principle Navigation
 
