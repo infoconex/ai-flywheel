@@ -80,11 +80,11 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 3](03-moving-determinism-boundary.md) defines where responsibility can reside; this principle determines where a specific learning should be applied.
-- [Principle 5](05-outcome-evidence.md) provides the evidence required for responsible classification and routing.
-- [Principle 7](07-persistent-learning.md) ensures the selected correction becomes a durable operational asset.
-- [Principle 1](01-human-authority.md) governs adaptations that affect authority or protected operational assets.
-- [Principle 8](08-compounding-reuse.md) depends on correctly routed improvements being inherited by future execution.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) defines where responsibility can reside; this principle determines where a specific learning should be applied.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) provides the evidence required for responsible classification and routing.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) ensures the selected correction becomes a durable operational asset.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) governs adaptations that affect authority or protected operational assets.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) depends on correctly routed improvements being inherited by future execution.
 
 ## Principle Navigation
 
