@@ -74,11 +74,11 @@ This principle is not satisfied when the AI primarily:
 
 ## Relationships to Other Principles
 
-- [Principle 1](01-human-authority.md) defines the authority within which AI operation occurs.
-- [Principle 3](03-moving-determinism-boundary.md) defines how work performed by the AI is distributed among reasoning, procedure, and deterministic capability.
-- [Principle 4](04-sop-control-plane.md) provides the persistent procedure the AI uses to operate.
-- [Principle 5](05-outcome-evidence.md) ensures execution produces evidence that can drive learning.
-- [Principle 8](08-compounding-reuse.md) depends on the AI actually reusing improved operational assets in later work.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) defines the authority within which AI operation occurs.
+- [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) defines how work performed by the AI is distributed among reasoning, procedure, and deterministic capability.
+- [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) provides the persistent procedure the AI uses to operate.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) ensures execution produces evidence that can drive learning.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) depends on the AI actually reusing improved operational assets in later work.
 
 ## Principle Navigation
 
