@@ -82,11 +82,11 @@ This principle is not satisfied when:
 
 ## Relationships to Other Principles
 
-- [Principle 2](02-ai-as-operator.md) describes the AI operating across these mechanisms.
-- [Principle 4](04-sop-control-plane.md) defines the procedural mechanism in more detail.
-- [Principle 6](06-evolution-routing.md) determines where a particular learning should be applied and can therefore move the boundary.
-- [Principle 7](07-persistent-learning.md) makes a changed responsibility allocation durable.
-- [Principle 8](08-compounding-reuse.md) allows improved allocations to benefit later execution.
+- [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md) describes the AI operating across these mechanisms.
+- [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) defines the procedural mechanism in more detail.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines where a particular learning should be applied and can therefore move the boundary.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) makes a changed responsibility allocation durable.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) allows improved allocations to benefit later execution.
 
 ## Principle Navigation
 
