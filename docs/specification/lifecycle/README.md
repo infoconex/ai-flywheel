@@ -41,14 +41,28 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 
 ## Lifecycle Stages
 
-1. [Execute](01-execute.md) — Perform the work using procedural guidance, AI reasoning, and deterministic capabilities.
-2. [Observe](02-observe.md) — Capture evidence about what actually occurred during execution.
-3. [Evaluate](03-evaluate.md) — Compare observed outcomes with intended outcomes and success criteria.
-4. [Classify](04-classify.md) — Identify the nature of a weakness or learning opportunity and ask where the learning should live.
-5. [Adapt](05-adapt.md) — Apply or propose the improvement appropriate to the classification.
-6. [Validate](06-validate.md) — Test the proposed improvement before trusting it for future use.
-7. [Persist](07-persist.md) — Store validated and authorized learning in a durable operational asset.
-8. [Reuse](08-reuse.md) — Begin future executions with the improved operating system.
+1. [Stage 1: Execute](01-execute.md) — Perform the work using procedural guidance, AI reasoning, and deterministic capabilities.
+2. [Stage 2: Observe](02-observe.md) — Capture evidence about what actually occurred during execution.
+3. [Stage 3: Evaluate](03-evaluate.md) — Compare observed outcomes with intended outcomes and success criteria.
+4. [Stage 4: Classify](04-classify.md) — Identify the nature of a weakness or learning opportunity and ask where the learning should live.
+5. [Stage 5: Adapt](05-adapt.md) — Apply or propose the improvement appropriate to the classification.
+6. [Stage 6: Validate](06-validate.md) — Test the proposed improvement before trusting it for future use.
+7. [Stage 7: Persist](07-persist.md) — Store validated and authorized learning in a durable operational asset.
+8. [Stage 8: Reuse](08-reuse.md) — Begin future executions with the improved operating system.
+
+## Lifecycle Document Structure
+
+Each lifecycle stage uses the same core structure so readers can answer a predictable set of questions:
+
+- **Purpose** — Why does this stage exist?
+- **Inputs** — What must be available when the stage begins?
+- **Required Behavior** — What must or should happen during the stage?
+- **Outputs** — What does the stage produce for the next stage or future execution?
+- **Governance Considerations** — How do authority, approval, prohibition, or human judgment affect this stage?
+- **Failure and Exit Conditions** — When can the stage advance, loop back, pause, or escalate?
+- **Relationships to Principles** — Which named principles are expressed most directly by this stage?
+
+The lifecycle pages explain when required behaviors occur. The linked principle pages remain the primary source for principle-level normative requirements.
 
 ## The Flywheel Effect
 
@@ -61,6 +75,8 @@ A mature AI Flywheel should reduce repeated reasoning, repeated failure, and unn
 ## Related Documents
 
 - [Formal Definition](../definition.md)
+- [Terminology](../terminology.md)
 - [Principles](../principles/README.md)
-- [Conformance Criteria](../conformance/README.md)
-- [Architecture and Diagrams](../../architecture/README.md)
+- [Conformance](../conformance/README.md)
+- [Core Operating Model](../../architecture/operating-model.md)
+- [Worked Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
