@@ -8,20 +8,26 @@ The diagram is explanatory rather than independently normative. Canonical requir
 flowchart TD
     H[Human Authority] --> G[Governance Policy]
 
-    G --> X
+    G --> START
     G -. constrains adaptation .-> A
     G -. authorizes persistence .-> P
 
-    subgraph X[Execute]
+    subgraph EXECUTE[Execute]
+        START[Authorized Execution Begins]
         SOP[Procedural Guidance / SOP]
         AI[AI Reasoning]
         DC[Deterministic Capability]
+        OUT[Execution Outcome]
+
+        START --> SOP
         SOP <--> AI
         AI <--> DC
         SOP -. governs use .-> DC
+        AI --> OUT
+        DC --> OUT
     end
 
-    X --> O[Observe]
+    OUT --> O[Observe]
     O --> E[Evaluate]
     E --> C[Classify]
 
@@ -42,7 +48,7 @@ flowchart TD
     A --> V[Validate]
     V --> P[Persist]
     P --> R[Reuse]
-    R --> X
+    R --> START
 
     V -. failed validation becomes evidence .-> C
     C -. may move responsibility across .-> MDB[Moving Determinism Boundary]
@@ -120,14 +126,15 @@ Validated and authorized learning changes a durable operational asset. Later exe
 
 This relationship is defined by [Principle 7: Learning Must Change a Persistent Operational Asset](../specification/principles/07-persistent-learning.md) and [Principle 8: Improvement Must Compound Through Reuse](../specification/principles/08-compounding-reuse.md).
 
-## Two Boundaries, Two Different Questions
+## Core Boundary Questions
 
-The model contains two boundaries that should not be confused:
+The model uses three boundary questions that should not be confused:
 
 - The **Moving Determinism Boundary** asks: **Where should responsibility live?**
 - The **Authority Boundary** asks: **What may the AI do autonomously?**
+- The **Uncertainty Boundary** asks: **Is the available evidence sufficient for the AI to decide responsibly?**
 
-The **Uncertainty Boundary** adds a third operational question: **Is the available evidence sufficient for the AI to decide responsibly?**
+The first two are core structural boundaries. The Uncertainty Boundary is an evidence-based escalation boundary.
 
 See [Core Boundaries](boundaries.md) for the detailed relationship.
 
