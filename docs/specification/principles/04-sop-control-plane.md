@@ -24,15 +24,15 @@ A conforming implementation must satisfy these requirements:
 
 A useful AI Flywheel SOP may contain:
 
-- process objectives and success criteria,
-- normal execution flow,
-- available deterministic capabilities and how to use them,
-- known conditions and exceptions,
-- known failure-handling procedures,
-- expected evidence and logging,
-- validation requirements,
-- conditions requiring AI judgment,
-- and escalation conditions.
+- Process objectives and success criteria
+- Normal execution flow
+- Available deterministic capabilities and how to use them
+- Known conditions and exceptions
+- Known failure-handling procedures
+- Expected evidence and logging
+- Validation requirements
+- Conditions requiring AI judgment
+- Escalation conditions
 
 ### Relationship to AI Reasoning
 
@@ -63,21 +63,21 @@ When the right correction is procedural, the SOP should be updated so future exe
 
 Evidence supporting this principle may include:
 
-- a persistent SOP, runbook, procedure, or equivalent machine-consumable operational asset,
-- proof that the AI directly accesses that guidance during execution,
-- documented normal paths, known exceptions, evidence expectations, validation, or escalation rules,
-- execution examples showing that known procedure is reused across separate contexts,
-- and examples of execution learning producing durable procedural updates.
+- A persistent SOP, runbook, procedure, or equivalent machine-consumable operational asset
+- Proof that the AI directly accesses that guidance during execution
+- Documented normal paths, known exceptions, evidence expectations, validation, or escalation rules
+- Execution examples showing that known procedure is reused across separate contexts
+- Examples of execution learning producing durable procedural updates
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- process knowledge exists only in temporary conversation history,
-- the AI must rediscover the same known procedure on every execution,
-- procedural guidance is unavailable to future operation,
-- the procedure is only human documentation that the operating AI does not use,
-- or the procedure can override governance restrictions.
+- Process knowledge exists only in temporary conversation history
+- The AI must rediscover the same known procedure on every execution
+- Procedural guidance is unavailable to future operation
+- The procedure is only human documentation that the operating AI does not use
+- The procedure can override governance restrictions
 
 ## Relationships to Other Principles
 
