@@ -1,5 +1,7 @@
 # AI Flywheel Research
 
+![AI Flywheel Research](../assets/research.png)
+
 This section contains supporting research used to examine the AI Flywheel in relation to established ideas, frameworks, and prior art. It is analytical material rather than part of the canonical specification.
 
 The research is organized in two complementary directions: by AI Flywheel principle and by related framework.
