@@ -1,12 +1,36 @@
 # AI Flywheel
 
-> **Status:** Early definition and working specification. The methodology and supporting research will evolve as the model is tested, refined, and compared with related work.
+> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`. The methodology and supporting research will continue to evolve as the model is tested, refined, and compared with related work.
 
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 > **A loop repeats. A flywheel compounds.**
 
 ![AI Flywheel lifecycle](docs/assets/ai-flywheel-2.png)
+
+## Project Status
+
+The current documentation includes:
+
+- the canonical AI Flywheel definition,
+- eight normative principles,
+- the eight-stage lifecycle,
+- human-authority, governance, and boundary models,
+- an evidence-based conformance assessment,
+- architecture views of runtime, learning, governance, boundaries, and the complete operating model,
+- a complete worked example,
+- canonical terminology,
+- and prior-art and framework-comparison research.
+
+Future work may include:
+
+- additional worked examples,
+- implementation guidance,
+- a reference implementation,
+- conformance evaluation tooling,
+- and continued prior-art research.
+
+The first repository release is intended to publish the **AI Flywheel Specification 0.1 — Draft** as a coherent working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
 
 ## Why AI Flywheel?
 
@@ -101,7 +125,9 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 
 Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
 
-- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, governance model, and conformance assessment.
+- [AI Flywheel Specification](docs/specification/README.md) — The canonical definition, principles, lifecycle, terminology, governance model, and conformance assessment.
+- [Core Operating Model](docs/architecture/operating-model.md) — One view showing how human authority, governance, runtime mechanisms, learning, persistence, and reuse fit together.
+- [Worked Example: Software Maintenance Flywheel](docs/examples/software-maintenance-flywheel.md) — A complete execution-to-reuse example, including movement across the Moving Determinism Boundary.
 - [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
 - [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
 
