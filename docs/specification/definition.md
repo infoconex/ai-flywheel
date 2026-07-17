@@ -44,7 +44,7 @@ The governing relationship is:
 
 The AI should request human judgment when available evidence is insufficient, contradictory, or too ambiguous to support a responsible decision.
 
-The purpose of the uncertainty boundary is to prevent the system from manufacturing certainty when it does not know enough.
+The **Uncertainty Boundary** is an evidence-based escalation boundary. Its purpose is to prevent the system from manufacturing certainty when it does not know enough.
 
 ### Authority Boundary
 
@@ -74,7 +74,7 @@ AI reasoning interprets the situation, follows and applies the SOP, orchestrates
 
 Deterministic code and tools perform stable, repeatable, testable operations when the problem is sufficiently understood.
 
-For a visual explanation of these runtime relationships, see the [architecture overview](../architecture/README.md).
+For a visual explanation of these runtime relationships, see the [Core Operating Model](../architecture/operating-model.md) and [Runtime Architecture](../architecture/runtime-view.md).
 
 ## Learning Destinations
 
@@ -102,9 +102,9 @@ The **Moving Determinism Boundary** therefore asks:
 
 > **Where should this responsibility live so that it is handled as reliably as possible without unnecessarily removing adaptability?**
 
-## The Two Boundaries
+## The Two Core Structural Boundaries
 
-The AI Flywheel manages two fundamentally different boundaries.
+The AI Flywheel manages two core structural boundaries that answer different architectural questions. The Uncertainty Boundary described above is a separate evidence-based escalation condition.
 
 ### Moving Determinism Boundary
 
@@ -114,14 +114,16 @@ Determines **where work and learning belong** among deterministic capability, pr
 
 Determines **what the AI is permitted to decide, execute, change, or persist autonomously**.
 
-The determinism boundary can move as the system learns. The authority boundary is governed by humans.
+The determinism boundary can move as the system learns. The authority boundary is governed by humans. The uncertainty boundary determines when available evidence is insufficient for responsible autonomous judgment.
 
 ## Related Specification Documents
 
 - [Specification Overview](README.md)
+- [Terminology](terminology.md)
 - [Principles](principles/README.md)
 - [Lifecycle](lifecycle/README.md)
-- [Conformance Criteria](conformance/README.md)
+- [Conformance](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
+- [Worked Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
 
 For comparative research, see the [research section](../research/README.md).
