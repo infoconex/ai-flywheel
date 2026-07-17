@@ -2,9 +2,9 @@
 
 ![AI Flywheel Examples](../assets/examples.png)
 
-This section contains worked examples showing how the AI Flywheel specification can be applied to concrete operational processes.
+This section contains worked examples showing how the AI Flywheel specification can be applied to real operating processes.
 
-Examples are explanatory rather than normative. The canonical requirements remain in the [AI Flywheel Specification](../specification/README.md).
+Examples help explain the methodology but do not add new requirements. The requirements remain in the [AI Flywheel Specification](../specification/README.md).
 
 ## Examples
 
@@ -12,7 +12,7 @@ Examples are explanatory rather than normative. The canonical requirements remai
 
 ## How to Read the Examples
 
-A complete example should make the following distinctions visible:
+A complete example should make the following clear:
 
 - what humans authorize,
 - what the AI operates,
@@ -21,9 +21,9 @@ A complete example should make the following distinctions visible:
 - what requires AI reasoning,
 - what outcome evidence is collected,
 - how weaknesses are classified,
-- where improvements are routed,
-- how adaptations are validated and authorized,
+- where improvements are sent,
+- how changes are validated and authorized,
 - what persists,
 - and how later execution reuses the improved operating system.
 
-The purpose is not to prescribe one implementation architecture. It is to make the relationships defined by the specification concrete.
+The purpose is not to require one implementation architecture. It is to show how the parts of the specification work together in practice.
