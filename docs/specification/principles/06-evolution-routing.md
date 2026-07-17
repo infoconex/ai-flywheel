@@ -44,9 +44,9 @@ This prevents the system from solving every recurring problem with more AI reaso
 
 Examples include:
 
-- **AI reasoning → SOP** when a recurring judgment becomes a known procedure,
-- **SOP → deterministic capability** when a stable procedure becomes reliably automatable,
-- and **deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle.
+- **AI reasoning → SOP** when a recurring judgment becomes a known procedure
+- **SOP → deterministic capability** when a stable procedure becomes reliably automatable
+- **Deterministic capability → SOP or AI reasoning** when evidence shows that a hard-coded assumption is too brittle
 
 ## Lifecycle Relationship
 
@@ -60,23 +60,23 @@ Examples include:
 
 Evidence supporting this principle may include:
 
-- classified failures or learning opportunities with identified causes,
-- examples in which different lessons produced different destinations,
-- records showing why a correction was placed in code, procedure, reasoning guidance, validation, or governance,
-- examples of responsibility moving across the Moving Determinism Boundary,
-- and validation results for proposed changes before persistence or reuse.
+- Classified failures or learning opportunities with identified causes
+- Examples in which different lessons produced different destinations
+- Records showing why a correction was placed in code, procedure, reasoning guidance, validation, or governance
+- Examples of responsibility moving across the Moving Determinism Boundary
+- Validation results for proposed changes before persistence or reuse
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- every failure produces the same response,
-- the system only retries without diagnosis,
-- every lesson is stored only as memory,
-- every failure is treated only as a code defect,
-- every weakness becomes additional prompt text,
-- learning is persisted without determining what part of the system should own it,
-- or the system has no intentional way to move responsibility when the current placement is wrong.
+- Every failure produces the same response
+- The system only retries without diagnosis
+- Every lesson is stored only as memory
+- Every failure is treated only as a code defect
+- Every weakness becomes additional prompt text
+- Learning is persisted without determining what part of the system should own it
+- The system has no intentional way to move responsibility when the current placement is wrong
 
 ## Relationships to Other Principles
 
