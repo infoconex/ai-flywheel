@@ -22,6 +22,6 @@ The documentation intentionally separates four questions:
 
 The canonical specification should be understandable without reference to any competing or predecessor framework. Comparative claims belong in the research collection and should be backed by primary sources before being treated as conclusions.
 
-Whenever a principle is referenced, include both its number and full canonical name. For example, use **Principle 1: Autonomy Is Bounded by Human Authority**, not `Principle 1` or `P1`. This convention applies equally to prose, tables, diagrams, navigation, and related-document lists.
+Whenever a principle is referenced by number, include its full canonical name. For example, use **Principle 1: Autonomy Is Bounded by Human Authority**, not `Principle 1` or `P1`. This convention applies equally to prose, tables, diagrams, navigation, and related-document lists. A principle name may stand alone when the name itself is the clear reference.
 
 Every documentation folder should contain a `README.md`. When a folder represents a single topic, the topic should be contained directly in that `README.md`. When a folder contains multiple documents, its `README.md` should summarize the section and provide a table of contents using standard Markdown links.
