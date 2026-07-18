@@ -1,26 +1,34 @@
 .brand__logo {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
   overflow: hidden;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
 }
 
 .brand__logo img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 34px;
+  height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  margin: 0;
   object-fit: cover;
 }
 
 @media (max-width: 640px) {
+  .brand__logo,
+  .brand__logo img {
+    width: 30px;
+    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
   .brand__logo {
-    width: 36px;
-    height: 36px;
-    flex-basis: 36px;
+    flex-basis: 30px;
   }
 }
