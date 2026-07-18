@@ -34,7 +34,7 @@ Canonical sources: [Principle 3: Work Is Distributed Across a Moving Determinism
 
 ## Operational Procedure
 
-14. Does a persistent SOP or equivalent procedure exist?
+14. Does a persistent Standard Operating Procedure (SOP) or equivalent procedure exist?
 15. Does it define how work should be performed and how known exceptions should be handled?
 16. Does it identify available capabilities, evidence expectations, validation, and escalation conditions where appropriate?
 17. Is the SOP subordinate to the Governance Policy?

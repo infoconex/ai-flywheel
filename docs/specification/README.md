@@ -6,7 +6,7 @@
 
 This section contains the official definition of the AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
-The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The planned first repository release is `v0.1.0`, containing **AI Flywheel Specification 0.1 — Draft**.
+The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **AI Flywheel Specification 0.1 — Draft**.
 
 ## Requirement Language
 
@@ -35,19 +35,19 @@ The eight principles and eight-stage lifecycle define the current structure, but
 ## Table of Contents
 
 - [Formal Definition](definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the core boundaries.
-- [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Principles](principles/README.md) — Defines the eight principles of an AI Flywheel, with a dedicated page for each principle.
 - [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied throughout.
 - [Conformance](conformance/README.md) — Provides an evidence-based way to determine whether an implementation satisfies the specification.
+- [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Architecture and Diagrams](../architecture/README.md) — Shows the complete operating model, runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
-- [Worked Examples](../examples/README.md) — Shows how the specification can be applied to real operating processes without adding new requirements.
+- [End-to-End Examples](../examples/README.md) — Shows how the specification can be applied to real operating processes without adding new requirements.
 
 ## Conceptual Model
 
 The specification separates four ideas that should not be treated as one sequence:
 
 1. **Human authority and governance** define the boundaries within which the Flywheel may operate.
-2. **Procedural SOP, AI reasoning, and deterministic capability** work together during execution.
+2. **Procedural guidance, expressed through a Standard Operating Procedure (SOP), AI reasoning, and deterministic capability** work together during execution.
 3. **The Flywheel lifecycle** turns execution evidence into validated and persistent learning.
 4. **The Moving Determinism Boundary** determines where learned responsibility should live, while the **Authority Boundary** determines what the AI is allowed to decide or change on its own.
 

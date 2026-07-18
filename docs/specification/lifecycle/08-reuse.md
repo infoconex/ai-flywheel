@@ -1,6 +1,6 @@
 # Stage 8: Reuse
 
-Future executions begin with the improved operating system created by previous Flywheel cycles.
+Future executions begin with the improved operating state created by previous Flywheel cycles.
 
 ## Purpose
 
@@ -12,10 +12,10 @@ Persistence creates durable assets. Reuse makes those assets useful by ensuring 
 
 Reuse receives:
 
-- validated and authorized persistent improvements from [Stage 7: Persist](07-persist.md),
-- the context in which each improvement is valid,
-- the current Governance Policy,
-- and a new authorized execution where earlier learning may be relevant.
+- Validated and authorized persistent improvements from [Stage 7: Persist](07-persist.md)
+- The context in which each improvement is valid
+- The current Governance Policy
+- A new authorized execution where earlier learning may be relevant
 
 ## Required Behavior
 
@@ -23,12 +23,12 @@ Later executions should inherit relevant improvements rather than rediscovering 
 
 Reusable improvements may include:
 
-- better deterministic capabilities,
-- improved SOP guidance,
-- stronger validation,
-- durable reasoning knowledge,
-- better failure handling,
-- and human-authorized governance changes.
+- Better deterministic capabilities
+- Improved Standard Operating Procedure (SOP) guidance
+- Stronger validation
+- Durable reasoning knowledge
+- Better failure handling
+- Human-authorized governance changes
 
 Reuse must match the current situation. A previously successful lesson should be applied only where it remains relevant, valid, and authorized.
 
@@ -40,16 +40,16 @@ Reuse produces an improved starting state for the next [Stage 1: Execute](01-exe
 
 The resulting pattern is:
 
-**better execution → better evidence → better learning → better operating assets → better future execution**
+**Better execution → better evidence → better learning → better operating assets → better future execution**
 
 Successful reuse may appear as:
 
-- fewer repeated failures,
-- less unnecessary reasoning,
-- less repeated tool exploration,
-- stronger validation,
-- more reliable capability use,
-- or less unnecessary human escalation.
+- Fewer repeated failures
+- Less unnecessary reasoning
+- Less repeated tool exploration
+- Stronger validation
+- More reliable capability use
+- Less unnecessary human escalation
 
 ## Governance Considerations
 
@@ -63,11 +63,11 @@ Previously authorized learning must also be reused within its current scope. A c
 
 The Flywheel should not reuse an improvement when:
 
-- its context no longer applies,
-- later evidence has invalidated it,
-- required authorization is no longer present,
-- the asset cannot be reliably retrieved or executed,
-- or reuse would create unacceptable uncertainty or risk.
+- Its context no longer applies
+- Later evidence has invalidated it
+- Required authorization is no longer present
+- The asset cannot be reliably retrieved or executed
+- Reuse would create unacceptable uncertainty or risk
 
 When reused behavior produces new evidence showing that the improvement is weak, stale, or in the wrong place, the new execution begins another Flywheel cycle rather than treating persisted learning as permanently correct.
 
@@ -89,4 +89,4 @@ When reused behavior produces new evidence showing that the improvement is weak,
 
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [Worked Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)

@@ -18,13 +18,13 @@ The approach continued to evolve through experimentation and repeated use.
 
 During this period, several parts of the model became clearer:
 
-- AI should operate the process rather than only assist a human.
-- Deterministic capability, procedural guidance, and AI reasoning serve different roles.
-- Execution evidence should be used to judge what actually happened.
-- Failures and lessons should help decide where the system needs to improve.
-- Useful learning should survive the current execution.
-- Reuse is what allows improvements to compound over time.
-- Human authority should define the limits around autonomous operation and self-improvement.
+- AI should operate the process rather than only assist a human
+- Deterministic capability, procedural guidance, and AI reasoning serve different roles
+- Execution evidence should be used to judge what actually happened
+- Failures and lessons should help decide where the system needs to improve
+- Useful learning should survive the current execution
+- Reuse is what allows improvements to compound over time
+- Human authority should define the limits around autonomous operation and self-improvement
 
 The terms and formal structure used by the current specification were not fixed during this period. They developed as the underlying ideas were refined.
 
@@ -32,23 +32,23 @@ The terms and formal structure used by the current specification were not fixed 
 
 In July 2026, the accumulated ideas were organized into the named **AI Flywheel** methodology and developed into a structured set of documentation.
 
-The formal documentation introduced a definition, eight named principles, an eight-stage lifecycle, a governance and boundary model, a conformance assessment, architecture views, worked examples, and supporting prior-art research.
+The formal documentation introduced a definition, eight named principles, an eight-stage lifecycle, a governance and boundary model, a conformance assessment, architecture views, an end-to-end example, and supporting prior-art research.
 
 This marks the point when the methodology was formally organized and documented, not the beginning of the underlying ideas.
 
-### July 2026 — Specification 0.1 Draft Prepared for Public Release
+### July 2026 — Specification 0.1 Published
 
-The first formal specification was prepared as **AI Flywheel Specification 0.1 — Draft**, with the first repository release planned as `v0.1.0`.
+The first formal specification was published as **AI Flywheel Specification 0.1 — Draft** in the `v0.1.0` repository release.
 
-The 0.1 designation reflects that the methodology is being released as a working specification that can continue to improve through implementation experience, public review, and continued research.
+The 0.1 designation reflects that the methodology was released as a working specification that can continue to improve through implementation experience, public review, and continued research.
 
 ## Interpreting These Dates
 
 The dates on this page represent different milestones:
 
-- **January 2026 — Origin of concept development:** The underlying ideas began being developed and refined.
-- **July 2026 — Formalization:** The ideas were organized into the named AI Flywheel methodology and specification structure.
-- **First `v0.1.0` publication — First formal public release:** The first intentionally released version of the documented methodology.
+- **January 2026 — Origin of concept development:** The underlying ideas began being developed and refined
+- **July 2026 — Formalization:** The ideas were organized into the named AI Flywheel methodology and specification structure
+- **`v0.1.0` publication — First formal public release:** The first intentionally released version of the documented methodology
 
 ## Related Documents
 

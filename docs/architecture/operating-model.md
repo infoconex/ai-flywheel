@@ -4,6 +4,8 @@ This view shows the complete AI Flywheel operating model in one place: human aut
 
 The diagram is explanatory. The actual requirements are defined by the [AI Flywheel Specification](../specification/README.md).
 
+In the diagram, **SOP** means **Standard Operating Procedure**.
+
 ```mermaid
 flowchart TD
     H[Human Authority] --> G[Governance Policy]
@@ -76,9 +78,9 @@ This relationship is defined by [Principle 1: Autonomy Is Bounded by Human Autho
 
 Execution combines:
 
-- **deterministic capability** for stable repeatable behavior,
-- **procedural guidance** for persistent direction,
-- and **AI reasoning** for interpretation, orchestration, judgment, and ambiguity.
+- **Deterministic capability** for stable repeatable behavior
+- **Procedural guidance** for persistent direction
+- **AI reasoning** for interpretation, orchestration, judgment, and ambiguity
 
 These are not three lifecycle stages. They are operating mechanisms used together while the AI performs the work.
 
@@ -116,9 +118,9 @@ A proposed improvement must be validated before it is trusted for future reuse, 
 
 A change may:
 
-- validate successfully but still require human approval,
-- be authorized in principle but fail validation,
-- or be prohibited even if it is technically possible.
+- Validate successfully but still require human approval
+- Be authorized in principle but fail validation
+- Be prohibited even if it is technically possible
 
 ### Persistence and Reuse Create the Flywheel Effect
 
@@ -144,4 +146,4 @@ See [Core Boundaries](boundaries.md) for the detailed relationship.
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [Worked Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
+- [End-to-End Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)

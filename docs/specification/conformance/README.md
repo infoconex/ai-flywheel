@@ -17,7 +17,7 @@ A complete conformance review evaluates the operating model across ten areas tak
 | **1. Human Authority** | [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) | Human-defined authority boundaries govern autonomous operation, and the AI cannot grant itself more authority. |
 | **2. AI Operation** | [Principle 2: AI Is the Operator, Not Merely the Assistant](../principles/02-ai-as-operator.md), [Stage 1: Execute](../lifecycle/01-execute.md) | AI performs meaningful work rather than only producing instructions for a human operator. |
 | **3. Runtime Responsibilities** | [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md), [Runtime Architecture](../../architecture/runtime-view.md) | Deterministic capability, procedural guidance, and AI reasoning have clear and intentional roles. |
-| **4. Persistent Operational Procedure** | [Principle 4: The SOP Is an Operational Control Plane](../principles/04-sop-control-plane.md) | Durable machine-consumable guidance directs how work is performed and remains subject to governance. |
+| **4. Persistent Operational Procedure** | [Principle 4: The SOP Is an Operational Control Plane](../principles/04-sop-control-plane.md) | A durable Standard Operating Procedure (SOP) or equivalent machine-consumable guidance directs how work is performed and remains subject to governance. |
 | **5. Outcome Evidence** | [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md), [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md) | Execution produces enough evidence to judge actual outcomes instead of relying on model confidence or completion status. |
 | **6. Evaluation and Classification** | [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) | The system determines what happened and identifies the type of weakness, uncertainty, or learning opportunity. |
 | **7. Improvement Routing** | [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Stage 5: Adapt](../lifecycle/05-adapt.md) | Learning is intentionally sent to the part of the system best suited to own it, including movement across the Moving Determinism Boundary when appropriate. |
@@ -80,4 +80,4 @@ This version does not define partial or maturity-based conformance levels. A fut
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [Worked Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)

@@ -4,7 +4,7 @@
 
 ## Research Objective
 
-Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements across code, procedure, reasoning, validation, and governed autonomy as one integrated operating system.
+Determine how existing systems reuse persistent improvements across repeated execution, whether repeated reuse measurably reduces future effort or failure, and whether any existing methodology compounds improvements across code, procedure, reasoning, validation, and governed autonomy as one integrated operating model.
 
 ## Current Evidence
 
@@ -23,15 +23,15 @@ Compounding reuse is therefore clearly established in multiple forms. The open q
 
 Research should establish dates and authoritative sources for:
 
-- learning curves and experience effects,
-- continual and lifelong agent learning,
-- reusable skill libraries,
-- case-based reasoning,
-- experience replay,
-- cumulative software automation,
-- self-improving and self-evolving agents,
-- organizational learning and compounding process improvement,
-- and systems that reduce repeated human intervention through learned delegation.
+- Learning curves and experience effects
+- Continual and lifelong agent learning
+- Reusable skill libraries
+- Case-based reasoning
+- Experience replay
+- Cumulative software automation
+- Self-improving and self-evolving agents
+- Organizational learning and compounding process improvement
+- Systems that reduce repeated human intervention through learned delegation
 
 ## Open Research Questions
 
@@ -48,17 +48,17 @@ Research should establish dates and authoritative sources for:
 
 ## Evidence Still Needed
 
-- Longitudinal studies of self-improving agents across many repeated executions.
-- Metrics for measuring accumulated operational capability rather than single-task performance.
-- Evidence comparing project-local reuse with cross-process reuse.
-- Systems that compound code, procedure, reasoning guidance, and validation together.
-- Research on regression, rollback, and negative transfer in persistent agent systems.
-- Historical establishment dates for the most relevant compounding-learning concepts.
+- Longitudinal studies of self-improving agents across many repeated executions
+- Metrics for measuring accumulated operational capability rather than single-task performance
+- Evidence comparing project-local reuse with cross-process reuse
+- Systems that compound code, procedure, reasoning guidance, and validation together
+- Research on regression, rollback, and negative transfer in persistent agent systems
+- Historical establishment dates for the most relevant compounding-learning concepts
 
 ## Current Research Position
 
 The idea that persistent learning should be reused is established prior art.
 
-The current AI Flywheel differentiation hypothesis is about **what compounds and how**: repeated execution improves the operating system itself by accumulating validated changes across multiple mechanisms while continually reconsidering where responsibility belongs and preserving human authority as capability grows.
+The current AI Flywheel differentiation hypothesis is about **what compounds and how**: repeated execution improves the operating model itself by accumulating validated changes across multiple mechanisms while continually reconsidering where responsibility belongs and preserving human authority as capability grows.
 
 The strongest evidence for or against that hypothesis will come from longitudinal comparisons with self-evolving agent frameworks rather than one-time benchmark performance.

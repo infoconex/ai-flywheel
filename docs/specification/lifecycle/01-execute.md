@@ -4,7 +4,7 @@ The AI performs the operational work using the current combination of procedural
 
 ## Purpose
 
-Execution applies the current operating system of the Flywheel to real work.
+Execution applies the current operating model of the Flywheel to real work.
 
 The AI is the operator of the process. It follows persistent procedural guidance, invokes deterministic capabilities, reasons about context and ambiguity, and carries authorized work forward without requiring a human to perform routine operational steps.
 
@@ -14,7 +14,7 @@ Execution begins with:
 
 - An authorized goal, trigger, request, event, or unit of work
 - The applicable Governance Policy
-- The current SOP or other persistent procedural guidance
+- The current Standard Operating Procedure (SOP) or other persistent procedural guidance
 - Available deterministic capabilities
 - Relevant reasoning knowledge and context
 - The current operating state inherited from prior Flywheel cycles

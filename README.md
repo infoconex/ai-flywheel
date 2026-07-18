@@ -1,42 +1,16 @@
 # AI Flywheel
 
-> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`. The methodology and supporting research will continue to evolve as the model is tested, refined, and compared with related work.
-
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 > **A loop repeats. A flywheel compounds.**
 
 ![AI Flywheel lifecycle](docs/assets/ai-flywheel-2.png)
 
-## Project Status
-
-The current documentation includes:
-
-- The AI Flywheel definition
-- Eight core principles
-- The eight-stage lifecycle
-- Human authority, governance, and boundary models
-- An evidence-based conformance assessment
-- Architecture views of runtime, learning, governance, boundaries, and the complete operating model
-- A complete worked example
-- Standard terminology
-- Prior-art and framework-comparison research
-
-Future work may include:
-
-- Additional worked examples
-- Implementation guidance
-- A reference implementation
-- Conformance evaluation tooling
-- Continued prior-art research
-
-The first repository release is intended to publish **AI Flywheel Specification 0.1 — Draft** as a working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
-
 ## Origin and Formalization
 
 The ideas that became the AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
 
-These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the planned `v0.1.0` release marks its first formal public specification release.
+These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the `v0.1.0` release marks its first formal public specification release.
 
 See [AI Flywheel History and Development](docs/history.md) for the full timeline.
 
@@ -46,7 +20,7 @@ AI-assisted work often begins with a human asking AI to create something the hum
 
 That creates a new question: what should happen when execution succeeds imperfectly, fails unexpectedly, or reveals a better way to perform the work?
 
-An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the system, validates the improvement, persists it, and reuses it in future execution.
+An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the operating model, validates the improvement, persists it, and reuses it in future execution.
 
 A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, or a proposed governance change. The next execution then begins from the improved operating state rather than starting from the same place again.
 
@@ -59,13 +33,13 @@ The lifecycle is:
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
 - **Execute** the work using procedural guidance, AI reasoning, and deterministic capabilities.
-- **Observe** evidence about what actually happened.
+- **Observe** evidence about what actually happened during execution.
 - **Evaluate** the outcome against the intended result and success criteria.
-- **Classify** the weakness, uncertainty, or learning opportunity and determine where the learning should live.
-- **Adapt** the right part of the operating system.
-- **Validate** the proposed improvement before trusting it for future use.
+- **Classify** what was learned, the source of weakness or uncertainty, and where the learning should live.
+- **Adapt** the procedure, reasoning, deterministic capability, validation, or governance needed to address what was learned.
+- **Validate** the proposed improvement to confirm that it works as intended before trusting it for future use.
 - **Persist** validated and authorized learning in a durable operational asset.
-- **Reuse** the improved system in future execution.
+- **Reuse** the improved operating state in future execution.
 
 Governance applies throughout the cycle. Human-defined authority determines whether actions and changes are authorized, require approval, require human judgment, or are prohibited.
 
@@ -73,33 +47,35 @@ Governance applies throughout the cycle. Human-defined authority determines whet
 
 An AI Flywheel is not defined by any single capability such as autonomous execution, memory, reflection, tool creation, code generation, self-modification, or feedback. These mechanisms all have substantial prior art.
 
-The main idea that may make the AI Flywheel different is how these mechanisms are combined into one operating model:
+The comparison below follows the AI Flywheel lifecycle so each stage can be evaluated consistently across different approaches:
 
-| Characteristic | Traditional Automation | Typical Agent Loop | AI Flywheel |
+| Lifecycle Stage | Traditional Automation | Typical Agent Loop | AI Flywheel |
 |---|---|---|---|
-| Executes work | Yes | Yes | Yes |
-| Uses outcome evidence | Limited | Often | Required |
-| Learns across executions | No | Sometimes | Required |
-| Persists operational learning | No | Sometimes | Required |
-| Chooses where learning should live | No | Framework-dependent | Explicit |
-| Can move responsibility among reasoning, procedure, and deterministic capability | No | Framework-dependent | Explicit |
-| Validates improvements before reuse | Release-dependent | Framework-dependent | Required |
-| Explicitly governs autonomous action and adaptation | External | Framework-dependent | Required |
-| Reuses improvements as part of the next operating state | No | Sometimes | Required |
+| **Execute** — Performs the work using procedures, reasoning, and deterministic capabilities | Yes | Yes | Required |
+| **Observe** — Captures evidence about what actually happened during execution | Possible, not inherent | Framework-dependent | Required |
+| **Evaluate** — Compares the outcome against the intended result and success criteria | Possible, not inherent | Framework-dependent | Required |
+| **Classify** — Determines what was learned, the source of weakness or uncertainty, and where the learning should live | Not inherent | Framework-dependent | Required |
+| **Adapt** — Changes the procedure, reasoning, deterministic capability, validation, or governance as needed | Release or process-dependent | Framework-dependent | Required |
+| **Validate** — Confirms that the proposed improvement works as intended before future use | Release or process-dependent | Framework-dependent | Required |
+| **Persist** — Stores validated and authorized learning in a durable operational asset | Possible, not inherent | Framework-dependent | Required |
+| **Reuse** — Uses the improved operating state in future execution | Possible, not inherent | Framework-dependent | Required |
+| **Governance** — Controls what may be executed, changed, or persisted | Usually external | Framework-dependent | Required throughout |
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
+
+> See [Conformance](docs/specification/conformance/README.md) for the requirements used to determine whether an implementation qualifies as an AI Flywheel.
 
 ## What an AI Flywheel Is Not
 
 A system does not become an AI Flywheel merely because it contains one part of the pattern.
 
 - A **retry-only loop** repeats work but does not necessarily learn from it.
-- A **memory-only agent** may retain information without changing the operational system used by future execution.
+- A **memory-only agent** may retain information without changing the operating model used by future execution.
 - A **self-modifying system** may change code without deciding whether code is the right place for the learning.
 - **Reflection alone** does not create compounding improvement unless the lesson changes a persistent operational asset that future execution can reuse.
 - **Fixed automation** can be highly reliable without having an evidence-driven mechanism for evolving itself.
 
-See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for the complete conformance distinctions.
+> See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for examples of systems that do not satisfy the requirements of an AI Flywheel.
 
 ## Core Concepts
 
@@ -116,7 +92,7 @@ The AI executes the process and can create, invoke, interpret, and improve the c
 The Flywheel combines:
 
 1. **Deterministic capability** for reliable, repeatable operations.
-2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed and when escalation is required.
+2. **Procedural guidance, expressed as a Standard Operating Procedure (SOP)**, for defining how work should be performed and when escalation is required.
 3. **AI reasoning** for orchestration, interpretation, judgment, adaptation, and ambiguity.
 
 These are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution produces evidence.
@@ -131,13 +107,37 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 
 ## Explore the Documentation
 
-Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
+New to the AI Flywheel? Start with the core specification:
 
-- [AI Flywheel Specification](docs/specification/README.md) — The definition, principles, lifecycle, terminology, governance model, and conformance assessment.
-- [AI Flywheel History and Development](docs/history.md) — The development timeline from early ideas through formalization and public release.
-- [Core Operating Model](docs/architecture/operating-model.md) — One view showing how human authority, governance, runtime mechanisms, learning, persistence, and reuse fit together.
-- [Worked Example: Software Maintenance Flywheel](docs/examples/software-maintenance-flywheel.md) — A complete execution-to-reuse example, including movement across the Moving Determinism Boundary.
-- [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
-- [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
+1. **[Definition](docs/specification/definition.md)** — Understand what an AI Flywheel is and what distinguishes it from related approaches.
+2. **[Principles](docs/specification/principles/README.md)** — Explore the eight principles that define how an AI Flywheel operates.
+3. **[Lifecycle](docs/specification/lifecycle/README.md)** — Follow the eight-stage cycle from execution through persistent reuse.
+4. **[Conformance](docs/specification/conformance/README.md)** — Evaluate whether a system meets the requirements of an AI Flywheel.
+
+Then explore the supporting material:
+
+- **[Complete Specification](docs/specification/README.md)** — Browse the full methodology, including terminology, governance, boundaries, principles, lifecycle, and conformance.
+- **[Core Operating Model](docs/architecture/operating-model.md)** — See how human authority, runtime mechanisms, governance, learning, persistence, and reuse fit together.
+- **[Architecture](docs/architecture/README.md)** — Explore detailed views of runtime, learning, governance, escalation, and system boundaries.
+- **[End-to-End Example](docs/examples/software-maintenance-flywheel.md)** — Follow a complete execution-to-reuse example in practice.
+- **[Research](docs/research/README.md)** — Review prior-art analysis, framework comparisons, and supporting research.
+- **[History and Development](docs/history.md)** — Follow the development of the methodology from its early ideas through formalization.
+- **[Documentation Index](docs/README.md)** — Browse the complete documentation structure.
 
 The specification defines the methodology. The research collection examines related ideas and how the AI Flywheel compares with them without making that research part of the specification.
+
+## Project Status and Roadmap
+
+> **Current status:** AI Flywheel Specification 0.1 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
+
+The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
+
+Future work may include:
+
+- Additional end-to-end examples
+- Implementation guidance
+- A reference implementation
+- Conformance evaluation tooling
+- Continued prior-art research
+
+Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.

@@ -43,12 +43,12 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 
 1. [Stage 1: Execute](01-execute.md) — Perform the work using procedural guidance, AI reasoning, and deterministic capabilities.
 2. [Stage 2: Observe](02-observe.md) — Capture evidence about what actually happened during execution.
-3. [Stage 3: Evaluate](03-evaluate.md) — Compare observed outcomes with intended outcomes and success criteria.
-4. [Stage 4: Classify](04-classify.md) — Identify the type of weakness or learning opportunity and ask where the learning should live.
-5. [Stage 5: Adapt](05-adapt.md) — Apply or propose the improvement that fits the classification.
-6. [Stage 6: Validate](06-validate.md) — Test the proposed improvement before trusting it for future use.
+3. [Stage 3: Evaluate](03-evaluate.md) — Compare the outcome against the intended result and success criteria.
+4. [Stage 4: Classify](04-classify.md) — Identify what was learned, the source of weakness or uncertainty, and where the learning should live.
+5. [Stage 5: Adapt](05-adapt.md) — Change the procedure, reasoning, deterministic capability, validation, or governance needed to address what was learned.
+6. [Stage 6: Validate](06-validate.md) — Confirm that the proposed improvement works as intended before trusting it for future use.
 7. [Stage 7: Persist](07-persist.md) — Store validated and authorized learning in a durable operational asset.
-8. [Stage 8: Reuse](08-reuse.md) — Begin future executions with the improved operating system.
+8. [Stage 8: Reuse](08-reuse.md) — Use the improved operating state in future execution.
 
 ## Lifecycle Document Structure
 
@@ -79,4 +79,4 @@ A mature AI Flywheel should reduce repeated reasoning, repeated failure, and unn
 - [Principles](../principles/README.md)
 - [Conformance](../conformance/README.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [Worked Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)

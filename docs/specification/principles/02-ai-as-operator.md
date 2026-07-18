@@ -22,7 +22,7 @@ A conforming implementation must satisfy these requirements:
 
 Within its authorized scope, the AI may:
 
-- Follow and interpret the SOP
+- Follow and interpret the Standard Operating Procedure (SOP)
 - Invoke existing tools and deterministic capabilities
 - Create new capabilities when needed and authorized
 - Reason between tool calls
@@ -51,7 +51,7 @@ Human authority remains above AI operation:
 - **Execute:** This principle is most directly expressed here; AI performs and carries forward the process.
 - **Observe:** Because the AI operates the process, execution evidence is directly available to the system responsible for later learning.
 - **Evaluate and Classify:** The AI interprets outcomes and identifies what should happen next.
-- **Adapt through Reuse:** The same operating system that performs work can help improve and later reuse the capabilities and guidance it depends on.
+- **Adapt through Reuse:** The same operating model that performs work can help improve and later reuse the capabilities and guidance it depends on.
 
 ## Evidence of Implementation
 

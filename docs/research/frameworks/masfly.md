@@ -10,11 +10,11 @@ No earlier official project release or implementation repository was identified 
 
 ## Research Objective
 
-Evaluate MASFly as prior art for SOP-driven multi-agent system construction, monitored execution, experience-informed adaptation, runtime intervention, and persistent reuse of successful and failed collaboration experience.
+Evaluate MASFly as prior art for Standard Operating Procedure (SOP)-driven multi-agent system construction, monitored execution, experience-informed adaptation, runtime intervention, and persistent reuse of successful and failed collaboration experience.
 
 ## Main References
 
-- [MAS-on-the-Fly: Dynamic Adaptation of LLM-based Multi-Agent Systems at Test Time](https://arxiv.org/abs/2602.13671) — Canonical paper and primary definition of MASFly.
+- [MAS-on-the-Fly: Dynamic Adaptation of Large Language Model (LLM)-based Multi-Agent Systems at Test Time](https://arxiv.org/abs/2602.13671) — Canonical paper and primary definition of MASFly.
 - [MASFly full HTML paper](https://arxiv.org/html/2602.13671) — Complete paper in navigable HTML form.
 
 No official MASFly source-code repository or standalone project website was identified in the primary paper or public repository search as of July 15, 2026.
@@ -244,7 +244,7 @@ No formal human authority or approval architecture was identified in the primary
 
 | Dimension | MASFly | AI Flywheel |
 |---|---|---|
-| Primary object of adaptation | Multi-agent organization and collaboration | Persistent operating system across code, procedure, reasoning, validation, and governance |
+| Primary object of adaptation | Multi-agent organization and collaboration | Persistent operating model across code, procedure, reasoning, validation, and governance |
 | SOP role | Generates task-specific multi-agent operation procedures | Persistent operational control plane guiding AI execution |
 | Runtime monitoring | Dedicated Watcher agent | Execution evidence plus governance and validation mechanisms |
 | Runtime intervention | Guidance and agent replacement | Any authorized operational response supported by the SOP and capabilities |

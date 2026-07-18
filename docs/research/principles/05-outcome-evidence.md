@@ -4,7 +4,7 @@
 
 ## Research Objective
 
-Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide how the operating system itself should change.
+Determine what kinds of execution evidence existing adaptive and agent systems capture, how they distinguish verified outcome from model belief, and whether evidence is used only to score performance or also to decide how the operating model itself should change.
 
 ## Current Evidence
 
@@ -23,15 +23,15 @@ Outcome feedback is therefore established prior art. The open question is whethe
 
 Research should establish authoritative sources and dates for:
 
-- feedback control and closed-loop systems,
-- observability in software systems,
-- test-driven and evidence-driven software development,
-- reinforcement signals and environment feedback in agents,
-- execution traces and trajectory learning,
-- postmortems and incident evidence,
-- verification and validation of autonomous systems,
-- confidence calibration and abstention,
-- and human judgments or approvals as structured operational evidence.
+- Feedback control and closed-loop systems
+- Observability in software systems
+- Test-driven and evidence-driven software development
+- Reinforcement signals and environment feedback in agents
+- Execution traces and trajectory learning
+- Postmortems and incident evidence
+- Verification and validation of autonomous systems
+- Confidence calibration and abstention
+- Human judgments or approvals as structured operational evidence
 
 ## Open Research Questions
 
@@ -39,7 +39,7 @@ Research should establish authoritative sources and dates for:
 2. How should evidence requirements differ by risk, consequence, and type of work?
 3. When is model self-report acceptable evidence, and when must an independent signal be required?
 4. How should partial success and uncertain outcomes be represented?
-5. Should evidence be defined before execution as part of the SOP rather than discovered afterward?
+5. Should evidence be defined before execution as part of the Standard Operating Procedure (SOP) rather than discovered afterward?
 6. How should human approvals and judgments be retained as evidence without overgeneralizing one decision?
 7. Can evidence quality itself be evaluated and improved by the Flywheel?
 8. How should conflicting evidence sources be reconciled?
@@ -47,12 +47,12 @@ Research should establish authoritative sources and dates for:
 
 ## Evidence Still Needed
 
-- Formal definitions of evidence sufficiency in autonomous and adaptive systems.
-- Research on independent validation of AI-generated actions.
-- Examples where evidence requirements are encoded in machine-consumable procedures.
-- Systems that preserve human decisions as reusable structured evidence.
-- Models that use evidence to choose among different adaptation destinations.
-- Historical establishment dates for observability and feedback concepts most directly applicable to the Flywheel.
+- Formal definitions of evidence sufficiency in autonomous and adaptive systems
+- Research on independent validation of AI-generated actions
+- Examples where evidence requirements are encoded in machine-consumable procedures
+- Systems that preserve human decisions as reusable structured evidence
+- Models that use evidence to choose among different adaptation destinations
+- Historical establishment dates for observability and feedback concepts most directly applicable to the Flywheel
 
 ## Current Research Position
 

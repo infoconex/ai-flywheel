@@ -1,6 +1,6 @@
 # Principle 4: The SOP Is an Operational Control Plane
 
-The SOP is a persistent, machine-consumable guide that tells the AI Flywheel how to perform its work.
+The Standard Operating Procedure (SOP) is a persistent, machine-consumable guide that tells the AI Flywheel how to perform its work.
 
 ## Purpose
 
