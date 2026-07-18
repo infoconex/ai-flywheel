@@ -20,6 +20,8 @@ Totals are shown as:
 
 With eight scored principles and a maximum of three points per principle, the maximum total is **24 points**.
 
+In this matrix, **SOP** means **Standard Operating Procedure**.
+
 ## Comparison Matrix
 
 | AI Flywheel Principle | GenericAgent | Metis | MOSS | MASFly | Ralph | Reflexion |
