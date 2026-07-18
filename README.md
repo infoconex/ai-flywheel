@@ -18,7 +18,7 @@ The current documentation includes:
 - Human authority, governance, and boundary models
 - An [evidence-based conformance assessment](docs/specification/conformance/README.md)
 - [Architecture views](docs/architecture/README.md) of runtime, learning, governance, boundaries, and the complete operating model
-- A [complete worked example](docs/examples/software-maintenance-flywheel.md)
+- A [complete end-to-end example](docs/examples/software-maintenance-flywheel.md)
 - [Standard terminology](docs/specification/terminology.md)
 - [Prior-art and framework-comparison research](docs/research/README.md)
 
