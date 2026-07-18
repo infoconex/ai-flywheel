@@ -1,8 +1,11 @@
 (() => {
   const body = document.body;
+  const root = document.documentElement;
   const navToggle = document.querySelector('.nav-toggle');
   const navClose = document.querySelector('[data-nav-close]');
   const navFilter = document.querySelector('#nav-filter');
+  const themePicker = document.querySelector('#theme-picker');
+  const backToTop = document.querySelector('.back-to-top');
 
   const closeNavigation = () => {
     body.classList.remove('nav-open');
@@ -54,6 +57,47 @@
 
         group.hidden = Boolean(query) && !titleMatches && !hasVisibleItem;
       });
+    });
+  }
+
+  const applyTheme = (theme) => {
+    if (theme === 'light') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    localStorage.setItem('ai-flywheel-theme', theme);
+  };
+
+  if (themePicker) {
+    const currentTheme = root.dataset.theme || 'light';
+    themePicker.value = currentTheme;
+
+    themePicker.addEventListener('change', () => {
+      applyTheme(themePicker.value);
+    });
+  }
+
+  const updateReadingProgress = () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollableHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / scrollableHeight) * 100)) : 0;
+
+    root.style.setProperty('--reading-progress', `${progress}%`);
+
+    if (backToTop) {
+      backToTop.classList.toggle('is-visible', scrollTop > 500);
+    }
+  };
+
+  window.addEventListener('scroll', updateReadingProgress, { passive: true });
+  window.addEventListener('resize', updateReadingProgress);
+  updateReadingProgress();
+
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 })();
