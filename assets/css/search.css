@@ -1,3 +1,7 @@
+.site-header__inner {
+  position: relative;
+}
+
 .site-search {
   position: absolute;
   left: 50%;
