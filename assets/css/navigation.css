@@ -1,0 +1,30 @@
+.sidebar__inner {
+  padding-top: 16px;
+}
+
+.sidebar-search {
+  margin-bottom: 14px;
+}
+
+.nav-section {
+  margin-bottom: 10px;
+}
+
+.nav-section__title {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.docs-nav ul {
+  margin-top: 2px;
+}
+
+.docs-nav li {
+  margin: 0;
+}
+
+.docs-nav li a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  line-height: 1.25;
+}
