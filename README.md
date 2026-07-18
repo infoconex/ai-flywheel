@@ -63,6 +63,8 @@ The comparison below follows the AI Flywheel lifecycle so each stage can be eval
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
 
+See [Conformance](docs/specification/conformance/README.md) for the requirements used to determine whether an implementation qualifies as an AI Flywheel.
+
 ## What an AI Flywheel Is Not
 
 A system does not become an AI Flywheel merely because it contains one part of the pattern.
@@ -73,7 +75,7 @@ A system does not become an AI Flywheel merely because it contains one part of t
 - **Reflection alone** does not create compounding improvement unless the lesson changes a persistent operational asset that future execution can reuse.
 - **Fixed automation** can be highly reliable without having an evidence-driven mechanism for evolving itself.
 
-See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for the complete conformance distinctions.
+See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for examples of systems that do not satisfy the requirements of an AI Flywheel.
 
 ## Core Concepts
 
