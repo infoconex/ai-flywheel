@@ -6,12 +6,14 @@ This section contains concrete use cases and end-to-end worked examples showing 
 
 A **use case** identifies a recurring problem where the AI Flywheel can be applied. A **worked example** shows how the Flywheel operates that use case through governance, execution, evidence, learning, improvement, persistence, and reuse.
 
+A use case may contain several supporting pages when its environment, target state, operating process, and representative scenarios require more detail.
+
 Examples help explain the methodology but do not add new requirements. The requirements remain in the [AI Flywheel Specification](../specification/README.md).
 
-## Worked Examples
+## Examples
 
 - [Software Maintenance Flywheel](software-maintenance-flywheel.md) — Applies the use case of recurring dependency maintenance across many software repositories.
-- [Consistent CI Implementation](consistent-ci-implementation.md) — Applies the use case of aligning repository standards with shared CI build templates so CI implementation remains consistent across repositories.
+- [Standards-Driven Repository Modernization](standards-driven-repository-modernization/README.md) — Describes a simulated standards-driven migration use case and demonstrates how repeated repository migrations improve profiles, validation, governance decisions, dependency planning, and deterministic tooling.
 
 ## Example Template
 
@@ -28,6 +30,8 @@ The template standardizes:
 - Human-authority outcomes
 - Conformance mapping
 - Evidence of compounding improvement
+
+A short example may keep its use case and worked example in one file. A larger example may use a folder containing a use-case package, supporting scenario pages, and a separate worked example.
 
 The template is guidance for documentation consistency. It does not add requirements to the AI Flywheel specification.
 
