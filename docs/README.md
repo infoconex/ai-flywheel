@@ -19,7 +19,7 @@ The documentation separates five questions:
 1. **What is the AI Flywheel?** See the [specification](specification/README.md).
 2. **How did the methodology develop?** See [history and development](history.md).
 3. **How does the model fit together?** See the [architecture diagrams](architecture/README.md).
-4. **What does it look like in practice?** See the [worked examples](examples/README.md).
+4. **What does it look like in practice?** See the [end-to-end examples](examples/README.md).
 5. **How does it relate to existing work?** See the [research section](research/README.md).
 
 ## Documentation Rules
