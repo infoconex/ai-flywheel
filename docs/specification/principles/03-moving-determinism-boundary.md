@@ -26,7 +26,7 @@ Code, tools, scripts, services, or other executable mechanisms should own work t
 
 ### Procedural Guidance
 
-The SOP should own repeatable operational knowledge that benefits from clear instructions but still requires orchestration, context, or flexible execution.
+The Standard Operating Procedure (SOP) should own repeatable operational knowledge that benefits from clear instructions but still requires orchestration, context, or flexible execution.
 
 ### AI Reasoning
 
