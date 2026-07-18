@@ -70,9 +70,9 @@ A framework can have a high total score while still differing in how the princip
 
 For example, a high-scoring framework may contain strong equivalents for many individual principles without combining them into the AI Flywheel's specific model of:
 
-- human-authorized autonomy with clear authority and uncertainty boundaries,
-- deterministic capability, procedural guidance, and AI reasoning as distinct but movable responsibilities,
-- and execution evidence that determines where persistent learning should live.
+- Human-authorized autonomy with clear authority and uncertainty boundaries
+- Deterministic capability, procedural guidance, and AI reasoning as distinct but movable responsibilities
+- Execution evidence that determines where persistent learning should live
 
 The total score therefore answers:
 
@@ -99,11 +99,11 @@ The most important unresolved comparison is no longer whether the individual mec
 
 The stronger question is whether another framework combines all of the following into one operating model:
 
-- human-authorized autonomy with clear authority and uncertainty boundaries,
-- deterministic capability, procedural guidance, and AI reasoning as distinct but movable responsibilities,
-- evidence-driven classification of where a persistent improvement should live,
-- movement in either direction across the determinism boundary,
-- and compounding reuse of the improved operating system.
+- Human-authorized autonomy with clear authority and uncertainty boundaries
+- Deterministic capability, procedural guidance, and AI reasoning as distinct but movable responsibilities
+- Evidence-driven classification of where a persistent improvement should live
+- Movement in either direction across the determinism boundary
+- Compounding reuse of the improved operating state
 
 These questions are examined most directly in the [Principle 1: Autonomy Is Bounded by Human Authority research dossier](../principles/01-human-authority.md), [Principle 3: Work Is Distributed Across a Moving Determinism Boundary research dossier](../principles/03-moving-determinism-boundary.md), and [Principle 6: Failure Determines Where the System Evolves research dossier](../principles/06-evolution-routing.md).
 
