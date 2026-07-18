@@ -1,4 +1,4 @@
-# Worked Example: Software Maintenance Flywheel
+# End-to-End Example: Software Maintenance Flywheel
 
 This example shows how an AI Flywheel could operate a recurring software-maintenance process and improve the system used by later executions.
 
@@ -33,7 +33,7 @@ The policy authorizes the AI to:
 - create branches,
 - update dependencies within an approved version policy,
 - modify deterministic maintenance tooling,
-- update the maintenance SOP when the change remains within the allowed procedural scope,
+- update the maintenance Standard Operating Procedure (SOP) when the change remains within the allowed procedural scope,
 - run builds and tests,
 - create draft pull requests,
 - and persist validated operational learning.
@@ -50,7 +50,7 @@ The policy also requires human judgment when the available evidence is not enoug
 
 This establishes the behavior required by [Principle 1: Autonomy Is Bounded by Human Authority](../specification/principles/01-human-authority.md).
 
-## 2. The Initial Operating System
+## 2. The Initial Operating Model
 
 The maintenance Flywheel begins with three operating mechanisms.
 
@@ -330,7 +330,7 @@ A later human decision may become evidence for a reusable rule, but any expansio
 | Moving Determinism Boundary | Responsibility moves from reasoning to procedure to code, and can move back when code becomes brittle. |
 | Validation | SOP changes are replayed; code changes are tested; governance approval remains separate from technical validation. |
 | Persistence | Validated learning changes the SOP, tooling, validation rules, or authorized governance assets. |
-| Reuse | Later maintenance runs inherit and apply the improved operating system. |
+| Reuse | Later maintenance runs inherit and apply the improved operating state. |
 
 ## Lifecycle Summary
 
@@ -340,7 +340,7 @@ The complete pattern is:
 
 The important point is not that the system encountered a failure and retried.
 
-The Flywheel effect occurs because evidence from one execution changed the persistent operating system used by later execution.
+The Flywheel effect occurs because evidence from one execution changed the persistent operating model used by later execution.
 
 ## Related Specification Documents
 
