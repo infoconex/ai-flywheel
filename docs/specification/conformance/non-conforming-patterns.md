@@ -20,7 +20,7 @@ An agent that reflects on failure but does not change persistent operational ass
 
 ## Fixed Automation Without Evolution
 
-A deterministic automation system with no evidence-driven mechanism for learning and changing its operating system is not an AI Flywheel.
+A deterministic automation system with no evidence-driven mechanism for learning and improving its operating model is not an AI Flywheel.
 
 ## Lessons That Are Never Reused
 
