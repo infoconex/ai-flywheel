@@ -37,6 +37,12 @@
         </span>
       </a>
 
+      <div class="site-search" data-site-search>
+        <label class="sr-only" for="site-search-input">Search documentation</label>
+        <input id="site-search-input" type="search" placeholder="Search documentation" autocomplete="off" aria-controls="site-search-results" aria-expanded="false">
+        <div class="site-search__results" id="site-search-results" role="listbox" hidden></div>
+      </div>
+
       <nav class="header-actions" aria-label="Repository links">
         <label class="theme-picker">
           <span class="sr-only">Theme</span>
@@ -58,11 +64,6 @@
   <div class="site-shell">
     <aside class="sidebar" id="site-sidebar">
       <div class="sidebar__inner">
-        <div class="sidebar-search">
-          <label class="sr-only" for="nav-filter">Filter navigation</label>
-          <input id="nav-filter" type="search" placeholder="Filter navigation" autocomplete="off">
-        </div>
-
         <nav class="docs-nav" aria-label="Documentation navigation">
           {% for section in site.data.navigation %}
             <div class="nav-section" data-nav-group>
