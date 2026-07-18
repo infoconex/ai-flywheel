@@ -4,6 +4,8 @@ This view shows the complete AI Flywheel operating model in one place: human aut
 
 The diagram is explanatory. The actual requirements are defined by the [AI Flywheel Specification](../specification/README.md).
 
+In the diagram, **SOP** means **Standard Operating Procedure**.
+
 ```mermaid
 flowchart TD
     H[Human Authority] --> G[Governance Policy]
