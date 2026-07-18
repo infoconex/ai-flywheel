@@ -1,36 +1,10 @@
 # AI Flywheel
 
-> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`. The methodology and supporting research will continue to evolve as the model is tested, refined, and compared with related work.
-
 The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 > **A loop repeats. A flywheel compounds.**
 
 ![AI Flywheel lifecycle](docs/assets/ai-flywheel-2.png)
-
-## Project Status
-
-The current documentation includes:
-
-- The [AI Flywheel definition](docs/specification/definition.md)
-- [Eight core principles](docs/specification/principles/README.md)
-- The [eight-stage lifecycle](docs/specification/lifecycle/README.md)
-- Human authority, governance, and boundary models
-- An [evidence-based conformance assessment](docs/specification/conformance/README.md)
-- [Architecture views](docs/architecture/README.md) of runtime, learning, governance, boundaries, and the complete operating model
-- A [complete end-to-end example](docs/examples/software-maintenance-flywheel.md)
-- [Standard terminology](docs/specification/terminology.md)
-- [Prior-art and framework-comparison research](docs/research/README.md)
-
-Future work may include:
-
-- Additional worked examples
-- Implementation guidance
-- A reference implementation
-- Conformance evaluation tooling
-- Continued prior-art research
-
-The first repository release is intended to publish **AI Flywheel Specification 0.1 — Draft** as a working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
 
 ## Origin and Formalization
 
@@ -149,3 +123,19 @@ Then explore the supporting material:
 - **[Documentation Index](docs/README.md)** — Browse the complete documentation structure.
 
 The specification defines the methodology. The research collection examines related ideas and how the AI Flywheel compares with them without making that research part of the specification.
+
+## Project Status and Roadmap
+
+> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`.
+
+The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
+
+Future work may include:
+
+- Additional end-to-end examples
+- Implementation guidance
+- A reference implementation
+- Conformance evaluation tooling
+- Continued prior-art research
+
+The first repository release is intended to publish **AI Flywheel Specification 0.1 — Draft** as a working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
