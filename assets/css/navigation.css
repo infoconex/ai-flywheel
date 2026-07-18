@@ -28,3 +28,9 @@
   padding-bottom: 4px;
   line-height: 1.25;
 }
+
+@media (min-width: 1280px) {
+  .back-to-top {
+    right: max(24px, calc((100vw - var(--sidebar-width) - var(--content-width)) / 2 - 60px));
+  }
+}
