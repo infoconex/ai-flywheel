@@ -105,9 +105,11 @@
   const contentWrap = document.querySelector('.content-wrap');
 
   if (content && contentWrap) {
-    const headings = Array.from(content.querySelectorAll('h2, h3'));
+    const pageTitle = content.querySelector('h1');
+    const sectionHeadings = Array.from(content.querySelectorAll('h2, h3'));
+    const headings = pageTitle ? [pageTitle, ...sectionHeadings] : sectionHeadings;
 
-    if (headings.length >= 2) {
+    if (sectionHeadings.length >= 2 && headings.length > 0) {
       const usedIds = new Set();
       const slugify = (value) => value
         .toLowerCase()
@@ -118,7 +120,9 @@
 
       headings.forEach((heading, index) => {
         if (!heading.id) {
-          const baseId = slugify(heading.textContent) || `section-${index + 1}`;
+          const baseId = heading.tagName === 'H1'
+            ? 'page-top'
+            : (slugify(heading.textContent) || `section-${index + 1}`);
           let id = baseId;
           let suffix = 2;
 
@@ -147,7 +151,8 @@
 
       headings.forEach((heading) => {
         const item = document.createElement('li');
-        item.className = `toc-level-${heading.tagName === 'H3' ? '3' : '2'}`;
+        const level = heading.tagName === 'H1' ? '1' : (heading.tagName === 'H3' ? '3' : '2');
+        item.className = `toc-level-${level}`;
 
         const link = document.createElement('a');
         link.href = `#${heading.id}`;
