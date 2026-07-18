@@ -65,9 +65,13 @@
 
         <nav class="docs-nav" aria-label="Documentation navigation">
           {% for section in site.data.navigation %}
-            {% assign section_url = section.url | relative_url %}
             <div class="nav-section" data-nav-group>
-              <a class="nav-section__title{% if page.url == section.url %} is-active{% endif %}" href="{{ section_url }}">{{ section.title }}</a>
+              {% if section.url %}
+                {% assign section_url = section.url | relative_url %}
+                <a class="nav-section__title{% if page.url == section.url %} is-active{% endif %}" href="{{ section_url }}">{{ section.title }}</a>
+              {% else %}
+                <span class="nav-section__title">{{ section.title }}</span>
+              {% endif %}
               {% if section.items %}
                 <ul>
                   {% for item in section.items %}
