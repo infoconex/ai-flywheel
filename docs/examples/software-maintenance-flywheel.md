@@ -1,145 +1,217 @@
 # End-to-End Example: Software Maintenance Flywheel
 
-This example shows how an AI Flywheel could operate a recurring software-maintenance process and improve the system used by later executions.
+This example shows how an AI Flywheel can operate a recurring software maintenance process and improve the operating model used by later executions.
 
-The example is specific, but it is not a required implementation architecture. It shows how the parts of the specification work together.
+The example presents one possible implementation. It illustrates the AI Flywheel specification but does not add requirements or prescribe a required architecture.
 
 ## Scenario
 
 A software organization maintains many repositories that periodically require dependency upgrades.
 
-The organization wants AI to operate the maintenance process rather than merely generate instructions for a developer.
+The organization wants AI to operate the maintenance process rather than merely generate instructions for a developer. It also wants evidence from completed maintenance work to improve future executions.
 
-The initial process is:
+The initial process requires the AI to:
 
-1. identify repositories with an outdated approved dependency,
-2. create a working branch,
-3. update the dependency,
-4. restore and build the project,
-5. run the relevant tests,
-6. inspect the resulting changes,
-7. create a pull request when validation succeeds,
-8. and escalate when the change cannot be completed safely within the AI's authority.
+1. Identify repositories with an outdated approved dependency
+2. Create a working branch
+3. Update the dependency
+4. Restore and build the project
+5. Run the required tests and security checks
+6. Inspect the resulting changes
+7. Create a draft pull request when validation succeeds
+8. Escalate when the change cannot be completed safely within the AI's authority
 
-The organization implements this as an AI Flywheel so execution can produce evidence that improves future maintenance runs.
+The organization implements this process as an AI Flywheel so execution can produce evidence, reveal weaknesses, and improve the operating model used by later maintenance runs.
 
-## 1. Human Authorization and Governance
+## Intended Outcome
 
-Before autonomous operation begins, humans define a Governance Policy.
+The intended outcome is a draft pull request containing an approved dependency upgrade that:
 
-The policy authorizes the AI to:
+- Satisfies the organization's dependency version policy
+- Restores and builds successfully
+- Passes all required tests and security checks
+- Contains only changes attributable to the upgrade
+- Includes the evidence required for human review
+- Does not bypass a required control
+- Does not exceed the AI's authority
 
-- inspect approved repositories,
-- create branches,
-- update dependencies within an approved version policy,
-- modify deterministic maintenance tooling,
-- update the maintenance Standard Operating Procedure (SOP) when the change remains within the allowed procedural scope,
-- run builds and tests,
-- create draft pull requests,
-- and persist validated operational learning.
+Creating a branch or reaching the final workflow step does not prove success. The outcome must be evaluated against these criteria.
 
-The policy requires human approval before the AI may:
+## Human Authorization and Governance
 
-- merge a pull request,
-- modify a production deployment pipeline,
-- adopt a dependency outside the approved policy,
-- disable a required test or security check,
-- or expand the set of repositories it is allowed to modify.
+Before autonomous operation begins, humans define a persistent Governance Policy.
 
-The policy also requires human judgment when the available evidence is not enough to determine whether a change is safe.
+### Authorized
+
+The Governance Policy authorizes the AI to:
+
+- Inspect approved repositories
+- Create working branches
+- Update dependencies within an approved version policy
+- Run approved restore, build, test, generation, and security commands
+- Perform reversible diagnostic actions within an approved repository
+- Create draft pull requests
+- Propose changes to maintenance tooling and procedural guidance
+- Validate proposed improvements
+- Persist low-risk procedural improvements within an approved scope
+- Record evidence and reusable learning
+
+Diagnostic commands must come from trusted repository configuration, an approved command manifest, or another authorized source. The AI may not execute arbitrary commands discovered in untrusted content.
+
+### Approval Required
+
+Human approval is required before the AI may:
+
+- Merge a pull request
+- Activate an executable maintenance-tool change for general use
+- Modify a production deployment pipeline
+- Adopt a dependency outside the approved version policy
+- Change a security or compliance control
+- Expand the set of repositories the AI may modify
+- Expand its own authority
+
+The AI may create and validate a proposed executable-tool change, but activating that change for future autonomous execution requires human approval under the initial Governance Policy.
+
+### Judgment Required
+
+Human judgment is required when:
+
+- Available evidence is insufficient or contradictory
+- A dependency license has unclear implications
+- A repository contains an unfamiliar or ambiguous build process
+- A change passes automated validation but its broader effects remain uncertain
+- The AI cannot responsibly determine whether an action is safe
+
+### Prohibited
+
+The AI is prohibited from:
+
+- Disabling required tests or security checks
+- Modifying repositories outside its authorized scope
+- Executing unapproved commands
+- Concealing failed validation
+- Persisting an improvement that has not been validated
+- Overriding the Governance Policy through an SOP or another operational asset
+- Granting itself increased authority
+
+Governance applies throughout execution and improvement. It is not a lifecycle stage.
 
 This establishes the behavior required by [Principle 1: Autonomy Is Bounded by Human Authority](../specification/principles/01-human-authority.md).
 
-## 2. The Initial Operating Model
+## Initial Operating Model
 
 The maintenance Flywheel begins with three operating mechanisms.
 
 ### Deterministic Capability
 
-A maintenance tool can:
+An approved maintenance tool can:
 
-- list repositories,
-- inspect project files,
-- detect dependency versions,
-- create branches,
-- apply standard version updates,
-- run restore, build, and test commands,
-- collect command output,
-- and create pull requests.
+- List repositories
+- Inspect project files
+- Detect dependency versions
+- Create branches
+- Apply standard version updates
+- Run approved restore, build, and test commands
+- Collect structured command output
+- Inspect changed files
+- Create draft pull requests
 
 ### Procedural Guidance
 
-The maintenance SOP defines:
+The maintenance Standard Operating Procedure (SOP) defines:
 
-- which repositories are in scope,
-- how a target dependency is selected,
-- the expected maintenance sequence,
-- known exception handling,
-- required evidence,
-- validation expectations,
-- and escalation conditions.
+- Which repositories are in scope
+- How a target dependency is selected
+- The expected maintenance sequence
+- Which commands and capabilities are approved
+- Known exception handling
+- Required outcome evidence
+- Validation expectations
+- Pull request requirements
+- Escalation conditions
 
 ### AI Reasoning
 
 The AI:
 
-- interprets repository-specific context,
-- decides which deterministic capability to use,
-- investigates unexpected failures,
-- determines whether the current SOP already covers the condition,
-- classifies learning opportunities,
-- proposes or applies authorized changes,
-- and decides when escalation is required.
+- Interprets repository-specific context
+- Applies the maintenance SOP
+- Selects and invokes deterministic capabilities
+- Investigates unexpected failures
+- Determines whether a known procedure covers the condition
+- Evaluates evidence against success criteria
+- Classifies weaknesses and learning opportunities
+- Proposes or applies authorized improvements
+- Escalates when authority or uncertainty requires human involvement
 
 This distribution reflects [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../specification/principles/03-moving-determinism-boundary.md).
 
-## Cycle 1: A Procedural Weakness Is Discovered
+## Cycle 1: Execution Reveals a Procedural Weakness
+
+The first cycle discovers that the SOP does not describe a required repository preparation step.
 
 ### Execute
 
-The AI begins a dependency upgrade in Repository A.
+The AI begins an approved dependency upgrade in Repository A.
 
 It follows the maintenance SOP and uses deterministic tooling to:
 
-1. create a branch,
-2. update the package version,
-3. restore dependencies,
-4. build the solution,
-5. and run tests.
+1. Create a working branch
+2. Update the approved package version
+3. Restore dependencies
+4. Build the solution
+5. Run the required tests and security checks
 
-The build fails because this repository requires a generated configuration file before compilation.
+The restore succeeds, but the build fails because Repository A requires a generated configuration file before compilation.
 
-The deterministic tool correctly reports the failure, but the SOP contains no instruction describing the required generation step.
+The deterministic tool correctly reports the failure. However, the maintenance SOP does not describe the required generation step.
 
-The AI is operating the process directly, satisfying the role described by [Principle 2: AI Is the Operator, Not Merely the Assistant](../specification/principles/02-ai-as-operator.md).
+The Governance Policy permits reversible diagnostic actions using approved repository commands. The AI inspects trusted repository configuration and finds an approved generation command.
+
+The AI runs the command, rebuilds the solution, completes the required validation, and carries the process forward.
+
+The AI is operating the process directly rather than merely advising a developer. This reflects [Principle 2: AI Is the Operator, Not Merely the Assistant](../specification/principles/02-ai-as-operator.md).
 
 ### Observe
 
 The Flywheel captures:
 
-- the repository and branch,
-- the dependency version change,
-- the restore result,
-- the failed build command,
-- the compiler output,
-- the missing-file error,
-- the repository documentation describing the generation command,
-- and the later successful build after the AI runs that documented command.
+- Repository and branch identifiers
+- Original and updated dependency versions
+- Changed files
+- Restore result
+- Failed build command
+- Compiler output
+- Missing-file error
+- Trusted configuration identifying the approved generation command
+- Generation-command output
+- Successful rebuild result
+- Test and security-check results
+- Draft pull request details
+- Time and AI reasoning required to resolve the failure
 
-The execution therefore produces evidence rather than relying on the AI's conclusion that the problem was solved.
+The evidence preserves both the original failure and the successful recovery. The failure is not discarded after the retry succeeds.
 
 This reflects [Principle 5: Execution Must Produce Outcome Evidence](../specification/principles/05-outcome-evidence.md).
 
 ### Evaluate
 
-The AI evaluates the evidence and determines:
+The AI compares the evidence with the intended outcome and success criteria.
 
-- the dependency update itself is valid,
-- the original maintenance procedure was incomplete for this repository type,
-- running the generation command resolves the build failure,
-- and the remaining tests pass.
+It determines that:
 
-The outcome is therefore not simply "the first build failed." The evidence shows a repeatable required step missing from the operating procedure.
+- The dependency version satisfies the approved policy
+- The repository restores successfully
+- The first build failed because a required generated file was missing
+- Running the approved generation command created the required file
+- The later build succeeded
+- Required tests and security checks passed
+- No required control was bypassed
+- Only expected files changed
+- The dependency upgrade is suitable for a draft pull request
+- The initial maintenance procedure was incomplete for this repository type
+
+The evidence identifies a repeatable prerequisite missing from the operating procedure.
 
 ### Classify
 
@@ -147,40 +219,47 @@ The AI asks:
 
 > **Where should this learning live?**
 
-It considers several destinations:
-
-- The dependency-update code is not incorrect.
-- The build system is not broken.
-- The required step is documented and repeatable.
-- The step should be followed whenever repositories of this type are maintained.
+It determines that the dependency-update code operated correctly, the validation exposed the problem, and the repeatable preparation step is missing from the SOP. Available evidence is not yet sufficient to move the behavior into deterministic tooling.
 
 The weakness is classified as **procedural guidance**.
 
 ### Adapt
 
-The AI proposes an SOP change:
+The AI proposes the following SOP change:
 
-> Before building repositories containing the approved generator configuration, run the repository's approved generation command and preserve its output as execution evidence.
+> Before building a repository containing an approved generator configuration, run the generation command identified by the trusted repository configuration. Preserve the command, source configuration, exit result, and generated-file changes as outcome evidence. If the configuration is missing, ambiguous, or unapproved, stop the affected maintenance operation and request human judgment.
 
-This follows the routing behavior required by [Principle 6: Failure Determines Where the System Evolves](../specification/principles/06-evolution-routing.md).
+The change includes applicability information so it is used only for repositories with the approved generation pattern.
+
+This follows [Principle 6: Failure Determines Where the System Evolves](../specification/principles/06-evolution-routing.md).
 
 ### Validate
 
-The AI validates the proposed procedure by replaying the maintenance sequence against:
+The AI validates the proposed procedure against:
 
-- Repository A, where the failure originally occurred,
-- another repository that uses the same generation pattern,
-- and a repository that does not require generation.
+- Repository A, where the original failure occurred
+- Repository B, which uses the same approved generation pattern
+- Repository C, which does not require generation
+- A test repository with an ambiguous generator configuration
+- A test repository containing an unapproved command
 
-The validation confirms that:
+Validation confirms that:
 
-- the new step fixes the affected repository type,
-- the condition for running it can be detected reliably,
-- and unaffected repositories do not run an unnecessary command.
+- The new step resolves the failure in Repository A
+- The same procedure succeeds in Repository B
+- Repository C does not run an unnecessary command
+- Ambiguous configuration produces Judgment Required
+- An unapproved command is blocked
+- Required evidence is collected
+- Existing tests and security controls remain enabled
+
+The improvement satisfies technical validation. Authorization to persist it is evaluated separately.
 
 ### Persist
 
-Because the Governance Policy authorizes procedural improvements of this type, the validated SOP change is persisted.
+The Governance Policy authorizes low-risk procedural improvements within the maintenance SOP's approved scope.
+
+The AI creates a versioned SOP change, records its originating evidence and validation results, defines where the guidance applies, and preserves the previous version for rollback.
 
 The learning now exists in a durable operational asset rather than only in the original execution log or conversation.
 
@@ -188,36 +267,49 @@ This reflects [Principle 7: Learning Must Change a Persistent Operational Asset]
 
 ### Reuse
 
-During a later upgrade of Repository B, the AI detects the same repository type and follows the improved SOP immediately.
+During a later dependency upgrade of Repository B, the AI retrieves the improved SOP and detects the same approved generation pattern.
 
-The generation step runs before the build, and the previous failure does not recur.
+The generation command runs before the first build, and the previous failure does not recur.
 
-The second execution begins from a better operating state because the first execution changed the procedure used by the next.
+Illustrative execution measurements show the effect:
 
-This is the behavior required by [Principle 8: Improvement Must Compound Through Reuse](../specification/principles/08-compounding-reuse.md).
+| Measure | Before Improvement | After Reuse |
+|---|---:|---:|
+| Build Attempts | 2 | 1 |
+| Diagnostic Actions | 6 | 0 |
+| Human Interventions | 0 | 0 |
+| Maintenance Duration | 18 minutes | 11 minutes |
+
+The measurements are illustrative. The important evidence is that the persisted procedural improvement changed later execution.
+
+This reflects [Principle 8: Improvement Must Compound Through Reuse](../specification/principles/08-compounding-reuse.md).
 
 ## Cycle 2: Repeated Procedure Becomes Deterministic Capability
 
-After many successful executions, evidence shows that the generation step is stable and can be detected reliably.
+After multiple successful executions, evidence shows that the approved generation pattern is stable and can be detected reliably.
 
-The AI now repeatedly performs the same reasoning:
+### Execute
 
-1. inspect the repository,
-2. determine whether the generator configuration exists,
-3. locate the approved generation command,
-4. run it,
-5. and capture the result.
+During later maintenance runs, the AI repeatedly follows the same SOP instructions: inspect the repository, detect the approved configuration, read and run the trusted command, capture its output, and continue with the build.
 
-The behavior is reliable enough that repeated AI reasoning no longer adds meaningful value.
+The process works, but the AI repeats the same interpretation and orchestration during every applicable execution.
 
-### Observe and Evaluate
+### Observe
 
-The accumulated evidence shows:
+The Flywheel accumulates evidence showing:
 
-- the detection rule is stable,
-- the generation command follows a predictable convention,
-- the behavior has succeeded across several representative repositories,
-- and exceptions are already covered by the SOP.
+- The repository pattern can be detected consistently
+- The command comes from trusted configuration
+- The procedure succeeds across representative repositories
+- Output can be captured consistently
+- Known exceptions are covered by the SOP
+- Repeated reasoning adds time and cost without improving the result
+
+### Evaluate
+
+The AI determines that the detection rule and execution sequence are stable, unsafe and ambiguous conditions can be represented as structured failures, and repeated reasoning is no longer necessary for the common path.
+
+This is a learning opportunity produced by successful repeated execution rather than by a new failure.
 
 ### Classify
 
@@ -225,122 +317,159 @@ The AI again asks:
 
 > **Where should this learning live now?**
 
-The answer has changed.
-
-The behavior was correctly placed in procedural guidance when it was first discovered, but repeated evidence now supports moving the stable steps into deterministic capability.
-
-This is the **Moving Determinism Boundary** in action.
+Accumulated evidence supports moving the common behavior from procedural guidance into deterministic capability. The opportunity is classified as a **responsibility-placement improvement** across the Moving Determinism Boundary.
 
 ### Adapt
 
-The AI modifies the maintenance tool so it can:
+The AI creates a proposed maintenance-tool change that can:
 
-- detect the generator configuration,
-- run the approved generation step,
-- capture its output,
-- and return a structured failure when generation does not succeed.
+- Detect the approved generator configuration
+- Reject ambiguous or unapproved configurations
+- Run the approved generation step
+- Capture structured output and generated-file changes
+- Return a structured failure when generation does not succeed
+- Return control to AI reasoning when the condition is unfamiliar
 
-The SOP is also updated so it no longer instructs the AI to manage the known steps itself. Instead, it tells the AI when to use the deterministic capability and how to handle unusual results.
+The revised SOP tells the AI when to use the capability, what evidence it must return, how structured failures should be handled, and when human judgment is required.
 
-The responsibility has moved from:
-
-**AI reasoning + procedural instruction**
-
-into:
-
-**deterministic capability governed by procedure**
-
-The AI still owns the process, but it no longer needs to rediscover or manually execute the stable steps.
+Responsibility moves from **AI reasoning guided by procedure** to **deterministic capability governed by procedure**.
 
 ### Validate
 
-The modified tool is validated through:
+The AI validates the proposed tool and SOP changes through unit tests, integration tests, replay against previously successful repositories, negative tests for unsupported or unapproved configurations, and the existing build, test, and security-check sequence.
 
-- unit tests for repository detection,
-- integration tests for running the generation step,
-- replay against repositories previously handled successfully,
-- negative tests for unsupported configurations,
-- and the existing build-and-test validation sequence.
+Validation confirms that the deterministic capability reproduces the approved behavior without expanding authority or weakening controls.
 
-### Persist and Reuse
+### Persist
 
-The validated tool change and corresponding SOP update are persisted.
+The AI may create and validate the proposed changes, but the Governance Policy requires human approval before executable tooling is activated for general use.
 
-Future maintenance runs use the improved deterministic capability directly.
+The AI creates versioned tooling and SOP changes, records the validation evidence, and creates a draft pull request. An authorized maintainer reviews and approves the change.
 
-The Flywheel has now compounded twice:
+The tool version is released, the SOP references that version, previous versions remain available for rollback, and the activation decision is recorded as governance evidence.
 
-1. execution evidence first improved the procedure,
-2. repeated evidence later moved stable behavior into deterministic implementation.
+### Reuse
 
-## Cycle 3: A Condition Should Move Back Toward Reasoning
+Future maintenance runs invoke the deterministic generation capability directly for recognized patterns. Later evidence shows fewer reasoning steps, consistent command validation, consistent evidence collection, reduced execution time, and continued escalation of ambiguous conditions.
+
+The Flywheel has now compounded twice: execution evidence first improved the procedure, and repeated evidence later moved stable behavior into deterministic capability.
+
+## Cycle 3: Brittle Deterministic Behavior Moves Back Toward Reasoning
 
 The Moving Determinism Boundary is not one-way.
 
-Suppose a later change introduces several repository-specific generation systems. The deterministic tool's detection logic becomes increasingly complex and begins selecting the wrong generation command in unusual repositories.
+Later, the organization introduces several repository-specific generation systems. The deterministic tool's detection logic becomes increasingly complex and begins selecting the wrong generation command in unusual repositories.
 
-### Evaluate and Classify
+### Execute
 
-Evidence shows that:
+The AI begins a dependency upgrade in Repository D. The deterministic capability detects what appears to be a known configuration and selects a command automatically.
 
-- the deterministic rule remains reliable for common repositories,
-- unusual repositories require judgment based on context,
-- and continuing to add special-case code would make the tool brittle.
+The command completes successfully, but the build produces unexpected generated-file changes and fails validation. The AI stops the affected operation rather than creating a draft pull request.
 
-The Flywheel determines that responsibility is now in the wrong place.
+### Observe
+
+The Flywheel captures the repository configuration, selected pattern, generation command and result, generated-file changes, build output, validation failure, and the deterministic rule responsible for the selection.
+
+The command's successful exit code is not treated as proof that the correct behavior occurred.
+
+### Evaluate
+
+The AI determines that the deterministic rule made an incorrect assumption. Common repositories still use the rule successfully, but unusual repositories require context. Adding more special cases would make the capability increasingly brittle.
+
+### Classify
+
+The AI asks:
+
+> **Where should this responsibility live now?**
+
+The evidence shows that common patterns should remain deterministic, while unfamiliar or conflicting patterns should return structured context for AI reasoning. Human judgment is required when the evidence remains insufficient.
+
+The learning is classified as a **deterministic-responsibility boundary weakness**.
 
 ### Adapt
 
-Instead of encoding every exception into deterministic code, the system changes the capability so that:
+The AI proposes changes so the deterministic capability handles only known high-confidence patterns, returns structured context instead of guessing, and refuses to execute a command when confidence conditions are not satisfied.
 
-- known common patterns remain deterministic,
-- unclear patterns return structured context,
-- the SOP defines how those cases should be investigated,
-- and AI reasoning selects or proposes the appropriate action when the deterministic capability cannot responsibly decide.
+The proposed SOP change defines how unfamiliar patterns are investigated, which trusted sources may be consulted, what evidence is required, and when human judgment is required. A new validation check compares generated-file scope with expected repository boundaries.
 
-Responsibility has moved partially back toward procedural guidance and AI reasoning.
+### Validate
 
-This demonstrates that the AI Flywheel does not treat maximum automation or maximum determinism as the goal.
+The AI validates the changes through replay against Repository D, regression testing against common repositories, tests for conflicting and unfamiliar configurations, structured fallback tests, and tests for the new generated-file-scope validation.
 
-## When Human Authority Intervenes
+Validation confirms that common patterns remain deterministic, unclear patterns return control to AI reasoning, insufficient evidence produces Judgment Required, and inappropriate generated-file changes are detected.
 
-Assume the AI discovers that one repository can only be upgraded by disabling a mandatory security validation step.
+### Persist
 
-The AI may understand exactly how to make the build pass, but the Governance Policy prohibits disabling the control.
+The executable-tool change requires human approval. The AI creates a versioned pull request containing the narrowed rules, structured fallback behavior, SOP change, validation check, evidence, and rollback plan.
 
-The result is **Prohibited**, not an invitation for the AI to rewrite its own policy.
+After approval, the tool, SOP, and validation updates are persisted and activated together.
 
-In a different case, assume a new dependency license has unclear implications. The AI may be authorized to update dependencies generally but lack enough evidence to determine whether this license is acceptable.
+### Reuse
 
-The result is **Judgment Required** because the Uncertainty Boundary has been reached.
+During a later maintenance run in Repository E, the deterministic capability detects conflicting indicators and returns structured context instead of selecting a command.
 
-A later human decision may become evidence for a reusable rule, but any expansion of the AI's authority still requires human authorization.
+The AI follows the improved SOP, evaluates repository-specific evidence, selects the correct approved action, and completes the process successfully.
 
-## How the Full Flywheel Appears in This Example
+The system preserves flexibility for unusual repositories while retaining deterministic behavior for common cases. Responsibility has moved partially back toward procedural guidance and AI reasoning.
 
-| AI Flywheel Element | Example Implementation |
+## Human Authority During Execution
+
+Governance outcomes can occur during any cycle.
+
+### Prohibited Action
+
+If an upgrade can only succeed by disabling a mandatory security check, the outcome is **Prohibited**. The AI records the evidence and stops the affected operation.
+
+### Approval Required
+
+If an upgrade requires a production-pipeline change, the AI may investigate and recommend the change, but the outcome is **Approval Required** before it may be applied.
+
+### Judgment Required
+
+If a new dependency license has unclear implications, the outcome is **Judgment Required** because the available evidence is not enough for a responsible decision.
+
+### Human Decisions as Evidence
+
+A human decision may reveal a missing SOP rule, reusable reasoning guidance, a validation requirement, a classification improvement, or a proposed Governance Policy change. Any expansion of AI authority still requires human authorization.
+
+## Conformance Mapping
+
+| Conformance Area | How the Example Demonstrates It |
 |---|---|
-| Human authority | Governance Policy defines repository scope, allowed modifications, approval gates, and prohibited actions. |
-| AI operation | AI performs the maintenance workflow rather than only advising a developer. |
-| Deterministic capability | Repository inspection, dependency changes, branch operations, builds, tests, and later generation handling. |
-| Procedural guidance | Maintenance SOP defines the process, known exceptions, evidence, validation, and escalation. |
-| AI reasoning | Interprets failures, investigates unfamiliar repository context, classifies learning, and handles ambiguity. |
-| Outcome evidence | Command results, build output, tests, repository state, generated artifacts, and human decisions. |
-| Evolution Routing | The first failure is sent to the SOP; repeated stable behavior is later moved into deterministic capability. |
-| Moving Determinism Boundary | Responsibility moves from reasoning to procedure to code, and can move back when code becomes brittle. |
-| Validation | SOP changes are replayed; code changes are tested; governance approval remains separate from technical validation. |
-| Persistence | Validated learning changes the SOP, tooling, validation rules, or authorized governance assets. |
-| Reuse | Later maintenance runs inherit and apply the improved operating state. |
+| **1. Human Authority** | A persistent Governance Policy defines authorized, approval-required, judgment-required, and prohibited actions |
+| **2. AI Operation** | AI performs the workflow, invokes capabilities, evaluates results, handles exceptions, and carries execution forward |
+| **3. Runtime Responsibilities** | Deterministic capability, procedural guidance, and AI reasoning have defined and intentionally changing responsibilities |
+| **4. Persistent Operational Procedure** | A durable maintenance SOP guides execution, evidence, exception handling, validation, and escalation |
+| **5. Outcome Evidence** | Command output, repository state, file changes, tests, security checks, validation results, and human decisions establish what occurred |
+| **6. Evaluation and Classification** | Outcomes are compared with success criteria and weaknesses are classified before adaptation |
+| **7. Improvement Routing** | Learning is routed to procedure, tooling, reasoning, validation, or governance as appropriate |
+| **8. Governance Enforcement** | Unapproved commands are blocked, executable changes require approval, prohibited actions stop, and authority cannot expand on its own |
+| **9. Persistent Learning** | Validated and authorized learning changes versioned SOP, tooling, and validation assets available after the original execution |
+| **10. Compounding Reuse** | Later executions use the improved procedure, capability, fallback behavior, and validation instead of starting from the original state |
+
+## What Compounded
+
+| Cycle | Evidence Revealed | Persistent Improvement | Effect on Later Execution |
+|---|---|---|---|
+| **Cycle 1** | A repeatable prerequisite was missing from the procedure | The SOP gained a governed generation step | Later repositories avoided the original build failure |
+| **Cycle 2** | Repeated procedural behavior became stable | The common behavior moved into deterministic capability | Later executions required less repeated reasoning |
+| **Cycle 3** | Deterministic rules became brittle for unusual repositories | Common cases remained deterministic while unclear cases moved toward procedure and reasoning | Later executions avoided incorrect guesses without losing common-case efficiency |
+
+The Flywheel effect is not produced merely by encountering failures, retrying work, saving logs, or modifying code.
+
+It occurs because execution evidence changes validated and authorized operational assets that later execution actually reuses.
 
 ## Lifecycle Summary
 
-The complete pattern is:
+Each complete cycle follows the same pattern:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
-The important point is not that the system encountered a failure and retried.
+Human authority and governance apply throughout the lifecycle.
 
-The Flywheel effect occurs because evidence from one execution changed the persistent operating model used by later execution.
+Deterministic capability, procedural guidance, and AI reasoning work together during execution. They are operating mechanisms, not additional lifecycle stages.
+
+The Moving Determinism Boundary determines where responsibility should live. The Authority Boundary determines what the AI may decide, execute, change, or persist on its own. The Uncertainty Boundary determines when available evidence is insufficient for responsible AI judgment.
 
 ## Related Specification Documents
 
