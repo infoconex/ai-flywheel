@@ -1,0 +1,141 @@
+:root {
+  --reading-progress: 0%;
+}
+
+html[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-muted: #1f2937;
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border: #293548;
+  --border-strong: #3b485d;
+  --accent: #818cf8;
+  --accent-strong: #a5b4fc;
+  --accent-soft: #252b5c;
+  --success-soft: #12372b;
+  --header: #070b16;
+}
+
+html[data-theme="sepia"] {
+  --bg: #f3ead8;
+  --surface: #fffaf0;
+  --surface-muted: #f7efdf;
+  --text: #3f3528;
+  --text-muted: #746452;
+  --border: #dfd0b7;
+  --border-strong: #cdbb9f;
+  --accent: #8b5e34;
+  --accent-strong: #68411f;
+  --accent-soft: #f1dfc6;
+  --success-soft: #e5ecd8;
+  --header: #2f281f;
+}
+
+.theme-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-picker select {
+  min-height: 38px;
+  padding: 0 30px 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e4e7ec;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-picker select:focus-visible,
+.back-to-top:focus-visible {
+  outline: 3px solid rgba(129, 140, 248, 0.45);
+  outline-offset: 2px;
+}
+
+.theme-picker option {
+  color: #172033;
+}
+
+.reading-progress {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  width: 4px;
+  pointer-events: none;
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.reading-progress__bar {
+  width: 100%;
+  height: var(--reading-progress);
+  background: var(--accent);
+  transition: height 0.08s linear;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 95;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, background 0.18s ease;
+}
+
+.back-to-top:hover {
+  background: var(--surface-muted);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 760px) {
+  .theme-picker select {
+    width: 44px;
+    padding: 0;
+    color: transparent;
+  }
+
+  .theme-picker::after {
+    content: "◐";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #e4e7ec;
+    pointer-events: none;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress__bar,
+  .back-to-top {
+    transition: none;
+  }
+}
