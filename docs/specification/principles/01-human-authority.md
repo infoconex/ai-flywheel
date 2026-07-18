@@ -18,7 +18,7 @@ A conforming implementation must satisfy these requirements:
 - Governance constrains both execution and persistent changes to the Flywheel itself.
 - The system escalates when human approval or judgment is required rather than silently exceeding its authority or pretending to be certain.
 - The AI may recommend increased autonomy but may not grant itself increased authority.
-- The SOP and other operational assets may not override the Governance Policy.
+- The Standard Operating Procedure (SOP) and other operational assets may not override the Governance Policy.
 
 ## Operational Model
 
