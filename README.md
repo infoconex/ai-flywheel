@@ -92,7 +92,7 @@ The AI executes the process and can create, invoke, interpret, and improve the c
 The Flywheel combines:
 
 1. **Deterministic capability** for reliable, repeatable operations.
-2. **Procedural guidance, expressed as an SOP**, for defining how work should be performed and when escalation is required.
+2. **Procedural guidance, expressed as a Standard Operating Procedure (SOP)**, for defining how work should be performed and when escalation is required.
 3. **AI reasoning** for orchestration, interpretation, judgment, adaptation, and ambiguity.
 
 These are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution produces evidence.
