@@ -1,9 +1,9 @@
 .brand__logo {
   display: grid;
   place-items: center;
-  width: 64px;
-  height: 64px;
-  flex: 0 0 64px;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
   overflow: hidden;
   border-radius: 50%;
   background: #ffffff;
@@ -11,10 +11,10 @@
 
 .brand__logo img {
   display: block;
-  width: 64px;
-  height: 64px;
-  max-width: 64px;
-  max-height: 64px;
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   margin: 0;
   object-fit: cover;
 }
@@ -22,13 +22,13 @@
 @media (max-width: 640px) {
   .brand__logo,
   .brand__logo img {
-    width: 48px;
-    height: 48px;
-    max-width: 48px;
-    max-height: 48px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
   }
 
   .brand__logo {
-    flex-basis: 48px;
+    flex-basis: 40px;
   }
 }
