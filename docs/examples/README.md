@@ -15,6 +15,10 @@ Examples help explain the methodology but do not add new requirements. The requi
 - [Continuous Dependency Maintenance](software-maintenance/README.md) — Describes a simulated dependency-health use case and demonstrates how maintenance evidence improves procedure, deterministic capability, and responsibility placement.
 - [Standards-Driven Repository Modernization](standards-driven-repository-modernization/README.md) — Describes a simulated standards-driven migration use case and demonstrates how repeated repository migrations improve profiles, validation, governance decisions, dependency planning, and deterministic tooling.
 
+## Use Cases in Development
+
+- [Production Incident Investigation and Recovery](production-incident-response/README.md) — Defines a simulated AI-operated incident-response use case. Its lifecycle worked example will be developed after the use case is reviewed.
+
 ## Example Template
 
 Use the [End-to-End Example Template](example-template.md) when creating another worked example.
