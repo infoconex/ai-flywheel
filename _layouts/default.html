@@ -4,10 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('ai-flywheel-theme');
+      if (savedTheme) {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    })();
+  </script>
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/navigation.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-features.css' | relative_url }}">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -29,10 +38,22 @@
       </a>
 
       <nav class="header-actions" aria-label="Repository links">
+        <label class="theme-picker">
+          <span class="sr-only">Theme</span>
+          <select id="theme-picker" aria-label="Choose site theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="sepia">Sepia</option>
+          </select>
+        </label>
         <a class="header-link" href="https://github.com/infoconex/ai-flywheel">GitHub</a>
       </nav>
     </div>
   </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar"></div>
+  </div>
 
   <div class="site-shell">
     <aside class="sidebar" id="site-sidebar">
@@ -83,6 +104,8 @@
       </footer>
     </main>
   </div>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
