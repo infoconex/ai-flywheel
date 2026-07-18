@@ -12,15 +12,15 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 The current documentation includes:
 
-- The AI Flywheel definition
-- Eight core principles
-- The eight-stage lifecycle
+- The [AI Flywheel definition](docs/specification/definition.md)
+- [Eight core principles](docs/specification/principles/README.md)
+- The [eight-stage lifecycle](docs/specification/lifecycle/README.md)
 - Human authority, governance, and boundary models
-- An evidence-based conformance assessment
-- Architecture views of runtime, learning, governance, boundaries, and the complete operating model
-- A complete worked example
-- Standard terminology
-- Prior-art and framework-comparison research
+- An [evidence-based conformance assessment](docs/specification/conformance/README.md)
+- [Architecture views](docs/architecture/README.md) of runtime, learning, governance, boundaries, and the complete operating model
+- A [complete worked example](docs/examples/software-maintenance-flywheel.md)
+- [Standard terminology](docs/specification/terminology.md)
+- [Prior-art and framework-comparison research](docs/research/README.md)
 
 Future work may include:
 
@@ -131,13 +131,21 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 
 ## Explore the Documentation
 
-Start with the [documentation index](docs/README.md), or choose the path that matches what you want to understand:
+New to the AI Flywheel? Start with the core specification:
 
-- [AI Flywheel Specification](docs/specification/README.md) — The definition, principles, lifecycle, terminology, governance model, and conformance assessment.
-- [AI Flywheel History and Development](docs/history.md) — The development timeline from early ideas through formalization and public release.
-- [Core Operating Model](docs/architecture/operating-model.md) — One view showing how human authority, governance, runtime mechanisms, learning, persistence, and reuse fit together.
-- [Worked Example: Software Maintenance Flywheel](docs/examples/software-maintenance-flywheel.md) — A complete execution-to-reuse example, including movement across the Moving Determinism Boundary.
-- [AI Flywheel Architecture](docs/architecture/README.md) — Runtime, learning, governance, escalation, and boundary diagrams.
-- [AI Flywheel Research](docs/research/README.md) — Prior-art analysis, framework comparisons, and principle research dossiers.
+1. **[Definition](docs/specification/definition.md)** — Understand what an AI Flywheel is and what distinguishes it from related approaches.
+2. **[Principles](docs/specification/principles/README.md)** — Explore the eight principles that define how an AI Flywheel operates.
+3. **[Lifecycle](docs/specification/lifecycle/README.md)** — Follow the eight-stage cycle from execution through persistent reuse.
+4. **[Conformance](docs/specification/conformance/README.md)** — Evaluate whether a system meets the requirements of an AI Flywheel.
+
+Then explore the supporting material:
+
+- **[Complete Specification](docs/specification/README.md)** — Browse the full methodology, including terminology, governance, boundaries, principles, lifecycle, and conformance.
+- **[Core Operating Model](docs/architecture/operating-model.md)** — See how human authority, runtime mechanisms, governance, learning, persistence, and reuse fit together.
+- **[Architecture](docs/architecture/README.md)** — Explore detailed views of runtime, learning, governance, escalation, and system boundaries.
+- **[Worked Example](docs/examples/software-maintenance-flywheel.md)** — Follow a complete execution-to-reuse example in practice.
+- **[Research](docs/research/README.md)** — Review prior-art analysis, framework comparisons, and supporting research.
+- **[History and Development](docs/history.md)** — Follow the development of the methodology from its early ideas through formalization.
+- **[Documentation Index](docs/README.md)** — Browse the complete documentation structure.
 
 The specification defines the methodology. The research collection examines related ideas and how the AI Flywheel compares with them without making that research part of the specification.
