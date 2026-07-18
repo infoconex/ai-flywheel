@@ -2,7 +2,7 @@
 
 ![AI Flywheel Specification](../assets/specification.png)
 
-> **Specification Version:** v0.1.1 — Draft
+> **Specification Version:** 0.1 — Draft
 
 This section contains the official definition of the AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
@@ -20,7 +20,7 @@ Architecture pages, examples, and research are not specification requirements un
 
 ## Draft Stability
 
-Version 0.1.1 is a working draft intended for public review, implementation experiments, and further research.
+Version 0.1 is a working draft intended for public review, implementation experiments, and further research.
 
 Readers should expect that:
 
