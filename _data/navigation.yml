@@ -1,0 +1,56 @@
+- title: Home
+  items:
+    - title: Overview
+      url: /
+    - title: Documentation
+      url: /docs/
+    - title: History and Development
+      url: /docs/history.html
+
+- title: Specification
+  items:
+    - title: Overview
+      url: /docs/specification/
+    - title: Formal Definition
+      url: /docs/specification/definition.html
+    - title: Principles
+      url: /docs/specification/principles/
+    - title: Lifecycle
+      url: /docs/specification/lifecycle/
+    - title: Conformance
+      url: /docs/specification/conformance/
+    - title: Terminology
+      url: /docs/specification/terminology.html
+
+- title: Architecture
+  items:
+    - title: Overview
+      url: /docs/architecture/
+    - title: Core Operating Model
+      url: /docs/architecture/operating-model.html
+    - title: Runtime View
+      url: /docs/architecture/runtime-view.html
+    - title: Learning View
+      url: /docs/architecture/learning-view.html
+    - title: Governance and Escalation
+      url: /docs/architecture/governance-and-escalation.html
+    - title: Core Boundaries
+      url: /docs/architecture/boundaries.html
+
+- title: End-to-End Example
+  items:
+    - title: Overview
+      url: /docs/examples/
+    - title: Software Maintenance Flywheel
+      url: /docs/examples/software-maintenance-flywheel.html
+
+- title: Research
+  items:
+    - title: Overview
+      url: /docs/research/
+    - title: Framework Research
+      url: /docs/research/frameworks/
+    - title: Prior-Art Overview
+      url: /docs/research/frameworks/prior-art-overview.html
+    - title: Framework Comparison
+      url: /docs/research/frameworks/framework-comparison-matrix.html

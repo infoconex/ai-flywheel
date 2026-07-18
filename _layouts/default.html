@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('ai-flywheel-theme');
+      if (savedTheme) {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    })();
+  </script>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=0.1.1-7">
+  <link rel="stylesheet" href="{{ '/assets/css/navigation.css' | relative_url }}?v=0.1.1-7">
+  <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}?v=0.1.1-7">
+  <link rel="stylesheet" href="{{ '/assets/css/site-features.css' | relative_url }}?v=0.1.1-7">
+  <link rel="stylesheet" href="{{ '/assets/css/search.css' | relative_url }}?v=0.1.1-7">
+  <link rel="stylesheet" href="{{ '/assets/css/diagram-interactions.css' | relative_url }}?v=0.1.1-7">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="AI Flywheel home">
+        <span class="brand__logo" aria-hidden="true">
+          <img src="{{ '/docs/assets/ai-flywheel-64-icon.png' | relative_url }}" alt="">
+        </span>
+        <span class="brand__text">
+          <strong>AI Flywheel</strong>
+          <span>Specification v0.1.1</span>
+        </span>
+      </a>
+
+      <div class="site-search" data-site-search>
+        <label class="sr-only" for="site-search-input">Search documentation</label>
+        <input id="site-search-input" type="search" placeholder="Search documentation" autocomplete="off" aria-controls="site-search-results" aria-expanded="false">
+        <div class="site-search__results" id="site-search-results" role="listbox" hidden></div>
+      </div>
+
+      <nav class="header-actions" aria-label="Repository links">
+        <label class="theme-picker">
+          <span class="sr-only">Theme</span>
+          <select id="theme-picker" aria-label="Choose site theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="sepia">Sepia</option>
+          </select>
+        </label>
+        <a class="header-link" href="https://github.com/infoconex/ai-flywheel">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar"></div>
+  </div>
+
+  <div class="site-shell">
+    <aside class="sidebar" id="site-sidebar">
+      <div class="sidebar__inner">
+        <nav class="docs-nav" aria-label="Documentation navigation">
+          {% for section in site.data.navigation %}
+            <div class="nav-section" data-nav-group>
+              {% if section.url %}
+                {% assign section_url = section.url | relative_url %}
+                <a class="nav-section__title{% if page.url == section.url %} is-active{% endif %}" href="{{ section_url }}">{{ section.title }}</a>
+              {% else %}
+                <span class="nav-section__title">{{ section.title }}</span>
+              {% endif %}
+              {% if section.items %}
+                <ul>
+                  {% for item in section.items %}
+                    {% assign item_url = item.url | relative_url %}
+                    <li data-nav-item>
+                      <a class="{% if page.url == item.url %}is-active{% endif %}" href="{{ item_url }}">{{ item.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>A loop repeats.<br><strong>A flywheel compounds.</strong></p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-backdrop" data-nav-close></div>
+
+    <main class="content-wrap" id="main-content">
+      <article class="content-card{% if page.url == '/docs/architecture/operating-model.html' %} content-card--wide{% endif %}">
+        <div class="content-prose">
+          {{ content }}
+        </div>
+      </article>
+
+      <footer class="site-footer">
+        <span>AI Flywheel</span>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/infoconex/ai-flywheel">View source on GitHub</a>
+      </footer>
+    </main>
+  </div>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+    const expandIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const collapseIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9H4V4M15 9h5V4M9 15H4v5M15 15h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+    const blocks = document.querySelectorAll('pre > code.language-mermaid');
+    blocks.forEach((codeBlock) => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'mermaid-diagram';
+
+      const fullscreenButton = document.createElement('button');
+      fullscreenButton.className = 'mermaid-diagram__fullscreen';
+      fullscreenButton.type = 'button';
+      fullscreenButton.innerHTML = expandIcon;
+      fullscreenButton.setAttribute('aria-label', 'View diagram full screen');
+      fullscreenButton.setAttribute('title', 'View diagram full screen');
+
+      const mermaidBlock = document.createElement('div');
+      mermaidBlock.className = 'mermaid';
+      mermaidBlock.textContent = codeBlock.textContent;
+
+      fullscreenButton.addEventListener('click', async () => {
+        try {
+          if (document.fullscreenElement === wrapper) {
+            await document.exitFullscreen();
+          } else {
+            await wrapper.requestFullscreen();
+          }
+        } catch {
+          // Fullscreen may be unavailable in some embedded browser contexts.
+        }
+      });
+
+      document.addEventListener('fullscreenchange', () => {
+        const isFullscreen = document.fullscreenElement === wrapper;
+        fullscreenButton.innerHTML = isFullscreen ? collapseIcon : expandIcon;
+        fullscreenButton.setAttribute('aria-label', isFullscreen ? 'Exit full screen' : 'View diagram full screen');
+        fullscreenButton.setAttribute('title', isFullscreen ? 'Exit full screen' : 'View diagram full screen');
+      });
+
+      wrapper.append(fullscreenButton, mermaidBlock);
+      codeBlock.parentElement.replaceWith(wrapper);
+    });
+
+    if (blocks.length > 0) {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        securityLevel: 'strict',
+        themeVariables: {
+          fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif',
+          primaryColor: '#eef2ff',
+          primaryTextColor: '#172033',
+          primaryBorderColor: '#8b9cf6',
+          lineColor: '#667085',
+          secondaryColor: '#f0fdf4',
+          tertiaryColor: '#f8fafc'
+        }
+      });
+
+      await mermaid.run({ querySelector: '.mermaid' });
+    }
+  </script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v=0.1.1-7" defer></script>
+  <script src="{{ '/assets/js/search-v2.js' | relative_url }}?v=0.1.1-7" defer></script>
+  <script src="{{ '/assets/js/diagram-interactions.js' | relative_url }}?v=0.1.1-7" defer></script>
+</body>
+</html>

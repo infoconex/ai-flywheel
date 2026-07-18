@@ -1,0 +1,42 @@
+.brand__logo {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.brand__logo img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.brand__text strong {
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  .brand__logo,
+  .brand__logo img {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .brand__logo {
+    flex-basis: 40px;
+  }
+
+  .brand__text strong {
+    font-size: 16px;
+  }
+}
