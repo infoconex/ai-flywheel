@@ -1,0 +1,76 @@
+.mermaid-diagram.is-interactive {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.mermaid-diagram.is-interactive .mermaid {
+  transform-origin: 0 0;
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+}
+
+.mermaid-diagram.is-interactive.is-dragging .mermaid {
+  cursor: grabbing;
+}
+
+.mermaid-diagram__reset {
+  position: absolute;
+  top: 12px;
+  right: 54px;
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #344054;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.12);
+  cursor: pointer;
+  appearance: none;
+  backdrop-filter: blur(6px);
+}
+
+.mermaid-diagram__reset svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+}
+
+.mermaid-diagram__reset:hover {
+  background: rgba(255, 255, 255, 0.94);
+  color: #101828;
+}
+
+.mermaid-diagram__reset:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+html[data-theme="dark"] .mermaid-diagram__reset {
+  background: rgba(255, 255, 255, 0.82);
+  color: #172033 !important;
+}
+
+html[data-theme="dark"] .mermaid-diagram__reset:hover {
+  background: #ffffff;
+  color: #0f172a !important;
+}
+
+html[data-theme="sepia"] .mermaid-diagram__reset {
+  background: rgba(255, 250, 240, 0.88);
+  color: #4f3d2b;
+}
+
+html[data-theme="sepia"] .mermaid-diagram__reset:hover {
+  background: #fffaf0;
+  color: #2f281f;
+}
+
+.mermaid-diagram:fullscreen .mermaid-diagram__reset {
+  top: 18px;
+  right: 60px;
+}
