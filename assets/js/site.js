@@ -100,4 +100,90 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  const content = document.querySelector('.content-prose');
+  const contentWrap = document.querySelector('.content-wrap');
+
+  if (content && contentWrap) {
+    const headings = Array.from(content.querySelectorAll('h2, h3'));
+
+    if (headings.length >= 2) {
+      const usedIds = new Set();
+      const slugify = (value) => value
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+
+      headings.forEach((heading, index) => {
+        if (!heading.id) {
+          const baseId = slugify(heading.textContent) || `section-${index + 1}`;
+          let id = baseId;
+          let suffix = 2;
+
+          while (usedIds.has(id) || document.getElementById(id)) {
+            id = `${baseId}-${suffix}`;
+            suffix += 1;
+          }
+
+          heading.id = id;
+        }
+
+        usedIds.add(heading.id);
+      });
+
+      const aside = document.createElement('aside');
+      aside.className = 'on-this-page';
+      aside.setAttribute('aria-label', 'On this page');
+
+      const title = document.createElement('p');
+      title.className = 'on-this-page__title';
+      title.textContent = 'On this page';
+      aside.appendChild(title);
+
+      const list = document.createElement('ul');
+      const links = [];
+
+      headings.forEach((heading) => {
+        const item = document.createElement('li');
+        item.className = `toc-level-${heading.tagName === 'H3' ? '3' : '2'}`;
+
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+        link.dataset.targetId = heading.id;
+
+        item.appendChild(link);
+        list.appendChild(item);
+        links.push(link);
+      });
+
+      aside.appendChild(list);
+      document.body.appendChild(aside);
+      contentWrap.classList.add('has-on-this-page');
+
+      const setActiveLink = (id) => {
+        links.forEach((link) => {
+          link.classList.toggle('is-active', link.dataset.targetId === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          setActiveLink(visible[0].target.id);
+        }
+      }, {
+        rootMargin: `-${68 + 24}px 0px -70% 0px`,
+        threshold: 0
+      });
+
+      headings.forEach((heading) => observer.observe(heading));
+      setActiveLink(headings[0].id);
+    }
+  }
 })();
