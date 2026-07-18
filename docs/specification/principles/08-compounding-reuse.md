@@ -1,6 +1,6 @@
 # Principle 8: Improvement Must Compound Through Reuse
 
-The output of one Flywheel cycle becomes part of the operating system of the next.
+The output of one Flywheel cycle becomes part of the operating state used by the next.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ A conforming implementation must satisfy these requirements:
 
 The recurring pattern is:
 
-**Execute → produce evidence → learn → improve persistent assets → reuse the improved system → produce better future evidence**
+**Execute → produce evidence → learn → improve persistent assets → reuse the improved operating state → produce better future evidence**
 
 Each cycle begins from a stronger operating state when previous learning has been preserved and reused successfully.
 
@@ -63,7 +63,7 @@ Capability can improve over time without allowing authority to expand on its own
 
 - **Persist:** Validated and authorized improvements become durable operational assets.
 - **Reuse:** Later execution retrieves, invokes, or applies those improvements.
-- **Execute:** The improved operating system becomes the new starting state.
+- **Execute:** The improved operating state becomes the new starting point.
 - **Observe through Validate:** Later evidence determines whether reused improvements remain effective and whether more adaptation is justified.
 
 Reuse closes the lifecycle and creates the compounding behavior that gives the AI Flywheel its name.
@@ -73,7 +73,7 @@ Reuse closes the lifecycle and creates the compounding behavior that gives the A
 Evidence supporting this principle may include:
 
 - Later executions invoking improved deterministic capabilities created or modified by earlier cycles
-- Updated SOP guidance being applied in future operation
+- Updated Standard Operating Procedure (SOP) guidance being applied in future operation
 - Stronger validation or failure-handling rules affecting later behavior
 - Durable reasoning knowledge being retrieved and used
 - Repeated human decisions being turned into reusable guidance where appropriate
