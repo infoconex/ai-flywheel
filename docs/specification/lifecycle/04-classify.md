@@ -70,7 +70,7 @@ Classification should return to evaluation or observation when the evidence is t
 
 It should advance to adaptation when a supported improvement destination has been identified.
 
-It may exit without adaptation when the current operating system behaved correctly and no durable improvement is justified.
+It may exit without adaptation when the current operating model behaved correctly and no durable improvement is justified.
 
 It must not force a change merely to complete the lifecycle.
 
