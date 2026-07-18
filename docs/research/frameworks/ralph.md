@@ -282,9 +282,9 @@ The human defines and tunes the loop, can stop or reset it, and makes judgment c
 
 | Dimension | Ralph | AI Flywheel |
 |---|---|---|
-| Primary purpose | Repeated autonomous progress on a software project | Repeated operational execution that improves its own operating system |
+| Primary purpose | Repeated autonomous progress on a software project | Repeated operational execution that improves its own operating model |
 | Core loop | Reinvoke coding agent with persistent repository state | Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, Reuse |
-| Persistent procedure | Prompt, specs, plans, `AGENT.md` | Explicit SOP / procedural knowledge |
+| Persistent procedure | Prompt, specs, plans, `AGENT.md` | Explicit Standard Operating Procedure (SOP) / procedural knowledge |
 | Deterministic feedback | Tests, builds, static analysis, other backpressure | Outcome evidence and validation appropriate to the work |
 | Learning destination | Mostly project artifacts | Explicitly selected persistent destination |
 | Cross-task learning | Primarily repository-local | Intended to compound across recurring executions of a process |
@@ -304,7 +304,7 @@ Ralph provides meaningful prior art for:
 
 ## Key Differences to Investigate
 
-### Loop progress versus operating-system evolution
+### Loop progress versus operating-model evolution
 
 A Ralph loop may continuously improve a product while leaving the underlying method largely unchanged.
 
@@ -334,7 +334,7 @@ Ralph should be treated as strong prior art for autonomous iterative coding loop
 
 The AI Flywheel should not claim the basic pattern of repeatedly invoking an AI until a goal converges as novel.
 
-The more defensible distinction is that the AI Flywheel treats repeated execution as a source of evidence for modifying the **persistent operating system of the process**, with explicit routing among different learning destinations and explicit human governance.
+The more defensible distinction is that the AI Flywheel treats repeated execution as a source of evidence for modifying the **persistent operating model of the process**, with explicit routing among different learning destinations and explicit human governance.
 
 ## Related AI Flywheel Research
 
