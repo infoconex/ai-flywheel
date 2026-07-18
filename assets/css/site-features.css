@@ -126,7 +126,8 @@ html[data-theme="sepia"] .content-prose pre code {
 }
 
 html[data-theme="dark"] .mermaid-diagram {
-  background: linear-gradient(180deg, #111827, #172033);
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  border-color: #d0d5dd;
 }
 
 html[data-theme="sepia"] .mermaid-diagram {
