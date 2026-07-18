@@ -20,7 +20,7 @@ AI-assisted work often begins with a human asking AI to create something the hum
 
 That creates a new question: what should happen when execution succeeds imperfectly, fails unexpectedly, or reveals a better way to perform the work?
 
-An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the system, validates the improvement, persists it, and reuses it in future execution.
+An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the operating model, validates the improvement, persists it, and reuses it in future execution.
 
 A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, or a proposed governance change. The next execution then begins from the improved operating state rather than starting from the same place again.
 
@@ -33,13 +33,13 @@ The lifecycle is:
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
 - **Execute** the work using procedural guidance, AI reasoning, and deterministic capabilities.
-- **Observe** evidence about what actually happened.
+- **Observe** evidence about what actually happened during execution.
 - **Evaluate** the outcome against the intended result and success criteria.
-- **Classify** the weakness, uncertainty, or learning opportunity and determine where the learning should live.
+- **Classify** what was learned, the source of weakness or uncertainty, and where the learning should live.
 - **Adapt** the procedure, reasoning, deterministic capability, validation, or governance needed to address what was learned.
-- **Validate** the proposed improvement before trusting it for future use.
+- **Validate** the proposed improvement to confirm that it works as intended before trusting it for future use.
 - **Persist** validated and authorized learning in a durable operational asset.
-- **Reuse** the improved system in future execution.
+- **Reuse** the improved operating state in future execution.
 
 Governance applies throughout the cycle. Human-defined authority determines whether actions and changes are authorized, require approval, require human judgment, or are prohibited.
 
@@ -52,14 +52,14 @@ The comparison below follows the AI Flywheel lifecycle so each stage can be eval
 | Lifecycle Stage | Traditional Automation | Typical Agent Loop | AI Flywheel |
 |---|---|---|---|
 | **Execute** — Performs the work using procedures, reasoning, and deterministic capabilities | Yes | Yes | Required |
-| **Observe** — Captures evidence about what actually happened | Limited | Often | Required |
-| **Evaluate** — Compares outcomes against intended results and success criteria | Limited | Often | Required |
-| **Classify** — Determines what was learned and where that learning should live | No | Framework-dependent | Required |
-| **Adapt** — Changes the procedure, reasoning, deterministic capability, validation, or governance as needed | Release-dependent | Framework-dependent | Required |
-| **Validate** — Confirms that the proposed improvement works as intended | Release-dependent | Framework-dependent | Required |
-| **Persist** — Stores validated and authorized learning in a durable form | Limited | Sometimes | Required |
-| **Reuse** — Uses the improved state in future execution | Limited | Sometimes | Required |
-| **Governance** — Controls what may be executed, changed, or persisted | External | Framework-dependent | Required throughout |
+| **Observe** — Captures evidence about what actually happened during execution | Possible, not inherent | Framework-dependent | Required |
+| **Evaluate** — Compares the outcome against the intended result and success criteria | Possible, not inherent | Framework-dependent | Required |
+| **Classify** — Determines what was learned, the source of weakness or uncertainty, and where the learning should live | Not inherent | Framework-dependent | Required |
+| **Adapt** — Changes the procedure, reasoning, deterministic capability, validation, or governance as needed | Release or process-dependent | Framework-dependent | Required |
+| **Validate** — Confirms that the proposed improvement works as intended before future use | Release or process-dependent | Framework-dependent | Required |
+| **Persist** — Stores validated and authorized learning in a durable operational asset | Possible, not inherent | Framework-dependent | Required |
+| **Reuse** — Uses the improved operating state in future execution | Possible, not inherent | Framework-dependent | Required |
+| **Governance** — Controls what may be executed, changed, or persisted | Usually external | Framework-dependent | Required throughout |
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
 
@@ -70,7 +70,7 @@ Agent systems vary widely, so this table is a general comparison rather than a c
 A system does not become an AI Flywheel merely because it contains one part of the pattern.
 
 - A **retry-only loop** repeats work but does not necessarily learn from it.
-- A **memory-only agent** may retain information without changing the operational system used by future execution.
+- A **memory-only agent** may retain information without changing the operating model used by future execution.
 - A **self-modifying system** may change code without deciding whether code is the right place for the learning.
 - **Reflection alone** does not create compounding improvement unless the lesson changes a persistent operational asset that future execution can reuse.
 - **Fixed automation** can be highly reliable without having an evidence-driven mechanism for evolving itself.
@@ -119,7 +119,7 @@ Then explore the supporting material:
 - **[Complete Specification](docs/specification/README.md)** — Browse the full methodology, including terminology, governance, boundaries, principles, lifecycle, and conformance.
 - **[Core Operating Model](docs/architecture/operating-model.md)** — See how human authority, runtime mechanisms, governance, learning, persistence, and reuse fit together.
 - **[Architecture](docs/architecture/README.md)** — Explore detailed views of runtime, learning, governance, escalation, and system boundaries.
-- **[Worked Example](docs/examples/software-maintenance-flywheel.md)** — Follow a complete execution-to-reuse example in practice.
+- **[End-to-End Example](docs/examples/software-maintenance-flywheel.md)** — Follow a complete execution-to-reuse example in practice.
 - **[Research](docs/research/README.md)** — Review prior-art analysis, framework comparisons, and supporting research.
 - **[History and Development](docs/history.md)** — Follow the development of the methodology from its early ideas through formalization.
 - **[Documentation Index](docs/README.md)** — Browse the complete documentation structure.
