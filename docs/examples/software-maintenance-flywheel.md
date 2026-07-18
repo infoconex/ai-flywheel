@@ -2,6 +2,12 @@
 
 This example shows how an AI Flywheel can operate a recurring software maintenance process and improve the operating model used by later executions.
 
+## Use Case
+
+**Recurring dependency maintenance across many software repositories**
+
+A software organization needs to apply approved dependency upgrades consistently across repositories while preserving required build, test, security, review, and governance controls. The AI Flywheel operates the maintenance process and uses evidence from completed work to improve later maintenance runs.
+
 The example presents one possible implementation. It illustrates the AI Flywheel specification but does not add requirements or prescribe a required architecture.
 
 ## Scenario
