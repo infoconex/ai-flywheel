@@ -3,4 +3,4 @@ layout: default
 permalink: /
 ---
 
-{% include_relative docs/README.md %}
+{% include_relative README.md %}
