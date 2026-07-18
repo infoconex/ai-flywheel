@@ -18,6 +18,7 @@ Examples help explain the methodology but do not add new requirements. The requi
 ## Use Cases in Development
 
 - [Production Incident Investigation and Recovery](production-incident-response/README.md) — Defines a simulated AI-operated incident-response use case. Its lifecycle worked example will be developed after the use case is reviewed.
+- [Hypothesis-Driven Problem Solving](hypothesis-driven-problem-solving/README.md) — Defines a governed test-and-learn use case for problems whose desired outcome is known but whose solution is not. Its lifecycle worked example will be developed after the use case is reviewed.
 
 ## Example Template
 
