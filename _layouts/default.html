@@ -13,11 +13,11 @@
     })();
   </script>
   {% seo %}
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=0.1.1-2">
-  <link rel="stylesheet" href="{{ '/assets/css/navigation.css' | relative_url }}?v=0.1.1-2">
-  <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}?v=0.1.1-2">
-  <link rel="stylesheet" href="{{ '/assets/css/site-features.css' | relative_url }}?v=0.1.1-2">
-  <link rel="stylesheet" href="{{ '/assets/css/search.css' | relative_url }}?v=0.1.1-2">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=0.1.1-3">
+  <link rel="stylesheet" href="{{ '/assets/css/navigation.css' | relative_url }}?v=0.1.1-3">
+  <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}?v=0.1.1-3">
+  <link rel="stylesheet" href="{{ '/assets/css/site-features.css' | relative_url }}?v=0.1.1-3">
+  <link rel="stylesheet" href="{{ '/assets/css/search.css' | relative_url }}?v=0.1.1-3">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -97,7 +97,7 @@
     <div class="sidebar-backdrop" data-nav-close></div>
 
     <main class="content-wrap" id="main-content">
-      <article class="content-card">
+      <article class="content-card{% if page.url == '/docs/architecture/operating-model.html' %} content-card--wide{% endif %}">
         <div class="content-prose">
           {{ content }}
         </div>
@@ -121,11 +121,33 @@
       const wrapper = document.createElement('div');
       wrapper.className = 'mermaid-diagram';
 
+      const fullscreenButton = document.createElement('button');
+      fullscreenButton.className = 'mermaid-diagram__fullscreen';
+      fullscreenButton.type = 'button';
+      fullscreenButton.textContent = 'Full screen';
+      fullscreenButton.setAttribute('aria-label', 'View diagram full screen');
+
       const mermaidBlock = document.createElement('div');
       mermaidBlock.className = 'mermaid';
       mermaidBlock.textContent = codeBlock.textContent;
 
-      wrapper.appendChild(mermaidBlock);
+      fullscreenButton.addEventListener('click', async () => {
+        try {
+          if (document.fullscreenElement === wrapper) {
+            await document.exitFullscreen();
+          } else {
+            await wrapper.requestFullscreen();
+          }
+        } catch {
+          // Fullscreen may be unavailable in some embedded browser contexts.
+        }
+      });
+
+      document.addEventListener('fullscreenchange', () => {
+        fullscreenButton.textContent = document.fullscreenElement === wrapper ? 'Exit full screen' : 'Full screen';
+      });
+
+      wrapper.append(fullscreenButton, mermaidBlock);
       codeBlock.parentElement.replaceWith(wrapper);
     });
 
@@ -148,7 +170,7 @@
       await mermaid.run({ querySelector: '.mermaid' });
     }
   </script>
-  <script src="{{ '/assets/js/site.js' | relative_url }}?v=0.1.1-2" defer></script>
-  <script src="{{ '/assets/js/search-v2.js' | relative_url }}?v=0.1.1-2" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v=0.1.1-3" defer></script>
+  <script src="{{ '/assets/js/search-v2.js' | relative_url }}?v=0.1.1-3" defer></script>
 </body>
 </html>
