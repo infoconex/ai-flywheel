@@ -19,6 +19,10 @@
   object-fit: cover;
 }
 
+.brand__text strong {
+  font-size: 18px;
+}
+
 @media (max-width: 640px) {
   .brand__logo,
   .brand__logo img {
@@ -30,5 +34,9 @@
 
   .brand__logo {
     flex-basis: 40px;
+  }
+
+  .brand__text strong {
+    font-size: 16px;
   }
 }
