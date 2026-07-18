@@ -26,13 +26,13 @@ The result is a compounding system in which repeated execution improves reliabil
 
 Human authority establishes the scope within which the Flywheel may operate. That authority should be expressed through a persistent **Governance Policy** defining:
 
-- the actions the AI may perform on its own,
-- the changes the AI may make on its own,
-- decisions requiring human approval,
-- conditions requiring human judgment,
-- prohibited actions,
-- applicable risk or impact thresholds,
-- and escalation requirements.
+- The actions the AI may perform on its own
+- The changes the AI may make on its own
+- Decisions requiring human approval
+- Conditions requiring human judgment
+- Prohibited actions
+- Applicable risk or impact thresholds
+- Escalation requirements
 
 Human authority is not a fourth execution layer. It is the source of governance over the system.
 
@@ -62,7 +62,7 @@ The Flywheel may become more conservative by escalating more often when unexpect
 
 The Governance Policy defines what the Flywheel is allowed to do and when human authority must be involved. The SOP may not override the Governance Policy.
 
-### Procedural SOP
+### Standard Operating Procedure (SOP)
 
 The SOP is the operational control plane. It defines the intended outcome, process, available capabilities, normal execution path, known exception handling, evidence expectations, validation requirements, and escalation conditions.
 
@@ -84,13 +84,13 @@ After execution, observation, evaluation, and classification, the Flywheel asks:
 
 A learning may become:
 
-- a new or improved deterministic capability,
-- procedural knowledge in the SOP,
-- reasoning knowledge such as durable guidance, examples, heuristics, or memory,
-- stronger validation,
-- or a proposed Governance Policy change requiring human authority.
+- A new or improved deterministic capability
+- Procedural knowledge in the SOP
+- Reasoning knowledge such as durable guidance, examples, heuristics, or memory
+- Stronger validation
+- A proposed Governance Policy change requiring human authority
 
-This distinction is important: deterministic code, procedural SOP, and AI reasoning are used **during execution**, while the decision to move responsibility among them occurs **after execution produces evidence**.
+This distinction is important: deterministic capability, procedural guidance through the SOP, and AI reasoning are used **during execution**, while the decision to move responsibility among them occurs **after execution produces evidence**.
 
 ## The Moving Determinism Boundary
 
@@ -124,6 +124,6 @@ The determinism boundary can move as the system learns. The authority boundary i
 - [Lifecycle](lifecycle/README.md)
 - [Conformance](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
-- [Worked Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
+- [End-to-End Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
 
 For comparative research, see the [research section](../research/README.md).
