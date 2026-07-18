@@ -128,7 +128,7 @@ The specification defines the methodology. The research collection examines rela
 
 ## Project Status and Roadmap
 
-> **Current status:** AI Flywheel Specification 0.1 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
+> **Current status:** AI Flywheel Specification v0.1.1 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
 
 The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
 
