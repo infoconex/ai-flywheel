@@ -8,7 +8,6 @@
       url: /docs/history.html
 
 - title: Specification
-  url: /docs/specification/
   items:
     - title: Overview
       url: /docs/specification/
@@ -24,7 +23,6 @@
       url: /docs/specification/terminology.html
 
 - title: Architecture
-  url: /docs/architecture/
   items:
     - title: Overview
       url: /docs/architecture/
@@ -40,7 +38,6 @@
       url: /docs/architecture/boundaries.html
 
 - title: End-to-End Example
-  url: /docs/examples/
   items:
     - title: Overview
       url: /docs/examples/
@@ -48,7 +45,6 @@
       url: /docs/examples/software-maintenance-flywheel.html
 
 - title: Research
-  url: /docs/research/
   items:
     - title: Overview
       url: /docs/research/
