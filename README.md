@@ -10,7 +10,7 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 The ideas that became the AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
 
-These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the planned `v0.1.0` release marks its first formal public specification release.
+These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the `v0.1.0` release marks its first formal public specification release.
 
 See [AI Flywheel History and Development](docs/history.md) for the full timeline.
 
@@ -126,7 +126,7 @@ The specification defines the methodology. The research collection examines rela
 
 ## Project Status and Roadmap
 
-> **Status:** AI Flywheel Specification 0.1 — Draft. The planned first repository release is `v0.1.0`.
+> **Current status:** AI Flywheel Specification 0.1 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
 
 The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
 
@@ -138,4 +138,4 @@ Future work may include:
 - Conformance evaluation tooling
 - Continued prior-art research
 
-The first repository release is intended to publish **AI Flywheel Specification 0.1 — Draft** as a working methodology, not as a frozen 1.0 standard. Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
+Terminology, conformance details, and supporting guidance may continue to evolve before a stable specification is declared.
