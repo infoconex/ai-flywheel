@@ -14,7 +14,7 @@ Execution begins with:
 
 - An authorized goal, trigger, request, event, or unit of work
 - The applicable Governance Policy
-- The current SOP or other persistent procedural guidance
+- The current Standard Operating Procedure (SOP) or other persistent procedural guidance
 - Available deterministic capabilities
 - Relevant reasoning knowledge and context
 - The current operating state inherited from prior Flywheel cycles
