@@ -3,6 +3,7 @@
 }
 
 html[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #0f172a;
   --surface: #111827;
   --surface-muted: #1f2937;
@@ -18,6 +19,7 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="sepia"] {
+  color-scheme: light;
   --bg: #f3ead8;
   --surface: #fffaf0;
   --surface-muted: #f7efdf;
@@ -30,6 +32,86 @@ html[data-theme="sepia"] {
   --accent-soft: #f1dfc6;
   --success-soft: #e5ecd8;
   --header: #2f281f;
+}
+
+/* Ensure the theme variables visibly apply to surfaces that use fixed colors in the base stylesheet. */
+html[data-theme="dark"] .site-header,
+html[data-theme="sepia"] .site-header {
+  background: color-mix(in srgb, var(--header) 96%, transparent);
+}
+
+html[data-theme="dark"] .content-card,
+html[data-theme="sepia"] .content-card {
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] .content-prose h1,
+html[data-theme="dark"] .content-prose h2,
+html[data-theme="dark"] .content-prose h3,
+html[data-theme="dark"] .content-prose h4,
+html[data-theme="dark"] .content-prose strong,
+html[data-theme="sepia"] .content-prose h1,
+html[data-theme="sepia"] .content-prose h2,
+html[data-theme="sepia"] .content-prose h3,
+html[data-theme="sepia"] .content-prose h4,
+html[data-theme="sepia"] .content-prose strong {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .nav-section__title,
+html[data-theme="sepia"] .nav-section__title,
+html[data-theme="dark"] .sidebar-footer strong,
+html[data-theme="sepia"] .sidebar-footer strong,
+html[data-theme="dark"] .content-prose th,
+html[data-theme="sepia"] .content-prose th {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .sidebar-search input:focus,
+html[data-theme="sepia"] .sidebar-search input:focus {
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .content-prose blockquote {
+  border-left-color: var(--accent);
+  background: linear-gradient(90deg, #1e2347, #171d31);
+  color: var(--text-muted);
+}
+
+html[data-theme="sepia"] .content-prose blockquote {
+  border-left-color: var(--accent);
+  background: linear-gradient(90deg, #f2e1c8, #fbf3e5);
+  color: var(--text-muted);
+}
+
+html[data-theme="dark"] .content-prose code,
+html[data-theme="sepia"] .content-prose code {
+  border-color: var(--border);
+  background: var(--surface-muted);
+  color: var(--text);
+}
+
+html[data-theme="dark"] .content-prose pre code,
+html[data-theme="sepia"] .content-prose pre code {
+  background: transparent;
+  color: inherit;
+}
+
+html[data-theme="dark"] .mermaid-diagram {
+  background: linear-gradient(180deg, #111827, #172033);
+}
+
+html[data-theme="sepia"] .mermaid-diagram {
+  background: linear-gradient(180deg, #fffaf0, #f7efdf);
+}
+
+html[data-theme="dark"] .site-footer,
+html[data-theme="dark"] .site-footer a,
+html[data-theme="sepia"] .site-footer,
+html[data-theme="sepia"] .site-footer a,
+html[data-theme="dark"] .sidebar-footer,
+html[data-theme="sepia"] .sidebar-footer {
+  color: var(--text-muted);
 }
 
 .theme-picker {
