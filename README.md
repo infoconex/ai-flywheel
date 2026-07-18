@@ -36,7 +36,7 @@ The lifecycle is:
 - **Observe** evidence about what actually happened.
 - **Evaluate** the outcome against the intended result and success criteria.
 - **Classify** the weakness, uncertainty, or learning opportunity and determine where the learning should live.
-- **Adapt** the right part of the operating system.
+- **Adapt** the procedure, reasoning, deterministic capability, validation, or governance needed to address what was learned.
 - **Validate** the proposed improvement before trusting it for future use.
 - **Persist** validated and authorized learning in a durable operational asset.
 - **Reuse** the improved system in future execution.
