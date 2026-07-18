@@ -17,6 +17,11 @@ exclude:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
 
 # Apply the site layout to existing Markdown without adding frontmatter to every page.
 defaults:
