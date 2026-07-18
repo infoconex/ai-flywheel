@@ -58,6 +58,34 @@ html[data-theme="sepia"] .content-prose strong {
   color: var(--text);
 }
 
+/* Dark-theme safety rules for nested elements and browser-rendered Markdown content. */
+html[data-theme="dark"] .content-prose h1 *,
+html[data-theme="dark"] .content-prose h2 *,
+html[data-theme="dark"] .content-prose h3 *,
+html[data-theme="dark"] .content-prose h4 *,
+html[data-theme="dark"] .content-prose h5 *,
+html[data-theme="dark"] .content-prose h6 *,
+html[data-theme="dark"] .content-prose h5,
+html[data-theme="dark"] .content-prose h6 {
+  color: var(--text) !important;
+}
+
+html[data-theme="dark"] .content-prose p,
+html[data-theme="dark"] .content-prose li,
+html[data-theme="dark"] .content-prose td,
+html[data-theme="dark"] .content-prose dt,
+html[data-theme="dark"] .content-prose dd {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .content-prose a {
+  color: var(--accent-strong);
+}
+
+html[data-theme="dark"] .content-prose a:hover {
+  color: #c7d2fe;
+}
+
 html[data-theme="dark"] .nav-section__title,
 html[data-theme="sepia"] .nav-section__title,
 html[data-theme="dark"] .sidebar-footer strong,
