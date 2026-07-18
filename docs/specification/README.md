@@ -20,7 +20,7 @@ Architecture pages, examples, and research are not specification requirements un
 
 ## Draft Stability
 
-Version v0.1.1 is a working draft intended for public review, implementation experiments, and further research.
+Version 0.1.1 is a working draft intended for public review, implementation experiments, and further research.
 
 Readers should expect that:
 
