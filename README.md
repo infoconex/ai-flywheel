@@ -47,19 +47,19 @@ Governance applies throughout the cycle. Human-defined authority determines whet
 
 An AI Flywheel is not defined by any single capability such as autonomous execution, memory, reflection, tool creation, code generation, self-modification, or feedback. These mechanisms all have substantial prior art.
 
-The main idea that may make the AI Flywheel different is how these mechanisms are combined into one operating model:
+The comparison below follows the AI Flywheel lifecycle so each stage can be evaluated consistently across different approaches:
 
-| Characteristic | Traditional Automation | Typical Agent Loop | AI Flywheel |
+| Lifecycle Stage | Traditional Automation | Typical Agent Loop | AI Flywheel |
 |---|---|---|---|
-| Executes work | Yes | Yes | Yes |
-| Uses outcome evidence | Limited | Often | Required |
-| Learns across executions | No | Sometimes | Required |
-| Persists operational learning | No | Sometimes | Required |
-| Chooses where learning should live | No | Framework-dependent | Explicit |
-| Can move responsibility among reasoning, procedure, and deterministic capability | No | Framework-dependent | Explicit |
-| Validates improvements before reuse | Release-dependent | Framework-dependent | Required |
-| Explicitly governs autonomous action and adaptation | External | Framework-dependent | Required |
-| Reuses improvements as part of the next operating state | No | Sometimes | Required |
+| **Execute** — Performs the work using procedures, reasoning, and deterministic capabilities | Yes | Yes | Required |
+| **Observe** — Captures evidence about what actually happened | Limited | Often | Required |
+| **Evaluate** — Compares outcomes against intended results and success criteria | Limited | Often | Required |
+| **Classify** — Determines what was learned and where that learning should live | No | Framework-dependent | Required |
+| **Adapt** — Changes the procedure, reasoning, deterministic capability, validation, or governance as needed | Release-dependent | Framework-dependent | Required |
+| **Validate** — Confirms that the proposed improvement works as intended | Release-dependent | Framework-dependent | Required |
+| **Persist** — Stores validated and authorized learning in a durable form | Limited | Sometimes | Required |
+| **Reuse** — Uses the improved state in future execution | Limited | Sometimes | Required |
+| **Governance** — Controls what may be executed, changed, or persisted | External | Framework-dependent | Required throughout |
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
 
