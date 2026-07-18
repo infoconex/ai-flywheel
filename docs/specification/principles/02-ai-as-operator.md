@@ -22,7 +22,7 @@ A conforming implementation must satisfy these requirements:
 
 Within its authorized scope, the AI may:
 
-- Follow and interpret the SOP
+- Follow and interpret the Standard Operating Procedure (SOP)
 - Invoke existing tools and deterministic capabilities
 - Create new capabilities when needed and authorized
 - Reason between tool calls
