@@ -35,10 +35,10 @@ The eight principles and eight-stage lifecycle define the current structure, but
 ## Table of Contents
 
 - [Formal Definition](definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the core boundaries.
-- [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Principles](principles/README.md) — Defines the eight principles of an AI Flywheel, with a dedicated page for each principle.
 - [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied throughout.
 - [Conformance](conformance/README.md) — Provides an evidence-based way to determine whether an implementation satisfies the specification.
+- [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Architecture and Diagrams](../architecture/README.md) — Shows the complete operating model, runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
 - [Worked Examples](../examples/README.md) — Shows how the specification can be applied to real operating processes without adding new requirements.
 
