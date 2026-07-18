@@ -130,6 +130,20 @@ html[data-theme="dark"] .mermaid-diagram {
   border-color: #d0d5dd;
 }
 
+html[data-theme="dark"] .mermaid-diagram,
+html[data-theme="dark"] .mermaid-diagram *,
+html[data-theme="dark"] .mermaid-diagram text,
+html[data-theme="dark"] .mermaid-diagram tspan,
+html[data-theme="dark"] .mermaid-diagram foreignObject,
+html[data-theme="dark"] .mermaid-diagram foreignObject * {
+  color: #172033 !important;
+}
+
+html[data-theme="dark"] .mermaid-diagram text,
+html[data-theme="dark"] .mermaid-diagram tspan {
+  fill: #172033 !important;
+}
+
 html[data-theme="sepia"] .mermaid-diagram {
   background: linear-gradient(180deg, #fffaf0, #f7efdf);
 }
