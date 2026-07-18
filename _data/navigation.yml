@@ -10,6 +10,8 @@
 - title: Specification
   url: /docs/specification/
   items:
+    - title: Overview
+      url: /docs/specification/
     - title: Formal Definition
       url: /docs/specification/definition.html
     - title: Principles
@@ -24,6 +26,8 @@
 - title: Architecture
   url: /docs/architecture/
   items:
+    - title: Overview
+      url: /docs/architecture/
     - title: Core Operating Model
       url: /docs/architecture/operating-model.html
     - title: Runtime View
@@ -38,12 +42,16 @@
 - title: End-to-End Example
   url: /docs/examples/
   items:
+    - title: Overview
+      url: /docs/examples/
     - title: Software Maintenance Flywheel
       url: /docs/examples/software-maintenance-flywheel.html
 
 - title: Research
   url: /docs/research/
   items:
+    - title: Overview
+      url: /docs/research/
     - title: Framework Research
       url: /docs/research/frameworks/
     - title: Prior-Art Overview
