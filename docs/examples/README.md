@@ -12,7 +12,7 @@ Examples help explain the methodology but do not add new requirements. The requi
 
 ## Examples
 
-- [Software Maintenance Flywheel](software-maintenance-flywheel.md) — Applies the use case of recurring dependency maintenance across many software repositories.
+- [Continuous Dependency Maintenance](software-maintenance/README.md) — Describes a simulated dependency-health use case and demonstrates how maintenance evidence improves procedure, deterministic capability, and responsibility placement.
 - [Standards-Driven Repository Modernization](standards-driven-repository-modernization/README.md) — Describes a simulated standards-driven migration use case and demonstrates how repeated repository migrations improve profiles, validation, governance decisions, dependency planning, and deterministic tooling.
 
 ## Example Template
