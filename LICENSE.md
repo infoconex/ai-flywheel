@@ -1,7 +1,5 @@
 # AI Flywheel Specification License
 
-Version 0.1 — Proposed for Legal Review
-
 Copyright © 2026 Jim Scott. All rights reserved except as expressly granted by this license.
 
 This license applies to the AI Flywheel specification, including its normative requirements, definitions, principles, lifecycle, conformance requirements, explanatory text, diagrams, and other documentation identified as part of the specification (the "Specification").
@@ -137,7 +135,3 @@ Upon termination, you must stop exercising the permissions granted by this licen
 ## 16. Additional Permission
 
 Permission for uses not granted by this license may be requested from the specification owner. Any additional permission must be provided in writing.
-
----
-
-This proposed license is intended to express the governance and adoption goals of the AI Flywheel project. It should be reviewed by a qualified intellectual-property attorney before being designated final.
