@@ -37,12 +37,18 @@
     - title: Core Boundaries
       url: /docs/architecture/boundaries.html
 
-- title: End-to-End Example
+- title: Examples
   items:
     - title: Overview
       url: /docs/examples/
-    - title: Software Maintenance Flywheel
-      url: /docs/examples/software-maintenance-flywheel.html
+    - title: Continuous Dependency Maintenance
+      url: /docs/examples/software-maintenance/
+    - title: Standards-Driven Repository Modernization
+      url: /docs/examples/standards-driven-repository-modernization/
+    - title: Production Incident Investigation and Recovery
+      url: /docs/examples/production-incident-response/
+    - title: Hypothesis-Driven Problem Solving
+      url: /docs/examples/hypothesis-driven-problem-solving/
 
 - title: Research
   items:
