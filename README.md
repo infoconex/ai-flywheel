@@ -119,7 +119,7 @@ Then explore the supporting material:
 - **[Complete Specification](docs/specification/README.md)** — Browse the full methodology, including terminology, governance, boundaries, principles, lifecycle, and conformance.
 - **[Core Operating Model](docs/architecture/operating-model.md)** — See how human authority, runtime mechanisms, governance, learning, persistence, and reuse fit together.
 - **[Architecture](docs/architecture/README.md)** — Explore detailed views of runtime, learning, governance, escalation, and system boundaries.
-- **[End-to-End Example](docs/examples/software-maintenance-flywheel.md)** — Follow a complete execution-to-reuse example in practice.
+- **[Examples](docs/examples/README.md)** — Explore concrete use cases and complete execution-to-reuse worked examples.
 - **[Research](docs/research/README.md)** — Review prior-art analysis, framework comparisons, and supporting research.
 - **[History and Development](docs/history.md)** — Follow the development of the methodology from its early ideas through formalization.
 - **[Documentation Index](docs/README.md)** — Browse the complete documentation structure.
