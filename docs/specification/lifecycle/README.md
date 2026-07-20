@@ -50,19 +50,21 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 7. [Stage 7: Persist](07-persist.md) — Store validated and authorized learning in a durable operational asset.
 8. [Stage 8: Reuse](08-reuse.md) — Use the improved operating state in future execution.
 
-## Lifecycle Document Structure
+## Lifecycle Stage Contracts
 
-Each lifecycle stage uses the same basic structure:
+Each lifecycle stage has a normative contract using the same structure:
 
-- **Purpose** — Why does this stage exist?
-- **Inputs** — What must be available when the stage begins?
-- **Required Behavior** — What must or should happen during the stage?
-- **Outputs** — What does the stage produce for the next stage or future execution?
-- **Governance Considerations** — How do authority, approval, prohibition, or human judgment affect this stage?
-- **Failure and Exit Conditions** — When can the stage advance, loop back, pause, or escalate?
-- **Relationships to Principles** — Which named principles are most directly connected to this stage?
+- **Required Inputs and Preconditions** — What must be available or true before the stage can perform its responsibility.
+- **Required Responsibilities** — What the stage must accomplish.
+- **Required Outputs and Evidence** — What the stage must produce or preserve.
+- **Completion Conditions** — What must be true for the stage responsibility to be considered complete.
+- **Relationship to Adjacent Stages** — How the stage consumes the prior stage's output and prepares the next stage's input.
 
-The lifecycle pages explain when required behavior occurs. The linked principle pages remain the main source for principle-level requirements.
+The stage contracts define required lifecycle responsibilities without prescribing a specific agent framework, programming language, storage mechanism, AI platform, or execution architecture.
+
+Completion conditions define the boundary of each stage responsibility. Retry behavior, backward transitions, escalation paths, stopping conditions, validation-failure routing, and other lifecycle transition semantics are separate concerns and are not defined by the individual stage contracts.
+
+The requirement language defined in the [Specification Overview](../README.md#requirement-language) applies to every lifecycle contract. Supporting examples and explanatory text do not create additional requirements unless they use requirement language to do so.
 
 ## The Flywheel Effect
 
