@@ -23,7 +23,7 @@ Evaluate Reflexion as prior art for agents that learn from execution feedback wi
 - [Reflecting on Reflexion](https://nanothoughts.substack.com/p/reflecting-on-reflexion) — Original author-linked explanatory blog post.
 - [ReAct paper](https://arxiv.org/abs/2210.03629) — Important background because Reflexion can use ReAct as the underlying actor strategy.
 - [ReAct project](https://react-lm.github.io/) — Project material for the reason-and-act agent architecture.
-- [AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Reflexion Is
 
@@ -247,9 +247,9 @@ The dominant adaptation destination is reflective linguistic memory. The framewo
 
 The architecture does not define an explicit Governance Policy or human approval gate.
 
-## Comparison to the AI Flywheel
+## Comparison to the Infoconex AI Flywheel
 
-| Dimension | Reflexion | AI Flywheel |
+| Dimension | Reflexion | Infoconex AI Flywheel |
 |---|---|---|
 | Learning trigger | Task feedback from a completed attempt | Outcome evidence from meaningful execution |
 | Reflection | Converts trajectory and feedback into a verbal lesson | Evaluation and classification determine what should change |
@@ -313,7 +313,7 @@ The more defensible distinction lies in what happens **after a lesson is identif
 
 That broader routing question, combined with movement across the determinism boundary and human-governed authority, remains the primary AI Flywheel differentiation hypothesis.
 
-## Related AI Flywheel Research
+## Related Infoconex AI Flywheel Research
 
 - [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
 - [AI Is the Operator](../principles/02-ai-as-operator.md)

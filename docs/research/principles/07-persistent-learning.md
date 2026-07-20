@@ -59,4 +59,4 @@ Research should establish dates and primary sources for:
 
 Persistent memory, skills, source changes, and reusable procedures are all established mechanisms.
 
-The AI Flywheel should therefore not claim persistence itself as novel. The stronger research question is whether the methodology's persistent-learning requirement is distinctive because the asset is selected through Evolution Routing, validated before reuse, governed by authority, and remains eligible to evolve again when later evidence shows that a different mechanism should own the behavior.
+The Infoconex AI Flywheel should therefore not claim persistence itself as novel. The stronger research question is whether the methodology's persistent-learning requirement is distinctive because the asset is selected through Evolution Routing, validated before reuse, governed by authority, and remains eligible to evolve again when later evidence shows that a different mechanism should own the behavior.

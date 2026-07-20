@@ -1,8 +1,8 @@
-# AI Flywheel Principles
+# Infoconex AI Flywheel Principles
 
-![AI Flywheel Principles](../../assets/principles.png)
+![Infoconex AI Flywheel Principles](../../assets/principles.png)
 
-These eight principles define the expected behavior of an AI Flywheel implementation. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse work as one operating model.
+These eight principles define the expected behavior of an implementation of the Infoconex AI Flywheel. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse work as one operating model.
 
 ## Principle Document Structure
 

@@ -1,10 +1,10 @@
 # Non-Conforming Patterns
 
-The following patterns may contain useful elements of the AI Flywheel but are not sufficient by themselves to satisfy the complete methodology.
+The following patterns may contain useful elements of the Infoconex AI Flywheel but are not sufficient by themselves to satisfy the complete methodology.
 
 ## Retry-Only Loops
 
-A loop that repeatedly retries until a task succeeds is not an AI Flywheel unless it also evaluates evidence, classifies learning, changes persistent operational assets, and reuses those improvements.
+A loop that repeatedly retries until a task succeeds does not conform to the Infoconex AI Flywheel Specification unless it also evaluates evidence, classifies learning, changes persistent operational assets, and reuses those improvements.
 
 ## Memory-Only Agents
 
@@ -20,7 +20,7 @@ An agent that reflects on failure but does not change persistent operational ass
 
 ## Fixed Automation Without Evolution
 
-A deterministic automation system with no evidence-driven mechanism for learning and improving its operating model is not an AI Flywheel.
+A deterministic automation system with no evidence-driven mechanism for learning and improving its operating model does not conform to the Infoconex AI Flywheel Specification.
 
 ## Lessons That Are Never Reused
 

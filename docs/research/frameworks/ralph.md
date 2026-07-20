@@ -23,7 +23,7 @@ Ralph does not have one canonical implementation repository because it is define
 
 - [Stop Hand-Holding Your Coding Agent: Engineering the Loops that Replace Step-by-Step Prompting](https://arxiv.org/abs/2607.00038) — A later formal treatment of reusable autonomous loop specifications, useful for understanding how the broader practice evolved beyond the original Ralph description.
 - [Geoffrey Huntley's specifications article](https://ghuntley.com/specs/) — Relevant to the specification-driven context used by Ralph-style loops.
-- [AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Ralph Is
 
@@ -278,9 +278,9 @@ However, the canonical Ralph technique does not define them as movable responsib
 
 The human defines and tunes the loop, can stop or reset it, and makes judgment calls when the system cannot recover. Formal machine-readable authority and uncertainty gates are not part of the minimal technique.
 
-## Comparison to the AI Flywheel
+## Comparison to the Infoconex AI Flywheel
 
-| Dimension | Ralph | AI Flywheel |
+| Dimension | Ralph | Infoconex AI Flywheel |
 |---|---|---|
 | Primary purpose | Repeated autonomous progress on a software project | Repeated operational execution that improves its own operating model |
 | Core loop | Reinvoke coding agent with persistent repository state | Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, Reuse |
@@ -336,7 +336,7 @@ The AI Flywheel should not claim the basic pattern of repeatedly invoking an AI 
 
 The more defensible distinction is that the AI Flywheel treats repeated execution as a source of evidence for modifying the **persistent operating model of the process**, with explicit routing among different learning destinations and explicit human governance.
 
-## Related AI Flywheel Research
+## Related Infoconex AI Flywheel Research
 
 - [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
 - [AI Is the Operator](../principles/02-ai-as-operator.md)

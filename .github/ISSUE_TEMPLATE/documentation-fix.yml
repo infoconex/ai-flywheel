@@ -1,0 +1,56 @@
+name: Documentation Fix
+description: Report a wording, link, formatting, typo, diagram, or navigation issue.
+title: "Documentation fix: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for documentation corrections that do not change the meaning of the Infoconex AI Flywheel Specification.
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Identify the page, section, heading, link, or file path.
+      placeholder: "Example: docs/specification/terminology.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fix_type
+    attributes:
+      label: Type of fix
+      options:
+        - Typo or grammar
+        - Broken link
+        - Formatting
+        - Navigation
+        - Diagram or image
+        - Clarifying wording without changing meaning
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what is wrong or unclear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_fix
+    attributes:
+      label: Suggested fix
+      description: Suggest corrected wording or explain the expected result.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: This issue is intended as a documentation fix and not as a change to the specification requirements.
+          required: true

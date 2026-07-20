@@ -1,0 +1,83 @@
+name: Specification Change Proposal
+description: Propose a change to the Infoconex AI Flywheel Specification.
+title: "Specification change: "
+labels:
+  - specification
+  - proposal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a change to the Infoconex AI Flywheel Specification.
+
+        A proposal, issue, pull request, fork, discussion, or derivative document does not redefine the specification. Proposed changes become official only if accepted and published by Infoconex.
+
+  - type: input
+    id: affected_area
+    attributes:
+      label: Affected area
+      description: Name the document, section, principle, lifecycle stage, term, or conformance area affected.
+      placeholder: "Example: Principle 6: Failure Determines Where the System Evolves"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed change
+      description: Describe the change you want made.
+      placeholder: "What should be added, removed, clarified, or revised?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for change
+      description: Explain why this change is needed.
+      placeholder: "What ambiguity, implementation issue, evidence gap, or problem does this address?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: conformance_impact
+    attributes:
+      label: Conformance impact
+      description: Does this proposal affect conformance requirements?
+      options:
+        - No conformance impact
+        - Clarifies existing conformance expectations
+        - Changes conformance requirements
+        - Unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: terminology_impact
+    attributes:
+      label: Terminology impact
+      description: Does this proposal affect defined terms or naming?
+      options:
+        - No terminology impact
+        - Clarifies existing terminology
+        - Adds, renames, or changes terminology
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, examples, or implementation experience
+      description: Provide supporting evidence, examples, links, implementation experience, or prior-art references.
+      placeholder: "Include primary sources when possible."
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I understand that this proposal does not become part of the official specification unless accepted and published by Infoconex.
+          required: true
+        - label: I have read or reviewed the project policies.
+          required: true

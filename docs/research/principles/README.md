@@ -1,6 +1,6 @@
 # Principle Research Dossiers
 
-This section does **not** define the AI Flywheel principles. The official principles are maintained in the [AI Flywheel specification](../../specification/principles/README.md).
+This section does **not** define the AI Flywheel principles. The official principles are maintained in the [Infoconex AI Flywheel Specification](../../specification/principles/README.md).
 
 These research pages investigate the ideas behind each principle. Their purpose is to record:
 

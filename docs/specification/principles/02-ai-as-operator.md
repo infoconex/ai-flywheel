@@ -1,6 +1,6 @@
 # Principle 2: AI Is the Operator, Not Merely the Assistant
 
-The AI Flywheel is built around AI performing the work itself rather than only producing instructions for a human to execute.
+The Infoconex AI Flywheel is built around AI performing the work itself rather than only producing instructions for a human to execute.
 
 ## Purpose
 

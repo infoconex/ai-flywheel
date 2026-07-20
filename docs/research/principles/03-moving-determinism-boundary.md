@@ -6,7 +6,7 @@
 
 Determine whether existing systems explicitly treat deterministic capability, procedural guidance, and AI reasoning as distinct operating mechanisms whose responsibilities can move over time based on execution evidence.
 
-This is currently one of the most important differentiation questions for the AI Flywheel.
+This is currently one of the most important differentiation questions for the Infoconex AI Flywheel.
 
 ## Current Evidence
 

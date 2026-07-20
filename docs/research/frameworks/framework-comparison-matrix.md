@@ -4,7 +4,7 @@
 
 ## Scoring System
 
-The matrix uses a **0–3 similarity score** to show how closely each framework appears to overlap with each AI Flywheel principle.
+The matrix uses a **0–3 similarity score** to show how closely each framework appears to overlap with each Infoconex AI Flywheel principle.
 
 - **3 — Strong:** The framework contains a very similar mechanism that plays a similar role.
 - **2 — Partial:** There is meaningful overlap, but the mechanism is narrower, organized differently, or missing important parts of the AI Flywheel principle.
@@ -24,7 +24,7 @@ In this matrix, **SOP** means **Standard Operating Procedure**.
 
 ## Comparison Matrix
 
-| AI Flywheel Principle | GenericAgent | Metis | MOSS | MASFly | Ralph | Reflexion |
+| Infoconex AI Flywheel Principle | GenericAgent | Metis | MOSS | MASFly | Ralph | Reflexion |
 |---|---:|---:|---:|---:|---:|---:|
 | **Principle 1: Autonomy Is Bounded by Human Authority** | Limited (1) | None (0) | Partial (2) | None (0) | Limited (1) | None (0) |
 | **Principle 2: AI Is the Operator, Not Merely the Assistant** | Strong (3) | Partial (2) | Partial (2) | Partial (2) | Strong (3) | Partial (2) |

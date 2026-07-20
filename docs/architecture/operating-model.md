@@ -1,8 +1,8 @@
 # Core Operating Model
 
-This view shows the complete AI Flywheel operating model in one place: human authority and governance above execution, the three operating mechanisms working together during execution, and the lifecycle turning outcome evidence into validated persistent learning.
+This view shows the complete Infoconex AI Flywheel operating model in one place: human authority and governance above execution, the three operating mechanisms working together during execution, and the lifecycle turning outcome evidence into validated persistent learning.
 
-The diagram is explanatory. The actual requirements are defined by the [AI Flywheel Specification](../specification/README.md).
+The diagram is explanatory. The actual requirements are defined by the [Infoconex AI Flywheel Specification](../specification/README.md).
 
 In the diagram, **SOP** means **Standard Operating Procedure**.
 

@@ -17,7 +17,7 @@ All reviewed frameworks demonstrate some form of reuse, but they compound differ
 - [Ralph](../frameworks/ralph.md) compounds progress and project-local learning through persistent repository artifacts, although transfer beyond the current project is limited.
 - [Reflexion](../frameworks/reflexion.md) reuses stored reflections across subsequent attempts to improve later behavior.
 
-Compounding reuse is therefore clearly established in multiple forms. The open question is whether the AI Flywheel combines those forms into a broader compounding operating model.
+Compounding reuse is therefore clearly established in multiple forms. The open question is whether the Infoconex AI Flywheel combines those forms into a broader compounding operating model.
 
 ## Related Ideas and Historical Provenance to Trace
 

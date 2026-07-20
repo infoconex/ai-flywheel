@@ -6,7 +6,7 @@ The output of one Flywheel cycle becomes part of the operating state used by the
 
 Persistent learning creates value only when future execution actually uses it.
 
-The AI Flywheel is designed so validated and authorized improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to improve over time.
+The Infoconex AI Flywheel is designed so validated and authorized improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to improve over time.
 
 ## Requirements
 

@@ -4,7 +4,7 @@ A failure is useful evidence, not merely a reason to retry.
 
 ## Purpose
 
-When execution reveals a weakness, the AI Flywheel should determine **where the correction belongs** before changing the system.
+When execution reveals a weakness, the Infoconex AI Flywheel should determine **where the correction belongs** before changing the system.
 
 Different failures have different causes. Treating every failure as a prompt problem, code problem, memory problem, or retry problem creates brittle systems and repeated mistakes.
 

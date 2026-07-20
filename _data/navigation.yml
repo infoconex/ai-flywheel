@@ -60,3 +60,8 @@
       url: /docs/research/frameworks/prior-art-overview.html
     - title: Framework Comparison
       url: /docs/research/frameworks/framework-comparison-matrix.html
+
+- title: Project Policies
+  items:
+    - title: Overview
+      url: /POLICIES.html

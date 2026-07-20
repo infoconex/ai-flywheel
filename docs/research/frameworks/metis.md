@@ -10,7 +10,7 @@ No earlier official project release, source-code repository, or standalone proje
 
 ## Research Objective
 
-Determine how closely Metis approaches the AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from the AI Flywheel's broader three-part responsibility and governance architecture.
+Determine how closely Metis approaches the Infoconex AI Flywheel concepts of moving responsibility between flexible reasoning guidance and deterministic executable capability, and identify where its dual-memory model differs from the AI Flywheel's broader three-part responsibility and governance architecture.
 
 ## Main References
 
@@ -25,7 +25,7 @@ No official Metis source-code repository or standalone project website was ident
 - [AppWorld paper](https://arxiv.org/abs/2407.18901) — Defines the interactive coding-agent environment in which Metis is evaluated.
 - [ReAct paper](https://arxiv.org/abs/2210.03629) — Important baseline for understanding the underlying reason-and-act execution model.
 - [ReAct project](https://react-lm.github.io/) — Project page and supplementary material for ReAct.
-- [AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Metis Is
 
@@ -241,9 +241,9 @@ No formal human approval or uncertainty-escalation mechanism was identified in t
 
 Metis constrains code creation through representation rules and validation checks, but the paper does not distinguish capability growth from authority growth or define a human-governed authority boundary.
 
-## Comparison to the AI Flywheel
+## Comparison to the Infoconex AI Flywheel
 
-| Dimension | Metis | AI Flywheel |
+| Dimension | Metis | Infoconex AI Flywheel |
 |---|---|---|
 | Primary representation model | Text memory and code memory | Deterministic capability, procedural knowledge, and AI reasoning |
 | Default learning destination | Text memory | Determined by post-execution classification |
@@ -311,7 +311,7 @@ The more defensible differentiation questions are:
 3. whether evidence-driven routing across multiple persistent destinations is broader than recurrence-based text-to-code promotion,
 4. and whether combining that mechanism with explicit human-governed authority forms a distinct operating model.
 
-## Related AI Flywheel Research
+## Related Infoconex AI Flywheel Research
 
 - [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
 - [AI Is the Operator](../principles/02-ai-as-operator.md)

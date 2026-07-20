@@ -1,6 +1,6 @@
-# AI Flywheel History and Development
+# Infoconex AI Flywheel History and Development
 
-The AI Flywheel methodology was not created at the moment its formal documentation was written. The ideas behind it developed through practical experimentation and repeated refinement before they were organized into the current specification.
+The Infoconex AI Flywheel methodology was not created at the moment its formal documentation was written. The ideas behind it developed through practical experimentation and repeated refinement before they were organized into the current specification.
 
 This page separates three parts of that history: **concept development**, **formalization**, and **public release**.
 
@@ -28,7 +28,7 @@ During this period, several parts of the model became clearer:
 
 The terms and formal structure used by the current specification were not fixed during this period. They developed as the underlying ideas were refined.
 
-### July 2026 — Formalization as the AI Flywheel
+### July 2026 — Formalization as the Infoconex AI Flywheel
 
 In July 2026, the accumulated ideas were organized into the named **AI Flywheel** methodology and developed into a structured set of documentation.
 
@@ -38,7 +38,7 @@ This marks the point when the methodology was formally organized and documented,
 
 ### July 2026 — Specification 0.1 Published
 
-The first formal specification was published as **AI Flywheel Specification 0.1 — Draft** in the `v0.1.0` repository release.
+The first formal specification was published as **Infoconex AI Flywheel Specification 0.1 — Draft** in the `v0.1.0` repository release.
 
 The 0.1 designation reflects that the methodology was released as a working specification that can continue to improve through implementation experience, public review, and continued research.
 
@@ -47,13 +47,13 @@ The 0.1 designation reflects that the methodology was released as a working spec
 The dates on this page represent different milestones:
 
 - **January 2026 — Origin of concept development:** The underlying ideas began being developed and refined
-- **July 2026 — Formalization:** The ideas were organized into the named AI Flywheel methodology and specification structure
+- **July 2026 — Formalization:** The ideas were organized into the named Infoconex AI Flywheel methodology and specification structure
 - **`v0.1.0` publication — First formal public release:** The first intentionally released version of the documented methodology
 
 ## Related Documents
 
-- [AI Flywheel Specification](specification/README.md)
+- [Infoconex AI Flywheel Specification](specification/README.md)
 - [Formal Definition](specification/definition.md)
-- [AI Flywheel Principles](specification/principles/README.md)
-- [AI Flywheel Lifecycle](specification/lifecycle/README.md)
+- [Infoconex AI Flywheel Principles](specification/principles/README.md)
+- [Infoconex AI Flywheel Lifecycle](specification/lifecycle/README.md)
 - [Prior-Art and Comparative Research](research/frameworks/prior-art-overview.md)

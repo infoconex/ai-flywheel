@@ -1,16 +1,20 @@
-# AI Flywheel Documentation
+# Infoconex AI Flywheel Documentation
 
-![AI Flywheel Documentation](assets/documentation.png)
+![Infoconex AI Flywheel Documentation](assets/documentation.png)
 
-This directory separates the **AI Flywheel specification** from the **architecture and examples used to explain it**, the **history of how it developed**, and the **research used to compare it with related work**.
+This directory separates the **Infoconex AI Flywheel Specification** from the **architecture and examples used to explain it**, the **history of how it developed**, and the **research used to compare it with related work**.
 
 ## Documentation Sections
 
-- [AI Flywheel Specification](specification/README.md) — Defines the methodology, terminology, principles, lifecycle, governance model, and conformance assessment.
-- [AI Flywheel History and Development](history.md) — Records the development timeline from early ideas through formalization and first public release.
-- [AI Flywheel Architecture](architecture/README.md) — Explains how the complete operating model, runtime model, learning model, governance, escalation, and core boundaries fit together.
-- [AI Flywheel Examples](examples/README.md) — Applies the specification to real operating scenarios without adding new requirements.
-- [AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It supports the specification but does not define it.
+- [Infoconex AI Flywheel Specification](specification/README.md) — Defines the methodology, terminology, principles, lifecycle, governance model, and conformance assessment.
+- [Infoconex AI Flywheel History and Development](history.md) — Records the development timeline from early ideas through formalization and first public release.
+- [Infoconex AI Flywheel Architecture](architecture/README.md) — Explains how the complete operating model, runtime model, learning model, governance, escalation, and core boundaries fit together.
+- [Infoconex AI Flywheel Examples](examples/README.md) — Applies the specification to real operating scenarios without adding new requirements.
+- [Infoconex AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It supports the specification but does not define it.
+
+## Project Policies
+
+See [Project Policies](../POLICIES.md) for ownership, permitted use, naming, contribution, governance, and versioning policies.
 
 ## Documentation Model
 

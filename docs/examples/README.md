@@ -1,14 +1,14 @@
-# AI Flywheel Examples
+# Infoconex AI Flywheel Examples
 
-![AI Flywheel Examples](../assets/examples.png)
+![Infoconex AI Flywheel Examples](../assets/examples.png)
 
-This section contains concrete use cases and end-to-end worked examples showing how the AI Flywheel specification can be applied to real operating processes.
+This section contains concrete use cases and end-to-end worked examples showing how the Infoconex AI Flywheel Specification can be applied to real operating processes.
 
 A **use case** identifies a recurring problem where the AI Flywheel can be applied. A **worked example** shows how the Flywheel operates that use case through governance, execution, evidence, learning, improvement, persistence, and reuse.
 
 A use case may contain several supporting pages when its environment, target state, operating process, and representative scenarios require more detail.
 
-Examples help explain the methodology but do not add new requirements. The requirements remain in the [AI Flywheel Specification](../specification/README.md).
+Examples help explain the methodology but do not add new requirements. The requirements remain in the [Infoconex AI Flywheel Specification](../specification/README.md).
 
 ## Examples
 
@@ -38,7 +38,7 @@ The template standardizes:
 
 A short example may keep its use case and worked example in one file. A larger example may use a folder containing a use-case package, supporting scenario pages, and a separate worked example.
 
-The template is guidance for documentation consistency. It does not add requirements to the AI Flywheel specification.
+The template is guidance for documentation consistency. It does not add requirements to the Infoconex AI Flywheel Specification.
 
 ## How to Read the Examples
 

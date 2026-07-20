@@ -1,6 +1,6 @@
 # Principle 1: Autonomy Is Bounded by Human Authority
 
-A human authorizes the AI Flywheel to operate and defines the limits of that authority. Once authorized, the Flywheel operates on its own until it reaches a condition that requires human judgment or approval.
+A human authorizes the Infoconex AI Flywheel to operate and defines the limits of that authority. Once authorized, the Flywheel operates on its own until it reaches a condition that requires human judgment or approval.
 
 ## Purpose
 

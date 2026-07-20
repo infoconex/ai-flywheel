@@ -17,7 +17,7 @@ All six reviewed frameworks use some form of execution feedback, but the type an
 - [Ralph](../frameworks/ralph.md) relies heavily on deterministic backpressure such as tests, builds, static analysis, and observable repository state.
 - [GenericAgent](../frameworks/genericagent.md) uses debugging, verification, task experience, and repeated-task evaluation when crystallizing capabilities.
 
-Outcome feedback is therefore established prior art. The open question is whether the AI Flywheel's concept of **outcome evidence** can be defined more precisely as evidence sufficient to support evaluation, classification, adaptation, validation, and future governance decisions.
+Outcome feedback is therefore established prior art. The open question is whether the Infoconex AI Flywheel's concept of **outcome evidence** can be defined more precisely as evidence sufficient to support evaluation, classification, adaptation, validation, and future governance decisions.
 
 ## Related Ideas and Historical Provenance to Trace
 
@@ -35,7 +35,7 @@ Research should establish authoritative sources and dates for:
 
 ## Open Research Questions
 
-1. What minimum evidence must an AI Flywheel execution produce to be considered observable enough for learning?
+1. What minimum evidence must an Infoconex AI Flywheel execution produce to be considered observable enough for learning?
 2. How should evidence requirements differ by risk, consequence, and type of work?
 3. When is model self-report acceptable evidence, and when must an independent signal be required?
 4. How should partial success and uncertain outcomes be represented?

@@ -1,12 +1,12 @@
-# AI Flywheel Terminology
+# Infoconex AI Flywheel Terminology
 
-This page defines the standard terms used throughout the AI Flywheel specification.
+This page defines the standard terms used throughout the Infoconex AI Flywheel Specification.
 
 The definitions are intentionally short. Detailed behavior and requirements remain in the linked specification documents.
 
-## AI Flywheel
+## Infoconex AI Flywheel
 
-An **AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, determines where learning should be applied, validates improvements, persists authorized learning, and reuses the improved system in future execution.
+The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, determines where learning should be applied, validates improvements, persists authorized learning, and reuses the improved system in future execution.
 
 See the [Formal Definition](definition.md).
 
@@ -102,15 +102,15 @@ See [Stage 6: Validate](lifecycle/06-validate.md).
 
 ## Conformance
 
-**Conformance** means showing, with evidence, that an implementation satisfies the complete AI Flywheel specification.
+**Conformance** means showing, with evidence, that an implementation satisfies the complete Infoconex AI Flywheel Specification.
 
 The conformance model gets its assessment areas from the specification and does not define the methodology on its own.
 
-See [AI Flywheel Conformance](conformance/README.md).
+See [Infoconex AI Flywheel Conformance](conformance/README.md).
 
 ## Related Documents
 
-- [AI Flywheel Specification](README.md)
+- [Infoconex AI Flywheel Specification](README.md)
 - [Formal Definition](definition.md)
 - [Principles](principles/README.md)
 - [Lifecycle](lifecycle/README.md)

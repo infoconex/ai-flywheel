@@ -1,8 +1,8 @@
-# AI Flywheel Conformance
+# Infoconex AI Flywheel Conformance
 
-![AI Flywheel Conformance](../../assets/conformance.png)
+![Infoconex AI Flywheel Conformance](../../assets/conformance.png)
 
-Conformance determines whether an implementation satisfies the AI Flywheel specification.
+Conformance determines whether an implementation satisfies the Infoconex AI Flywheel Specification.
 
 The conformance section does not define the methodology on its own. The requirements come from the [Formal Definition](../definition.md), [Principles](../principles/README.md), and [Lifecycle](../lifecycle/README.md). Conformance turns those requirements into a practical assessment based on observable evidence.
 
@@ -62,7 +62,7 @@ The exact technology used to satisfy the specification may vary. Conformance loo
 
 ## Conformance Decision
 
-A system conforms to this version of the AI Flywheel specification when it can demonstrate that the complete operating model satisfies all ten conformance areas.
+A system conforms to this version of the Infoconex AI Flywheel Specification when it can demonstrate that the complete operating model satisfies all ten conformance areas.
 
 When an area is not satisfied, the implementation may still use valuable AI Flywheel concepts, but it should not be described as a complete conforming implementation.
 

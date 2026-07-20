@@ -58,4 +58,4 @@ Research should identify authoritative sources and establishment dates for:
 
 Learning from failure is clearly established, and several frameworks already persist different kinds of improvements.
 
-The stronger AI Flywheel differentiation hypothesis is that the **destination decision itself is a formal part of the operating model**. Execution evidence is classified before adaptation so the system can determine which persistent mechanism is actually responsible for the weakness and should therefore own the correction.
+The stronger Infoconex AI Flywheel differentiation hypothesis is that the **destination decision itself is a formal part of the operating model**. Execution evidence is classified before adaptation so the system can determine which persistent mechanism is actually responsible for the weakness and should therefore own the correction.
