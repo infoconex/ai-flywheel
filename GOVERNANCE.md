@@ -20,7 +20,7 @@ Unofficial copies, mirrors, forks, summaries, translations, excerpts, or derivat
 
 Specification versions identify the maturity and content of the methodology.
 
-Pre-1.0 versions are drafts and may change as terminology, conformance guidance, examples, implementation experience, and research evolve.
+Pre-v1.0 versions are drafts and may change as terminology, conformance guidance, examples, implementation experience, and research evolve.
 
 A repository release, website deployment, or reference implementation version is separate from the specification version unless Infoconex explicitly identifies it as a specification version.
 

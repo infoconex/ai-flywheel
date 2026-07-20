@@ -2,11 +2,11 @@
 
 ![Infoconex AI Flywheel Specification](../assets/specification.png)
 
-> **Specification Version:** 0.1.3 — Draft
+> **Specification Version:** v0.1.3 — Draft
 
 This section contains the official definition of the Infoconex AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
-The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **Infoconex AI Flywheel Specification 0.1 — Draft**.
+The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **Infoconex AI Flywheel Specification v0.1 — Draft**.
 
 ## Requirement Language
 
@@ -20,7 +20,7 @@ Architecture pages, examples, and research are explanatory support. They do not 
 
 ## Draft Stability
 
-Version 0.1.3 is a working draft intended for public review, implementation experiments, and further research.
+Version v0.1.3 is a working draft intended for public review, implementation experiments, and further research.
 
 Readers should expect that:
 
@@ -30,7 +30,7 @@ Readers should expect that:
 - More examples and implementation guidance may be added.
 - Research conclusions may change as new primary sources are reviewed.
 
-The eight principles and eight-stage lifecycle define the current structure, but this draft does not promise backward compatibility with future pre-1.0 revisions.
+The eight principles and eight-stage lifecycle define the current structure, but this draft does not promise backward compatibility with future pre-v1.0 revisions.
 
 ## Table of Contents
 

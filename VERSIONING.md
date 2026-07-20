@@ -10,13 +10,13 @@ Specification versions are assigned by Infoconex.
 
 Examples:
 
-- Infoconex AI Flywheel Specification 0.1
-- Infoconex AI Flywheel Specification 0.1.3
-- Infoconex AI Flywheel Specification 1.0
+- Infoconex AI Flywheel Specification v0.1
+- Infoconex AI Flywheel Specification v0.1.3
+- Infoconex AI Flywheel Specification v1.0
 
 ## Draft Versions
 
-Versions below 1.0 are draft versions.
+Versions below v1.0 are draft versions.
 
 Draft versions may change as terminology, principles, lifecycle requirements, conformance guidance, examples, implementation experience, and research evolve.
 
@@ -24,7 +24,7 @@ A draft version should not be treated as permanently stable unless Infoconex say
 
 ## Stable Versions
 
-A 1.0 or later version may be identified by Infoconex as a stable specification version.
+A v1.0 or later version may be identified by Infoconex as a stable specification version.
 
 A stable version means the published specification is intended to be used as a reliable reference for implementation and conformance assessment.
 
@@ -56,7 +56,7 @@ A conformance claim must identify the specification version being used.
 
 Recommended wording:
 
-> This implementation is self-assessed as designed to conform to the Infoconex AI Flywheel Specification 0.1.3.
+> This implementation is self-assessed as designed to conform to the Infoconex AI Flywheel Specification v0.1.3.
 
 A conformance claim for one version does not automatically apply to a later version.
 
