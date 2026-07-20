@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project policies
+    url: https://github.com/Infoconex/ai-flywheel/blob/issue-15-repository-governance/POLICIES.md
+    about: Review the license, notice, trademark, contribution, governance, and versioning policies.

@@ -1,0 +1,67 @@
+name: Research Source
+description: Suggest a source, framework, paper, implementation, or prior-art reference for research review.
+title: "Research source: "
+labels:
+  - research
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest research sources or prior-art references for comparison with the Infoconex AI Flywheel.
+
+        Research supports the specification but does not define it unless accepted into official specification documents by Infoconex.
+
+  - type: input
+    id: source_name
+    attributes:
+      label: Source name
+      description: Name the paper, framework, project, article, standard, or implementation.
+      placeholder: "Example: GenericAgent"
+    validations:
+      required: true
+
+  - type: input
+    id: source_link
+    attributes:
+      label: Source link
+      description: Provide a URL, DOI, repository, publication page, or other reference.
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - Primary source
+        - Secondary source
+        - Implementation or repository
+        - Article or commentary
+        - Standard or specification
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Explain why this source matters for the Infoconex AI Flywheel research.
+      placeholder: "Which principle, lifecycle stage, conformance area, or prior-art question does it relate to?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add any useful context, caveats, quotes, or comparison notes.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I understand that research notes support the specification but do not redefine it unless accepted by Infoconex.
+          required: true
