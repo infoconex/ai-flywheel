@@ -1,10 +1,10 @@
 # Infoconex AI Flywheel
 
+![Infoconex AI Flywheel](docs/assets/Infoconex-ai-flywheel.png)
+
 The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 > **A loop repeats. A flywheel compounds.**
-
-![Infoconex AI Flywheel](docs/assets/Infoconex-ai-flywheel.png)
 
 ## Origin and Formalization
 
