@@ -8,9 +8,9 @@ Execution applies the current operating model of the Flywheel to real work.
 
 The AI is the operator of the process. It follows persistent procedural guidance, invokes deterministic capabilities, reasons about context and ambiguity, and carries authorized work forward without requiring a human to perform routine operational steps.
 
-## Inputs
+## Required Inputs and Preconditions
 
-Execution begins with:
+Execute requires:
 
 - An authorized goal, trigger, request, event, or unit of work
 - The applicable Governance Policy
@@ -19,21 +19,24 @@ Execution begins with:
 - Relevant reasoning knowledge and context
 - The current operating state inherited from prior Flywheel cycles
 
-## Required Behavior
+The execution must begin within the authority granted by the applicable Governance Policy.
 
-During execution:
+## Required Responsibilities
 
-- The AI must perform meaningful operational work rather than only generate instructions for a human operator
-- Deterministic capability, procedural guidance, and AI reasoning must have intentional and distinguishable roles
-- The AI should follow the applicable SOP while retaining enough reasoning ability to handle context, ambiguity, and exceptions
-- Deterministic capabilities should be used where reliable repeatable behavior already exists
-- Actions must remain within the current Governance Policy
+Execute must:
+
+- Perform meaningful operational work rather than only generate instructions for a human operator
+- Apply deterministic capability, procedural guidance, and AI reasoning in intentional and distinguishable roles
+- Follow applicable procedural guidance while retaining enough reasoning ability to handle context, ambiguity, and exceptions
+- Use deterministic capabilities where reliable repeatable behavior is already available and appropriate
+- Keep actions within the current Governance Policy
+- Produce enough operational information for later observation of what actually occurred
 
 The three operating mechanisms are not separate lifecycle stages. A single execution may move between AI reasoning and deterministic capabilities many times while following the same procedure.
 
-## Outputs
+## Required Outputs and Evidence
 
-Execution produces:
+Execute must produce or preserve an operational record that may include:
 
 - Operational results and outputs
 - State changes
@@ -43,7 +46,17 @@ Execution produces:
 - Validation signals generated during operation
 - Other raw events needed to determine what actually occurred
 
-These outputs become the primary inputs to [Stage 2: Observe](02-observe.md).
+## Completion Conditions
+
+Execute is complete when the current execution attempt has reached an observable point and enough operational information exists for Observe to determine what actually happened.
+
+Task completion, failure, or the absence of an exception does not by itself determine whether the lifecycle is complete.
+
+## Relationship to Adjacent Stages
+
+Execute begins from the current operating state, including relevant improvements made available through [Stage 8: Reuse](08-reuse.md).
+
+Its operational record becomes the primary input to [Stage 2: Observe](02-observe.md).
 
 ## Governance Considerations
 
@@ -54,14 +67,6 @@ When execution reaches the Authority Boundary, the affected action must be handl
 When execution reaches the Uncertainty Boundary because evidence is insufficient for responsible autonomous judgment, the affected decision requires additional evidence or human judgment.
 
 Where practical, unrelated authorized work should continue rather than stopping the entire process.
-
-## Failure and Exit Conditions
-
-Execution does not end the Flywheel merely because the task completed, failed, or raised no exception.
-
-Every meaningful execution should proceed to observation with enough operational data to evaluate the actual outcome.
-
-When the AI cannot continue within its authority or cannot responsibly resolve uncertainty, the affected decision must be paused or escalated rather than bypassing governance.
 
 ## Relationships to Principles
 
