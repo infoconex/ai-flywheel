@@ -8,9 +8,9 @@ Observation creates the factual record needed to evaluate the outcome.
 
 The Flywheel cannot responsibly learn from execution if later stages must rely only on AI memory, model confidence, or a success indicator that does not demonstrate the actual result.
 
-## Inputs
+## Required Inputs and Preconditions
 
-Observation receives the operational record produced by [Stage 1: Execute](01-execute.md), including:
+Observe requires the operational record produced by [Stage 1: Execute](01-execute.md), including the available information about:
 
 - Actions taken
 - Tool and capability outputs
@@ -22,9 +22,17 @@ Observation receives the operational record produced by [Stage 1: Execute](01-ex
 - User feedback
 - Human approvals or judgments that affected the process
 
-## Required Behavior
+Observation must have access to enough of the execution record to determine what evidence is available and what evidence is missing.
 
-The system must preserve enough evidence to support responsible later evaluation.
+## Required Responsibilities
+
+Observe must:
+
+- Capture or preserve evidence about what actually occurred during execution
+- Distinguish observed facts from expected, intended, inferred, or assumed outcomes
+- Preserve evidence needed for responsible later evaluation
+- Preserve material human decisions when they affected execution or may contain reusable learning
+- Identify material evidence gaps rather than replacing missing evidence with unsupported assumptions
 
 Observed evidence may include:
 
@@ -39,36 +47,37 @@ Observed evidence may include:
 - Human approvals
 - Human judgments
 
-The exact evidence depends on the process, but it should allow later stages to distinguish what actually happened from what the AI expected or intended to happen.
+The exact evidence depends on the process and domain.
 
-When a human decision affects execution, that decision should become part of the observed record when it may contain reusable learning.
+## Required Outputs and Evidence
 
-## Outputs
-
-Observation produces an evidence set sufficient for [Stage 3: Evaluate](03-evaluate.md) to assess:
+Observe must produce an evidence set that identifies, where relevant:
 
 - What actions were performed
 - What results were produced
-- Whether relevant external state changed
+- Whether external or internal state changed
 - What failures or unexpected conditions occurred
-- What validations ran
+- What validation signals were produced
 - What human decisions influenced the outcome
+- What material evidence is unavailable or uncertain
+
+## Completion Conditions
+
+Observe is complete when the available evidence has been captured well enough for Evaluate to make a responsible assessment or to explicitly determine that the outcome cannot yet be resolved from the available evidence.
+
+The existence of telemetry alone does not satisfy the stage contract.
+
+## Relationship to Adjacent Stages
+
+Observe consumes the operational record produced by [Stage 1: Execute](01-execute.md).
+
+Its evidence set becomes the primary input to [Stage 3: Evaluate](03-evaluate.md).
 
 ## Governance Considerations
 
 Observation must respect governance requirements for evidence collection, access, retention, privacy, and protected information.
 
-Governance should not be bypassed in the name of collecting more evidence. When required evidence cannot be gathered within the AI's authority, that limitation becomes part of the observed record and may require escalation during evaluation.
-
-## Failure and Exit Conditions
-
-Observation should not advance merely because some telemetry exists.
-
-The stage can advance to evaluation when the available evidence is sufficient to make a responsible assessment or sufficient to determine that the outcome is uncertain.
-
-If critical evidence is missing and can still be collected within the AI's authority, the system should gather that evidence before advancing.
-
-If missing evidence cannot be obtained autonomously, the limitation should be preserved and handled as uncertainty rather than replaced with an unsupported assumption.
+Governance should not be bypassed in the name of collecting more evidence. When required evidence cannot be gathered within the AI's authority, that limitation becomes part of the observed record.
 
 ## Relationships to Principles
 
