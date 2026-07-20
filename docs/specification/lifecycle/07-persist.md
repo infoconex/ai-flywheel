@@ -8,42 +8,51 @@ A lesson does not become operational learning merely because it was observed, di
 
 Persistence changes something that future executions can actually use.
 
-## Inputs
+## Required Inputs and Preconditions
 
-Persistence receives:
+Persist requires:
 
-- a validated candidate improvement from [Stage 6: Validate](06-validate.md),
-- the evidence supporting validation,
-- the classification identifying where the learning should live,
-- the persistent operational asset to be created or changed,
-- and the authorization required to make that durable change.
+- A successfully validated candidate improvement from [Stage 6: Validate](06-validate.md)
+- The evidence supporting the validation result
+- The classification identifying where the learning should live
+- The persistent operational asset to be created or changed
+- The authorization required to make the durable change
 
-## Required Behavior
+The candidate must be validated and authorized for persistence before it can satisfy this stage contract.
 
-The persistent asset should match the classification made earlier in the lifecycle.
+## Required Responsibilities
 
-Possible persistent assets include:
+Persist must:
 
-- deterministic capabilities,
-- code changes,
-- SOP updates,
-- validation rules,
-- durable reasoning guidance,
-- reusable knowledge,
-- and approved Governance Policy changes.
+- Place the validated learning in a durable operational asset appropriate to the earlier classification
+- Make the resulting improvement identifiable and available for later relevant use
+- Preserve enough context to distinguish where the learning applies
+- Preserve the relationship between the persisted change and its supporting evidence where required by the operating context
+- Avoid treating raw execution history, unvalidated observations, or an unapplied candidate as persisted operational learning
 
-A deterministic bug should normally be corrected in deterministic implementation. A procedural weakness should normally change the SOP. A lesson that still requires judgment should remain available as reasoning knowledge rather than being forced into brittle code.
+Persistent learning may exist in different operational assets. The detailed categories and required properties of persisted learning are defined separately from this stage contract.
 
-Persistence must make the learning available to future execution. Logs, transcripts, or archived conversations do not satisfy this stage by themselves unless later operation can reliably retrieve and use the resulting learning.
+## Required Outputs and Evidence
 
-## Outputs
+Persist must produce:
 
-Persistence produces:
+- A durable updated operational asset
+- An identifiable persisted improvement
+- Enough applicability context for later relevant use
+- An improved operating state available to [Stage 8: Reuse](08-reuse.md)
+- Evidence that the durable change was successfully made
 
-- a durable updated operational asset,
-- a link between the change and its supporting evidence where appropriate,
-- enough context to prevent the learning from being reused in the wrong situation,
-- and an improved operating state available to [Stage 8: Reuse](08-reuse.md).
+## Completion Conditions
+
+Persist is complete when the validated and authorized improvement has been durably incorporated into an operational asset and is available for later relevant use.
+
+A log, transcript, archived conversation, or other stored record does not by itself satisfy the stage contract unless it functions as an operational asset that later execution can reliably use.
+
+## Relationship to Adjacent Stages
+
+Persist consumes a successfully validated and appropriately authorized candidate from [Stage 6: Validate](06-validate.md).
+
+Its durable improved operating state becomes available to [Stage 8: Reuse](08-reuse.md).
 
 ## Governance Considerations
 
@@ -53,15 +62,7 @@ Changes that expand the AI's authority or modify protected governance require hu
 
 Persistence should also respect governance requirements for versioning, audit history, rollback, protected assets, and change approval where applicable.
 
-## Failure and Exit Conditions
-
-The stage must not persist a candidate that has not been sufficiently validated and authorized.
-
-If persistence fails technically, the failure becomes new evidence and should be handled without falsely treating the improvement as available for future use.
-
-If the selected destination proves unsuitable during implementation, the Flywheel should return to classification or adaptation rather than forcing the learning into the wrong asset.
-
-Persistent does not mean permanent. Future evidence may justify refining, replacing, rolling back, invalidating, or moving the asset to another operating mechanism.
+Persistent does not mean permanently authoritative. The detailed behavior for challenging, superseding, deprecating, or retiring persisted learning is defined separately from this stage contract.
 
 ## Relationships to Principles
 
