@@ -60,13 +60,15 @@ Infoconex may deprecate, replace, or withdraw draft language, examples, guidance
 
 Deprecated or withdrawn material should not be treated as current authority unless Infoconex says otherwise.
 
-## Relationship to Other Documents
+## Related Documents
 
 This governance document works together with:
 
-- [LICENSE.md](LICENSE.md)
-- [TRADEMARKS.md](TRADEMARKS.md)
-- [NOTICE.md](NOTICE.md)
-- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.
 
 If there is a conflict between this document and the license, the license controls rights and permissions.

@@ -60,3 +60,18 @@
       url: /docs/research/frameworks/prior-art-overview.html
     - title: Framework Comparison
       url: /docs/research/frameworks/framework-comparison-matrix.html
+
+- title: Project
+  items:
+    - title: License
+      url: /LICENSE.html
+    - title: Notice
+      url: /NOTICE.html
+    - title: Trademarks
+      url: /TRADEMARKS.html
+    - title: Contributing
+      url: /CONTRIBUTING.html
+    - title: Governance
+      url: /GOVERNANCE.html
+    - title: Versioning
+      url: /VERSIONING.html

@@ -58,3 +58,12 @@ Research notes support the specification but do not define it unless accepted in
 Issues may be used to ask questions, suggest improvements, identify ambiguity, or propose new examples.
 
 An issue discussion does not modify the specification unless the accepted change is incorporated into the repository by Infoconex.
+
+## Related Documents
+
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.

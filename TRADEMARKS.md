@@ -62,3 +62,12 @@ Not acceptable without Infoconex approval:
 No permission in this policy transfers ownership of any Infoconex name, mark, logo, or branding.
 
 Infoconex retains the sole right to define, publish, revise, interpret, and approve the Infoconex AI Flywheel Specification.
+
+## Related Documents
+
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.

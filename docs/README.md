@@ -12,6 +12,15 @@ This directory separates the **Infoconex AI Flywheel Specification** from the **
 - [Infoconex AI Flywheel Examples](examples/README.md) — Applies the specification to real operating scenarios without adding new requirements.
 - [Infoconex AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It supports the specification but does not define it.
 
+## Project Policies
+
+- [LICENSE.md](../LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](../NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](../TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](../CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](../GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](../VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.
+
 ## Documentation Model
 
 The documentation separates five questions:

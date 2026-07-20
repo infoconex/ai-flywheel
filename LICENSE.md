@@ -135,3 +135,12 @@ Upon termination, you must stop exercising the permissions granted by this licen
 ## 16. Additional Permission
 
 Permission for uses not granted by this license may be requested from Infoconex. Any additional permission must be provided in writing.
+
+## Related Documents
+
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.

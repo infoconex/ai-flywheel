@@ -75,3 +75,12 @@ Deprecated versions may remain available for historical reference, but they shou
 ## Official Version Authority
 
 Infoconex retains authority to assign, publish, revise, interpret, deprecate, and withdraw specification versions.
+
+## Related Documents
+
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.

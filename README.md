@@ -126,6 +126,15 @@ Then explore the supporting material:
 
 The specification defines the methodology. The research collection examines related ideas and how the AI Flywheel compares with them without making that research part of the specification.
 
+## Project Policies
+
+- [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
+- [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
+- [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
+- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
+- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.
+
 ## Project Status and Roadmap
 
 > **Current status:** Infoconex AI Flywheel Specification 0.1.2 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
