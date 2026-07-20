@@ -1,6 +1,6 @@
 # Stage 1: Execute
 
-The AI performs the operational work using the current combination of procedural guidance, AI reasoning, and deterministic capability.
+The Infoconex AI Flywheel performs operational work using the current combination of procedural guidance, AI reasoning, and deterministic capability.
 
 ## Purpose
 

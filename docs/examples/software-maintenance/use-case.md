@@ -350,7 +350,7 @@ The maintenance process does not:
 
 ## Worked Example
 
-See [Worked Example: Continuous Dependency Maintenance](worked-example.md) for three complete AI Flywheel cycles showing:
+See [Worked Example: Continuous Dependency Maintenance](worked-example.md) for three complete Infoconex AI Flywheel cycles showing:
 
 - A missing procedural step
 - Stable procedure moving into deterministic capability

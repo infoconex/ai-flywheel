@@ -1,6 +1,6 @@
 # End-to-End Example: [Example Name]
 
-This example shows how an AI Flywheel can [operate a recurring process] and improve the operating model used by later executions.
+This example shows how the Infoconex AI Flywheel can [operate a recurring process] and improve the operating model used by later executions.
 
 ## Use Case
 
@@ -8,7 +8,7 @@ This example shows how an AI Flywheel can [operate a recurring process] and impr
 
 [Describe the recurring need, affected environment, desired consistency, and why learning from execution should improve later work.]
 
-The example presents one possible implementation. It illustrates the AI Flywheel specification but does not add requirements or prescribe a required architecture.
+The example presents one possible implementation. It illustrates the Infoconex AI Flywheel Specification but does not add requirements or prescribe a required architecture.
 
 ## Scenario
 

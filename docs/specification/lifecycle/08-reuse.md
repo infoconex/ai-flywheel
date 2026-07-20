@@ -1,6 +1,6 @@
 # Stage 8: Reuse
 
-Future executions begin with the improved operating state created by previous Flywheel cycles.
+Future Infoconex AI Flywheel executions begin with the improved operating state created by previous cycles.
 
 ## Purpose
 
@@ -89,4 +89,4 @@ When reused behavior produces new evidence showing that the improvement is weak,
 
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [Worked Example: Continuous Dependency Maintenance](../../examples/software-maintenance/worked-example.md)

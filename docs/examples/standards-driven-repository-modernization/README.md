@@ -10,7 +10,7 @@ The simulated environment uses Jenkins as the existing CI platform and Azure Dev
 - [Target Repository Standard](use-case/target-repository-standard.md) — Defines the expected repository structure and build contract after migration
 - [Migration Process](use-case/migration-process.md) — Defines inventory, profile selection, phased execution, validation, approval, and retirement behavior
 - [Repository Scenarios](use-case/repository-scenarios.md) — Shows representative starting conditions and expected results
-- [Worked Example](worked-example.md) — Demonstrates how repeated migrations operate as an AI Flywheel and improve later migrations
+- [Worked Example](worked-example.md) — Demonstrates how repeated migrations operate as an Infoconex AI Flywheel and improve later migrations
 
 ## Relationship Between the Documents
 
@@ -18,4 +18,4 @@ The use-case documents describe the simulated problem and how the migration is e
 
 The worked example applies the AI Flywheel lifecycle to that use case. It shows how execution evidence changes persistent migration assets that later migrations reuse.
 
-The package illustrates one possible implementation. It does not add requirements to the AI Flywheel specification or prescribe a universal repository standard.
+The package illustrates one possible implementation. It does not add requirements to the Infoconex AI Flywheel Specification or prescribe a universal repository standard.

@@ -1,6 +1,6 @@
 # Stage 5: Adapt
 
-The Flywheel selects the appropriate improvement target and applies or proposes a change.
+The Infoconex AI Flywheel selects the appropriate improvement target and applies or proposes a change.
 
 ## Purpose
 

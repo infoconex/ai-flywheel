@@ -4,7 +4,7 @@
 
 This page defines the simulated target state for repositories in the standards-driven modernization use case.
 
-It is an example repository standard rather than a requirement of the AI Flywheel specification.
+It is an example repository standard rather than a requirement of the Infoconex AI Flywheel Specification.
 
 ## Standard Structure
 

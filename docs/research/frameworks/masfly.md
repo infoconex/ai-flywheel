@@ -25,7 +25,7 @@ No official MASFly source-code repository or standalone project website was iden
 - [MetaGPT repository](https://github.com/geekan/MetaGPT) — Implementation of SOP-oriented multi-agent software collaboration.
 - [AgentSquare paper](https://arxiv.org/abs/2410.06153) — Relevant work on automatically searching and improving agent-system architectures.
 - [AgentSquare repository](https://github.com/tsinghua-fib-lab/AgentSquare) — Implementation and evaluation materials for automated agent-system design.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What MASFly Is
 

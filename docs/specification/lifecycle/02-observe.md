@@ -1,6 +1,6 @@
 # Stage 2: Observe
 
-The system captures evidence about what actually occurred during execution.
+The Infoconex AI Flywheel captures evidence about what actually occurred during execution.
 
 ## Purpose
 

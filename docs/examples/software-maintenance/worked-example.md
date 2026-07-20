@@ -1,12 +1,12 @@
 # Worked Example: Continuous Dependency Maintenance
 
-This worked example applies the AI Flywheel to the [Continuous Dependency Maintenance Use Case](use-case.md).
+This worked example applies the Infoconex AI Flywheel to the [Continuous Dependency Maintenance Use Case](use-case.md).
 
 The use case defines the broader recurring process, including maintenance triggers, dependency inventory, risk classification, campaigns, profiles, validation, governance, and producer-consumer impact.
 
 This page follows one approved dependency upgrade through three complete cycles. It shows how execution evidence first improves procedural guidance, later moves stable behavior into deterministic capability, and eventually moves brittle behavior back toward AI reasoning.
 
-The example presents one possible implementation. It illustrates the AI Flywheel specification but does not add requirements or prescribe a required architecture.
+The example presents one possible implementation. It illustrates the Infoconex AI Flywheel Specification but does not add requirements or prescribe a required architecture.
 
 ## Scenario
 

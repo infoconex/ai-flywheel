@@ -11,7 +11,7 @@ Specification versions are assigned by Infoconex.
 Examples:
 
 - Infoconex AI Flywheel Specification 0.1
-- Infoconex AI Flywheel Specification 0.1.1
+- Infoconex AI Flywheel Specification 0.1.3
 - Infoconex AI Flywheel Specification 1.0
 
 ## Draft Versions
@@ -56,7 +56,7 @@ A conformance claim must identify the specification version being used.
 
 Recommended wording:
 
-> This implementation is designed to conform to the Infoconex AI Flywheel Specification 0.1.1.
+> This implementation is self-assessed as designed to conform to the Infoconex AI Flywheel Specification 0.1.3.
 
 A conformance claim for one version does not automatically apply to a later version.
 
@@ -84,4 +84,3 @@ Infoconex retains authority to assign, publish, revise, interpret, deprecate, an
 - [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
 - [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
 - [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
-- [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.

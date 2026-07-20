@@ -1,6 +1,6 @@
 # Stage 3: Evaluate
 
-The AI compares the observed outcome with the intended outcome and applicable success criteria.
+The Infoconex AI Flywheel compares the observed outcome with the intended outcome and applicable success criteria.
 
 ## Purpose
 

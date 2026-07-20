@@ -22,7 +22,7 @@ Evaluate MOSS as prior art for evidence-driven self-modification, persistent imp
 
 - [OpenClaw repository](https://github.com/openclaw/openclaw) — Production agent substrate on which the documented MOSS implementation performs source-level evolution.
 - [MOSS official repository architecture](https://github.com/hkgai-official/Moss#architecture) — Implementation-level view of the host daemon, trial workers, and promotion process.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What MOSS Is
 

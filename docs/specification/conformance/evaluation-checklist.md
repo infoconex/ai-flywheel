@@ -30,7 +30,7 @@ Canonical sources: [Principle 2: AI Is the Operator, Not Merely the Assistant](.
 12. Is each responsibility intentionally placed in the mechanism best suited to own it?
 13. Can those responsibilities move when evidence shows the current allocation is no longer appropriate?
 
-Canonical sources: [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md) and [Runtime Architecture](../../architecture/runtime-view.md).
+Canonical source: [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md). Supporting explanation: [Runtime Architecture](../../architecture/runtime-view.md).
 
 ## Operational Procedure
 

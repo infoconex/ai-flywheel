@@ -23,7 +23,7 @@ Ralph does not have one canonical implementation repository because it is define
 
 - [Stop Hand-Holding Your Coding Agent: Engineering the Loops that Replace Step-by-Step Prompting](https://arxiv.org/abs/2607.00038) — A later formal treatment of reusable autonomous loop specifications, useful for understanding how the broader practice evolved beyond the original Ralph description.
 - [Geoffrey Huntley's specifications article](https://ghuntley.com/specs/) — Relevant to the specification-driven context used by Ralph-style loops.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Ralph Is
 

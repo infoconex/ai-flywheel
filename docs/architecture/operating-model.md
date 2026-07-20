@@ -146,4 +146,4 @@ See [Core Boundaries](boundaries.md) for the detailed relationship.
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [End-to-End Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
+- [Worked Example: Continuous Dependency Maintenance](../examples/software-maintenance/worked-example.md)

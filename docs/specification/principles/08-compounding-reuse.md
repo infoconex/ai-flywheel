@@ -1,6 +1,6 @@
 # Principle 8: Improvement Must Compound Through Reuse
 
-The output of one Flywheel cycle becomes part of the operating state used by the next.
+The output of one Infoconex AI Flywheel cycle becomes part of the operating state used by the next.
 
 ## Purpose
 

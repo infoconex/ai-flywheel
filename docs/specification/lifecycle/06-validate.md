@@ -1,6 +1,6 @@
 # Stage 6: Validate
 
-The proposed improvement is tested against appropriate evidence before it is trusted for future use.
+The Infoconex AI Flywheel tests a proposed improvement against appropriate evidence before trusting it for future use.
 
 ## Purpose
 

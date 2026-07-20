@@ -23,7 +23,7 @@ Evaluate Reflexion as prior art for agents that learn from execution feedback wi
 - [Reflecting on Reflexion](https://nanothoughts.substack.com/p/reflecting-on-reflexion) — Original author-linked explanatory blog post.
 - [ReAct paper](https://arxiv.org/abs/2210.03629) — Important background because Reflexion can use ReAct as the underlying actor strategy.
 - [ReAct project](https://react-lm.github.io/) — Project material for the reason-and-act agent architecture.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Reflexion Is
 

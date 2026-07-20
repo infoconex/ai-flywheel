@@ -4,7 +4,7 @@
 
 These simulated scenarios represent different starting conditions within the standards-driven repository modernization use case.
 
-They help define migration profiles and expected outcomes. They are not separate AI Flywheel lifecycle examples.
+They help define migration profiles and expected outcomes. They are not separate Infoconex AI Flywheel lifecycle examples.
 
 ## Scenario 1: Simple SDK-Style Library
 
