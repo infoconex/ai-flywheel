@@ -52,4 +52,4 @@ A proposed change may also reach an authority boundary. The Flywheel can recomme
 - [Runtime Architecture](runtime-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [AI Flywheel Lifecycle](../specification/lifecycle/README.md)
+- [Infoconex AI Flywheel Lifecycle](../specification/lifecycle/README.md)

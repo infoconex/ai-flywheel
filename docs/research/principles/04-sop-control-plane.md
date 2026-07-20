@@ -4,7 +4,7 @@
 
 ## Research Objective
 
-Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational role proposed by the AI Flywheel.
+Determine how existing systems use persistent procedures, SOPs, plans, runbooks, skills, prompts, or workflow definitions to control AI execution, and whether any existing model gives the SOP the same broad operational role proposed by the Infoconex AI Flywheel.
 
 ## Current Evidence
 

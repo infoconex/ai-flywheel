@@ -1,6 +1,6 @@
 # Principle 3: Work Is Distributed Across a Moving Determinism Boundary
 
-The AI Flywheel deliberately divides responsibility among deterministic capability, procedural guidance, and AI reasoning.
+The Infoconex AI Flywheel deliberately divides responsibility among deterministic capability, procedural guidance, and AI reasoning.
 
 ## Purpose
 

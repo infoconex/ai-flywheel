@@ -54,4 +54,4 @@ Research should establish dates and primary sources for:
 
 AI acting directly on tools and environments should be treated as established prior art, not as an independent novelty claim.
 
-The stronger AI Flywheel research question is whether operator status is integrated with the rest of the methodology: bounded human authority, persistent procedure, outcome evidence, explicit evolution routing, and reuse of improved operational assets.
+The stronger Infoconex AI Flywheel research question is whether operator status is integrated with the rest of the methodology: bounded human authority, persistent procedure, outcome evidence, explicit evolution routing, and reuse of improved operational assets.

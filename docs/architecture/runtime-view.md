@@ -1,6 +1,6 @@
 # Runtime Architecture
 
-The runtime view explains how an authorized AI Flywheel performs work during the **Execute** stage.
+The runtime view explains how an authorized Infoconex AI Flywheel performs work during the **Execute** stage.
 
 The three operating mechanisms—procedural SOP, AI reasoning, and deterministic capability—are not sequential lifecycle stages. They work together during execution.
 
@@ -53,4 +53,4 @@ Execution is not learning by itself. It must first produce outcome evidence that
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
 - [Core Boundaries](boundaries.md)
-- [AI Flywheel Lifecycle](../specification/lifecycle/README.md)
+- [Infoconex AI Flywheel Lifecycle](../specification/lifecycle/README.md)

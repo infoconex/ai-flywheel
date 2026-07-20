@@ -10,7 +10,7 @@ This distinction matters because the project was publicly released before the re
 
 ## Research Objective
 
-Determine which AI Flywheel principles are substantially represented by GenericAgent and identify where its self-evolution model differs from the AI Flywheel's explicit runtime responsibility, evolution-routing, and governance models.
+Determine which Infoconex AI Flywheel principles are substantially represented by GenericAgent and identify where its self-evolution model differs from the AI Flywheel's explicit runtime responsibility, evolution-routing, and governance models.
 
 ## Main References
 
@@ -23,7 +23,7 @@ Determine which AI Flywheel principles are substantially represented by GenericA
 
 - [GenericAgent tutorial](https://datawhalechina.github.io/hello-generic-agent/) — Community tutorial linked directly by the official repository.
 - [Sophub Skill Hub](https://fudankw.cn/sophub) — Skill repository linked by the official project and useful for understanding the broader skill-reuse model.
-- [AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What GenericAgent Is
 
@@ -61,7 +61,7 @@ GenericAgent exposes a minimal tool set that includes code execution, file manip
 
 The `code_run` capability is especially significant. It allows the agent to install packages, create scripts, invoke external APIs, and construct new capabilities during execution. Successful temporary capabilities can then be preserved as reusable tools or skills.
 
-From an AI Flywheel perspective, this is strong evidence for the pattern:
+From an Infoconex AI Flywheel perspective, this is strong evidence for the pattern:
 
 **AI reasoning → newly created deterministic capability → future AI reuse**
 
@@ -107,7 +107,7 @@ This is broader than a framework that stores only conversational reflection. The
 
 The public materials show that new capabilities are developed through exploration, debugging, and verification before they are crystallized for reuse. The technical report also evaluates repeated-task convergence and the effectiveness of persistent memory.
 
-However, the reviewed materials do not establish an AI Flywheel-style formal classification process that asks whether a weakness should be corrected in:
+However, the reviewed materials do not establish a formal classification process comparable to the Infoconex AI Flywheel's process for deciding whether a weakness should be corrected in:
 
 - deterministic capability,
 - procedural knowledge,
@@ -180,9 +180,9 @@ The framework provides an `ask_user` capability and can request confirmation or 
 
 GenericAgent intentionally allows autonomous capability growth. The reviewed sources do not establish a formal distinction between expanding capability and expanding authority, nor an explicit prohibition against self-granting additional authority.
 
-## Comparison to the AI Flywheel
+## Comparison to the Infoconex AI Flywheel
 
-| Dimension | GenericAgent | AI Flywheel |
+| Dimension | GenericAgent | Infoconex AI Flywheel |
 |---|---|---|
 | AI as operator | Core architectural property | Core principle |
 | Deterministic capability creation | Dynamically creates scripts and tools | Explicit learning destination |
@@ -220,7 +220,7 @@ The AI Flywheel should not claim those individual mechanisms as unique. The more
 3. bidirectional movement across the determinism boundary,
 4. and explicit human governance over authority rather than only human interaction.
 
-## Related AI Flywheel Research
+## Related Infoconex AI Flywheel Research
 
 - [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
 - [AI Is the Operator](../principles/02-ai-as-operator.md)

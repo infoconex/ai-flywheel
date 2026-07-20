@@ -1,6 +1,6 @@
 # Prior-Art and Comparative Research Overview
 
-> **Research status:** Working analysis. This collection keeps research and comparison separate from the AI Flywheel specification. Conclusions should be treated as working findings until they are supported by primary sources.
+> **Research status:** Working analysis. This collection keeps research and comparison separate from the Infoconex AI Flywheel Specification. Conclusions should be treated as working findings until they are supported by primary sources.
 
 ## Purpose
 

@@ -1,10 +1,10 @@
-# AI Flywheel Lifecycle
+# Infoconex AI Flywheel Lifecycle
 
 The AI Flywheel operates as a recurring eight-stage cycle:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
 
-![AI Flywheel lifecycle](../../assets/ai-flywheel-2.png)
+![Infoconex AI Flywheel lifecycle](../../assets/ai-flywheel-2.png)
 
 The lifecycle turns operating experience into validated improvements that future executions can reuse.
 

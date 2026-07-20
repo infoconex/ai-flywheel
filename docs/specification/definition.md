@@ -1,8 +1,8 @@
-# AI Flywheel Formal Definition
+# Infoconex AI Flywheel Formal Definition
 
 ## Definition
 
-The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
+The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 A human authorizes the Flywheel to operate and defines the limits of that authority. Once authorized, the AI operates on its own within those limits until it reaches a condition requiring human judgment or approval.
 

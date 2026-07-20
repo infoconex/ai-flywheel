@@ -1,6 +1,6 @@
 # Conformance Evaluation Checklist
 
-Use this checklist to evaluate whether a system satisfies the AI Flywheel specification.
+Use this checklist to evaluate whether a system satisfies the Infoconex AI Flywheel Specification.
 
 A complete conformance review should be supported by observable evidence rather than architecture labels or stated intent alone. The ten sections below are assessment areas derived from the canonical specification; they do not define independent requirements.
 
@@ -74,7 +74,7 @@ Canonical sources: [Principle 6: Failure Determines Where the System Evolves](..
 31. Can the system distinguish approval required from judgment required?
 32. Are prohibited actions actually blocked?
 
-Canonical sources: [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md), [AI Flywheel Lifecycle](../lifecycle/README.md#governance-applies-throughout-the-lifecycle), and [Governance and Escalation](../../architecture/governance-and-escalation.md).
+Canonical sources: [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md), [Infoconex AI Flywheel Lifecycle](../lifecycle/README.md#governance-applies-throughout-the-lifecycle), and [Governance and Escalation](../../architecture/governance-and-escalation.md).
 
 ## Persistent Learning
 
@@ -94,7 +94,7 @@ Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../pri
 
 ## Conformance Decision
 
-A system conforms to this version of the AI Flywheel specification when the implementation can demonstrate that the complete operating model satisfies all ten conformance areas described in the [Conformance Overview](README.md).
+A system conforms to this version of the Infoconex AI Flywheel Specification when the implementation can demonstrate that the complete operating model satisfies all ten conformance areas described in the [Conformance Overview](README.md).
 
 When an area is not satisfied, the implementation may still use valuable AI Flywheel concepts, but it should not be described as a complete conforming implementation.
 

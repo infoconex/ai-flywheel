@@ -27,7 +27,7 @@ Each framework research page should include, where available:
 - a detailed description of the framework and its architecture,
 - its execution, learning, persistence, validation, and governance mechanisms,
 - a completed evidence checklist,
-- direct comparison with the AI Flywheel,
+- direct comparison with the Infoconex AI Flywheel,
 - and remaining questions requiring more primary-source research.
 
 The research prioritizes original papers, author-maintained project pages, official source repositories, and documentation published by the framework authors.

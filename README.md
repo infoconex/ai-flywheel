@@ -1,6 +1,6 @@
-# AI Flywheel
+# Infoconex AI Flywheel
 
-The **AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
+The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI does not merely assist a human in performing work, but progressively builds, operates, observes, and improves the system by which the work is performed.
 
 > **A loop repeats. A flywheel compounds.**
 
@@ -8,19 +8,19 @@ The **AI Flywheel** is an evidence-driven operating model in which AI does not m
 
 ## Origin and Formalization
 
-The ideas that became the AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
+The ideas that became the Infoconex AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named Infoconex AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
 
 These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the `v0.1.0` release marks its first formal public specification release.
 
-See [AI Flywheel History and Development](docs/history.md) for the full timeline.
+See [Infoconex AI Flywheel History and Development](docs/history.md) for the full timeline.
 
-## Why AI Flywheel?
+## Why the AI Flywheel?
 
 AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
 
 That creates a new question: what should happen when execution succeeds imperfectly, fails unexpectedly, or reveals a better way to perform the work?
 
-An AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the operating model, validates the improvement, persists it, and reuses it in future execution.
+The AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the operating model, validates the improvement, persists it, and reuses it in future execution.
 
 A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, or a proposed governance change. The next execution then begins from the improved operating state rather than starting from the same place again.
 
@@ -43,13 +43,13 @@ The lifecycle is:
 
 Governance applies throughout the cycle. Human-defined authority determines whether actions and changes are authorized, require approval, require human judgment, or are prohibited.
 
-## What Makes an AI Flywheel Different?
+## What Makes the AI Flywheel Different?
 
-An AI Flywheel is not defined by any single capability such as autonomous execution, memory, reflection, tool creation, code generation, self-modification, or feedback. These mechanisms all have substantial prior art.
+The AI Flywheel is not defined by any single capability such as autonomous execution, memory, reflection, tool creation, code generation, self-modification, or feedback. These mechanisms all have substantial prior art.
 
 The comparison below follows the AI Flywheel lifecycle so each stage can be evaluated consistently across different approaches:
 
-| Lifecycle Stage | Traditional Automation | Typical Agent Loop | AI Flywheel |
+| Lifecycle Stage | Traditional Automation | Typical Agent Loop | Infoconex AI Flywheel |
 |---|---|---|---|
 | **Execute** — Performs the work using procedures, reasoning, and deterministic capabilities | Yes | Yes | Required |
 | **Observe** — Captures evidence about what actually happened during execution | Possible, not inherent | Framework-dependent | Required |
@@ -63,11 +63,11 @@ The comparison below follows the AI Flywheel lifecycle so each stage can be eval
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
 
-> See [Conformance](docs/specification/conformance/README.md) for the requirements used to determine whether an implementation qualifies as an AI Flywheel.
+> See [Conformance](docs/specification/conformance/README.md) for the requirements used to determine whether an implementation conforms to the Infoconex AI Flywheel Specification.
 
-## What an AI Flywheel Is Not
+## What the AI Flywheel Is Not
 
-A system does not become an AI Flywheel merely because it contains one part of the pattern.
+A system does not conform to the Infoconex AI Flywheel Specification merely because it contains one part of the pattern.
 
 - A **retry-only loop** repeats work but does not necessarily learn from it.
 - A **memory-only agent** may retain information without changing the operating model used by future execution.
@@ -75,7 +75,7 @@ A system does not become an AI Flywheel merely because it contains one part of t
 - **Reflection alone** does not create compounding improvement unless the lesson changes a persistent operational asset that future execution can reuse.
 - **Fixed automation** can be highly reliable without having an evidence-driven mechanism for evolving itself.
 
-> See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for examples of systems that do not satisfy the requirements of an AI Flywheel.
+> See [Non-Conforming Patterns](docs/specification/conformance/non-conforming-patterns.md) for examples of systems that do not satisfy the requirements of the Infoconex AI Flywheel Specification.
 
 ## Core Concepts
 
@@ -109,10 +109,10 @@ The **Authority Boundary** determines what the AI is permitted to decide, execut
 
 New to the AI Flywheel? Start with the core specification:
 
-1. **[Definition](docs/specification/definition.md)** — Understand what an AI Flywheel is and what distinguishes it from related approaches.
-2. **[Principles](docs/specification/principles/README.md)** — Explore the eight principles that define how an AI Flywheel operates.
+1. **[Definition](docs/specification/definition.md)** — Understand what the AI Flywheel is and what distinguishes it from related approaches.
+2. **[Principles](docs/specification/principles/README.md)** — Explore the eight principles that define how the AI Flywheel operates.
 3. **[Lifecycle](docs/specification/lifecycle/README.md)** — Follow the eight-stage cycle from execution through persistent reuse.
-4. **[Conformance](docs/specification/conformance/README.md)** — Evaluate whether a system meets the requirements of an AI Flywheel.
+4. **[Conformance](docs/specification/conformance/README.md)** — Evaluate whether a system meets the requirements of the Infoconex AI Flywheel Specification.
 
 Then explore the supporting material:
 
@@ -128,7 +128,7 @@ The specification defines the methodology. The research collection examines rela
 
 ## Project Status and Roadmap
 
-> **Current status:** AI Flywheel Specification 0.1.2 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
+> **Current status:** Infoconex AI Flywheel Specification 0.1.2 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
 
 The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
 

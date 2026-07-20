@@ -1,6 +1,6 @@
 # Principle 5: Execution Must Produce Outcome Evidence
 
-The AI Flywheel learns from observed results rather than AI confidence alone.
+The Infoconex AI Flywheel learns from observed results rather than AI confidence alone.
 
 ## Purpose
 

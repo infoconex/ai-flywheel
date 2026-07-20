@@ -1,12 +1,12 @@
-# AI Flywheel Specification
+# Infoconex AI Flywheel Specification
 
-![AI Flywheel Specification](../assets/specification.png)
+![Infoconex AI Flywheel Specification](../assets/specification.png)
 
 > **Specification Version:** 0.1 — Draft
 
-This section contains the official definition of the AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
+This section contains the official definition of the Infoconex AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
-The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **AI Flywheel Specification 0.1 — Draft**.
+The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **Infoconex AI Flywheel Specification 0.1 — Draft**.
 
 ## Requirement Language
 
@@ -34,8 +34,8 @@ The eight principles and eight-stage lifecycle define the current structure, but
 
 ## Table of Contents
 
-- [Formal Definition](definition.md) — Defines the AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the core boundaries.
-- [Principles](principles/README.md) — Defines the eight principles of an AI Flywheel, with a dedicated page for each principle.
+- [Formal Definition](definition.md) — Defines the Infoconex AI Flywheel, human authority, governance, runtime responsibilities, learning destinations, and the core boundaries.
+- [Principles](principles/README.md) — Defines the eight principles of the AI Flywheel, with a dedicated page for each principle.
 - [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied throughout.
 - [Conformance](conformance/README.md) — Provides an evidence-based way to determine whether an implementation satisfies the specification.
 - [Terminology](terminology.md) — Defines the standard terms used across the specification.

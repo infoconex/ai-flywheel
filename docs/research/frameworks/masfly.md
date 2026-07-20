@@ -25,7 +25,7 @@ No official MASFly source-code repository or standalone project website was iden
 - [MetaGPT repository](https://github.com/geekan/MetaGPT) — Implementation of SOP-oriented multi-agent software collaboration.
 - [AgentSquare paper](https://arxiv.org/abs/2410.06153) — Relevant work on automatically searching and improving agent-system architectures.
 - [AgentSquare repository](https://github.com/tsinghua-fib-lab/AgentSquare) — Implementation and evaluation materials for automated agent-system design.
-- [AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What MASFly Is
 
@@ -89,7 +89,7 @@ The framework can dynamically determine:
 
 The resulting system is therefore assembled for the current task rather than chosen from one fixed topology.
 
-From an AI Flywheel perspective, this is an example of **procedural knowledge shaping runtime organization**.
+From an Infoconex AI Flywheel perspective, this is an example of **procedural knowledge shaping runtime organization**.
 
 However, the procedure primarily governs how AI agents collaborate. It does not appear to define a broader control plane spanning deterministic software, AI judgment, evidence requirements, authority boundaries, and the placement of learned behavior across different execution mechanisms.
 
@@ -240,9 +240,9 @@ The framework adapts agent roles, prompts, collaboration procedures, and supervi
 
 No formal human authority or approval architecture was identified in the primary paper.
 
-## Comparison to the AI Flywheel
+## Comparison to the Infoconex AI Flywheel
 
-| Dimension | MASFly | AI Flywheel |
+| Dimension | MASFly | Infoconex AI Flywheel |
 |---|---|---|
 | Primary object of adaptation | Multi-agent organization and collaboration | Persistent operating model across code, procedure, reasoning, validation, and governance |
 | SOP role | Generates task-specific multi-agent operation procedures | Persistent operational control plane guiding AI execution |
@@ -306,7 +306,7 @@ The more defensible differentiation questions concern:
 3. whether failure is routed among fundamentally different operational layers rather than only used to improve agent organization and guidance,
 4. and whether human authority is separately modeled above autonomous supervision.
 
-## Related AI Flywheel Research
+## Related Infoconex AI Flywheel Research
 
 - [Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md)
 - [AI Is the Operator](../principles/02-ai-as-operator.md)

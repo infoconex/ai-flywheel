@@ -1,6 +1,6 @@
-# AI Flywheel Architecture
+# Infoconex AI Flywheel Architecture
 
-![AI Flywheel Architecture](../assets/architecture.png)
+![Infoconex AI Flywheel Architecture](../assets/architecture.png)
 
 This section explains how the AI Flywheel fits together. It separates the complete operating model, runtime model, post-execution learning model, governance and escalation, and the boundaries that determine where responsibility lives and what the AI is allowed to do.
 
@@ -26,4 +26,4 @@ The architecture is easiest to understand through three operating views and two 
 
 The three operating mechanisms—deterministic capability, procedural SOP, and AI reasoning—are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution.
 
-For the specification, see the [AI Flywheel Specification](../specification/README.md). For a practical walkthrough, see the [Software Maintenance Flywheel example](../examples/software-maintenance-flywheel.md).
+For the specification, see the [Infoconex AI Flywheel Specification](../specification/README.md). For a practical walkthrough, see the [Software Maintenance Flywheel example](../examples/software-maintenance-flywheel.md).

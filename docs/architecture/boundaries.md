@@ -1,6 +1,6 @@
 # Core Boundaries
 
-The AI Flywheel architecture contains two core structural boundaries that should not be confused: the **Moving Determinism Boundary** and the **Authority Boundary**.
+The Infoconex AI Flywheel architecture contains two core structural boundaries that should not be confused: the **Moving Determinism Boundary** and the **Authority Boundary**.
 
 The model also uses an **Uncertainty Boundary** as an evidence-based escalation condition. It answers a different question: whether the AI has enough evidence to decide responsibly.
 
@@ -98,5 +98,5 @@ The Moving Determinism Boundary governs **where intelligence and responsibility 
 - [Runtime Architecture](runtime-view.md)
 - [Learning Architecture](learning-view.md)
 - [Governance and Escalation](governance-and-escalation.md)
-- [AI Flywheel Formal Definition](../specification/definition.md)
+- [Infoconex AI Flywheel Formal Definition](../specification/definition.md)
 - [Terminology](../specification/terminology.md)
