@@ -61,8 +61,10 @@
     - title: Framework Comparison
       url: /docs/research/frameworks/framework-comparison-matrix.html
 
-- title: Project
+- title: Project Policies
   items:
+    - title: Overview
+      url: /POLICIES.html
     - title: License
       url: /LICENSE.html
     - title: Notice

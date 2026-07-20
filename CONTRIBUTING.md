@@ -61,6 +61,7 @@ An issue discussion does not modify the specification unless the accepted change
 
 ## Related Documents
 
+- [POLICIES.md](POLICIES.md) — Provides an overview of all project policy documents.
 - [LICENSE.md](LICENSE.md) — Defines permitted use, restrictions, attribution, warranty, and reserved rights.
 - [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
 - [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
