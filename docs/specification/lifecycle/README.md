@@ -50,9 +50,13 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 7. [Stage 7: Persist](07-persist.md) — Store validated and authorized learning in a durable operational asset.
 8. [Stage 8: Reuse](08-reuse.md) — Use the improved operating state in future execution.
 
-## Lifecycle Stage Contracts
+## Lifecycle Stage Document Structure
 
-Each lifecycle stage has a normative contract using the same structure:
+Each lifecycle stage follows a consistent document structure.
+
+### Normative Stage Contract
+
+The normative contract for each stage uses the same five sections:
 
 - **Required Inputs and Preconditions** — What must be available or true before the stage can perform its responsibility.
 - **Required Responsibilities** — What the stage must accomplish.
@@ -64,7 +68,17 @@ The stage contracts define required lifecycle responsibilities without prescribi
 
 Completion conditions define the boundary of each stage responsibility. Retry behavior, backward transitions, escalation paths, stopping conditions, validation-failure routing, and other lifecycle transition semantics are separate concerns and are not defined by the individual stage contracts.
 
-The requirement language defined in the [Specification Overview](../README.md#requirement-language) applies to every lifecycle contract. Supporting examples and explanatory text do not create additional requirements unless they use requirement language to do so.
+### Supporting Sections
+
+Each lifecycle stage also includes supporting sections that explain and connect the contract:
+
+- **Purpose** — Why the stage exists.
+- **Governance Considerations** — How authority, approval, prohibition, and human judgment affect the stage.
+- **Relationships to Principles** — Which named principles are most directly connected to the stage.
+- **Stage Navigation** — Where the stage sits in the lifecycle.
+- **Related Documents** — Where to find relevant supporting material.
+
+The requirement language defined in the [Specification Overview](../README.md#requirement-language) applies throughout every lifecycle page. Supporting explanation does not create additional requirements unless it uses requirement language to do so.
 
 ## The Flywheel Effect
 
