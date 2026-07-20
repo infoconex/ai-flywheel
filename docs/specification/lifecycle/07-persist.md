@@ -1,6 +1,6 @@
 # Stage 7: Persist
 
-Validated and authorized learning is stored in a durable operational asset so it can survive the current execution.
+The Infoconex AI Flywheel stores validated and authorized learning in a durable operational asset so it can survive the current execution.
 
 ## Purpose
 

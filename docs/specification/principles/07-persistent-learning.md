@@ -1,6 +1,6 @@
 # Principle 7: Learning Must Change a Persistent Operational Asset
 
-Useful learning must survive the current execution.
+Useful Infoconex AI Flywheel learning must survive the current execution.
 
 ## Purpose
 

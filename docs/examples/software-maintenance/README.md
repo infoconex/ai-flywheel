@@ -7,7 +7,7 @@ The use case covers recurring package evaluation, risk classification, maintenan
 ## Documents
 
 - [Use Case](use-case.md) — Defines continuous dependency maintenance, triggers, inventory, profiles, outcomes, controls, and success measures
-- [Worked Example](worked-example.md) — Walks dependency maintenance through three complete AI Flywheel cycles
+- [Worked Example](worked-example.md) — Walks dependency maintenance through three complete Infoconex AI Flywheel cycles
 
 ## Relationship to Repository Modernization
 
@@ -15,4 +15,4 @@ This use case assumes a repository has a usable build and test process.
 
 When dependency maintenance reveals that broader project, repository, or CI modernization is required, the maintenance operation records the blocker and routes the repository to [Standards-Driven Repository Modernization](../standards-driven-repository-modernization/README.md).
 
-The package illustrates one possible implementation. It does not add requirements to the AI Flywheel specification or prescribe a universal dependency-management process.
+The package illustrates one possible implementation. It does not add requirements to the Infoconex AI Flywheel Specification or prescribe a universal dependency-management process.

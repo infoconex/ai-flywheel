@@ -124,6 +124,6 @@ The determinism boundary can move as the system learns. The authority boundary i
 - [Lifecycle](lifecycle/README.md)
 - [Conformance](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
-- [End-to-End Example: Software Maintenance Flywheel](../examples/software-maintenance-flywheel.md)
+- [Worked Example: Continuous Dependency Maintenance](../examples/software-maintenance/worked-example.md)
 
 For comparative research, see the [research section](../research/README.md).

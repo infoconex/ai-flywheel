@@ -200,41 +200,29 @@ The hypothesis most likely to be correct is not always the best one to test firs
 
 Every experiment should define:
 
-1. **Question**  
-   What uncertainty is being tested?
+1. **Question:** What uncertainty is being tested?
 
-2. **Hypothesis**  
-   What may be true?
+2. **Hypothesis:** What may be true?
 
-3. **Reasoning**  
-   Why is the hypothesis worth testing?
+3. **Reasoning:** Why is the hypothesis worth testing?
 
-4. **Expected observation**  
-   What should occur if the hypothesis is correct?
+4. **Expected observation:** What should occur if the hypothesis is correct?
 
-5. **Contradicting observation**  
-   What result would weaken or disprove it?
+5. **Contradicting observation:** What result would weaken or disprove it?
 
-6. **Test method**  
-   What controlled action will be performed?
+6. **Test method:** What controlled action will be performed?
 
-7. **Controlled variables**  
-   What conditions must remain stable?
+7. **Controlled variables:** What conditions must remain stable?
 
-8. **Risk and authority**  
-   Is the experiment authorized, approval-required, judgment-required, or prohibited?
+8. **Risk and authority:** Is the experiment authorized, approval-required, judgment-required, or prohibited?
 
-9. **Success criteria**  
-   What result supports moving forward?
+9. **Success criteria:** What result supports moving forward?
 
-10. **Rollback**  
-    How will experimental changes be removed?
+10. **Rollback:** How will experimental changes be removed?
 
-11. **Evidence**  
-    What must be collected?
+11. **Evidence:** What must be collected?
 
-12. **Stop conditions**  
-    What conditions end the test?
+12. **Stop conditions:** What conditions end the test?
 
 ## Experiment Record
 

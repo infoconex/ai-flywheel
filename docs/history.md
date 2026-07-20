@@ -36,11 +36,11 @@ The formal documentation introduced a definition, eight named principles, an eig
 
 This marks the point when the methodology was formally organized and documented, not the beginning of the underlying ideas.
 
-### July 2026 — Specification 0.1 Published
+### July 2026 — Specification v0.1 Published
 
-The first formal specification was published as **Infoconex AI Flywheel Specification 0.1 — Draft** in the `v0.1.0` repository release.
+The first formal specification was published as **Infoconex AI Flywheel Specification v0.1 — Draft** in the `v0.1.0` repository release.
 
-The 0.1 designation reflects that the methodology was released as a working specification that can continue to improve through implementation experience, public review, and continued research.
+The v0.1 designation reflects that the methodology was released as a working specification that can continue to improve through implementation experience, public review, and continued research.
 
 ## Interpreting These Dates
 

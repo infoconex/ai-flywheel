@@ -25,7 +25,7 @@ No official Metis source-code repository or standalone project website was ident
 - [AppWorld paper](https://arxiv.org/abs/2407.18901) — Defines the interactive coding-agent environment in which Metis is evaluated.
 - [ReAct paper](https://arxiv.org/abs/2210.03629) — Important baseline for understanding the underlying reason-and-act execution model.
 - [ReAct project](https://react-lm.github.io/) — Project page and supplementary material for ReAct.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What Metis Is
 

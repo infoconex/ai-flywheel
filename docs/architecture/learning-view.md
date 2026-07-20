@@ -1,6 +1,6 @@
 # Learning Architecture
 
-The learning view explains what happens **after execution** and how evidence changes future operation.
+The Infoconex AI Flywheel learning view explains what happens **after execution** and how evidence changes future operation.
 
 Deterministic capability, procedural knowledge, and reasoning knowledge appear again here, but now as possible destinations for persistent learning rather than as execution stages.
 

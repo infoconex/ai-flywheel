@@ -1,6 +1,6 @@
 # Stage 4: Classify
 
-The AI identifies the type and likely source of any weakness, uncertainty, or learning opportunity revealed by evaluation.
+The Infoconex AI Flywheel identifies the type and likely source of any weakness, uncertainty, or learning opportunity revealed by evaluation.
 
 ## Purpose
 

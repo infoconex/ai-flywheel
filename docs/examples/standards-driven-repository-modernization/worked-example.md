@@ -1,10 +1,10 @@
 # Worked Example: Standards-Driven Repository Modernization
 
-This worked example applies the AI Flywheel to the [Standards-Driven Repository Modernization Use Case](use-case/README.md).
+This worked example applies the Infoconex AI Flywheel to the [Standards-Driven Repository Modernization Use Case](use-case/README.md).
 
 The use case defines the simulated environment, target repository standard, migration process, and representative repository scenarios. This page focuses on how repeated migrations produce evidence, improve persistent operational assets, and change later migrations.
 
-The example presents one possible implementation. It illustrates the AI Flywheel specification but does not add requirements or prescribe a universal repository standard.
+The example presents one possible implementation. It illustrates the Infoconex AI Flywheel Specification but does not add requirements or prescribe a universal repository standard.
 
 ## Intended Outcome
 

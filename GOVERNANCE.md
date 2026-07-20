@@ -20,7 +20,7 @@ Unofficial copies, mirrors, forks, summaries, translations, excerpts, or derivat
 
 Specification versions identify the maturity and content of the methodology.
 
-Pre-1.0 versions are drafts and may change as terminology, conformance guidance, examples, implementation experience, and research evolve.
+Pre-v1.0 versions are drafts and may change as terminology, conformance guidance, examples, implementation experience, and research evolve.
 
 A repository release, website deployment, or reference implementation version is separate from the specification version unless Infoconex explicitly identifies it as a specification version.
 
@@ -69,7 +69,6 @@ This governance document works together with:
 - [NOTICE.md](NOTICE.md) — Provides the public ownership, naming, and authority notice.
 - [TRADEMARKS.md](TRADEMARKS.md) — Defines naming, branding, and conformance-claim rules.
 - [CONTRIBUTING.md](CONTRIBUTING.md) — Defines contribution expectations and contribution licensing.
-- [GOVERNANCE.md](GOVERNANCE.md) — Defines specification authority, change process, and interpretation.
 - [VERSIONING.md](VERSIONING.md) — Defines specification versions, draft status, releases, and conformance versioning.
 
 If there is a conflict between this document and the license, the license controls rights and permissions.

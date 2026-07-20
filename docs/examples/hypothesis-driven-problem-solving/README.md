@@ -8,7 +8,7 @@ The AI operates a governed test-and-learn process that forms hypotheses, runs bo
 
 - [Use Case](use-case.md) — Defines the problem-solving model, hypothesis and experiment records, governance, validation, persistence, reuse, and stop conditions
 
-The worked example will be developed after the use case is reviewed. It will apply the eight-stage AI Flywheel lifecycle to a problem whose solution emerges through controlled experimentation.
+The worked example will be developed after the use case is reviewed. It will apply the eight-stage Infoconex AI Flywheel lifecycle to a problem whose solution emerges through controlled experimentation.
 
 ## Format
 
@@ -20,4 +20,4 @@ This package follows the same format used by the other examples:
 4. Map the worked example to conformance expectations
 5. Show which persistent improvements later executions reuse
 
-The package presents a simulated environment. It does not add requirements to the AI Flywheel specification or prescribe one experimental method.
+The package presents a simulated environment. It does not add requirements to the Infoconex AI Flywheel Specification or prescribe one experimental method.

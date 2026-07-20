@@ -26,4 +26,4 @@ The architecture is easiest to understand through three operating views and two 
 
 The three operating mechanisms—deterministic capability, procedural SOP, and AI reasoning—are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution.
 
-For the specification, see the [Infoconex AI Flywheel Specification](../specification/README.md). For a practical walkthrough, see the [Software Maintenance Flywheel example](../examples/software-maintenance-flywheel.md).
+For the specification, see the [Infoconex AI Flywheel Specification](../specification/README.md). For a practical walkthrough, see the [Continuous Dependency Maintenance worked example](../examples/software-maintenance/worked-example.md).

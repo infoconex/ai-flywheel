@@ -79,4 +79,4 @@ A mature AI Flywheel should reduce repeated reasoning, repeated failure, and unn
 - [Principles](../principles/README.md)
 - [Conformance](../conformance/README.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [Worked Example: Continuous Dependency Maintenance](../../examples/software-maintenance/worked-example.md)

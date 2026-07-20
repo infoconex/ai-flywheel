@@ -23,7 +23,7 @@ Determine which Infoconex AI Flywheel principles are substantially represented b
 
 - [GenericAgent tutorial](https://datawhalechina.github.io/hello-generic-agent/) — Community tutorial linked directly by the official repository.
 - [Sophub Skill Hub](https://fudankw.cn/sophub) — Skill repository linked by the official project and useful for understanding the broader skill-reuse model.
-- [Infoconex AI Flywheel framework comparison matrix](../framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
+- [Infoconex AI Flywheel framework comparison matrix](framework-comparison-matrix.md) — Current cross-framework scoring and comparison.
 
 ## What GenericAgent Is
 

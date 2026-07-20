@@ -12,11 +12,11 @@ A system may contain individual AI Flywheel mechanisms without conforming to the
 
 A complete conformance review evaluates the operating model across ten areas taken from the specification:
 
-| Conformance Area | Specification Source | What Must Be Demonstrated |
+| Conformance Area | Requirement Source and Support | What Must Be Demonstrated |
 |---|---|---|
 | **1. Human Authority** | [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) | Human-defined authority boundaries govern autonomous operation, and the AI cannot grant itself more authority. |
 | **2. AI Operation** | [Principle 2: AI Is the Operator, Not Merely the Assistant](../principles/02-ai-as-operator.md), [Stage 1: Execute](../lifecycle/01-execute.md) | AI performs meaningful work rather than only producing instructions for a human operator. |
-| **3. Runtime Responsibilities** | [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md), [Runtime Architecture](../../architecture/runtime-view.md) | Deterministic capability, procedural guidance, and AI reasoning have clear and intentional roles. |
+| **3. Runtime Responsibilities** | [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md), supported by [Runtime Architecture](../../architecture/runtime-view.md) | Deterministic capability, procedural guidance, and AI reasoning have clear and intentional roles. |
 | **4. Persistent Operational Procedure** | [Principle 4: The SOP Is an Operational Control Plane](../principles/04-sop-control-plane.md) | A durable Standard Operating Procedure (SOP) or equivalent machine-consumable guidance directs how work is performed and remains subject to governance. |
 | **5. Outcome Evidence** | [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md), [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md) | Execution produces enough evidence to judge actual outcomes instead of relying on model confidence or completion status. |
 | **6. Evaluation and Classification** | [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) | The system determines what happened and identifies the type of weakness, uncertainty, or learning opportunity. |
@@ -25,7 +25,7 @@ A complete conformance review evaluates the operating model across ten areas tak
 | **9. Persistent Learning** | [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 7: Persist](../lifecycle/07-persist.md) | Validated and authorized learning survives the current execution in an asset future execution can use. |
 | **10. Compounding Reuse** | [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md), [Stage 8: Reuse](../lifecycle/08-reuse.md) | Later executions use relevant improvements so capability, reliability, or efficiency can improve over time. |
 
-These ten areas are a way to assess the specification, not a second set of requirements. When the specification changes, conformance should be updated to point back to the source requirement rather than redefining it here.
+These ten areas are a way to assess the specification, not a second set of requirements. Architecture pages and examples may support interpretation, but the linked principle and lifecycle documents remain the requirement sources. When the specification changes, conformance should be updated to point back to the source requirement rather than redefining it here.
 
 ## Specification Traceability
 
@@ -80,4 +80,4 @@ This version does not define partial or maturity-based conformance levels. A fut
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
 - [Core Operating Model](../../architecture/operating-model.md)
-- [End-to-End Example: Software Maintenance Flywheel](../../examples/software-maintenance-flywheel.md)
+- [Worked Example: Continuous Dependency Maintenance](../../examples/software-maintenance/worked-example.md)

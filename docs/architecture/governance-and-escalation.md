@@ -1,6 +1,6 @@
 # Governance and Escalation
 
-Governance and escalation are related but different parts of the architecture.
+Governance and escalation are related but different parts of the Infoconex AI Flywheel architecture.
 
 **Governance** defines the boundaries before and during operation. It answers what the AI may do, what it may change, what requires approval, what is prohibited, and when uncertainty must be escalated.
 
