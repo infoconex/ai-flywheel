@@ -65,15 +65,3 @@
   items:
     - title: Overview
       url: /POLICIES.html
-    - title: License
-      url: /LICENSE.html
-    - title: Notice
-      url: /NOTICE.html
-    - title: Trademarks
-      url: /TRADEMARKS.html
-    - title: Contributing
-      url: /CONTRIBUTING.html
-    - title: Governance
-      url: /GOVERNANCE.html
-    - title: Versioning
-      url: /VERSIONING.html
