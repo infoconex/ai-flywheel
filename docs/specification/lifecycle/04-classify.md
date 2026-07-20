@@ -10,9 +10,9 @@ At this stage, the Flywheel asks:
 
 > **Where should this learning live?**
 
-## Inputs
+## Required Inputs and Preconditions
 
-Classification receives:
+Classify requires:
 
 - The assessed outcome from [Stage 3: Evaluate](03-evaluate.md)
 - The evidence supporting that assessment
@@ -20,41 +20,50 @@ Classification receives:
 - The current placement of responsibility among deterministic capability, procedural guidance, and AI reasoning
 - Applicable governance constraints
 
-## Required Behavior
+The classification must be grounded in an evaluated outcome or identified learning opportunity rather than an unsupported preference for a particular implementation mechanism.
 
-The system should consider whether the issue belongs primarily to:
+## Required Responsibilities
+
+Classify must:
+
+- Identify the type and likely source of the weakness, uncertainty, or learning opportunity
+- Consider the part of the operating model best suited to own any resulting improvement
+- Make the routing decision intentionally rather than defaulting every issue to one adaptation mechanism
+- Preserve the evidence supporting the routing decision
+- Allow the result to be that no persistent change is justified
+
+Potential improvement destinations may include:
 
 - Deterministic implementation
 - Procedural guidance
-- Missing or weak validation
-- Missing or incomplete reasoning knowledge
-- Runtime reasoning
-- Environmental change
-- Governance or authority
-- An incorrect assumption about where responsibility should live
-
-The classification should identify the persistent destination best suited to own the learning, which may include:
-
-- Deterministic capability
-- Procedural knowledge
-- Reasoning knowledge
 - Validation
-- A proposed governance change
+- Reasoning knowledge
+- Runtime reasoning behavior
+- Governance or authority
+- A changed placement of responsibility across the Moving Determinism Boundary
 
-Classification must be intentional. The system should not automatically route every failure to code changes, prompt changes, memory, retries, or any other single destination.
+Classification does not authorize a governance change or expansion of authority.
 
-A classification may also determine that no persistent change is justified because the event is temporary, already handled correctly, or unsupported by enough evidence.
+## Required Outputs and Evidence
 
-## Outputs
+Classify must produce:
 
-Classification produces:
-
-- An identified weakness or learning opportunity
-- A selected improvement destination or clear decision that no adaptation is justified
+- An identified weakness, uncertainty, or learning opportunity
+- A selected improvement destination or an explicit decision that no adaptation is justified
 - The evidence supporting that routing decision
 - Any identified movement of responsibility across the Moving Determinism Boundary
 
-When adaptation is justified, the selected destination becomes the primary input to [Stage 5: Adapt](05-adapt.md).
+## Completion Conditions
+
+Classify is complete when the evidence supports an explicit decision about where the learning should be addressed or that no durable adaptation is justified.
+
+The stage contract is not satisfied by forcing a change solely to continue the lifecycle.
+
+## Relationship to Adjacent Stages
+
+Classify consumes the supported assessment and learning opportunities produced by [Stage 3: Evaluate](03-evaluate.md).
+
+When adaptation is justified, the selected improvement destination and supporting evidence become the primary inputs to [Stage 5: Adapt](05-adapt.md).
 
 ## Governance Considerations
 
@@ -63,16 +72,6 @@ Classification may identify a governance weakness or suggest that the AI's autho
 A proposed Governance Policy change remains subject to human authorization.
 
 The Flywheel may determine on its own that more conservative behavior or additional escalation is appropriate when evidence shows increased risk or uncertainty, as long as that change remains within existing authority.
-
-## Failure and Exit Conditions
-
-Classification should return to evaluation or observation when the evidence is too weak to responsibly identify the issue.
-
-It should advance to adaptation when a supported improvement destination has been identified.
-
-It may exit without adaptation when the current operating model behaved correctly and no durable improvement is justified.
-
-It must not force a change merely to complete the lifecycle.
 
 ## Relationships to Principles
 
