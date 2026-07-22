@@ -55,6 +55,8 @@ Evidence may include:
 
 Evidence should be attributable enough for a reviewer to determine what happened, why a conclusion was reached, and how the evidence demonstrates the relevant principle requirements.
 
+Conformance is assessed across the behavior of the operating model, not by requiring every individual execution to produce a new persistent change. A verified successful outcome may reinforce an existing validated pattern rather than justify adaptation. The implementation must still demonstrate that evidence is evaluated and classified, and that the lifecycle can adapt, validate, persist, and reuse learning when evidence supports a lasting improvement.
+
 The exact technology used to satisfy the specification may vary. Conformance evaluates required behavior rather than requiring a specific language, framework, model, storage system, or infrastructure platform.
 
 ## Conformance Decision
