@@ -124,6 +124,33 @@ The colors below are representative primary values sampled from the approved cur
 - The compact `64 × 64` navigation icon may omit stage text, but it should preserve the same eight-stage color order and recognizable icon mapping.
 - Stage numbers and directional arrows are optional design devices, not part of the stage identity. The approved root banner omits them to reduce visual clutter.
 
+## Canonical Principle Visual Mapping
+
+The approved `principles.png` asset establishes the current visual identity for the eight canonical principles. Principle visuals should preserve the exact principle order and use stable icon associations so readers encounter the same visual language across the Principles section, conformance material, architecture diagrams, and future supporting visuals.
+
+The accent colors below are representative values from the approved Principles banner. They are stable presentation identifiers **within principle-specific visuals**. Unlike lifecycle colors, they do not create a semantic relationship between a principle and a lifecycle stage that happens to use a similar color.
+
+| Principle | Stable short label | Representative accent | Icon | Icon meaning |
+|---|---|---|---|---|
+| **1. Autonomy Is Bounded by Human Authority** | Human Authority | `#0C64E8` | Person with shield | Human authority constrains autonomous operation |
+| **2. AI Is the Operator, Not Merely the Assistant** | AI as Operator | `#0698A5` | Gear with AI | AI performs meaningful operational work |
+| **3. Work Is Distributed Across a Moving Determinism Boundary** | Moving Determinism Boundary | `#34A453` | Adjustable boundary or split controls | Responsibility can move among deterministic capability, procedural guidance, and AI reasoning |
+| **4. The SOP Is an Operational Control Plane** | SOP Control Plane | `#F3A839` | Procedure document with checklist | Persistent operational procedure directs execution |
+| **5. Execution Must Produce Outcome Evidence** | Outcome Evidence | `#F86D09` | Ascending evidence chart | Execution produces observable evidence of outcomes |
+| **6. Failure Determines Where the System Evolves** | Evolution Routing | `#E03036` | Branching route arrows | Failure classification routes where improvement belongs |
+| **7. Learning Must Change a Persistent Operational Asset** | Persistent Learning | `#752DB4` | Database cylinder | Validated learning changes a durable operational asset |
+| **8. Improvement Must Compound Through Reuse** | Compounding Reuse | `#4A46C4` | Circular reuse arrows | Improvements are reused so benefits compound over time |
+
+### Principle visual rules
+
+- Preserve the exact canonical order whenever the principles are shown as a set.
+- Use the full canonical principle names in normative specification content. Stable short labels may be used in compact supporting visuals where the full names would not remain readable.
+- Keep principle icons semantically stable. Do not substitute lifecycle-stage icons merely because a principle and lifecycle stage are conceptually related.
+- Principle accent colors identify principles only within principle-specific contexts. Do not imply that Principle 1 corresponds to Execute, Principle 2 corresponds to Observe, or any other one-to-one principle-to-stage mapping based on shared ordering or similar colors.
+- In visuals that show both principles and lifecycle stages, lifecycle stage colors and icons retain their canonical semantic meaning. Principle treatments should be visually secondary or slightly muted when needed to prevent false equivalence.
+- When principles appear in mixed diagrams, preserve their recognizable icons and labels even if neutral or softened containers are used to reduce visual competition with lifecycle semantics.
+- Update this mapping deliberately and consistently if an approved principle icon or accent changes; do not allow competing principle visual systems to remain in authoritative assets.
+
 ## Documentation Area Visual Mapping
 
 The root README banner currently uses these supporting visual associations for the four primary documentation destinations shown in the banner.
@@ -202,9 +229,9 @@ Use icons that are:
 - Consistent in visual weight and level of detail.
 - Flat or line-based rather than photorealistic.
 - Legible at the smallest size where the asset is intended to appear.
-- Semantically stable when the icon represents a lifecycle stage.
+- Semantically stable when the icon represents a lifecycle stage or canonical principle.
 
-For lifecycle visuals, the stage-to-icon mapping in this guide is authoritative for design consistency unless the guide is deliberately revised.
+For lifecycle visuals, the stage-to-icon mapping in this guide is authoritative for design consistency unless the guide is deliberately revised. For principle visuals, use the canonical principle mapping above and preserve the distinction between principle identity and lifecycle-stage identity.
 
 ## Image Formats
 
@@ -215,7 +242,7 @@ For lifecycle visuals, the stage-to-icon mapping in this guide is authoritative 
 
 ## Accessibility and Readability
 
-- Do not rely on color alone to communicate lifecycle stage identity; retain labels or recognizable icons where space allows.
+- Do not rely on color alone to communicate lifecycle stage or principle identity; retain labels or recognizable icons where space allows.
 - Maintain sufficient contrast between text or icons and their backgrounds.
 - Keep important text large enough to remain readable when images scale down on mobile devices.
 - Avoid embedding essential explanatory text in an image when equivalent real page text can communicate it more accessibly.
