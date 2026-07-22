@@ -4,48 +4,67 @@ The Infoconex AI Flywheel tests a proposed improvement against appropriate evide
 
 ## Purpose
 
-Adaptation creates a candidate improvement. Validation determines whether that candidate actually fixes the identified weakness and is safe enough to become part of future operation.
+Adaptation creates a candidate improvement. Validation determines whether that candidate actually addresses the intended weakness well enough to be considered for persistent future use.
 
 Validation and authority are separate concerns. A change may work but still not be authorized, or it may be authorized in principle but not yet proven to work.
 
-## Inputs
+## Required Inputs and Preconditions
 
-Validation receives:
+Validate requires:
 
-- the candidate adaptation from [Stage 5: Adapt](05-adapt.md),
-- the weakness or learning opportunity the candidate is intended to address,
-- the evidence supporting the original classification,
-- applicable success and safety criteria,
-- representative scenarios or test conditions,
-- and governance requirements affecting how the change may be tested, approved, or promoted.
+- The candidate adaptation from [Stage 5: Adapt](05-adapt.md)
+- The weakness or learning opportunity the candidate is intended to address
+- The expected improvement
+- The evidence supporting the original classification
+- Applicable success, safety, and validation criteria
+- Representative scenarios or test conditions when relevant
+- Governance requirements affecting how the change may be tested, approved, or promoted
 
-## Required Behavior
+The candidate itself must be identifiable well enough to test the proposed improvement rather than merely confirm that some change occurred.
 
-Validation should match the type and impact of the change.
+## Required Responsibilities
 
-Examples include:
+Validate must:
 
-- automated tests for code changes,
-- replay against representative scenarios for SOP changes,
-- evaluation against known examples for reasoning guidance,
-- independent outcome checks for validation rules,
-- comparison with the prior behavior,
-- and human review when authority or risk requires it.
+- Test the actual candidate improvement against the outcome it is intended to improve
+- Base the validation conclusion on evidence appropriate to the candidate and its context
+- Distinguish a successful validation result from authorization to persist or deploy the change
+- Preserve the evidence supporting the validation result
+- Represent failed or unresolved validation honestly rather than treating the candidate as validated
 
-Validation must test the actual candidate improvement rather than merely confirm that a change was made.
+Validation methods may vary by domain and change type. Examples include:
 
-Where practical, validation should include independent evidence that can detect whether the proposed change creates new failures or side effects.
+- Automated tests for code changes
+- Replay against representative scenarios for SOP changes
+- Evaluation against known examples for reasoning guidance
+- Independent outcome checks for validation rules
+- Comparison with prior behavior
+- Human review when authority or risk requires it
 
-## Outputs
+The detailed requirements for what constitutes sufficient validation are defined separately from this stage contract.
 
-Validation produces one of the following:
+## Required Outputs and Evidence
 
-- a validated candidate improvement with supporting evidence,
-- a failed validation result with evidence explaining the failure,
-- an uncertain validation result requiring more evidence or human judgment,
-- or a governance outcome preventing the candidate from advancing.
+Validate must produce an explicit validation result with supporting evidence. The result must identify the candidate as one of the following:
 
-A validated and authorized candidate may proceed to [Stage 7: Persist](07-persist.md).
+- Validated
+- Failed validation
+- Uncertain or unresolved validation
+- Unable to advance because of an applicable governance constraint
+
+A candidate may be eligible for [Stage 7: Persist](07-persist.md) only when it has a successful validation result and the required authorization for persistence.
+
+## Completion Conditions
+
+Validate is complete when the candidate has an explicit validation result supported by preserved evidence.
+
+The stage contract is not satisfied by treating incomplete, failed, or unresolved validation as successful validation.
+
+## Relationship to Adjacent Stages
+
+Validate consumes the candidate improvement, expected outcome, and validation intent produced by [Stage 5: Adapt](05-adapt.md).
+
+A successfully validated and appropriately authorized candidate becomes eligible input to [Stage 7: Persist](07-persist.md).
 
 ## Governance Considerations
 
@@ -55,25 +74,10 @@ A human may authorize a change without proving that it works. Likewise, a techni
 
 The Governance Policy determines whether the validation activity itself is authorized and whether successful validation is enough for persistence or requires another approval step.
 
-## Failure and Exit Conditions
-
-When validation fails, the failure must become new outcome evidence.
-
-The Flywheel should return to classification or adaptation when the failure reveals that:
-
-- the diagnosis was incomplete,
-- the selected destination was wrong,
-- the candidate change does not work,
-- or the candidate creates unacceptable side effects.
-
-The stage should not advance to persistence when validation is incomplete, failed, or unresolved.
-
-Uncertain validation that cannot be resolved within the AI's authority requires human judgment.
-
 ## Relationships to Principles
 
 - [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) requires validation conclusions to be based on evidence.
-- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) allows failed validation to trigger reclassification or a different adaptation destination.
+- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) allows validation evidence to inform later lifecycle decisions.
 - [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) requires validation before learning is trusted for durable future use.
 - [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) keeps technical validation separate from authorization.
 

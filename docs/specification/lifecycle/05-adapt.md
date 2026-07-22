@@ -8,9 +8,9 @@ Adaptation turns a supported classification into a concrete candidate improvemen
 
 The goal is not continuous change or maximum automation. The goal is to correct the identified weakness in the part of the system best suited to own the improved behavior.
 
-## Inputs
+## Required Inputs and Preconditions
 
-Adaptation receives:
+Adapt requires:
 
 - The classification produced by [Stage 4: Classify](04-classify.md)
 - The selected improvement destination
@@ -19,7 +19,18 @@ Adaptation receives:
 - The current placement of responsibility across the Moving Determinism Boundary
 - The applicable Governance Policy
 
-## Required Behavior
+Adaptation requires a supported classification that identifies a concrete improvement target. An unsupported preference for a tool, technology, prompt, code change, or other mechanism is not enough.
+
+## Required Responsibilities
+
+Adapt must:
+
+- Create or propose a concrete candidate improvement that addresses the classified weakness or learning opportunity
+- Place the candidate in the improvement destination selected by classification unless new evidence shows that destination is unsuitable
+- Preserve the reason and evidence supporting the candidate change
+- State the expected improvement the candidate is intended to produce
+- Identify enough validation intent to allow the candidate itself to be evaluated
+- Keep the proposed or applied change within the applicable Governance Policy
 
 Possible adaptations include:
 
@@ -36,21 +47,29 @@ The Flywheel should follow the Evolution Routing Rule:
 
 > **Correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability.**
 
-The goal is not maximum determinism or maximum AI reasoning. The improvement should be placed where it can operate most reliably while retaining needed flexibility.
-
 Adaptation produces a candidate change. It does not by itself prove that the change is correct or authorize that change for persistent use.
 
-## Outputs
+## Required Outputs and Evidence
 
-Adaptation produces:
+Adapt must produce:
 
-- A candidate change or proposed governance decision
+- A concrete candidate change or proposed governance decision
 - The persistent asset or responsibility placement that would be affected
 - The reason and evidence supporting the change
 - The expected improvement
-- Enough information to determine how the candidate should be validated
+- The information needed to determine how the candidate should be validated
 
-The candidate proceeds to [Stage 6: Validate](06-validate.md) before it is trusted for future reuse.
+## Completion Conditions
+
+Adapt is complete when a concrete candidate improvement exists, its intended effect and target are explicit, and enough information exists for Validate to assess the candidate itself.
+
+Generating or applying a change does not by itself satisfy the lifecycle requirement for validation or persistence.
+
+## Relationship to Adjacent Stages
+
+Adapt consumes the improvement destination and supporting evidence produced by [Stage 4: Classify](04-classify.md).
+
+Its candidate improvement, expected outcome, and validation intent become the primary inputs to [Stage 6: Validate](06-validate.md).
 
 ## Governance Considerations
 
@@ -65,17 +84,7 @@ The Governance Policy determines whether a proposed change is:
 
 The AI may recommend an expansion of its authority but may not grant itself additional authority.
 
-Where approval is required before a candidate can even be tested or applied in an isolated environment, the Flywheel must obtain that approval before proceeding.
-
-## Failure and Exit Conditions
-
-Adaptation should return to classification when the proposed change reveals that the original diagnosis or destination was incorrect.
-
-It should pause or escalate when the proposed change is outside the AI's authority.
-
-It should advance to validation when there is a concrete candidate improvement that can be responsibly tested.
-
-A candidate must not be persisted merely because the AI was able to generate or apply it.
+Where approval is required before a candidate can be tested or applied in an isolated environment, the Flywheel must obtain that approval before proceeding.
 
 ## Relationships to Principles
 
