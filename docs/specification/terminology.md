@@ -102,9 +102,9 @@ See [Stage 6: Validate](lifecycle/06-validate.md).
 
 ## Conformance
 
-**Conformance** means showing, with evidence, that an implementation satisfies the complete Infoconex AI Flywheel Specification.
+**Conformance** means showing, with objective evidence from actual operation, that an implementation satisfies the complete Infoconex AI Flywheel Specification.
 
-The conformance model gets its assessment areas from the specification and does not define the methodology on its own.
+The eight canonical principles provide the top-level conformance structure. Lifecycle behavior, governance, and supporting operational evidence are used to demonstrate whether each principle is satisfied. Conformance does not define a separate set of assessment requirements.
 
 See [Infoconex AI Flywheel Conformance](conformance/README.md).
 
