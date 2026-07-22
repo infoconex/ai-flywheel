@@ -139,6 +139,13 @@ These associations may be reused in supporting visuals where doing so improves r
 
 ## Image Types and Dimensions
 
+### Heading duplication
+
+- When a supporting image appears directly below an H1 or other visible page or section heading, do not repeat that heading or section title inside the image.
+- Treat the real Markdown or HTML heading as the primary title and use the image to explain, reinforce, or visualize the subject.
+- Include text inside the image only when it adds information, meaning, or context that is not already provided by the surrounding page content.
+- A title may appear inside an image when the image is intentionally designed to stand alone outside the page context, but page-specific supporting assets should avoid duplicated headings.
+
 ### Root README banner
 
 Current approved asset:
@@ -166,8 +173,9 @@ Guidance:
 - Target dimensions: approximately `1024 × 341` pixels.
 - Target aspect ratio: approximately `3:1`.
 - Target file size: approximately `150 KB` or less where practical.
-- Use only the applicable section title inside the banner.
-- Do not repeat `Infoconex AI Flywheel` in a section banner when the page already identifies the project and section in real heading text.
+- Do not repeat the page H1 or visible section title when the image is placed directly beneath that heading.
+- Include image text only when it adds information not already provided by the surrounding page content.
+- Do not repeat `Infoconex AI Flywheel` merely for branding when the page already identifies the project in real heading text.
 - Keep composition, whitespace, typography, rounded treatment, and visual density consistent across section banners.
 
 ### Navigation icon
