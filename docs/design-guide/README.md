@@ -168,10 +168,11 @@ These associations may be reused in supporting visuals where doing so improves r
 
 ### Heading duplication
 
-- When a supporting image appears directly below an H1 or other visible page or section heading, do not repeat that heading or section title inside the image.
-- Treat the real Markdown or HTML heading as the primary title and use the image to explain, reinforce, or visualize the subject.
-- Include text inside the image only when it adds information, meaning, or context that is not already provided by the surrounding page content.
-- A title may appear inside an image when the image is intentionally designed to stand alone outside the page context, but page-specific supporting assets should avoid duplicated headings.
+- Do not duplicate the full page or section heading inside a supporting image when that heading is already visible in the surrounding page content.
+- A concise category title may appear inside a supporting image when it materially improves comprehension of an otherwise abstract visual.
+- Treat the real Markdown or HTML heading as the primary page title and use the image to explain, reinforce, or visualize the subject.
+- Include text inside the image only when it adds information, meaning, or context beyond simply repeating the surrounding heading.
+- A full standalone title may appear inside an image when the image is intentionally designed to stand alone outside the page context.
 
 ### Root README banner
 
@@ -200,8 +201,9 @@ Guidance:
 - Target dimensions: approximately `1024 × 341` pixels.
 - Target aspect ratio: approximately `3:1`.
 - Target file size: approximately `150 KB` or less where practical.
-- Do not repeat the page H1 or visible section title when the image is placed directly beneath that heading.
-- Include image text only when it adds information not already provided by the surrounding page content.
+- Do not duplicate the full page H1 or visible section heading inside the banner.
+- A concise category title may be used when it materially improves comprehension of an otherwise abstract visual.
+- Include image text only when it adds useful meaning or context beyond simply repeating the surrounding page heading.
 - Do not repeat `Infoconex AI Flywheel` merely for branding when the page already identifies the project in real heading text.
 - Keep composition, whitespace, typography, rounded treatment, and visual density consistent across section banners.
 
@@ -255,15 +257,4 @@ Authoritative visuals must be reviewed against the current specification before 
 
 When an asset changes lifecycle terminology, stage ordering, icon mapping, semantic colors, principle representation, conformance representation, or another methodology-level concept, update the affected visual set consistently rather than allowing competing representations to remain in the repository.
 
-Superseded assets that visually contradict the current methodology should be removed when they are no longer referenced.
-
-## Future Expansion
-
-This guide begins with the established image system and current web visual tokens. Future additions may define broader conventions for:
-
-- Documentation page composition.
-- Diagram layout and Mermaid styling.
-- GitHub Pages components and responsive behavior.
-- Theme-specific presentation.
-- Reusable design patterns and component states.
-- Asset production and review workflows.
+Superseded image assets should be removed when they are no longer referenced, except when a deliberately retained high-resolution `-full` source variant is kept alongside its production asset.
