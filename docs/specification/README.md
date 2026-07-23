@@ -6,7 +6,7 @@
 
 This section contains the official definition of the Infoconex AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
-The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions. The initial `v0.1.0` repository release published **Infoconex AI Flywheel Specification v0.1 — Draft**.
+The specification version describes the maturity of the methodology itself and is separate from repository, reference-implementation, or software release versions.
 
 ## Requirement Language
 
