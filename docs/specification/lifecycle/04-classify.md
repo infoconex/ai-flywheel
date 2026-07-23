@@ -4,7 +4,7 @@ The Infoconex AI Flywheel identifies the type and likely source of any weakness,
 
 ## Purpose
 
-Classification prevents the Flywheel from treating every problem as the same type of problem or sending every lesson to the same improvement mechanism.
+Classification prevents the Flywheel from treating every outcome as the same type of result or sending every lesson to the same improvement mechanism.
 
 At this stage, the Flywheel asks:
 
@@ -16,7 +16,7 @@ Classify requires:
 
 - The assessed outcome from [Stage 3: Evaluate](03-evaluate.md)
 - The evidence supporting that assessment
-- Identified failures, uncertainty, broken assumptions, or learning opportunities
+- Identified failures, uncertainty, broken assumptions, successful patterns, or learning opportunities
 - The current placement of responsibility among deterministic capability, procedural guidance, and AI reasoning
 - Applicable governance constraints
 
@@ -26,11 +26,12 @@ The classification must be grounded in an evaluated outcome or identified learni
 
 Classify must:
 
-- Identify the type and likely source of the weakness, uncertainty, or learning opportunity
-- Consider the part of the operating model best suited to own any resulting improvement
-- Make the routing decision intentionally rather than defaulting every issue to one adaptation mechanism
+- Identify the type and likely source of the weakness, uncertainty, successful pattern, or learning opportunity
+- Determine whether the evidence justifies adaptation, reinforces an existing validated operating pattern, or does not justify new persistent learning
+- Consider the part of the operating model best suited to own any resulting improvement or reusable learning
+- Make the routing decision intentionally rather than defaulting every outcome to one adaptation mechanism
 - Preserve the evidence supporting the routing decision
-- Allow the result to be that no persistent change is justified
+- Allow the result to be that no adaptation is justified
 
 Potential improvement destinations may include:
 
@@ -48,22 +49,27 @@ Classification does not authorize a governance change or expansion of authority.
 
 Classify must produce:
 
-- An identified weakness, uncertainty, or learning opportunity
-- A selected improvement destination or an explicit decision that no adaptation is justified
-- The evidence supporting that routing decision
+- An identified weakness, uncertainty, successful pattern, or learning opportunity
+- One of the following supported dispositions:
+  - Adaptation is justified and an improvement destination is selected
+  - No adaptation is justified and the evidence reinforces an existing validated operating pattern
+  - No new reusable learning or persistent change is justified
+- The evidence supporting the disposition
 - Any identified movement of responsibility across the Moving Determinism Boundary
 
 ## Completion Conditions
 
-Classify is complete when the evidence supports an explicit decision about where the learning should be addressed or that no durable adaptation is justified.
+Classify is complete when the evidence supports an explicit decision about how the learning should be handled, including when no adaptation or new persistent learning is justified.
 
-The stage contract is not satisfied by forcing a change solely to continue the lifecycle.
+The stage contract is not satisfied by forcing a change solely to continue the lifecycle or by silently treating a successful outcome as if no classification occurred.
 
 ## Relationship to Adjacent Stages
 
 Classify consumes the supported assessment and learning opportunities produced by [Stage 3: Evaluate](03-evaluate.md).
 
 When adaptation is justified, the selected improvement destination and supporting evidence become the primary inputs to [Stage 5: Adapt](05-adapt.md).
+
+When no adaptation is justified, the explicit no-change disposition becomes the input to Adapt so the lifecycle can resolve that responsibility without manufacturing a candidate change.
 
 ## Governance Considerations
 

@@ -1,29 +1,29 @@
 # Stage 5: Adapt
 
-The Infoconex AI Flywheel selects the appropriate improvement target and applies or proposes a change.
+The Infoconex AI Flywheel creates or proposes a candidate improvement when change is justified and explicitly resolves when no adaptation is required.
 
 ## Purpose
 
-Adaptation turns a supported classification into a concrete candidate improvement.
+Adaptation turns a supported classification into a concrete response.
 
-The goal is not continuous change or maximum automation. The goal is to correct the identified weakness in the part of the system best suited to own the improved behavior.
+The goal is not continuous change or maximum automation. The goal is to correct an identified weakness when change is justified while preserving stable operating behavior when the evidence does not support change.
 
 ## Required Inputs and Preconditions
 
 Adapt requires:
 
 - The classification produced by [Stage 4: Classify](04-classify.md)
-- The selected improvement destination
-- The evidence supporting that routing decision
+- The selected improvement destination when adaptation is justified
+- The evidence supporting the classification
 - The current persistent operational assets
 - The current placement of responsibility across the Moving Determinism Boundary
 - The applicable Governance Policy
 
-Adaptation requires a supported classification that identifies a concrete improvement target. An unsupported preference for a tool, technology, prompt, code change, or other mechanism is not enough.
+Adaptation requires a supported classification. An unsupported preference for a tool, technology, prompt, code change, or other mechanism is not enough.
 
 ## Required Responsibilities
 
-Adapt must:
+When adaptation is justified, Adapt must:
 
 - Create or propose a concrete candidate improvement that addresses the classified weakness or learning opportunity
 - Place the candidate in the improvement destination selected by classification unless new evidence shows that destination is unsuitable
@@ -31,6 +31,8 @@ Adapt must:
 - State the expected improvement the candidate is intended to produce
 - Identify enough validation intent to allow the candidate itself to be evaluated
 - Keep the proposed or applied change within the applicable Governance Policy
+
+When classification determines that no adaptation is justified, Adapt must explicitly record that no candidate change is required and preserve the evidence supporting continuation of the current operating pattern.
 
 Possible adaptations include:
 
@@ -47,29 +49,39 @@ The Flywheel should follow the Evolution Routing Rule:
 
 > **Correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability.**
 
-Adaptation produces a candidate change. It does not by itself prove that the change is correct or authorize that change for persistent use.
+Adaptation produces a candidate change only when change is justified. It does not by itself prove that the change is correct or authorize that change for persistent use.
+
+A no-change resolution is not a skipped Adapt stage. It is an explicit determination that no candidate adaptation is warranted by the supported classification.
 
 ## Required Outputs and Evidence
 
-Adapt must produce:
+Adapt must produce one of the following:
 
 - A concrete candidate change or proposed governance decision
-- The persistent asset or responsibility placement that would be affected
-- The reason and evidence supporting the change
-- The expected improvement
-- The information needed to determine how the candidate should be validated
+- An explicit `no adaptation required` resolution identifying the operating pattern being preserved
+
+The result must preserve:
+
+- The reason and evidence supporting the result
+- The persistent asset or responsibility placement that would be affected when a candidate change exists
+- The expected improvement when a candidate change exists
+- The information needed for [Stage 6: Validate](06-validate.md) to resolve the next lifecycle responsibility
 
 ## Completion Conditions
 
-Adapt is complete when a concrete candidate improvement exists, its intended effect and target are explicit, and enough information exists for Validate to assess the candidate itself.
+Adapt is complete when the classification has been resolved into an explicit adaptation result.
+
+When change is justified, a concrete candidate improvement, its intended effect, and enough validation intent must be explicit.
+
+When no change is justified, the no-change resolution and supporting evidence must be explicit. Silently doing nothing does not satisfy the stage contract.
 
 Generating or applying a change does not by itself satisfy the lifecycle requirement for validation or persistence.
 
 ## Relationship to Adjacent Stages
 
-Adapt consumes the improvement destination and supporting evidence produced by [Stage 4: Classify](04-classify.md).
+Adapt consumes the classification and supporting evidence produced by [Stage 4: Classify](04-classify.md).
 
-Its candidate improvement, expected outcome, and validation intent become the primary inputs to [Stage 6: Validate](06-validate.md).
+Its candidate improvement or explicit no-change resolution becomes the primary input to [Stage 6: Validate](06-validate.md).
 
 ## Governance Considerations
 
