@@ -79,22 +79,25 @@ Canonical sources: [Principle 6: Failure Determines Where the System Evolves](..
 ## Principle 7: Learning Must Change a Persistent Operational Asset
 
 43. Do validated and authorized improvements survive the current execution?
-44. Are they stored in durable operational assets that future execution can use?
-45. Before an improvement is persisted for future use, can the implementation show that the applicable validation sufficiency requirements were satisfied?
-46. Are validation and authorization represented as separate decisions so approval cannot substitute for evidence and validation cannot grant authority?
-47. On a no-change path, can reinforcing learning be persisted without manufacturing a candidate adaptation, and is the reinforcing claim sufficiently supported?
-48. Are persistent learning items scoped to the conditions supported by their validation evidence?
-49. Can persistent assets later be refined, replaced, rolled back, or moved when new evidence requires it?
-50. Can a reviewer identify the specific persistent asset changed or reinforced by a learning event?
+44. Can persisted learning take the operational form appropriate to what was learned rather than being limited to memory or a knowledge store?
+45. Does the implementation distinguish persisted learning from raw logs, transcripts, unvalidated observations, and historical records?
+46. Before an improvement is persisted for future use, can the implementation show that the applicable validation sufficiency requirements were satisfied?
+47. Are validation and authorization represented as separate decisions so approval cannot substitute for evidence and validation cannot grant authority?
+48. Can validated learning derived from a failed or rejected attempt persist without the failed candidate itself being represented as approved behavior?
+49. On a no-change path, can reinforcing evidence be associated with an existing validated operating pattern without manufacturing a candidate adaptation?
+50. Are persisted learning items identifiable and scoped to the conditions supported by their evidence and validation?
+51. Is persisted learning available to the later operating process that needs it rather than merely stored somewhere?
+52. Can persistent assets later be refined, replaced, rolled back, invalidated, or moved when new evidence requires it?
+53. Can a reviewer identify the specific persistent asset changed, learning item retained, or operating pattern reinforced by a learning event?
 
-Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), [Validation Sufficiency Requirements](../validation-sufficiency.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
+Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), [Validation Sufficiency Requirements](../validation-sufficiency.md), [Persisted Learning Requirements](../persisted-learning.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
 
 ## Principle 8: Improvement Must Compound Through Reuse
 
-51. Do later executions inherit and use relevant validated improvements?
-52. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, or human escalation where prior learning applies?
-53. Can a reviewer point to behavior that improved because of learning from earlier executions?
-54. Are successful validated patterns retained and reused rather than rediscovered on every execution?
+54. Do later executions inherit and use relevant validated improvements?
+55. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, or human escalation where prior learning applies?
+56. Can a reviewer point to behavior that improved because of learning from earlier executions?
+57. Are successful validated patterns retained and reused rather than rediscovered on every execution?
 
 Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) and [Stage 8: Reuse](../lifecycle/08-reuse.md).
 
@@ -111,6 +114,7 @@ This version does not define partial or maturity-based conformance levels.
 - [Conformance Overview](README.md)
 - [Non-Conforming Patterns](non-conforming-patterns.md)
 - [Validation Sufficiency Requirements](../validation-sufficiency.md)
+- [Persisted Learning Requirements](../persisted-learning.md)
 - [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)

@@ -54,11 +54,19 @@ See [Principle 5: Execution Must Produce Outcome Evidence](principles/05-outcome
 
 ## Persistent Operational Asset
 
-A **persistent operational asset** is something durable that can change future execution. Examples include deterministic capability, code, SOP guidance, validation rules, reasoning knowledge, reusable examples, and approved governance changes.
+A **persistent operational asset** is a durable operational form through which validated learning can affect future execution. Examples include deterministic capability, code, SOP guidance, validation rules, configuration, reasoning knowledge, reusable examples, constraints, structured knowledge, failure-derived rules, and approved governance changes.
 
-Storage alone is not enough. The asset must be available for future use.
+Storage alone is not enough. The validated learning must be identifiable, appropriately scoped, and available for future relevant use. Reinforcing evidence may also be durably associated with an existing validated operating pattern without creating a new adaptation.
 
-See [Principle 7: Learning Must Change a Persistent Operational Asset](principles/07-persistent-learning.md).
+See [Principle 7: Learning Must Change a Persistent Operational Asset](principles/07-persistent-learning.md) and [Persisted Learning Requirements](persisted-learning.md).
+
+## Persisted Learning
+
+**Persisted learning** is validated learning that survives the current execution in a durable operational form that can influence later relevant operation. It may represent an operational improvement, validated knowledge derived from failure or rejection, or reinforcing evidence associated with an existing validated pattern.
+
+Raw history, unvalidated observations, or storage of a failed candidate do not by themselves become persisted learning.
+
+See [Persisted Learning Requirements](persisted-learning.md) and [Stage 7: Persist](lifecycle/07-persist.md).
 
 ## Moving Determinism Boundary
 
@@ -114,4 +122,6 @@ See [Infoconex AI Flywheel Conformance](conformance/README.md).
 - [Formal Definition](definition.md)
 - [Principles](principles/README.md)
 - [Lifecycle](lifecycle/README.md)
+- [Validation Sufficiency Requirements](validation-sufficiency.md)
+- [Persisted Learning Requirements](persisted-learning.md)
 - [Architecture and Diagrams](../architecture/README.md)
