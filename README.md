@@ -93,7 +93,7 @@ The Flywheel combines:
 
 1. **Deterministic capability** for reliable, repeatable operations.
 2. **Procedural guidance, expressed as a Standard Operating Procedure (SOP)**, for defining how work should be performed and when escalation is required.
-3. **AI reasoning** for orchestration, interpretation, judgment, adaptation, and ambiguity.
+3. **AI reasoning** for orchestration, interpretation, judgment, problem solving, and ambiguity.
 
 These are not sequential lifecycle stages. They work together during execution and become possible destinations for learning after execution produces evidence.
 
