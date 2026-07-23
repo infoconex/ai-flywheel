@@ -1,6 +1,6 @@
 # Core Operating Model
 
-This view shows the complete Infoconex AI Flywheel operating model in one place: human authority and governance above execution, the three operating mechanisms working together during execution, and the lifecycle turning outcome evidence into validated persistent learning.
+This view shows the complete Infoconex AI Flywheel operating model in one place: human authority and governance above execution, the three operating mechanisms working together during execution, and the lifecycle turning outcome evidence into validated persistent learning or reinforcing an existing validated operating state.
 
 The diagram is explanatory. The actual requirements are defined by the [Infoconex AI Flywheel Specification](../specification/README.md).
 
@@ -33,7 +33,9 @@ flowchart TD
     O --> E[Evaluate]
     E --> C[Classify]
 
-    C --> Q{Where should the learning live?}
+    C --> CHANGE{Is adaptation justified?}
+    CHANGE -->|Yes| Q{Where should the learning live?}
+    CHANGE -->|No| N[Resolve No Adaptation Required]
 
     Q --> D1[Deterministic Capability]
     Q --> D2[Procedural Guidance / SOP]
@@ -48,8 +50,9 @@ flowchart TD
     D5 --> A
 
     A --> V[Validate]
-    V --> P[Persist]
-    P --> R[Reuse]
+    N --> V
+    V --> P[Persist / Reinforce / Resolve No New Learning]
+    P --> R[Reuse Current Validated Operating State]
     R --> START
 
     V -. failed validation becomes evidence .-> C
@@ -94,13 +97,15 @@ Observation and evaluation determine what actually happened rather than relying 
 
 This relationship is defined by [Principle 5: Execution Must Produce Outcome Evidence](../specification/principles/05-outcome-evidence.md).
 
-### Classification Determines Where the System Evolves
+### Classification Determines Whether and Where the System Evolves
 
-After evaluation, the Flywheel classifies the weakness, uncertainty, or learning opportunity and asks:
+After evaluation, the Flywheel classifies what was learned and asks two related questions:
 
-> **Where should this learning live?**
+> **Is adaptation justified?**
+>
+> **If learning should change the operating state, where should it live?**
 
-The answer may send learning to deterministic capability, procedural guidance, reasoning knowledge, validation, or a proposed governance change.
+When change is justified, learning may be routed to deterministic capability, procedural guidance, reasoning knowledge, validation, or a proposed governance change. When change is not justified, the lifecycle explicitly resolves a no-change path and may still retain reinforcing evidence for an existing validated pattern.
 
 This is the core behavior defined by [Principle 6: Failure Determines Where the System Evolves](../specification/principles/06-evolution-routing.md).
 
@@ -114,17 +119,21 @@ The goal is not maximum determinism. The goal is to put responsibility where it 
 
 ### Validation and Authority Are Separate Gates
 
-A proposed improvement must be validated before it is trusted for future reuse, but a change that works is not automatically authorized for persistence.
+A candidate improvement or other learning intended for persistent future use must be sufficiently supported before it is trusted, but evidence that something works does not automatically authorize persistence.
 
 A change may:
 
 - Validate successfully but still require human approval
 - Be authorized in principle but fail validation
-- Be prohibited even if it is technically possible
+- Be prohibited even if evidence suggests it would work
+
+A successful no-change cycle does not require manufacturing a candidate improvement. Validate instead determines whether any reinforcing or reusable learning intended for persistence is sufficiently supported.
 
 ### Persistence and Reuse Create the Flywheel Effect
 
-Validated and authorized learning changes a durable operational asset. Later executions use relevant improvements rather than starting from the same operating state.
+Validated and authorized learning can change a durable operational asset. Sufficiently supported evidence can also reinforce an existing validated operating pattern without changing behavior. Later executions use the relevant current operating state rather than starting from the same state or rediscovering prior learning.
+
+Persisted learning is not permanently authoritative. New evidence can challenge, narrow, supersede, invalidate, or retire earlier learning through the lifecycle again.
 
 This relationship is defined by [Principle 7: Learning Must Change a Persistent Operational Asset](../specification/principles/07-persistent-learning.md) and [Principle 8: Improvement Must Compound Through Reuse](../specification/principles/08-compounding-reuse.md).
 

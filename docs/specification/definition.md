@@ -12,7 +12,7 @@ During execution, the system combines three operating mechanisms:
 2. **Procedural guidance, expressed as a Standard Operating Procedure (SOP)**, for defining how work should be performed, how capabilities should be used, how known conditions should be handled, and when escalation is required.
 3. **AI reasoning** for interpretation, orchestration, judgment, adaptation, ambiguity, and conditions that cannot yet be handled reliably through deterministic behavior.
 
-These mechanisms are not sequential lifecycle stages. They work together during execution. After execution produces evidence, the Flywheel evaluates what happened and determines where any resulting learning should persist.
+These mechanisms are not sequential lifecycle stages. They work together during execution. After execution produces evidence, the Flywheel evaluates what happened, classifies what was learned, determines whether adaptation is justified, and determines where any resulting reusable learning should live.
 
 The core cycle is:
 
@@ -20,7 +20,7 @@ The core cycle is:
 
 Governance applies throughout that cycle. It determines whether an action is authorized, requires human approval, requires human judgment, or is prohibited.
 
-The result is a compounding system in which repeated execution improves reliability, capability, efficiency, and safely bounded autonomy over time.
+The result is a compounding system in which evidence from repeated execution can improve the operating state, reinforce patterns that continue to work, prevent repeated failures, and challenge learning that is no longer valid. Later execution uses the current validated operating state rather than starting from the same place again.
 
 ## Human Authority and Governance
 
@@ -76,13 +76,15 @@ Deterministic code and tools perform stable, repeatable, testable operations whe
 
 For a visual explanation of these runtime relationships, see the [Core Operating Model](../architecture/operating-model.md) and [Runtime Architecture](../architecture/runtime-view.md).
 
-## Learning Destinations
+## Learning and Adaptation Outcomes
 
-After execution, observation, evaluation, and classification, the Flywheel asks:
+After execution, observation, and evaluation, the Flywheel classifies what the evidence means and asks:
 
-> **Where should this learning live?**
+> **Is adaptation justified?**
+>
+> **If reusable learning should change the operating state, where should that learning live?**
 
-A learning may become:
+When adaptation is justified, learning may become:
 
 - A new or improved deterministic capability
 - Procedural knowledge in the SOP
@@ -90,7 +92,13 @@ A learning may become:
 - Stronger validation
 - A proposed Governance Policy change requiring human authority
 
-This distinction is important: deterministic capability, procedural guidance through the SOP, and AI reasoning are used **during execution**, while the decision to move responsibility among them occurs **after execution produces evidence**.
+Classification may also determine that no adaptation is justified. A successful or acceptable outcome may reinforce an existing validated operating pattern, or the evidence may justify no new persistent learning at all.
+
+A failed or rejected adaptation may still produce separate reusable learning, such as a known-failure rule, applicability constraint, detection mechanism, validation check, or strategy-selection rule. The failed candidate itself does not become approved behavior merely because useful evidence was produced.
+
+This distinction is important: deterministic capability, procedural guidance through the SOP, and AI reasoning are used **during execution**, while decisions about whether and where learning should change the persistent operating state occur **after execution produces evidence**.
+
+Persisted learning is not permanently authoritative. Later evidence may challenge, narrow, revise, supersede, deprecate, invalidate, roll back, or retire earlier learning through the lifecycle again.
 
 ## The Moving Determinism Boundary
 
@@ -122,6 +130,10 @@ The determinism boundary can move as the system learns. The authority boundary i
 - [Terminology](terminology.md)
 - [Principles](principles/README.md)
 - [Lifecycle](lifecycle/README.md)
+- [Validation Sufficiency Requirements](validation-sufficiency.md)
+- [Persisted Learning Requirements](persisted-learning.md)
+- [Reuse Evidence Requirements](reuse-evidence.md)
+- [Learning Supersession Requirements](learning-supersession.md)
 - [Conformance](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
 - [Worked Example: Continuous Dependency Maintenance](../examples/software-maintenance/worked-example.md)

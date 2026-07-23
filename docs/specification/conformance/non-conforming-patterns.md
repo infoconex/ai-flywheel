@@ -2,6 +2,10 @@
 
 The following patterns may contain useful elements of the Infoconex AI Flywheel but are not sufficient by themselves to satisfy the complete methodology.
 
+## Design-Only Conformance Claims
+
+An architecture diagram, implementation plan, configured capability, or statement that a system "supports" a required behavior does not demonstrate conformance unless observable operation shows that the behavior actually occurred as required.
+
 ## Retry-Only Loops
 
 A loop that repeatedly retries until a task succeeds does not conform to the Infoconex AI Flywheel Specification unless it also evaluates evidence, classifies learning, changes persistent operational assets when lasting improvement is justified, and reuses those improvements.
@@ -24,7 +28,11 @@ A deterministic automation system with no evidence-driven mechanism for learning
 
 ## Lessons That Are Never Reused
 
-A workflow that records lessons but does not make them available to later execution does not satisfy [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md).
+A workflow that records lessons but does not make them available to later execution, or cannot show that relevant learning actually influenced later execution, does not satisfy [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md).
+
+## Configured Controls That Are Not Enforced
+
+The existence of an approval mechanism, escalation path, prohibited-action list, validation step, or other control does not demonstrate conformance when observable operation shows that the control is bypassed, ignored, or not invoked when required.
 
 ## Unrestricted Self-Modification
 
@@ -42,7 +50,12 @@ A system in which AI primarily recommends actions that humans routinely execute 
 
 A system that assumes every lesson belongs in one fixed destination—such as memory, code, or prompt text—does not satisfy [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) unless it can intentionally determine where responsibility should reside.
 
+## Historical Learning Treated as Current
+
+A system that retains superseded, deprecated, invalidated, or retired learning but cannot distinguish it from current validated guidance does not satisfy the persistence and reuse requirements when that ambiguity can affect future operation.
+
 ## Related Documents
 
 - [Conformance Index](README.md)
+- [Principle-Aligned Conformance Assessments](principle-assessments.md)
 - [Conformance Evaluation Checklist](evaluation-checklist.md)

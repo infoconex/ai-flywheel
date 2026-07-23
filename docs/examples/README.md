@@ -4,7 +4,7 @@
 
 This section contains concrete use cases and end-to-end worked examples showing how the Infoconex AI Flywheel Specification can be applied to real operating processes.
 
-A **use case** identifies a recurring problem where the AI Flywheel can be applied. A **worked example** shows how the Flywheel operates that use case through governance, execution, evidence, learning, improvement, persistence, and reuse.
+A **use case** identifies a recurring problem where the AI Flywheel can be applied. A **worked example** shows how the Flywheel operates that use case through governance, execution, evidence, classification, adaptation when justified, validation, persistence or reinforcement, reuse, and later reevaluation.
 
 A use case may contain several supporting pages when its environment, target state, operating process, and representative scenarios require more detail.
 
@@ -30,11 +30,11 @@ The template standardizes:
 - Scenario and intended outcome
 - Human authorization and governance
 - Deterministic capability, procedural guidance, and AI reasoning
-- The eight lifecycle stages in each complete cycle
-- Validation, persistence, rollback, and reuse
+- The eight lifecycle responsibilities and their possible transition outcomes
+- Successful no-change, failure-derived learning, validation, persistence, supersession, and reuse
 - Human-authority outcomes
-- Conformance mapping
-- Evidence of compounding improvement
+- Eight-principle conformance mapping
+- Evidence of compounding learning and reinforcement
 
 A short example may keep its use case and worked example in one file. A larger example may use a folder containing a use-case package, supporting scenario pages, and a separate worked example.
 
@@ -51,10 +51,12 @@ A complete end-to-end example should make the following clear:
 - What belongs in procedural guidance
 - What requires AI reasoning
 - What outcome evidence is collected
-- How weaknesses are classified
-- Where improvements are sent
-- How changes are validated and authorized
-- What persists
-- How later execution reuses the improved operating state
+- How outcomes and learning opportunities are classified
+- Whether adaptation is justified
+- Where resulting learning is routed when change is needed
+- How candidate changes or other reusable learning are validated and authorized
+- What persists, what reinforces an existing pattern, and what may later be superseded
+- How later execution actually reuses the current validated operating state
+- What observable evidence supports any conformance mapping
 
 The purpose is not to require one implementation architecture. It is to show how the parts of the specification work together in practice.

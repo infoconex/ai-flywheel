@@ -254,7 +254,7 @@ Validation confirms that:
 - Required evidence is collected
 - Existing tests and security controls remain enabled
 
-The improvement satisfies technical validation. Authorization to persist it is evaluated separately.
+The evidence satisfies the intended validation claim for the defined scope. Authorization to persist the improvement is evaluated separately.
 
 ### Persist
 
@@ -435,22 +435,22 @@ A human decision may reveal a missing SOP rule, reusable reasoning guidance, a v
 
 ## Conformance Mapping
 
-| Conformance Area | How the Example Demonstrates It |
+This mapping illustrates how the scenario relates to the eight canonical principle-aligned assessments. Because this is an explanatory example rather than evidence from a deployed implementation, the mapping does not itself establish conformance.
+
+| Principle-Aligned Assessment | How the Example Illustrates It |
 |---|---|
-| **1. Human Authority** | A persistent Governance Policy defines authorized, approval-required, judgment-required, and prohibited actions |
-| **2. AI Operation** | AI performs the workflow, invokes capabilities, evaluates results, handles exceptions, and carries execution forward |
-| **3. Runtime Responsibilities** | Deterministic capability, procedural guidance, and AI reasoning have defined and intentionally changing responsibilities |
-| **4. Persistent Operational Procedure** | A durable maintenance SOP guides execution, evidence, exception handling, validation, and escalation |
-| **5. Outcome Evidence** | Command output, repository state, file changes, tests, security checks, validation results, and human decisions establish what occurred |
-| **6. Evaluation and Classification** | Outcomes are compared with success criteria and weaknesses are classified before adaptation |
-| **7. Improvement Routing** | Learning is routed to procedure, tooling, reasoning, validation, or governance as appropriate |
-| **8. Governance Enforcement** | Unapproved commands are blocked, executable changes require approval, prohibited actions stop, and authority cannot expand on its own |
-| **9. Persistent Learning** | Validated and authorized learning changes versioned SOP, tooling, and validation assets available after the original execution |
-| **10. Compounding Reuse** | Later executions use the improved procedure, capability, fallback behavior, and validation instead of starting from the original state |
+| **Principle 1: Autonomy Is Bounded by Human Authority** | A persistent Governance Policy defines authorized, approval-required, judgment-required, and prohibited actions, and the scenario shows those controls affecting operation |
+| **Principle 2: AI Is the Operator, Not Merely the Assistant** | AI performs the workflow, invokes capabilities, evaluates results, handles exceptions, and carries execution forward |
+| **Principle 3: Work Is Distributed Across a Moving Determinism Boundary** | Deterministic capability, procedural guidance, and AI reasoning have defined responsibilities that move in both directions when evidence changes |
+| **Principle 4: The SOP Is an Operational Control Plane** | A durable maintenance SOP actively guides execution, evidence collection, exception handling, validation, capability use, and escalation |
+| **Principle 5: Execution Must Produce Outcome Evidence** | Command output, repository state, file changes, tests, security checks, validation results, and human decisions establish what occurred and prevent technical completion from being mistaken for outcome success |
+| **Principle 6: Failure Determines Where the System Evolves** | Failure and successful repeated operation are evaluated and classified before learning is routed to procedure, tooling, reasoning, or validation |
+| **Principle 7: Learning Must Change a Persistent Operational Asset** | Validated and authorized learning changes versioned SOP, tooling, and validation assets that survive the originating execution and remain available for later correction or rollback |
+| **Principle 8: Improvement Must Compound Through Reuse** | Later executions demonstrably use the improved procedure, capability, fallback behavior, and validation rather than merely storing the learning |
 
 ## What Compounded
 
-| Cycle | Evidence Revealed | Persistent Improvement | Effect on Later Execution |
+| Cycle | Evidence Revealed | Persistent Learning | Effect on Later Execution |
 |---|---|---|---|
 | **Cycle 1** | A repeatable prerequisite was missing from the procedure | The SOP gained a governed generation step | Later repositories avoided the original build failure |
 | **Cycle 2** | Repeated procedural behavior became stable | The common behavior moved into deterministic capability | Later executions required less repeated reasoning |
@@ -458,13 +458,15 @@ A human decision may reveal a missing SOP rule, reusable reasoning guidance, a v
 
 The Flywheel effect is not produced merely by encountering failures, retrying work, saving logs, or modifying code.
 
-It occurs because execution evidence changes validated and authorized operational assets that later execution actually reuses.
+It occurs because execution evidence changes validated and authorized operational assets that later execution actually reuses. A different cycle could also compound by reinforcing an existing validated pattern without creating a new adaptation.
 
 ## Lifecycle Summary
 
-Each complete cycle follows the same pattern:
+The canonical lifecycle responsibilities are:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
+
+These three cycles all justify adaptation, but the lifecycle does not require every cycle to create a change. A successful no-change cycle can explicitly resolve Adapt, validate any reinforcing learning intended for persistence, reinforce an existing validated pattern, and continue to reuse that pattern.
 
 Human authority and governance apply throughout the lifecycle.
 
@@ -478,4 +480,5 @@ The Moving Determinism Boundary determines where responsibility should live. The
 - [Principles](../../specification/principles/README.md)
 - [Lifecycle](../../specification/lifecycle/README.md)
 - [AI Flywheel Conformance](../../specification/conformance/README.md)
+- [Principle-Aligned Conformance Assessments](../../specification/conformance/principle-assessments.md)
 - [Core Operating Model](../../architecture/operating-model.md)

@@ -17,7 +17,7 @@ A conforming implementation must satisfy these requirements:
 - Persisted learning is not limited to conversational memory or a knowledge store and may be represented through executable, procedural, reasoning, validation, configuration, knowledge, constraint, governance, or other operational forms.
 - Saving raw logs, conversations, observations, or historical records alone does not satisfy persistence unless validated learning represented by those records becomes available to future operation.
 - Persistent learning is identifiable and includes enough context to avoid applying lessons where they do not belong.
-- Improvements are sufficiently validated before becoming part of future operation.
+- Candidate improvements and other reusable learning intended for persistent future use are sufficiently validated before being trusted for that use.
 - The system must be authorized to persist governed changes.
 - A failed or rejected adaptation is not persisted as an approved improvement, while separately validated learning derived from that attempt may persist in an appropriate form.
 - Reinforcing evidence may be associated with an existing validated operating pattern without requiring or misrepresenting a new adaptation.

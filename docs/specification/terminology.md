@@ -6,7 +6,7 @@ The definitions are intentionally short. Detailed behavior and requirements rema
 
 ## Infoconex AI Flywheel
 
-The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, determines where learning should be applied, validates improvements, persists authorized learning, and reuses the improved system in future execution.
+The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, classifies what was learned and whether adaptation is justified, validates learning intended for persistent future use, persists supported learning or reinforcing evidence, and reuses the current validated operating state in later execution.
 
 See the [Formal Definition](definition.md).
 
@@ -94,9 +94,11 @@ See [Principle 1: Autonomy Is Bounded by Human Authority](principles/01-human-au
 
 ## Evolution Routing
 
-**Evolution Routing** is the process of classifying a weakness or learning opportunity and sending the improvement to the part of the system best suited to own it.
+**Evolution Routing** is the process of classifying what was learned from an outcome, determining whether adaptation is justified, and selecting the part of the operating system best suited to own any resulting persistent improvement or reusable learning.
 
-The AI Flywheel uses this routing rule:
+The classification may also resolve that no adaptation is required, that a successful outcome reinforces an existing validated pattern, or that no new persistent learning is justified.
+
+The AI Flywheel uses this routing rule when a correction is required:
 
 > **Correct the weakness at the lowest layer capable of handling it reliably without unnecessarily removing adaptability.**
 
@@ -112,9 +114,11 @@ See [Stage 6: Validate](lifecycle/06-validate.md) and [Validation Sufficiency Re
 
 **Conformance** means showing, with objective evidence from actual operation, that an implementation satisfies the complete Infoconex AI Flywheel Specification.
 
-The eight canonical principles provide the top-level conformance structure. Lifecycle behavior, governance, and supporting operational evidence are used to demonstrate whether each principle is satisfied. Conformance does not define a separate set of assessment requirements.
+The eight canonical principles provide the top-level conformance structure. Lifecycle behavior and governance provide operational evidence used to assess those principles; they do not create a second set of conformance areas. Each principle-aligned assessment resolves to **Conforms**, **Does Not Conform**, or **Insufficient Evidence**, and a complete conformance result requires sufficient evidence for all eight principles.
 
-See [Infoconex AI Flywheel Conformance](conformance/README.md).
+A conformance assessment against the specification does not by itself constitute certification, endorsement, approval, or official status.
+
+See [Infoconex AI Flywheel Conformance](conformance/README.md) and [Principle-Aligned Conformance Assessments](conformance/principle-assessments.md).
 
 ## Related Documents
 
@@ -124,4 +128,7 @@ See [Infoconex AI Flywheel Conformance](conformance/README.md).
 - [Lifecycle](lifecycle/README.md)
 - [Validation Sufficiency Requirements](validation-sufficiency.md)
 - [Persisted Learning Requirements](persisted-learning.md)
+- [Reuse Evidence Requirements](reuse-evidence.md)
+- [Learning Supersession Requirements](learning-supersession.md)
+- [Conformance](conformance/README.md)
 - [Architecture and Diagrams](../architecture/README.md)
