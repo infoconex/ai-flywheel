@@ -48,7 +48,7 @@ body:
     attributes:
       label: Relevance
       description: Explain why this source matters for the Infoconex AI Flywheel research.
-      placeholder: "Which principle, lifecycle stage, conformance area, or prior-art question does it relate to?"
+      placeholder: "Which principle, lifecycle stage, principle-aligned conformance assessment, or prior-art question does it relate to?"
     validations:
       required: true
 
