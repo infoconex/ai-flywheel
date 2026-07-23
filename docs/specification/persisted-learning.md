@@ -105,7 +105,7 @@ A Governance Policy change that expands or changes authority requires human auth
 
 Persistent does not mean permanently correct or permanently authoritative. Persisted learning must remain capable of being challenged, revised, superseded, deprecated, invalidated, rolled back, or retired when later evidence justifies a different state.
 
-The detailed supersession requirements are defined separately.
+The normative behavior for changing which learning is treated as current guidance is defined in [Learning Supersession Requirements](learning-supersession.md).
 
 ## Persistence Is More Than Evidence Retention
 
@@ -122,7 +122,7 @@ An implementation may retain both, but it must not treat the following as persis
 - A validated change that is not authorized for persistence when authorization is required
 - Archived information that future operation cannot access or apply
 
-## Relationship to Validation, Persist, and Reuse
+## Relationship to Validation, Persist, Reuse, and Supersession
 
 [Stage 6: Validate](lifecycle/06-validate.md) determines whether a candidate improvement or other learning intended for persistence is sufficiently supported.
 
@@ -130,7 +130,9 @@ An implementation may retain both, but it must not treat the following as persis
 
 [Stage 8: Reuse](lifecycle/08-reuse.md) determines whether relevant persisted learning actually becomes available to and influences later execution.
 
-Persistence therefore establishes durable operational availability. It does not by itself prove later reuse.
+[Learning Supersession Requirements](learning-supersession.md) define how later evidence can change which persisted learning remains current, valid, and eligible for future reuse.
+
+Persistence therefore establishes durable operational availability. It does not by itself prove later reuse or make the learning permanently authoritative.
 
 ## Relationship to Conformance
 
@@ -145,6 +147,7 @@ Conformance evidence should make it possible to determine that:
 - Reinforcing evidence can be retained without manufacturing a new adaptation
 - Persisted learning is identifiable, appropriately scoped, and available for later relevant reuse
 - Persistence remains distinct from validation and authorization
+- Persisted learning can later be challenged and changed without being treated as permanently authoritative
 - The implementation does not depend on one prescribed storage mechanism
 
 ## Related Documents
@@ -153,6 +156,8 @@ Conformance evidence should make it possible to determine that:
 - [Stage 6: Validate](lifecycle/06-validate.md)
 - [Stage 8: Reuse](lifecycle/08-reuse.md)
 - [Validation Sufficiency Requirements](validation-sufficiency.md)
+- [Reuse Evidence Requirements](reuse-evidence.md)
+- [Learning Supersession Requirements](learning-supersession.md)
 - [Principle 6: Failure Determines Where the System Evolves](principles/06-evolution-routing.md)
 - [Principle 7: Learning Must Change a Persistent Operational Asset](principles/07-persistent-learning.md)
 - [Principle 8: Improvement Must Compound Through Reuse](principles/08-compounding-reuse.md)
