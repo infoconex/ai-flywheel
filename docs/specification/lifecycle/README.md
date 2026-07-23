@@ -44,11 +44,11 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 1. [Stage 1: Execute](01-execute.md) — Perform the work using procedural guidance, AI reasoning, and deterministic capabilities.
 2. [Stage 2: Observe](02-observe.md) — Capture evidence about what actually happened during execution.
 3. [Stage 3: Evaluate](03-evaluate.md) — Compare the outcome against the intended result and success criteria.
-4. [Stage 4: Classify](04-classify.md) — Identify what was learned, whether change is justified, and where any resulting learning should live.
+4. [Stage 4: Classify](04-classify.md) — Identify what was learned, whether adaptation is justified, and where any resulting learning should live.
 5. [Stage 5: Adapt](05-adapt.md) — Create a candidate improvement when change is justified or explicitly resolve that no adaptation is required.
-6. [Stage 6: Validate](06-validate.md) — Determine whether the candidate improvement or other learning disposition is sufficiently supported before it is trusted for future use.
-7. [Stage 7: Persist](07-persist.md) — Retain validated learning, including useful failure-derived or reinforcing knowledge, in a durable form future execution can use.
-8. [Stage 8: Reuse](08-reuse.md) — Apply relevant persisted learning and validated operating patterns in later execution.
+6. [Stage 6: Validate](06-validate.md) — Validate a candidate improvement or resolve whether no-change learning intended for persistence is sufficiently supported.
+7. [Stage 7: Persist](07-persist.md) — Retain validated learning in a durable operational asset or reinforce an existing validated operating pattern.
+8. [Stage 8: Reuse](08-reuse.md) — Use relevant persisted learning and validated operating patterns in later execution.
 
 ## Lifecycle Stage Document Structure
 
@@ -66,7 +66,7 @@ The normative contract for each stage uses the same five sections:
 
 The stage contracts define required lifecycle responsibilities without prescribing a specific agent framework, programming language, storage mechanism, AI platform, or execution architecture.
 
-Completion conditions define the boundary of each stage responsibility. The canonical stage order defines the logical dependency of the operating model, but it does not require an implementation to execute each stage exactly once as a rigid linear workflow.
+Completion conditions define the boundary of each stage responsibility. Retry behavior, backward transitions, escalation paths, stopping conditions, validation-failure routing, and other lifecycle transition semantics are defined by the transition rules below rather than by a requirement that every implementation execute the stages as a rigid linear workflow.
 
 ### Supporting Sections
 
@@ -82,76 +82,74 @@ The requirement language defined in the [Specification Overview](../README.md#re
 
 ## Lifecycle Transition Semantics
 
-Every lifecycle stage responsibility must be accounted for. A stage may produce a new change, reinforce an existing validated pattern, produce reusable learning from failure, or explicitly resolve that no new persistent change is justified.
+The canonical stage order defines the logical responsibilities of the operating model. It does not require every implementation to invoke each stage exactly once or to implement the lifecycle as a rigid linear state machine.
 
-An implementation may organize the lifecycle as a pipeline, state machine, agent workflow, event-driven process, or another architecture. Regardless of implementation structure, it must not treat non-linear control flow as permission to bypass required lifecycle responsibilities.
+An implementation may use a pipeline, state machine, agent workflow, event-driven process, nested loops, or another architecture. Non-linear control flow does not permit required lifecycle responsibilities to be silently bypassed.
+
+A lifecycle cycle is complete only when the responsibilities required for its outcome have been explicitly resolved. Work that is paused, blocked, stopped, or abandoned must not be represented as a completed cycle merely because execution ended.
 
 ### Permitted Transition Behavior
 
 The lifecycle permits the following transition behavior when supported by evidence and governance:
 
-- **Forward transition** — Continue to the next logical stage when the current stage has a supported result.
-- **Retry** — Repeat the current stage when the responsibility is not yet resolved and another attempt is justified.
-- **Backward transition** — Return to an earlier stage when new evidence invalidates or materially changes an earlier assumption, assessment, classification, or candidate.
-- **Escalation or pause** — Pause the affected decision for required approval or human judgment, then resume from the stage appropriate to the resulting decision.
-- **Stop or abandon** — End an attempted action or candidate when proceeding is unsafe, prohibited, unsupported, or no longer justified while preserving the resulting evidence and considering whether it creates reusable learning.
+- **Forward transition** — Continue to the next logical responsibility when the current stage has a supported result.
+- **Retry** — Repeat a stage or operational attempt when another attempt is justified.
+- **Backward transition** — Return to an earlier stage when new evidence changes or invalidates an earlier assumption, assessment, classification, or candidate.
+- **Escalation or pause** — Pause the affected decision for required approval or human judgment and resume from the stage appropriate to the resulting decision.
+- **Stop or abandon** — End an attempted action or candidate when proceeding is unsafe, prohibited, unsupported, or no longer justified.
 
-Retries, backward transitions, and stopped attempts must not erase material evidence from earlier attempts. When a transition causes operational work to execute again, the new attempt must remain observable and evaluable rather than replacing the evidence from the prior attempt.
+Retries and backward transitions must preserve material evidence from earlier attempts. A later success does not erase a prior failure when that failure remains relevant to evaluation or learning.
 
-Stopping or abandoning an attempted action or candidate does not automatically stop the lifecycle's learning responsibilities. The resulting evidence must still be evaluated and classified, and any justified learning must continue through validation, persistence, and reuse as appropriate.
-
-A backward transition does not erase later evidence. For example, failed validation becomes new evidence that may cause the Flywheel to return to Evaluate, Classify, or Adapt.
-
-A stage is not considered satisfied merely because the implementation moved past it. Its responsibility must be resolved explicitly enough to produce the evidence required by the lifecycle.
+Stopping an action or candidate does not convert an incomplete outcome into a successful one, and it does not require useful evidence to be discarded. When stopped or failed work produces a meaningful new learning opportunity, that evidence enters the lifecycle through the appropriate evaluation and classification responsibilities before any resulting learning can be persisted or reused.
 
 ### Successful No-Change Behavior
 
 The lifecycle exists to improve future execution when evidence justifies improvement. It does not require change for its own sake.
 
-When evaluation shows that the outcome is successful or acceptable and classification determines that no adaptation is warranted:
+When evaluation shows a successful or acceptable outcome and classification determines that no adaptation is warranted:
 
-1. **Classify** records the explicit no-change decision and the evidence showing why the current operating pattern remains appropriate.
-2. **Adapt** resolves that no candidate adaptation is required rather than manufacturing an unnecessary change. It preserves the current pattern and identifies any learning or reinforcing evidence that should be validated.
-3. **Validate** determines whether the no-change conclusion and any reusable or reinforcing learning are adequately supported. If the conclusion is not supported, the lifecycle returns to the appropriate earlier stage.
-4. **Persist** durably associates the validated reinforcing evidence with the existing operating pattern so the evidence remains available to future evaluation and reuse. It does not misrepresent a no-change result as a new adaptation or improvement.
-5. **Reuse** continues to make the existing validated operating pattern and relevant accumulated learning available to future execution.
+1. **Classify** records the no-change disposition and whether the outcome reinforces an existing validated operating pattern.
+2. **Adapt** explicitly resolves that no candidate adaptation is required rather than manufacturing an unnecessary change.
+3. **Validate** records that no candidate change requires validation and determines whether any reinforcing or reusable learning intended for persistence is sufficiently supported.
+4. **Persist** tracks sufficiently supported reinforcing evidence with the existing validated pattern, or explicitly resolves that no new persistent learning is justified.
+5. **Reuse** continues to make the validated operating pattern and relevant accumulated learning available to later execution.
 
-A deliberate `no change required` result is therefore a resolved lifecycle outcome, not permission to skip Adapt, Validate, Persist, or Reuse responsibilities.
+A deliberate `no adaptation required` outcome therefore resolves the later lifecycle responsibilities without pretending that an adaptation occurred and without silently skipping those responsibilities.
 
-Repeated successful outcomes may strengthen the evidence supporting an existing validated pattern. That reinforcement can itself be useful learning even when the operating behavior does not change.
+Repeated successful outcomes can strengthen the evidence supporting an existing validated pattern. That reinforcing evidence is learning even when the operating behavior itself remains unchanged.
 
 ### Failure and Validation-Failure Behavior
 
-A failed execution, failed adaptation, and failed validation can all produce valuable learning.
+A failed execution, failed adaptation, or failed validation can produce valuable evidence and reusable learning.
 
 The lifecycle must distinguish between the status of an attempted adaptation and the status of the learning produced by that attempt:
 
 - A failed, unresolved, or unvalidated adaptation must not be promoted as an approved operational improvement.
 - The evidence produced by the failed attempt remains available for evaluation and classification.
-- Failure-derived learning may become a separate reusable lesson, such as a known-failure rule, applicability constraint, detection rule, validation check, procedural instruction, or strategy-selection rule.
-- Failure-derived learning must itself be sufficiently validated and authorized before it becomes trusted persistent operational learning.
-- Once validated and persisted, that learning may be reused to avoid repeating the failed approach, detect the condition earlier, constrain when an approach applies, or select a different strategy.
+- A reusable lesson derived from failure may become a different persistent asset, such as a known-failure rule, applicability constraint, detection rule, validation check, procedural instruction, or strategy-selection rule.
+- Failure-derived learning must follow the lifecycle in its own right: it is evaluated, classified, represented through the appropriate adaptation destination when required, validated, persisted, and reused.
+- Preserving a historical record of failure does not by itself make the failure operational learning. The resulting lesson must become available to future operation in an appropriate persistent form.
 
-Stopping or abandoning a failed candidate does not require discarding what was learned from it. Likewise, preserving a historical record of failure does not by itself make the failure reusable learning. The useful lesson must be made available to future operation in an appropriate persistent form.
+This prevents a failed candidate from being smuggled into future behavior while still allowing the Flywheel to learn from why the candidate failed.
 
 ### Validation Failure Does Not End Learning
 
 When validation fails or remains unresolved, the candidate is not eligible to become an approved operational improvement. The validation result becomes new lifecycle evidence and may lead to:
 
-- Retrying validation when the evidence or test conditions were incomplete.
-- Returning to Adapt to revise or replace the candidate.
+- Retrying validation when the validation activity itself was incomplete or inconclusive.
+- Returning to Adapt to revise or replace the candidate when the classification remains sound.
 - Returning to Classify when the failure shows that the learning was routed to the wrong destination.
-- Returning to Evaluate when the intended outcome or interpretation of the evidence must be reconsidered.
+- Returning to Evaluate when the intended outcome, evidence, or earlier assessment must be reconsidered.
 - Escalating for human judgment or authorization.
-- Stopping the attempted improvement while preserving and evaluating any useful failure-derived learning.
+- Stopping the attempted improvement while preserving evidence that may reveal a separate learning opportunity.
 
-The lifecycle therefore prevents unsafe promotion of failed changes without preventing the Flywheel from learning from failure.
+Any separate learning derived from the failed candidate must still be evaluated and classified before the system decides where that learning should persist.
 
 ## The Flywheel Effect
 
-The cycle becomes a Flywheel when future execution uses the learning created or reinforced by earlier cycles.
+The cycle becomes a Flywheel when later execution uses the learning created or reinforced by earlier lifecycle operation.
 
-The goal is not change for its own sake. Stable successful behavior should remain stable. The system should evolve when evidence shows that a lasting improvement is justified, and it should retain evidence that helps demonstrate when an existing pattern continues to work.
+The goal is not change for its own sake. Stable successful behavior should remain stable. The system should evolve when evidence shows that a lasting improvement is justified, learn from failed attempts without promoting failed changes, and retain evidence that strengthens confidence in patterns that continue to work.
 
 A mature AI Flywheel should reduce repeated reasoning, repeated failure, and unnecessary human intervention while preserving AI judgment and human authority where they are still needed.
 
