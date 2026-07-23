@@ -1,99 +1,91 @@
 # Stage 6: Validate
 
-The Infoconex AI Flywheel evaluates whether a candidate improvement or other learning disposition is sufficiently supported before the resulting learning is trusted for future use.
+The Infoconex AI Flywheel determines whether a proposed improvement or other learning intended for persistent future use is sufficiently supported before it is trusted.
 
 ## Purpose
 
-Adapt produces an explicit response to classification. Validation determines whether that response is supported well enough to influence persistent future operation.
+Adaptation creates a candidate improvement when change is justified. Validation determines whether that candidate actually addresses the intended weakness well enough to be considered for persistent future use.
+
+When Adapt explicitly resolves that no adaptation is required, there is no candidate change to test. Validate instead resolves whether any reinforcing or reusable learning intended for persistence is sufficiently supported. It must not manufacture a change merely to create a validation subject.
 
 Validation and authority are separate concerns. A change may work but still not be authorized, or it may be authorized in principle but not yet proven to work.
-
-Validation also applies when the correct outcome is not a new adaptation. A no-change conclusion or reusable lesson derived from failure still needs enough evidence to justify being trusted beyond the current execution.
 
 ## Required Inputs and Preconditions
 
 Validate requires:
 
-- The adaptation result from [Stage 5: Adapt](05-adapt.md)
-- The weakness, successful pattern, or learning opportunity the result is intended to address
+- The candidate adaptation or explicit no-change resolution from [Stage 5: Adapt](05-adapt.md)
+- The weakness, successful pattern, or learning opportunity associated with that result
 - The expected improvement when a candidate adaptation exists
-- The evidence supporting the original classification and adaptation result
+- The evidence supporting the original classification
 - Applicable success, safety, and validation criteria
 - Representative scenarios or test conditions when relevant
-- Governance requirements affecting how the result may be tested, approved, or promoted
+- Governance requirements affecting how a change or persistent learning may be tested, approved, or promoted
 
-The subject of validation must be identifiable well enough to assess the actual claim being made. Depending on the lifecycle path, that subject may be:
-
-- A candidate adaptation
-- An explicit conclusion that no adaptation is required
-- A reusable lesson derived from a failed or rejected attempt
-- Reinforcing evidence associated with an existing validated operating pattern
+When a candidate exists, the candidate must be identifiable well enough to test the proposed improvement rather than merely confirm that some change occurred.
 
 ## Required Responsibilities
 
-Validate must:
+When a candidate adaptation exists, Validate must:
 
-- Assess the actual validation subject against the outcome or learning claim it is intended to support
-- Base the validation conclusion on evidence appropriate to the subject and its context
-- Distinguish a successful validation result from authorization to persist or deploy a change
+- Test the actual candidate improvement against the outcome it is intended to improve
+- Base the validation conclusion on evidence appropriate to the candidate and its context
+- Distinguish a successful validation result from authorization to persist or deploy the change
 - Preserve the evidence supporting the validation result
-- Represent failed or unresolved validation honestly rather than treating the subject as validated
-- When validating a no-change result, determine whether the evidence supports preserving the current operating behavior rather than manufacturing a change
-- When an adaptation fails validation, keep the failed candidate separate from any potentially reusable learning produced by that failure
-- Allow failure-derived learning to become a separate validation subject when it can improve future execution
+- Represent failed or unresolved validation honestly rather than treating the candidate as validated
 
-Validation methods may vary by domain and subject. Examples include:
+When no adaptation is required, Validate must:
+
+- Explicitly record that no candidate adaptation requires validation
+- Determine whether any reinforcing or reusable learning intended for persistence is sufficiently supported by the available evidence
+- Preserve the evidence supporting that determination
+
+Validation methods may vary by domain and change type. Examples include:
 
 - Automated tests for code changes
 - Replay against representative scenarios for SOP changes
 - Evaluation against known examples for reasoning guidance
 - Independent outcome checks for validation rules
 - Comparison with prior behavior
-- Evidence showing that the current validated pattern continues to satisfy the intended outcome
-- Testing a known-failure rule or applicability constraint against representative cases
 - Human review when authority or risk requires it
 
 The detailed requirements for what constitutes sufficient validation are defined separately from this stage contract.
 
 ## Required Outputs and Evidence
 
-Validate must produce an explicit validation result with supporting evidence.
+Validate must produce an explicit result with supporting evidence.
 
-For a candidate adaptation, the result must identify the candidate as one of the following:
+When a candidate adaptation exists, the result must identify the candidate as one of the following:
 
 - Validated
 - Failed validation
 - Uncertain or unresolved validation
 - Unable to advance because of an applicable governance constraint
 
-For a no-change or failure-derived learning path, the result must identify whether the claimed learning or disposition is:
+When no candidate adaptation exists, the result must identify:
 
-- Sufficiently supported for persistence or reinforcement
-- Not sufficiently supported
-- Uncertain or unresolved
-- Unable to advance because of an applicable governance constraint
+- That no candidate validation was required
+- Whether any reinforcing or reusable learning intended for persistence is sufficiently supported
 
-A candidate adaptation may become eligible to be persisted as an approved operational improvement only when it has a successful validation result and the required authorization.
+A candidate adaptation may be eligible for [Stage 7: Persist](07-persist.md) as an approved operational improvement only when it has a successful validation result and the required authorization for persistence.
 
-A failed or rejected adaptation must not be promoted as an approved operational improvement. However, separately validated learning produced by that failed attempt may still become eligible for [Stage 7: Persist](07-persist.md).
+A failed, unresolved, or unvalidated candidate must not advance to Persist as an approved operational improvement.
 
 ## Completion Conditions
 
-Validate is complete when the validation subject has an explicit result supported by preserved evidence.
+Validate is complete when the applicable validation responsibility has an explicit result supported by preserved evidence.
 
-The stage contract is not satisfied by treating incomplete, failed, or unresolved validation as successful validation.
-
-When validation fails, the lifecycle must not silently continue as though the candidate succeeded. The result becomes new evidence that may justify retry, backward transition, escalation, stopping the attempted improvement, or validating a separate lesson derived from the failure.
+The stage contract is not satisfied by treating incomplete, failed, or unresolved validation as successful validation or by treating the absence of a candidate as permission to skip consideration of reinforcing or reusable learning.
 
 ## Relationship to Adjacent Stages
 
-Validate consumes the adaptation result, intended outcome, and validation intent produced by [Stage 5: Adapt](05-adapt.md).
+Validate consumes the candidate improvement or explicit no-change resolution produced by [Stage 5: Adapt](05-adapt.md).
 
-Successfully validated and appropriately authorized operational improvements may advance to [Stage 7: Persist](07-persist.md).
+A successfully validated and appropriately authorized candidate becomes eligible input to [Stage 7: Persist](07-persist.md).
 
-Validated no-change conclusions, reinforcing evidence, and reusable failure-derived learning may also advance to Persist when durable retention can influence future operation.
+A no-change path may advance to Persist with sufficiently supported reinforcing learning, or with an explicit determination that no new persistent learning is justified.
 
-Failed or unresolved validation may return the lifecycle to Evaluate, Classify, Adapt, or another appropriate stage. Returning to an earlier stage does not erase the validation evidence that caused the transition.
+When candidate validation fails, the candidate does not advance as an approved improvement. The validation result becomes new evidence and returns through the lifecycle as needed. Any reusable lesson derived from that failure must be evaluated and classified before the system decides where that new learning should live.
 
 ## Governance Considerations
 
@@ -103,13 +95,11 @@ A human may authorize a change without proving that it works. Likewise, a techni
 
 The Governance Policy determines whether the validation activity itself is authorized and whether successful validation is enough for persistence or requires another approval step.
 
-Governance may also require stopping or escalating a candidate even when useful learning can still be preserved from the attempt.
-
 ## Relationships to Principles
 
 - [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) requires validation conclusions to be based on evidence.
-- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) allows validation evidence to inform later lifecycle decisions and produce new learning.
-- [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) requires reusable learning to be validated before it is trusted for durable future use.
+- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) requires new learning from validation failure to be evaluated and routed intentionally rather than promoted automatically.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) requires validation before learning is trusted for durable future use.
 - [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) keeps technical validation separate from authorization.
 
 ## Stage Navigation
