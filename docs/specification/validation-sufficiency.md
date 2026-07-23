@@ -35,7 +35,7 @@ For example, a code change may compile and pass unit tests while still failing t
 
 The validation method and evidence must be strong enough for the scope and consequence of the proposed future use.
 
-Validation should account for factors such as:
+Validation must account for applicable factors such as:
 
 - Risk and impact of an incorrect result
 - Novelty or uncertainty in the candidate
@@ -113,7 +113,7 @@ Therefore:
 - Authorization to test a candidate does not mean the candidate is validated.
 - Successful validation does not grant permission to persist or deploy a candidate.
 - Human approval does not replace evidence that the candidate works as intended.
-- A candidate may be technically validated while still requiring approval for persistence or operational use.
+- Passing technical checks does not establish outcome validation when the validation claim is broader than technical correctness.
 - A prohibited change remains prohibited even when evidence suggests that it would work.
 
 The applicable Governance Policy determines the authorization required at each point.
