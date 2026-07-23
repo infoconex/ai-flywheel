@@ -30,7 +30,8 @@ Evaluate must:
 - Identify whether required conditions were satisfied
 - Identify material unexpected side effects or violated assumptions when evidence reveals them
 - Represent insufficient evidence as uncertainty rather than unsupported confidence
-- Identify material weaknesses or learning opportunities revealed by the assessment
+- Identify material weaknesses, successful patterns, or learning opportunities revealed by the assessment
+- Consider evidence from failed, stopped, retried, or superseded attempts when that evidence remains relevant to the outcome or future learning
 
 An assessed outcome may include:
 
@@ -39,7 +40,9 @@ An assessed outcome may include:
 - Known failure
 - Uncertain outcome
 
-A verified success may still reveal a learning opportunity. A successful result does not imply that the process was optimal, efficient, or appropriately divided across runtime mechanisms.
+A verified success may still reveal a learning opportunity or reinforce an existing validated operating pattern. A successful result does not imply that the process was optimal, efficient, or appropriately divided across runtime mechanisms.
+
+A later successful retry does not erase evidence from an earlier failure when that earlier evidence reveals a reusable lesson.
 
 ## Required Outputs and Evidence
 
@@ -49,11 +52,11 @@ Evaluate must produce:
 - The evidence supporting that assessment
 - Identified gaps or violated assumptions
 - Unresolved uncertainty
-- Any observed weakness or learning opportunity that requires classification
+- Any observed weakness, successful pattern, or learning opportunity that requires classification
 
 ## Completion Conditions
 
-Evaluate is complete when the available evidence supports an explicit outcome assessment, including an explicit uncertain outcome when evidence is insufficient, and any material weakness or learning opportunity has been identified for classification.
+Evaluate is complete when the available evidence supports an explicit outcome assessment, including an explicit uncertain outcome when evidence is insufficient, and any material weakness, successful pattern, or learning opportunity has been identified for classification.
 
 Evaluation must not treat an unsupported conclusion as a completed assessment.
 
@@ -62,6 +65,8 @@ Evaluation must not treat an unsupported conclusion as a completed assessment.
 Evaluate consumes the evidence set produced by [Stage 2: Observe](02-observe.md).
 
 Its supported assessment and identified learning opportunities become the primary inputs to [Stage 4: Classify](04-classify.md).
+
+New evidence from later lifecycle stages may return the lifecycle to Evaluate when the intended outcome, interpretation of evidence, or earlier assessment must be reconsidered. The new assessment must preserve the material evidence that caused the backward transition.
 
 ## Governance Considerations
 
