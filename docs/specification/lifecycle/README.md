@@ -96,6 +96,10 @@ The lifecycle permits the following transition behavior when supported by eviden
 - **Escalation or pause** — Pause the affected decision for required approval or human judgment, then resume from the stage appropriate to the resulting decision.
 - **Stop or abandon** — End an attempted action or candidate when proceeding is unsafe, prohibited, unsupported, or no longer justified while preserving the resulting evidence and considering whether it creates reusable learning.
 
+Retries, backward transitions, and stopped attempts must not erase material evidence from earlier attempts. When a transition causes operational work to execute again, the new attempt must remain observable and evaluable rather than replacing the evidence from the prior attempt.
+
+Stopping or abandoning an attempted action or candidate does not automatically stop the lifecycle's learning responsibilities. The resulting evidence must still be evaluated and classified, and any justified learning must continue through validation, persistence, and reuse as appropriate.
+
 A backward transition does not erase later evidence. For example, failed validation becomes new evidence that may cause the Flywheel to return to Evaluate, Classify, or Adapt.
 
 A stage is not considered satisfied merely because the implementation moved past it. Its responsibility must be resolved explicitly enough to produce the evidence required by the lifecycle.
@@ -109,7 +113,7 @@ When evaluation shows that the outcome is successful or acceptable and classific
 1. **Classify** records the explicit no-change decision and the evidence showing why the current operating pattern remains appropriate.
 2. **Adapt** resolves that no candidate adaptation is required rather than manufacturing an unnecessary change. It preserves the current pattern and identifies any learning or reinforcing evidence that should be validated.
 3. **Validate** determines whether the no-change conclusion and any reusable or reinforcing learning are adequately supported. If the conclusion is not supported, the lifecycle returns to the appropriate earlier stage.
-4. **Persist** retains validated reinforcing evidence or reusable knowledge in an appropriate durable asset when it can influence future operation. It does not misrepresent a no-change result as a new adaptation or improvement.
+4. **Persist** durably associates the validated reinforcing evidence with the existing operating pattern so the evidence remains available to future evaluation and reuse. It does not misrepresent a no-change result as a new adaptation or improvement.
 5. **Reuse** continues to make the existing validated operating pattern and relevant accumulated learning available to future execution.
 
 A deliberate `no change required` result is therefore a resolved lifecycle outcome, not permission to skip Adapt, Validate, Persist, or Reuse responsibilities.
