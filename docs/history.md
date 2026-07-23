@@ -2,7 +2,7 @@
 
 The Infoconex AI Flywheel methodology was not created at the moment its formal documentation was written. The ideas behind it developed through practical experimentation and repeated refinement before they were organized into the current specification.
 
-This page separates three parts of that history: **concept development**, **formalization**, and **public release**.
+This page separates three parts of that history: **concept development**, **formalization**, and **public releases**. Release summaries describe what each release represented in the evolution of the methodology; detailed change lists remain in the linked GitHub release notes.
 
 ## Timeline
 
@@ -30,17 +30,43 @@ The terms and formal structure used by the current specification were not fixed 
 
 ### July 2026 — Formalization as the Infoconex AI Flywheel
 
-In July 2026, the accumulated ideas were organized into the named **AI Flywheel** methodology and developed into a structured set of documentation.
+In July 2026, the accumulated ideas were organized into the named **Infoconex AI Flywheel** methodology and developed into a structured set of documentation.
 
-The formal documentation introduced a definition, eight named principles, an eight-stage lifecycle, a governance and boundary model, a conformance assessment, architecture views, an end-to-end example, and supporting prior-art research.
+The formal documentation introduced a definition, eight named principles, an eight-stage lifecycle, a governance and boundary model, a conformance assessment, architecture views, end-to-end examples, and supporting prior-art research.
 
 This marks the point when the methodology was formally organized and documented, not the beginning of the underlying ideas.
 
-### July 2026 — Specification v0.1 Published
+## Public Releases
 
-The first formal specification was published as **Infoconex AI Flywheel Specification v0.1 — Draft** in the `v0.1.0` repository release.
+### v0.1.0 — July 16, 2026
 
-The v0.1 designation reflects that the methodology was released as a working specification that can continue to improve through implementation experience, public review, and continued research.
+The first formal public release established the initial working specification, including the core definition, eight principles, eight-stage lifecycle, governance and boundary concepts, conformance guidance, architecture views, an end-to-end example, and supporting research.
+
+[View the v0.1.0 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.1.0).
+
+### v0.1.1 — July 17, 2026
+
+This release improved the first public draft by strengthening navigation and cross-linking, refining terminology and example naming, clarifying the project history, and aligning the core operating model with the developing specification.
+
+[View the v0.1.1 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.1.1).
+
+### v0.1.2 — July 18, 2026
+
+This release established the GitHub Pages documentation experience, including structured navigation, search, responsive presentation, theme support, and richer interaction with complex diagrams while keeping the published site aligned with the repository specification.
+
+[View the v0.1.2 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.1.2).
+
+### v0.1.3 — July 20, 2026
+
+This release established the repository governance and policy foundation and tightened documentation consistency across versioning, naming, links, conformance wording, and the distinction between normative specification requirements and explanatory supporting material.
+
+[View the v0.1.3 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.1.3).
+
+### v0.2.0 — July 23, 2026
+
+This release completed the major conceptual hardening of the specification. It formalized lifecycle stage contracts, non-linear and no-change behavior, validation sufficiency, persisted learning, reuse evidence, learning supersession, and independently assessable principle-aligned conformance, creating the conceptual foundation for implementation testing.
+
+[View the v0.2.0 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.2.0).
 
 ## Interpreting These Dates
 
@@ -48,7 +74,7 @@ The dates on this page represent different milestones:
 
 - **January 2026 — Origin of concept development:** The underlying ideas began being developed and refined
 - **July 2026 — Formalization:** The ideas were organized into the named Infoconex AI Flywheel methodology and specification structure
-- **`v0.1.0` publication — First formal public release:** The first intentionally released version of the documented methodology
+- **Public release dates — Published specification history:** Each release records a distinct point in the evolution of the documented methodology
 
 ## Related Documents
 
