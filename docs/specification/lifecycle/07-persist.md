@@ -15,7 +15,7 @@ Persist requires:
 - A validation result from [Stage 6: Validate](06-validate.md)
 - The evidence supporting that validation result
 - The classification identifying how the learning should be handled
-- The persistent operational asset to be created, changed, reinforced, or associated with the learning when durable retention is justified
+- The persistent operational asset to be created, changed, reinforced, or associated with the learning as applicable
 - The authorization required to make any durable operational change
 
 When the input is a candidate adaptation, the candidate must be validated and authorized for persistence before it can become an approved operational improvement.
@@ -33,7 +33,7 @@ Persist must:
 - Avoid treating raw execution history, unvalidated observations, or an unapplied candidate as persisted operational learning
 - Prevent a failed or unvalidated adaptation from being activated or represented as an approved operational improvement
 - Allow separately validated learning produced by a failed or rejected attempt to be persisted without promoting the failed adaptation itself
-- When a successful no-change outcome reinforces an existing validated pattern, retain the reinforcing evidence in an appropriate durable form when it can influence future evaluation, confidence, applicability, or reuse
+- When a successful no-change outcome reinforces an existing validated pattern, retain the validated reinforcing evidence in an appropriate durable form associated with that pattern so it remains available to future evaluation and reuse
 - Avoid misrepresenting reinforcing evidence as a new adaptation when the operating behavior did not change
 
 Persistent learning may exist in different operational assets. The detailed categories and required properties of persisted learning are defined separately from this stage contract.
@@ -46,10 +46,10 @@ Persist must produce one of the following supported outcomes:
 
 - A durable updated operational asset containing a validated and authorized improvement
 - A durable operational asset containing validated reusable learning derived from failure or another non-change outcome
-- Reinforcing evidence durably associated with an existing validated operating pattern when that evidence is useful to future operation
+- Reinforcing evidence durably associated with an existing validated operating pattern
 - An explicit determination that no new persistent operational learning is justified
 
-When persistent learning is created or updated, Persist must also produce:
+When persistent learning is created, updated, or reinforced, Persist must also produce:
 
 - An identifiable persisted learning item or reinforced operating pattern
 - Enough applicability context for later relevant use
@@ -61,6 +61,8 @@ When persistent learning is created or updated, Persist must also produce:
 Persist is complete when the validated learning disposition has been resolved explicitly.
 
 When reusable learning is justified, it must be durably incorporated into or associated with an operational asset and made available for later relevant use.
+
+When a successful no-change outcome reinforces an existing validated operating pattern, the reinforcing evidence must be durably associated with that pattern rather than discarded merely because no adaptation occurred.
 
 When no new persistent learning is justified, the stage is complete only when that disposition is explicit and supported by the preceding lifecycle evidence.
 
