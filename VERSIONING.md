@@ -11,7 +11,7 @@ Specification versions are assigned by Infoconex.
 Examples:
 
 - Infoconex AI Flywheel Specification v0.1
-- Infoconex AI Flywheel Specification v0.2.0
+- Infoconex AI Flywheel Specification v0.2.1
 - Infoconex AI Flywheel Specification v1.0
 
 ## Draft Versions
@@ -56,7 +56,7 @@ A conformance claim must identify the specification version being used.
 
 Recommended wording:
 
-> This implementation is self-assessed as designed to conform to the Infoconex AI Flywheel Specification v0.2.0.
+> This implementation is self-assessed as designed to conform to the Infoconex AI Flywheel Specification v0.2.1.
 
 A conformance claim for one version does not automatically apply to a later version.
 
