@@ -10,6 +10,8 @@ Persistence creates durable operational assets. Reuse makes those assets useful 
 
 Reuse is not limited to a new adaptation created by the immediately preceding cycle. A successful no-change cycle may demonstrate continued reuse of an existing validated operating pattern while adding reinforcing evidence about that pattern.
 
+The normative minimum evidence required to demonstrate that reuse occurred is defined in [Reuse Evidence Requirements](../reuse-evidence.md).
+
 ## Required Inputs and Preconditions
 
 Reuse requires:
@@ -28,11 +30,13 @@ A later execution may be the next attempt, experiment, work item, or cycle withi
 Reuse must:
 
 - Make relevant persisted learning available to later execution
+- Determine or preserve enough evidence to establish whether persisted learning was relevant to that execution
 - Apply persisted learning only where it remains relevant, valid, and authorized
+- Apply the [Reuse Evidence Requirements](../reuse-evidence.md) when claiming that persisted learning or an existing validated pattern was reused
 - Allow later execution to benefit from prior validated learning rather than requiring the same learning to be rediscovered from scratch
 - Continue to use an existing validated operating pattern when it remains applicable and no adaptation is justified
 - Keep reused behavior subject to new outcome evidence and later evaluation
-- Avoid treating persistence alone as proof that compounding reuse occurred
+- Avoid treating persistence, availability, or retrieval alone as proof that compounding reuse occurred
 - Avoid treating a failed or rejected adaptation as reusable approved behavior merely because records of the attempt were retained
 
 Reusable learning may include:
@@ -45,25 +49,29 @@ Reusable learning may include:
 - Known-failure rules and applicability constraints
 - Human-authorized governance changes
 
-The detailed evidence required to demonstrate that reuse influenced later execution is defined separately from this stage contract.
+No specific reuse mechanism is required. The implementation must be able to produce evidence sufficient to show that relevant persisted learning influenced later operation.
 
 ## Required Outputs and Evidence
 
 Reuse must produce:
 
 - An operating state for a later execution that includes applicable persisted learning
-- A basis for later determining which persisted learning or existing validated patterns were available and relevant to that execution
+- Evidence identifying which persisted learning or existing validated patterns were relevant to that execution
+- Evidence showing how relevant learning was selected, invoked, applied, enforced, or otherwise incorporated when reuse is claimed
+- Observable evidence of how the later execution was influenced by that learning or validated pattern
 - A new execution context in which reused learning remains observable through normal lifecycle evidence
 
-A later execution may demonstrate reuse by applying a prior improvement, continuing a validated operating pattern, avoiding a known failed approach, selecting a different strategy because of persisted learning, or applying a previously learned constraint.
+A later execution may demonstrate reuse by applying a prior improvement, continuing a validated operating pattern, avoiding a known failed approach, selecting a different strategy because of persisted learning, applying a previously learned constraint, or otherwise behaving differently because earlier learning changed the operating state.
+
+The specification does not require every persisted learning item to be applied to every execution. Evidence must be sufficient to distinguish relevant learning that should have been reused from learning that was not applicable, no longer valid, or outside the current governance scope.
 
 ## Completion Conditions
 
-Reuse is complete for a persisted learning item when a later relevant execution has access to that learning and applies it when applicable.
+Reuse is complete for a persisted learning item when a later relevant execution has access to that learning, applies it when applicable, and produces enough evidence to demonstrate the resulting influence under the [Reuse Evidence Requirements](../reuse-evidence.md).
 
-A no-change cycle does not fail Reuse merely because it created no new adaptation. Continued use of an existing validated operating pattern can demonstrate reuse when later outcome evidence shows that the pattern remains effective.
+A no-change cycle does not fail Reuse merely because it created no new adaptation. Continued use of an existing validated operating pattern can demonstrate reuse when later outcome evidence shows that the pattern was applied and remains effective.
 
-A stored improvement or lesson that never becomes available to later relevant execution does not satisfy the stage contract for reuse.
+A stored improvement or lesson that never becomes available to later relevant execution does not satisfy the stage contract for reuse. Likewise, availability without evidence of relevant application or influence does not by itself demonstrate completed reuse.
 
 ## Relationship to Adjacent Stages
 
@@ -92,7 +100,7 @@ Persisted learning remains subject to later evidence and reevaluation. The detai
 - [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) defines the requirement that persisted learning changes future operation.
 - [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) ensures there is durable learning available to reuse.
 - [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) helps place learning where it can be reused effectively.
-- [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) ensures reused learning remains subject to outcome evaluation.
+- [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) ensures reused improvements continue to be evaluated against actual outcomes.
 - [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) prevents improving capability from becoming uncontrolled authority expansion.
 
 ## Stage Navigation
@@ -103,6 +111,8 @@ Persisted learning remains subject to later evidence and reevaluation. The detai
 
 ## Related Documents
 
+- [Reuse Evidence Requirements](../reuse-evidence.md)
+- [Persisted Learning Requirements](../persisted-learning.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
 - [Worked Example: Continuous Dependency Maintenance](../../examples/software-maintenance/worked-example.md)
