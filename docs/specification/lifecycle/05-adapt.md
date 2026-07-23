@@ -55,13 +55,14 @@ Adaptation produces a candidate change only when change is justified. It does no
 
 A no-change resolution is not a skipped Adapt stage. It is an explicit determination that the current operating behavior should remain unchanged based on the evidence available at that point in the lifecycle.
 
+If Adapt cannot responsibly resolve the classification because more evidence, authority, or human judgment is required, the stage must pause, return to an appropriate earlier stage, or escalate. An unresolved adaptation decision is not a completed Adapt stage.
+
 ## Required Outputs and Evidence
 
 Adapt must produce one of the following supported results:
 
 - A concrete candidate change or proposed governance decision
 - An explicit `no adaptation required` resolution that identifies the operating pattern being preserved
-- A determination that additional evidence, human judgment, or escalation is required before a responsible adaptation decision can be completed
 
 The result must also preserve:
 
@@ -70,6 +71,8 @@ The result must also preserve:
 - The expected improvement when a candidate change exists
 - Any reinforcing or failure-derived learning that should be considered separately from the disposition of the candidate itself
 - The information needed to determine what [Stage 6: Validate](06-validate.md) must assess
+
+When Adapt cannot yet produce a completed result, it must preserve the unresolved condition and the evidence, authority, judgment, or escalation needed to continue.
 
 ## Completion Conditions
 
@@ -85,7 +88,7 @@ Generating or applying a change does not by itself satisfy the lifecycle require
 
 Adapt consumes the learning disposition and supporting evidence produced by [Stage 4: Classify](04-classify.md).
 
-Its adaptation result becomes the primary input to [Stage 6: Validate](06-validate.md). Validate may assess a candidate improvement, an explicit no-change resolution, or reusable learning derived from a failed or rejected attempt.
+A completed adaptation result becomes the primary input to [Stage 6: Validate](06-validate.md). Validate may assess a candidate improvement, an explicit no-change resolution, or reusable learning derived from a failed or rejected attempt.
 
 If new evidence shows that the earlier classification or improvement destination was wrong, the lifecycle may return to Classify rather than forcing the current adaptation path to continue.
 
