@@ -68,6 +68,12 @@ This release completed the major conceptual hardening of the specification. It f
 
 [View the v0.2.0 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.2.0).
 
+### v0.2.1 — July 23, 2026
+
+This defect-correction release aligned supporting documentation with the hardened v0.2.0 specification, clarified the distinction between execution-time AI reasoning and the Adapt lifecycle stage, restored complete lifecycle terminology, and completed a repository-wide consistency review before implementation testing.
+
+[View the v0.2.1 release notes](https://github.com/Infoconex/ai-flywheel/releases/tag/v0.2.1).
+
 ## Interpreting These Dates
 
 The dates on this page represent different milestones:
