@@ -27,3 +27,13 @@ The documentation separates six questions:
 4. **What does it look like in practice?** See the [end-to-end examples](examples/README.md).
 5. **How does it relate to existing work?** See the [research section](research/README.md).
 6. **How should the methodology be presented?** See the [Design Guide](design-guide/README.md).
+
+## Documentation Rules
+
+The specification should be understandable without referring to any competing or earlier framework. Comparisons belong in the research section and should be backed by primary sources before being treated as conclusions.
+
+Whenever a principle is referenced by number, include its full name. For example, use **Principle 1: Autonomy Is Bounded by Human Authority**, not `Principle 1` or `P1`. This applies to prose, tables, diagrams, navigation, and related-document lists. A principle name may stand alone when the name itself is the clear reference.
+
+On first use within a standalone reader-facing page, spell out an unfamiliar acronym followed by the acronym in parentheses. For example, use **Standard Operating Procedure (SOP)** before using **SOP** by itself. Widely understood project terms such as **AI** do not need to be expanded on every page.
+
+Every documentation folder should contain a `README.md`. When a folder represents a single topic, the topic should be contained directly in that `README.md`. When a folder contains multiple documents, its `README.md` should summarize the section and provide a table of contents using standard Markdown links.
