@@ -10,6 +10,8 @@ When Adapt explicitly resolves that no adaptation is required, there is no candi
 
 Validation and authority are separate concerns. A change may work but still not be authorized, or it may be authorized in principle but not yet proven to work.
 
+The normative minimum conditions for deciding whether validation is sufficient are defined in [Validation Sufficiency Requirements](../validation-sufficiency.md).
+
 ## Required Inputs and Preconditions
 
 Validate requires:
@@ -29,15 +31,18 @@ When a candidate exists, the candidate must be identifiable well enough to test 
 When a candidate adaptation exists, Validate must:
 
 - Test the actual candidate improvement against the outcome it is intended to improve
-- Base the validation conclusion on evidence appropriate to the candidate and its context
+- Apply the [Validation Sufficiency Requirements](../validation-sufficiency.md) to the validation claim being made
+- Base the validation conclusion on evidence appropriate to the candidate, its risk, and its intended scope of reuse
+- Distinguish technical success from outcome success when they are materially different
+- Check for material regressions or unacceptable side effects when they are reasonably relevant to the candidate
 - Distinguish a successful validation result from authorization to persist or deploy the change
-- Preserve the evidence supporting the validation result
-- Represent failed or unresolved validation honestly rather than treating the candidate as validated
+- Preserve enough attributable evidence to support later persistence, review, and reuse decisions
+- Represent failed, contradictory, incomplete, or unresolved validation honestly rather than treating the candidate as validated
 
 When no adaptation is required, Validate must:
 
 - Explicitly record that no candidate adaptation requires validation
-- Determine whether any reinforcing or reusable learning intended for persistence is sufficiently supported by the available evidence
+- Determine whether any reinforcing or reusable learning intended for persistence is sufficiently supported under the [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - Preserve the evidence supporting that determination
 
 Validation methods may vary by domain and change type. Examples include:
@@ -49,7 +54,7 @@ Validation methods may vary by domain and change type. Examples include:
 - Comparison with prior behavior
 - Human review when authority or risk requires it
 
-The detailed requirements for what constitutes sufficient validation are defined separately from this stage contract.
+No single method is universally required. The method and evidence must be sufficient for the validation claim, risk, and intended scope of future use.
 
 ## Required Outputs and Evidence
 
@@ -62,6 +67,8 @@ When a candidate adaptation exists, the result must identify the candidate as on
 - Uncertain or unresolved validation
 - Unable to advance because of an applicable governance constraint
 
+A candidate may be identified as **Validated** only when the applicable [Validation Sufficiency Requirements](../validation-sufficiency.md) are satisfied.
+
 When no candidate adaptation exists, the result must identify:
 
 - That no candidate validation was required
@@ -73,9 +80,9 @@ A failed, unresolved, or unvalidated candidate must not advance to Persist as an
 
 ## Completion Conditions
 
-Validate is complete when the applicable validation responsibility has an explicit result supported by preserved evidence.
+Validate is complete when the applicable validation responsibility has an explicit result supported by preserved evidence and the applicable sufficiency requirements have been resolved.
 
-The stage contract is not satisfied by treating incomplete, failed, or unresolved validation as successful validation or by treating the absence of a candidate as permission to skip consideration of reinforcing or reusable learning.
+The stage contract is not satisfied by treating incomplete, failed, contradictory, or unresolved validation as successful validation, by relying only on technical execution success when the intended outcome is broader, or by treating the absence of a candidate as permission to skip consideration of reinforcing or reusable learning.
 
 ## Relationship to Adjacent Stages
 
@@ -110,5 +117,6 @@ The Governance Policy determines whether the validation activity itself is autho
 
 ## Related Documents
 
+- [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Governance and Escalation](../../architecture/governance-and-escalation.md)

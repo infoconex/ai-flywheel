@@ -56,35 +56,45 @@ Canonical source: [Principle 4: The SOP Is an Operational Control Plane](../prin
 28. Are failures and unexpected results retained as learning inputs?
 29. Are material human judgments and approvals preserved as evidence?
 30. Is the evidence attributable enough to explain what happened and why the system reached its conclusion?
+31. When a candidate improvement is validated, does the evidence address the intended outcome rather than only technical execution or task completion?
+32. Is the validation evidence appropriate to the claim, risk, and intended scope of future use?
+33. Are representative conditions covered when materially different operating scenarios affect the validation claim?
+34. Are material regressions and unacceptable side effects checked when they are reasonably relevant to the candidate?
+35. Are contradictory, incomplete, or insufficient results kept failed, uncertain, or unresolved rather than represented as successful validation?
+36. Is enough validation evidence preserved to determine what was validated, against what criteria, under what conditions, and with what limitations?
 
-Canonical sources: [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md), [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md), and [Stage 6: Validate](../lifecycle/06-validate.md).
+Canonical sources: [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md), [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 6: Validate](../lifecycle/06-validate.md), and [Validation Sufficiency Requirements](../validation-sufficiency.md).
 
 ## Principle 6: Failure Determines Where the System Evolves
 
-31. Can the system identify the type of weakness, uncertainty, or learning opportunity revealed by an outcome?
-32. Are successful outcomes also classified when they provide evidence that an existing pattern should be reinforced or reused?
-33. Can the system determine where the resulting learning should live?
-34. Can learning be routed to deterministic capability, procedure, reasoning knowledge, validation, or governance as appropriate?
-35. Can responsibility move across the Moving Determinism Boundary when classification shows that a different mechanism should own the behavior?
-36. Does the system avoid forcing every lesson into one fixed adaptation mechanism?
+37. Can the system identify the type of weakness, uncertainty, or learning opportunity revealed by an outcome?
+38. Are successful outcomes also classified when they provide evidence that an existing pattern should be reinforced or reused?
+39. Can the system determine where the resulting learning should live?
+40. Can learning be routed to deterministic capability, procedure, reasoning knowledge, validation, or governance as appropriate?
+41. Can responsibility move across the Moving Determinism Boundary when classification shows that a different mechanism should own the behavior?
+42. Does the system avoid forcing every lesson into one fixed adaptation mechanism?
 
 Canonical sources: [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 4: Classify](../lifecycle/04-classify.md), and [Stage 5: Adapt](../lifecycle/05-adapt.md).
 
 ## Principle 7: Learning Must Change a Persistent Operational Asset
 
-37. Do validated and authorized improvements survive the current execution?
-38. Are they stored in durable operational assets that future execution can use?
-39. Can persistent assets later be refined, replaced, rolled back, or moved when new evidence requires it?
-40. Can a reviewer identify the specific persistent asset changed by a learning event?
+43. Do validated and authorized improvements survive the current execution?
+44. Are they stored in durable operational assets that future execution can use?
+45. Before an improvement is persisted for future use, can the implementation show that the applicable validation sufficiency requirements were satisfied?
+46. Are validation and authorization represented as separate decisions so approval cannot substitute for evidence and validation cannot grant authority?
+47. On a no-change path, can reinforcing learning be persisted without manufacturing a candidate adaptation, and is the reinforcing claim sufficiently supported?
+48. Are persistent learning items scoped to the conditions supported by their validation evidence?
+49. Can persistent assets later be refined, replaced, rolled back, or moved when new evidence requires it?
+50. Can a reviewer identify the specific persistent asset changed or reinforced by a learning event?
 
-Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
+Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), [Validation Sufficiency Requirements](../validation-sufficiency.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
 
 ## Principle 8: Improvement Must Compound Through Reuse
 
-41. Do later executions inherit and use relevant validated improvements?
-42. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, or human escalation where prior learning applies?
-43. Can a reviewer point to behavior that improved because of learning from earlier executions?
-44. Are successful validated patterns retained and reused rather than rediscovered on every execution?
+51. Do later executions inherit and use relevant validated improvements?
+52. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, or human escalation where prior learning applies?
+53. Can a reviewer point to behavior that improved because of learning from earlier executions?
+54. Are successful validated patterns retained and reused rather than rediscovered on every execution?
 
 Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) and [Stage 8: Reuse](../lifecycle/08-reuse.md).
 
@@ -100,6 +110,7 @@ This version does not define partial or maturity-based conformance levels.
 
 - [Conformance Overview](README.md)
 - [Non-Conforming Patterns](non-conforming-patterns.md)
+- [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
