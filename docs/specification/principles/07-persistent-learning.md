@@ -21,9 +21,11 @@ A conforming implementation must satisfy these requirements:
 - The system must be authorized to persist governed changes.
 - A failed or rejected adaptation is not persisted as an approved improvement, while separately validated learning derived from that attempt may persist in an appropriate form.
 - Reinforcing evidence may be associated with an existing validated operating pattern without requiring or misrepresenting a new adaptation.
-- Persistent assets can be revised, replaced, rolled back, invalidated, or moved when later evidence shows that the current form is no longer appropriate.
+- Persisted learning remains subject to later evidence and can be revised, superseded, deprecated, invalidated, rolled back, retired, or moved when the current form is no longer appropriate.
+- Known-invalid or superseded learning is not treated as current validated guidance within the affected scope.
+- Current learning can be distinguished from historical, deprecated, superseded, invalidated, or retired learning when those distinctions affect future operation.
 
-The detailed requirements for what may count as persisted learning are defined in [Persisted Learning Requirements](../persisted-learning.md).
+The detailed requirements for what may count as persisted learning are defined in [Persisted Learning Requirements](../persisted-learning.md). The requirements governing changes to the current status of persisted learning are defined in [Learning Supersession Requirements](../learning-supersession.md).
 
 ## Operational Model
 
@@ -71,16 +73,18 @@ Applying a lesson too broadly can make the Flywheel worse instead of better.
 
 ### Persistent Does Not Mean Permanent
 
-Future evidence may show that an asset should be refined, replaced, rolled back, invalidated, or moved to a different operating mechanism.
+Future evidence may show that an asset should be refined, replaced, rolled back, invalidated, deprecated, retired, or moved to a different operating mechanism.
+
+When the system determines that learning is no longer current for a defined scope, future execution must stop treating that learning as current validated guidance for that scope even if historical records remain available.
 
 ## Lifecycle Relationship
 
-- **Observe through Classify:** Execution evidence is interpreted and a reusable lesson or reinforcing pattern is identified.
-- **Adapt:** The system creates or proposes the appropriate improvement when change is justified, or explicitly resolves that no adaptation is required.
+- **Observe through Classify:** Execution evidence is interpreted and a reusable lesson, reinforcing pattern, or challenge to existing persisted learning is identified.
+- **Adapt:** The system creates or proposes the appropriate improvement when change is justified, revises or replaces challenged learning when needed, or explicitly resolves that no adaptation is required.
 - **Validate:** The candidate improvement or other learning intended for persistence is evaluated for sufficient support.
-- **Persist:** Validated and authorized learning changes or enriches a durable operational asset, reinforces an existing validated pattern, or explicitly resolves that no new persistent learning is justified.
-- **Reuse:** Future executions retrieve or apply relevant persisted learning and validated operating patterns.
-- **Later cycles:** New evidence may refine, replace, invalidate, roll back, or move the persisted learning.
+- **Persist:** Validated and authorized learning changes or enriches a durable operational asset, reinforces an existing validated pattern, changes which learning is current, or explicitly resolves that no new persistent learning is justified.
+- **Reuse:** Future executions retrieve or apply relevant current persisted learning and validated operating patterns.
+- **Later cycles:** New evidence may refine, supersede, deprecate, invalidate, roll back, retire, or move persisted learning through the lifecycle again.
 
 ## Evidence of Implementation
 
@@ -93,7 +97,8 @@ Evidence supporting this principle may include:
 - Retrieval or invocation mechanisms that make the asset available to future operation
 - Scope or applicability information attached to learned assets
 - Validation and authorization records for persisted changes
-- Examples of persistent assets later being refined, replaced, rolled back, or moved in response to new evidence
+- Evidence showing how later learning was revised, superseded, deprecated, invalidated, rolled back, retired, or moved in response to new evidence
+- Evidence that historical or invalid learning is not selected as current guidance where it no longer applies
 
 ## Non-Conforming Patterns
 
@@ -106,15 +111,17 @@ This principle is not satisfied when:
 - A failed or rejected adaptation is represented as approved behavior merely because its history was retained
 - Persisted learning is activated without required validation or authority
 - Lessons are applied outside the context where they are valid
+- Known-invalid, superseded, deprecated, or retired learning continues to be treated as current validated guidance where it should no longer apply
+- The implementation retains conflicting historical learning but cannot determine which guidance is current
 - Every successful execution is forced to create a new adaptation even when the evidence only reinforces an existing validated pattern
 
 ## Relationships to Other Principles
 
-- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) provides the evidence from which useful learning is derived.
-- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines which persistent asset should own the learning.
+- [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) provides the evidence from which useful learning is derived and later challenged.
+- [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) determines which persistent asset should own the learning or replacement.
 - [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) allows persisted responsibility to move again when evidence changes.
-- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) determines whether the system is authorized to persist a change.
-- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) requires future execution to actually use the improved asset.
+- [Principle 1: Autonomy Is Bounded by Human Authority](01-human-authority.md) determines whether the system is authorized to persist or supersede a change.
+- [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) requires future execution to use the current valid operating state rather than outdated learning.
 
 ## Principle Navigation
 
@@ -125,7 +132,9 @@ This principle is not satisfied when:
 ## Related Documents
 
 - [Persisted Learning Requirements](../persisted-learning.md)
+- [Learning Supersession Requirements](../learning-supersession.md)
 - [Validation Sufficiency Requirements](../validation-sufficiency.md)
+- [Reuse Evidence Requirements](../reuse-evidence.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Stage 6: Validate](../lifecycle/06-validate.md)
 - [Stage 7: Persist](../lifecycle/07-persist.md)
