@@ -27,7 +27,7 @@ The classification must be grounded in an evaluated outcome or identified learni
 Classify must:
 
 - Identify the type and likely source of the weakness, uncertainty, successful pattern, or learning opportunity
-- Determine whether the evidence justifies a persistent adaptation, reinforces an existing validated pattern, or does not yet justify durable change
+- Determine whether the evidence justifies a persistent adaptation, reinforces an existing validated pattern, or does not justify durable change
 - Consider the part of the operating model best suited to own any resulting improvement or reusable learning
 - Make the routing decision intentionally rather than defaulting every outcome to one adaptation mechanism
 - Preserve the evidence supporting the routing decision
@@ -47,6 +47,8 @@ Potential improvement or learning destinations may include:
 
 Classification does not authorize a governance change or expansion of authority.
 
+If the available evidence is insufficient to route the learning responsibly, Classify must preserve that uncertainty and obtain additional evidence, return to an earlier stage, or escalate for human judgment as appropriate. An unresolved routing decision is not a completed classification.
+
 ## Required Outputs and Evidence
 
 Classify must produce an explicit learning disposition that includes:
@@ -55,22 +57,23 @@ Classify must produce an explicit learning disposition that includes:
 - One of the following supported outcomes:
   - An adaptation is justified and an improvement destination is selected
   - No adaptation is justified and an existing validated pattern is reinforced
-  - No reusable learning or persistent change is currently justified
-  - Additional evidence, judgment, or escalation is required before the learning can be routed responsibly
+  - No reusable learning or persistent change is justified
 - The evidence supporting the disposition
 - Any identified movement of responsibility across the Moving Determinism Boundary
+
+When classification cannot yet be completed, the stage must instead preserve the unresolved condition and the evidence, judgment, or escalation needed to continue.
 
 ## Completion Conditions
 
 Classify is complete when the evidence supports an explicit decision about how the learning should be handled, including when no durable adaptation is justified.
 
-The stage contract is not satisfied by forcing a change solely to continue the lifecycle or by silently treating a successful outcome as if no classification occurred.
+The stage contract is not satisfied by forcing a change solely to continue the lifecycle, by silently treating a successful outcome as if no classification occurred, or by presenting an unresolved routing decision as complete.
 
 ## Relationship to Adjacent Stages
 
 Classify consumes the supported assessment and learning opportunities produced by [Stage 3: Evaluate](03-evaluate.md).
 
-Its learning disposition becomes the primary input to [Stage 5: Adapt](05-adapt.md). When adaptation is justified, Adapt uses the selected improvement destination and supporting evidence. When no adaptation is justified, Adapt explicitly resolves the no-change disposition rather than manufacturing a candidate change.
+A completed learning disposition becomes the primary input to [Stage 5: Adapt](05-adapt.md). When adaptation is justified, Adapt uses the selected improvement destination and supporting evidence. When no adaptation is justified, Adapt explicitly resolves the no-change disposition rather than manufacturing a candidate change.
 
 New evidence from later stages may return the lifecycle to Classify when an earlier routing decision is no longer supported.
 
