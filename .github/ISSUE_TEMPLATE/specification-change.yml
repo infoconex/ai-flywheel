@@ -16,7 +16,7 @@ body:
     id: affected_area
     attributes:
       label: Affected area
-      description: Name the document, section, principle, lifecycle stage, term, or conformance area affected.
+      description: Name the document, section, principle, lifecycle stage, term, or principle-aligned conformance assessment affected.
       placeholder: "Example: Principle 6: Failure Determines Where the System Evolves"
     validations:
       required: true
