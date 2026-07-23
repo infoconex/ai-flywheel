@@ -30,7 +30,7 @@ Evaluate must:
 - Identify whether required conditions were satisfied
 - Identify material unexpected side effects or violated assumptions when evidence reveals them
 - Represent insufficient evidence as uncertainty rather than unsupported confidence
-- Identify material weaknesses or learning opportunities revealed by the assessment
+- Identify material weaknesses, successful patterns, or other learning opportunities revealed by the assessment
 
 An assessed outcome may include:
 
@@ -39,7 +39,7 @@ An assessed outcome may include:
 - Known failure
 - Uncertain outcome
 
-A verified success may still reveal a learning opportunity. A successful result does not imply that the process was optimal, efficient, or appropriately divided across runtime mechanisms.
+A verified success may still reveal a learning opportunity or reinforce an existing validated operating pattern. A successful result does not imply that the process was optimal, efficient, or appropriately divided across runtime mechanisms, and it does not require adaptation merely because a lifecycle cycle occurred.
 
 ## Required Outputs and Evidence
 
@@ -49,19 +49,19 @@ Evaluate must produce:
 - The evidence supporting that assessment
 - Identified gaps or violated assumptions
 - Unresolved uncertainty
-- Any observed weakness or learning opportunity that requires classification
+- Any material weakness, successful pattern, or learning opportunity that requires classification
 
 ## Completion Conditions
 
-Evaluate is complete when the available evidence supports an explicit outcome assessment, including an explicit uncertain outcome when evidence is insufficient, and any material weakness or learning opportunity has been identified for classification.
+Evaluate is complete when the available evidence supports an explicit outcome assessment, including an explicit uncertain outcome when evidence is insufficient, and any material weakness, successful pattern, or learning opportunity relevant to future operation has been identified for classification.
 
-Evaluation must not treat an unsupported conclusion as a completed assessment.
+Evaluation must not treat an unsupported conclusion as a completed assessment or silently discard a successful outcome that contains meaningful reinforcing evidence.
 
 ## Relationship to Adjacent Stages
 
 Evaluate consumes the evidence set produced by [Stage 2: Observe](02-observe.md).
 
-Its supported assessment and identified learning opportunities become the primary inputs to [Stage 4: Classify](04-classify.md).
+Its supported assessment and identified weaknesses, successful patterns, or learning opportunities become the primary inputs to [Stage 4: Classify](04-classify.md).
 
 ## Governance Considerations
 
@@ -74,7 +74,7 @@ A technically clear outcome may still trigger the Authority Boundary when a resu
 ## Relationships to Principles
 
 - [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) requires evaluation to be grounded in observable evidence.
-- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) uses evaluation results as the basis for later classification and routing.
+- [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) uses evaluation results as the basis for classification, including successful no-change and reinforcing outcomes.
 - [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) distinguishes unresolved uncertainty from actions that are understood but not authorized.
 
 ## Stage Navigation
