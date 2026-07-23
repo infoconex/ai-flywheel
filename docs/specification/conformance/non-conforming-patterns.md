@@ -4,7 +4,7 @@ The following patterns may contain useful elements of the Infoconex AI Flywheel 
 
 ## Retry-Only Loops
 
-A loop that repeatedly retries until a task succeeds does not conform to the Infoconex AI Flywheel Specification unless it also evaluates evidence, classifies learning, changes persistent operational assets, and reuses those improvements.
+A loop that repeatedly retries until a task succeeds does not conform to the Infoconex AI Flywheel Specification unless it also evaluates evidence, classifies learning, changes persistent operational assets when lasting improvement is justified, and reuses those improvements.
 
 ## Memory-Only Agents
 
@@ -16,7 +16,7 @@ A system that only rewrites source code does not conform if it has no intentiona
 
 ## Reflection Without Operational Change
 
-An agent that reflects on failure but does not change persistent operational assets does not satisfy the persistence and reuse requirements.
+An agent that reflects on failure but never changes a persistent operational asset when lasting improvement is justified does not satisfy [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) or [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md).
 
 ## Fixed Automation Without Evolution
 
@@ -24,11 +24,11 @@ A deterministic automation system with no evidence-driven mechanism for learning
 
 ## Lessons That Are Never Reused
 
-A workflow that records lessons but does not make them available to later execution does not produce compounding reuse.
+A workflow that records lessons but does not make them available to later execution does not satisfy [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md).
 
 ## Unrestricted Self-Modification
 
-A system with unrestricted self-modification and no human-defined authority boundary does not satisfy the governance requirements of the AI Flywheel.
+A system with unrestricted self-modification and no human-defined authority boundary does not satisfy [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md).
 
 ## Approval for Every Action
 
@@ -36,11 +36,11 @@ A human-in-the-loop workflow that requires routine approval for every action doe
 
 ## AI as Advisor Only
 
-A system in which AI primarily recommends actions that humans routinely execute does not satisfy the requirement that AI operate the process itself.
+A system in which AI primarily recommends actions that humans routinely execute does not satisfy [Principle 2: AI Is the Operator, Not Merely the Assistant](../principles/02-ai-as-operator.md).
 
 ## Single-Destination Learning
 
-A system that assumes every lesson belongs in one fixed destination—such as memory, code, or prompt text—does not satisfy the full Evolution Routing requirement unless it can intentionally determine where responsibility should reside.
+A system that assumes every lesson belongs in one fixed destination—such as memory, code, or prompt text—does not satisfy [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) unless it can intentionally determine where responsibility should reside.
 
 ## Related Documents
 

@@ -61,6 +61,11 @@
     - title: Framework Comparison
       url: /docs/research/frameworks/framework-comparison-matrix.html
 
+- title: Design Guide
+  items:
+    - title: Overview
+      url: /docs/design-guide/
+
 - title: Project Policies
   items:
     - title: Overview

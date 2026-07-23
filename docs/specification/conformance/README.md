@@ -2,75 +2,74 @@
 
 ![Infoconex AI Flywheel Conformance](../../assets/conformance.png)
 
-Conformance determines whether an implementation satisfies the Infoconex AI Flywheel Specification.
+Conformance determines whether an implementation satisfies the complete Infoconex AI Flywheel Specification.
 
-The conformance section does not define the methodology on its own. The requirements come from the [Formal Definition](../definition.md), [Principles](../principles/README.md), and [Lifecycle](../lifecycle/README.md). Conformance turns those requirements into a practical assessment based on observable evidence.
+The conformance model does not create a separate set of requirements. The eight canonical [Principles](../principles/README.md) provide the top-level conformance structure, while the [Lifecycle](../lifecycle/README.md) defines the operational behavior through which those principles are exercised and evidenced. The [Formal Definition](../definition.md) remains the overall boundary for what constitutes an Infoconex AI Flywheel.
 
-A system may contain individual AI Flywheel mechanisms without conforming to the complete methodology.
+A complete conformance assessment therefore asks whether each canonical principle can be demonstrated through observable evidence from actual lifecycle operation. A system may contain individual AI Flywheel mechanisms without conforming to the complete methodology.
 
-## Conformance Areas
+## Conformance Model
 
-A complete conformance review evaluates the operating model across ten areas taken from the specification:
+Conformance follows a simple relationship:
 
-| Conformance Area | Requirement Source and Support | What Must Be Demonstrated |
+**Requirements → Observable operation evidence → Conformance decision**
+
+1. **Requirements** — The eight canonical principles define the enduring requirements of the operating model.
+2. **Observable operation evidence** — Execution across the lifecycle produces evidence showing how those requirements behave in practice.
+3. **Conformance decision** — An implementation conforms only when the complete set of principle requirements is demonstrated through objective evidence and the required lifecycle behavior is present.
+
+This structure keeps conformance aligned with the specification instead of introducing a separate vocabulary of assessment areas.
+
+## Principle-Aligned Assessment
+
+A complete conformance review evaluates each canonical principle using evidence from the lifecycle stages and governance behavior most relevant to that principle.
+
+| Principle | What Must Be Demonstrated | Primary Lifecycle Relationship |
 |---|---|---|
-| **1. Human Authority** | [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) | Human-defined authority boundaries govern autonomous operation, and the AI cannot grant itself more authority. |
-| **2. AI Operation** | [Principle 2: AI Is the Operator, Not Merely the Assistant](../principles/02-ai-as-operator.md), [Stage 1: Execute](../lifecycle/01-execute.md) | AI performs meaningful work rather than only producing instructions for a human operator. |
-| **3. Runtime Responsibilities** | [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md), supported by [Runtime Architecture](../../architecture/runtime-view.md) | Deterministic capability, procedural guidance, and AI reasoning have clear and intentional roles. |
-| **4. Persistent Operational Procedure** | [Principle 4: The SOP Is an Operational Control Plane](../principles/04-sop-control-plane.md) | A durable Standard Operating Procedure (SOP) or equivalent machine-consumable guidance directs how work is performed and remains subject to governance. |
-| **5. Outcome Evidence** | [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md), [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md) | Execution produces enough evidence to judge actual outcomes instead of relying on model confidence or completion status. |
-| **6. Evaluation and Classification** | [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) | The system determines what happened and identifies the type of weakness, uncertainty, or learning opportunity. |
-| **7. Improvement Routing** | [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Stage 5: Adapt](../lifecycle/05-adapt.md) | Learning is intentionally sent to the part of the system best suited to own it, including movement across the Moving Determinism Boundary when appropriate. |
-| **8. Governance Enforcement** | [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md), [Lifecycle Governance](../lifecycle/README.md#governance-applies-throughout-the-lifecycle), [Governance and Escalation](../../architecture/governance-and-escalation.md) | Human-defined authority constrains both execution and persistent changes. |
-| **9. Persistent Learning** | [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 7: Persist](../lifecycle/07-persist.md) | Validated and authorized learning survives the current execution in an asset future execution can use. |
-| **10. Compounding Reuse** | [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md), [Stage 8: Reuse](../lifecycle/08-reuse.md) | Later executions use relevant improvements so capability, reliability, or efficiency can improve over time. |
+| [**1. Autonomy Is Bounded by Human Authority**](../principles/01-human-authority.md) | Human-defined authority boundaries govern autonomous operation and persistent change. The AI cannot grant itself additional authority, prohibited actions are blocked, and insufficient evidence or required judgment is escalated appropriately. | Applies before and throughout all lifecycle stages; supported by [Governance and Escalation](../../architecture/governance-and-escalation.md). |
+| [**2. AI Is the Operator, Not Merely the Assistant**](../principles/02-ai-as-operator.md) | AI performs meaningful operational work and can continue within delegated authority rather than merely producing instructions for a human operator. | [Execute](../lifecycle/01-execute.md) |
+| [**3. Work Is Distributed Across a Moving Determinism Boundary**](../principles/03-moving-determinism-boundary.md) | Deterministic capability, procedural guidance, and AI reasoning have clear and intentional responsibilities, and those responsibilities can move when evidence shows a different placement is more appropriate. | [Execute](../lifecycle/01-execute.md), [Classify](../lifecycle/04-classify.md), [Adapt](../lifecycle/05-adapt.md) |
+| [**4. The SOP Is an Operational Control Plane**](../principles/04-sop-control-plane.md) | A durable Standard Operating Procedure (SOP), or equivalent machine-consumable guidance, directs how work is performed, handles known conditions, defines evidence and escalation expectations, and remains subject to governance. | [Execute](../lifecycle/01-execute.md), with later adaptation, persistence, and reuse |
+| [**5. Execution Must Produce Outcome Evidence**](../principles/05-outcome-evidence.md) | Execution produces enough objective evidence to determine what actually happened and whether the intended outcome was achieved. Success, failure, partial success, and unresolved uncertainty can be distinguished without relying only on model confidence or task completion. | [Observe](../lifecycle/02-observe.md), [Evaluate](../lifecycle/03-evaluate.md), [Validate](../lifecycle/06-validate.md) |
+| [**6. Failure Determines Where the System Evolves**](../principles/06-evolution-routing.md) | Failures and other learning opportunities are classified and routed to the part of the system best suited to own the improvement. Successful outcomes may also reinforce validated patterns that should continue to be reused. | [Evaluate](../lifecycle/03-evaluate.md), [Classify](../lifecycle/04-classify.md), [Adapt](../lifecycle/05-adapt.md) |
+| [**7. Learning Must Change a Persistent Operational Asset**](../principles/07-persistent-learning.md) | Validated and authorized learning changes a durable operational asset that survives the current execution and can affect future behavior. | [Validate](../lifecycle/06-validate.md), [Persist](../lifecycle/07-persist.md) |
+| [**8. Improvement Must Compound Through Reuse**](../principles/08-compounding-reuse.md) | Later executions actually use relevant validated improvements so capability, reliability, or efficiency can improve over time rather than repeatedly starting from the same state. | [Reuse](../lifecycle/08-reuse.md), which becomes part of the starting state for the next [Execute](../lifecycle/01-execute.md) |
 
-These ten areas are a way to assess the specification, not a second set of requirements. Architecture pages and examples may support interpretation, but the linked principle and lifecycle documents remain the requirement sources. When the specification changes, conformance should be updated to point back to the source requirement rather than redefining it here.
-
-## Specification Traceability
-
-The following table shows how each principle connects to lifecycle behavior and the conformance areas that assess it.
-
-| Principle | Primary Lifecycle Relationship | Conformance Areas |
-|---|---|---|
-| [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) | Applies before and throughout all lifecycle stages | Human Authority; Governance Enforcement |
-| [Principle 2: AI Is the Operator, Not Merely the Assistant](../principles/02-ai-as-operator.md) | [Stage 1: Execute](../lifecycle/01-execute.md) | AI Operation |
-| [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](../principles/03-moving-determinism-boundary.md) | [Stage 1: Execute](../lifecycle/01-execute.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Stage 5: Adapt](../lifecycle/05-adapt.md) | Runtime Responsibilities; Improvement Routing |
-| [Principle 4: The SOP Is an Operational Control Plane](../principles/04-sop-control-plane.md) | [Stage 1: Execute](../lifecycle/01-execute.md), with later adaptation and reuse | Persistent Operational Procedure |
-| [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) | [Stage 2: Observe](../lifecycle/02-observe.md), [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 6: Validate](../lifecycle/06-validate.md) | Outcome Evidence; Evaluation and Classification |
-| [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) | [Stage 3: Evaluate](../lifecycle/03-evaluate.md), [Stage 4: Classify](../lifecycle/04-classify.md), [Stage 5: Adapt](../lifecycle/05-adapt.md) | Evaluation and Classification; Improvement Routing |
-| [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) | [Stage 6: Validate](../lifecycle/06-validate.md), [Stage 7: Persist](../lifecycle/07-persist.md) | Persistent Learning |
-| [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) | [Stage 8: Reuse](../lifecycle/08-reuse.md), which becomes the starting point for the next [Stage 1: Execute](../lifecycle/01-execute.md) | Compounding Reuse |
-
-This table helps readers navigate the specification. The linked principle and lifecycle documents remain the source of the requirements.
+The same evidence may support more than one principle, and a single principle may require evidence from multiple lifecycle stages. The purpose of the mapping is traceability, not to create one-to-one relationships between principles and stages.
 
 ## Evidence-Based Assessment
 
-A conformance claim should be supported by observable evidence rather than labels or stated intent alone.
+A conformance claim must be supported by observable evidence rather than labels, architecture diagrams, or stated intent alone.
 
 Evidence may include:
 
-- Governance policies and authorization records
-- SOPs or other persistent procedural assets
-- Execution traces and tool outputs
-- Tests and validation results
-- Examples of classified failures or learning opportunities
-- Persistent changes produced by earlier execution
-- Later executions showing that those changes were reused
+- Governance policies and authorization records.
+- SOPs or other persistent procedural assets.
+- Execution traces and tool outputs.
+- Outcome observations and evaluation records.
+- Classification and improvement-routing decisions.
+- Tests and validation results.
+- Material human judgments and approvals.
+- Persistent changes produced by earlier execution.
+- Later executions showing that those changes were reused.
 
-The exact technology used to satisfy the specification may vary. Conformance looks at the required behavior rather than requiring a specific language, framework, model, storage system, or infrastructure platform.
+Evidence should be attributable enough for a reviewer to determine what happened, why a conclusion was reached, and how the evidence demonstrates the relevant principle requirements.
+
+Conformance is assessed across the behavior of the operating model, not by requiring every individual execution to produce a new persistent change. A verified successful outcome may reinforce an existing validated pattern rather than justify adaptation. The implementation must still demonstrate that evidence is evaluated and classified, and that the lifecycle can adapt, validate, persist, and reuse learning when evidence supports a lasting improvement.
+
+The exact technology used to satisfy the specification may vary. Conformance evaluates required behavior rather than requiring a specific language, framework, model, storage system, or infrastructure platform.
 
 ## Conformance Decision
 
-A system conforms to this version of the Infoconex AI Flywheel Specification when it can demonstrate that the complete operating model satisfies all ten conformance areas.
+A system conforms to this version of the Infoconex AI Flywheel Specification when it can demonstrate, through objective evidence from actual operation, that all eight canonical principles are satisfied and that the complete lifecycle behavior required by the specification is present.
 
-When an area is not satisfied, the implementation may still use valuable AI Flywheel concepts, but it should not be described as a complete conforming implementation.
+When a principle is not satisfied, the implementation may still use valuable AI Flywheel concepts, but it should not be described as a complete conforming implementation.
 
 This version does not define partial or maturity-based conformance levels. A future version may add maturity levels for areas such as autonomy, persistence, self-modification, governance, validation, and escalation. Until then, those levels are not part of the specification.
 
 ## Supporting Evaluation Documents
 
-- [Conformance Evaluation Checklist](evaluation-checklist.md) — Practical questions for evaluating an implementation against the ten conformance areas and their specification sources.
+- [Conformance Evaluation Checklist](evaluation-checklist.md) — Practical questions organized around the eight canonical principles and the lifecycle evidence used to demonstrate them.
 - [Non-Conforming Patterns](non-conforming-patterns.md) — Common patterns that contain useful Flywheel elements but do not satisfy the complete methodology.
 
 ## Related Documents
