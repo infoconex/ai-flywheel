@@ -47,7 +47,7 @@ See [Governance and Escalation](../../architecture/governance-and-escalation.md)
 4. [Stage 4: Classify](04-classify.md) — Identify what was learned, whether adaptation is justified, and where any resulting learning should live.
 5. [Stage 5: Adapt](05-adapt.md) — Create a candidate improvement when change is justified or explicitly resolve that no adaptation is required.
 6. [Stage 6: Validate](06-validate.md) — Validate a candidate improvement or resolve whether no-change learning intended for persistence is sufficiently supported.
-7. [Stage 7: Persist](07-persist.md) — Retain validated learning in a durable operational asset or reinforce an existing validated operating pattern.
+7. [Stage 7: Persist](07-persist.md) — Persist validated learning, reinforce an existing validated operating pattern, or explicitly resolve that no new persistent learning is justified.
 8. [Stage 8: Reuse](08-reuse.md) — Use relevant persisted learning and validated operating patterns in later execution.
 
 ## Lifecycle Stage Document Structure

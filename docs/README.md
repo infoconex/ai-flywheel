@@ -7,7 +7,7 @@ This directory separates the **Infoconex AI Flywheel Specification** from the **
 ## Documentation Sections
 
 - [Infoconex AI Flywheel Specification](specification/README.md) — Defines the methodology, terminology, principles, lifecycle, governance model, and conformance assessment.
-- [Infoconex AI Flywheel History and Development](history.md) — Records the development timeline from early ideas through formalization and first public release.
+- [Infoconex AI Flywheel History and Development](history.md) — Records the development timeline from early ideas through formalization and published releases.
 - [Infoconex AI Flywheel Architecture](architecture/README.md) — Explains how the complete operating model, runtime model, learning model, governance, escalation, and core boundaries fit together.
 - [Infoconex AI Flywheel Examples](examples/README.md) — Applies the specification to real operating scenarios without adding new requirements.
 - [Infoconex AI Flywheel Research](research/README.md) — Examines related frameworks and prior art. It supports the specification but does not define it.

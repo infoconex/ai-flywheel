@@ -86,7 +86,7 @@ The architecture can be understood in five steps:
 1. **Before and during execution:** Governance determines what is allowed.
 2. **During execution:** SOP, AI reasoning, and deterministic capability work together; missing evidence may trigger the Uncertainty Boundary.
 3. **After execution:** Evidence is evaluated and classified to determine what was learned, whether adaptation is justified, and where any resulting learning should live.
-4. **Before future operational use:** Candidate improvements or other reusable learning intended for persistence are sufficiently validated, governance requirements are satisfied, and supported learning may be persisted or an existing validated pattern may be reinforced.
+4. **Before future operational use:** Candidate improvements or other reusable learning intended for persistence are sufficiently validated, governance requirements are satisfied, and Persist resolves the result by durably retaining supported learning, reinforcing an existing validated pattern, or explicitly determining that no new persistent learning is justified.
 5. **On later execution:** The relevant current validated operating state becomes the starting point and produces new evidence that can reinforce or challenge earlier learning.
 
 The Moving Determinism Boundary governs **where intelligence and responsibility live**. The Authority Boundary governs **where human authority must remain**. The Uncertainty Boundary governs **when there is not enough evidence for responsible AI judgment**.

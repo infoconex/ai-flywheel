@@ -2,7 +2,7 @@
 
 ![Infoconex AI Flywheel Specification](../assets/specification.png)
 
-> **Specification Version:** v0.2.0 — Draft
+> **Specification Version:** v0.2.1 — Draft
 
 This section contains the official definition of the Infoconex AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
@@ -20,7 +20,7 @@ Architecture pages, examples, and research are explanatory support. They do not 
 
 ## Draft Stability
 
-Version v0.2.0 is a working draft intended for implementation testing, public review, and further research.
+Version v0.2.1 is a working draft intended for implementation testing, public review, and further research.
 
 Readers should expect that:
 

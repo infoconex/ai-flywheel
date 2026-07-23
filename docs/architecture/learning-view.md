@@ -29,7 +29,7 @@ flowchart TD
 
     AD --> V[Validate]
     N --> V
-    V --> P[Persist or Resolve No New Persistent Learning]
+    V --> P[Persist / Reinforce / Resolve No New Persistent Learning]
     P --> U[Reuse Current Validated Operating State]
     U --> X
 ```

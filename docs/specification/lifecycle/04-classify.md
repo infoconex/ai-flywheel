@@ -1,6 +1,6 @@
 # Stage 4: Classify
 
-The Infoconex AI Flywheel identifies the type and likely source of any weakness, uncertainty, or learning opportunity revealed by evaluation.
+The Infoconex AI Flywheel identifies what was learned from evaluation, determines whether adaptation is justified, and decides where any resulting learning should live.
 
 ## Purpose
 
@@ -8,7 +8,7 @@ Classification prevents the Flywheel from treating every outcome as the same typ
 
 At this stage, the Flywheel asks:
 
-> **Where should this learning live?**
+> **What was learned, is adaptation justified, and where should any resulting learning live?**
 
 ## Required Inputs and Preconditions
 
@@ -35,13 +35,13 @@ Classify must:
 
 Potential improvement destinations may include:
 
-- Deterministic implementation
+- Deterministic capability
 - Procedural guidance
-- Validation
 - Reasoning knowledge
-- Runtime reasoning behavior
-- Governance or authority
-- A changed placement of responsibility across the Moving Determinism Boundary
+- Validation
+- Governance
+
+Classification may also determine that responsibility should move across the Moving Determinism Boundary when the current placement is no longer appropriate.
 
 Classification does not authorize a governance change or expansion of authority.
 
