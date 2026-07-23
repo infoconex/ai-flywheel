@@ -77,7 +77,7 @@ Persist consumes validated learning and persistence dispositions produced by [St
 
 Its durable operating state, persisted learning, reinforced pattern, or explicit no-new-learning result becomes the basis for [Stage 8: Reuse](08-reuse.md).
 
-Persistence makes learning available for future operation. It does not by itself demonstrate that the learning was actually reused; that responsibility belongs to Reuse.
+Persistence makes learning available for future operation. It does not by itself demonstrate that the learning was actually reused; the evidence required to demonstrate later influence is defined in [Reuse Evidence Requirements](../reuse-evidence.md).
 
 ## Governance Considerations
 
@@ -87,7 +87,7 @@ Changes that expand the AI's authority or modify protected governance require hu
 
 Persistence should also respect governance requirements for versioning, audit history, rollback, protected assets, evidence retention, and change approval where applicable.
 
-Persistent does not mean permanently authoritative. The detailed behavior for challenging, superseding, deprecating, or retiring persisted learning is defined separately from this stage contract.
+Persistent does not mean permanently authoritative. Later evidence may challenge which learning should remain current, and resulting revision, supersession, deprecation, invalidation, rollback, or retirement must follow the [Learning Supersession Requirements](../learning-supersession.md).
 
 ## Relationships to Principles
 
@@ -107,5 +107,7 @@ Persistent does not mean permanently authoritative. The detailed behavior for ch
 
 - [Persisted Learning Requirements](../persisted-learning.md)
 - [Validation Sufficiency Requirements](../validation-sufficiency.md)
+- [Reuse Evidence Requirements](../reuse-evidence.md)
+- [Learning Supersession Requirements](../learning-supersession.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
