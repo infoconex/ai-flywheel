@@ -21,7 +21,6 @@ Observe requires the operational record produced by [Stage 1: Execute](01-execut
 - External observations
 - User feedback
 - Human approvals or judgments that affected the process
-- Retry or re-entry context when multiple execution attempts occurred
 
 Observation must have access to enough of the execution record to determine what evidence is available and what evidence is missing.
 
@@ -33,7 +32,6 @@ Observe must:
 - Distinguish observed facts from expected, intended, inferred, or assumed outcomes
 - Preserve evidence needed for responsible later evaluation
 - Preserve material human decisions when they affected execution or may contain reusable learning
-- Preserve material evidence from failed, stopped, retried, or superseded attempts rather than retaining only the final attempt
 - Identify material evidence gaps rather than replacing missing evidence with unsupported assumptions
 
 Observed evidence may include:
@@ -48,7 +46,6 @@ Observed evidence may include:
 - User feedback
 - Human approvals
 - Human judgments
-- Attempt and retry relationships
 
 The exact evidence depends on the process and domain.
 
@@ -63,7 +60,6 @@ Observe must produce an evidence set that identifies, where relevant:
 - What validation signals were produced
 - What human decisions influenced the outcome
 - What material evidence is unavailable or uncertain
-- How multiple attempts relate when retries or backward transitions caused execution to recur
 
 ## Completion Conditions
 
@@ -71,15 +67,11 @@ Observe is complete when the available evidence has been captured well enough fo
 
 The existence of telemetry alone does not satisfy the stage contract.
 
-A retry or later successful attempt does not make evidence from an earlier failed attempt irrelevant when that evidence may affect evaluation, classification, or future learning.
-
 ## Relationship to Adjacent Stages
 
 Observe consumes the operational record produced by [Stage 1: Execute](01-execute.md).
 
 Its evidence set becomes the primary input to [Stage 3: Evaluate](03-evaluate.md).
-
-When the lifecycle returns to Execute and produces another attempt, Observe captures the resulting evidence as part of the evolving lifecycle record rather than replacing the evidence from earlier attempts.
 
 ## Governance Considerations
 
