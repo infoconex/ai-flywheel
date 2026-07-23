@@ -6,7 +6,7 @@ The definitions are intentionally short. Detailed behavior and requirements rema
 
 ## Infoconex AI Flywheel
 
-The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, classifies what was learned and whether adaptation is justified, validates learning intended for persistent future use, persists supported learning or reinforcing evidence, and reuses the current validated operating state in later execution.
+The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI performs work, observes outcomes, evaluates evidence, classifies what was learned and whether adaptation is justified, resolves the Adapt responsibility by creating or proposing a candidate improvement when change is justified or explicitly determining that no adaptation is required, validates learning intended for persistent future use, persists supported learning or reinforcing evidence, and reuses the current validated operating state in later execution.
 
 See the [Formal Definition](definition.md).
 
