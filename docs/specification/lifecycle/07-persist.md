@@ -1,26 +1,24 @@
 # Stage 7: Persist
 
-The Infoconex AI Flywheel retains validated and authorized learning in a durable operational asset so useful learning can survive the current execution and influence future work.
+The Infoconex AI Flywheel stores validated and authorized learning in a durable operational asset so it can survive the current execution.
 
 ## Purpose
 
 A lesson does not become operational learning merely because it was observed, discussed, logged, or remembered during one execution.
 
-Persistence changes something durable that future executions can actually use. That durable change may represent a new operational improvement, reusable knowledge derived from failure, or reinforcing evidence associated with an existing validated operating pattern.
+Persistence changes something that future executions can actually use. On a no-change path, that durable result may be reinforcing evidence associated with an existing validated operating pattern rather than a new adaptation.
 
 ## Required Inputs and Preconditions
 
 Persist requires:
 
-- A validation result from [Stage 6: Validate](06-validate.md)
-- The evidence supporting that validation result
+- The result from [Stage 6: Validate](06-validate.md)
+- The evidence supporting that result
 - The classification identifying how the learning should be handled
-- The persistent operational asset to be created, changed, reinforced, or associated with the learning as applicable
+- The persistent operational asset to be created, changed, or reinforced when persistent learning is justified
 - The authorization required to make any durable operational change
 
-When the input is a candidate adaptation, the candidate must be validated and authorized for persistence before it can become an approved operational improvement.
-
-When the input is reusable learning derived from a failed or rejected attempt, that learning must be validated separately from the failed candidate before it can become trusted persistent learning.
+A candidate adaptation must be validated and authorized for persistence before it can become an approved operational improvement.
 
 ## Required Responsibilities
 
@@ -31,22 +29,21 @@ Persist must:
 - Preserve enough context to distinguish where the learning applies
 - Preserve the relationship between the persisted learning and its supporting evidence where required by the operating context
 - Avoid treating raw execution history, unvalidated observations, or an unapplied candidate as persisted operational learning
-- Prevent a failed or unvalidated adaptation from being activated or represented as an approved operational improvement
-- Allow separately validated learning produced by a failed or rejected attempt to be persisted without promoting the failed adaptation itself
-- When a successful no-change outcome reinforces an existing validated pattern, retain the validated reinforcing evidence in an appropriate durable form associated with that pattern so it remains available to future evaluation and reuse
-- Avoid misrepresenting reinforcing evidence as a new adaptation when the operating behavior did not change
+- Prevent a failed, unresolved, or unvalidated adaptation from being activated or represented as an approved operational improvement
+- When a successful no-change outcome reinforces an existing validated operating pattern, durably associate the reinforcing evidence with that pattern without misrepresenting it as a new adaptation
+- Explicitly resolve when no new persistent learning or durable operational change is justified
+
+A failed adaptation and the learning produced by that failure are separate lifecycle concerns. The failed candidate itself must not be persisted as an approved improvement. A reusable lesson derived from the failure may be persisted only after that lesson has been evaluated, classified, appropriately represented through Adapt, and validated as learning in its own right.
 
 Persistent learning may exist in different operational assets. The detailed categories and required properties of persisted learning are defined separately from this stage contract.
-
-Persist may also resolve that no new reusable learning or durable operational change is justified. That explicit result does not create persistent learning, but it distinguishes a completed no-change disposition from a silently skipped Persist responsibility.
 
 ## Required Outputs and Evidence
 
 Persist must produce one of the following supported outcomes:
 
 - A durable updated operational asset containing a validated and authorized improvement
-- A durable operational asset containing validated reusable learning derived from failure or another non-change outcome
 - Reinforcing evidence durably associated with an existing validated operating pattern
+- Another validated learning item durably incorporated into an appropriate operational asset
 - An explicit determination that no new persistent operational learning is justified
 
 When persistent learning is created, updated, or reinforced, Persist must also produce:
@@ -62,11 +59,11 @@ Persist is complete when the validated learning disposition has been resolved ex
 
 When reusable learning is justified, it must be durably incorporated into or associated with an operational asset and made available for later relevant use.
 
-When a successful no-change outcome reinforces an existing validated operating pattern, the reinforcing evidence must be durably associated with that pattern rather than discarded merely because no adaptation occurred.
+When a successful no-change outcome reinforces an existing validated operating pattern, the reinforcing evidence must remain durably associated with that pattern rather than being discarded merely because no adaptation occurred.
 
 When no new persistent learning is justified, the stage is complete only when that disposition is explicit and supported by the preceding lifecycle evidence.
 
-A log, transcript, archived conversation, or other stored record does not by itself satisfy the stage contract for persistent learning unless it functions as or informs an operational asset that later execution can reliably use.
+A log, transcript, archived conversation, or other stored record does not by itself satisfy the stage contract unless it functions as an operational asset that later execution can reliably use.
 
 ## Relationship to Adjacent Stages
 
@@ -74,15 +71,13 @@ Persist consumes validated learning and persistence dispositions produced by [St
 
 Its durable operating state, persisted learning, reinforced pattern, or explicit no-new-learning result becomes the basis for [Stage 8: Reuse](08-reuse.md).
 
-A failed adaptation does not advance to Reuse as an approved improvement. Separately validated knowledge learned from that failure may advance through Persist and later influence Reuse.
-
 ## Governance Considerations
 
-A validated operational change may only be persisted when the system is authorized to make that change.
+A validated change may only be persisted when the system is authorized to make that change.
 
 Changes that expand the AI's authority or modify protected governance require human authorization.
 
-Persistence should also respect governance requirements for versioning, audit history, rollback, protected assets, and change approval where applicable.
+Persistence should also respect governance requirements for versioning, audit history, rollback, protected assets, evidence retention, and change approval where applicable.
 
 Persistent does not mean permanently authoritative. The detailed behavior for challenging, superseding, deprecating, or retiring persisted learning is defined separately from this stage contract.
 
