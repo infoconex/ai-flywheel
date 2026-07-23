@@ -12,12 +12,15 @@ Reuse is not limited to a new adaptation created by the immediately preceding cy
 
 The normative minimum evidence required to demonstrate that reuse occurred is defined in [Reuse Evidence Requirements](../reuse-evidence.md).
 
+The normative requirements governing how later evidence can challenge, supersede, invalidate, or retire persisted learning are defined in [Learning Supersession Requirements](../learning-supersession.md).
+
 ## Required Inputs and Preconditions
 
 Reuse requires:
 
 - Relevant validated and authorized persistent learning from [Stage 7: Persist](07-persist.md)
 - The context in which that learning is valid
+- The current status of that learning for the applicable scope
 - The current Governance Policy
 - A later authorized execution in which earlier learning may be relevant
 
@@ -31,11 +34,13 @@ Reuse must:
 
 - Make relevant persisted learning available to later execution
 - Determine or preserve enough evidence to establish whether persisted learning was relevant to that execution
-- Apply persisted learning only where it remains relevant, valid, and authorized
+- Apply persisted learning only where it remains current, relevant, valid, and authorized
 - Apply the [Reuse Evidence Requirements](../reuse-evidence.md) when claiming that persisted learning or an existing validated pattern was reused
+- Avoid selecting superseded, deprecated, invalidated, retired, or otherwise inapplicable learning as current guidance for a scope where it should no longer apply
 - Allow later execution to benefit from prior validated learning rather than requiring the same learning to be rediscovered from scratch
 - Continue to use an existing validated operating pattern when it remains applicable and no adaptation is justified
 - Keep reused behavior subject to new outcome evidence and later evaluation
+- Route new evidence that challenges persisted learning back through the lifecycle under the [Learning Supersession Requirements](../learning-supersession.md)
 - Avoid treating persistence, availability, or retrieval alone as proof that compounding reuse occurred
 - Avoid treating a failed or rejected adaptation as reusable approved behavior merely because records of the attempt were retained
 
@@ -55,7 +60,7 @@ No specific reuse mechanism is required. The implementation must be able to prod
 
 Reuse must produce:
 
-- An operating state for a later execution that includes applicable persisted learning
+- An operating state for a later execution that includes applicable current persisted learning
 - Evidence identifying which persisted learning or existing validated patterns were relevant to that execution
 - Evidence showing how relevant learning was selected, invoked, applied, enforced, or otherwise incorporated when reuse is claimed
 - Observable evidence of how the later execution was influenced by that learning or validated pattern
@@ -63,7 +68,7 @@ Reuse must produce:
 
 A later execution may demonstrate reuse by applying a prior improvement, continuing a validated operating pattern, avoiding a known failed approach, selecting a different strategy because of persisted learning, applying a previously learned constraint, or otherwise behaving differently because earlier learning changed the operating state.
 
-The specification does not require every persisted learning item to be applied to every execution. Evidence must be sufficient to distinguish relevant learning that should have been reused from learning that was not applicable, no longer valid, or outside the current governance scope.
+The specification does not require every persisted learning item to be applied to every execution. Evidence must be sufficient to distinguish relevant current learning that should have been reused from learning that was not applicable, no longer valid, superseded, retired, or outside the current governance scope.
 
 ## Completion Conditions
 
@@ -72,6 +77,8 @@ Reuse is complete for a persisted learning item when a later relevant execution 
 A no-change cycle does not fail Reuse merely because it created no new adaptation. Continued use of an existing validated operating pattern can demonstrate reuse when later outcome evidence shows that the pattern was applied and remains effective.
 
 A stored improvement or lesson that never becomes available to later relevant execution does not satisfy the stage contract for reuse. Likewise, availability without evidence of relevant application or influence does not by itself demonstrate completed reuse.
+
+Reuse must not be considered correct merely because an item was previously validated. When current evidence shows that the learning is no longer valid or current for the applicable scope, reuse must stop treating it as active guidance and the resulting challenge must be resolved through the lifecycle.
 
 ## Relationship to Adjacent Stages
 
@@ -83,7 +90,7 @@ The resulting pattern is:
 
 **Better execution → better evidence → better learning → better operating state → better future execution**
 
-Later evidence may show that reused learning should be challenged, revised, superseded, or retired. That new evidence returns through the lifecycle rather than allowing earlier learning to become permanently authoritative.
+Later evidence may show that reused learning should be challenged, revised, superseded, deprecated, invalidated, rolled back, or retired. That evidence returns through the existing lifecycle under the [Learning Supersession Requirements](../learning-supersession.md) rather than allowing earlier learning to become permanently authoritative.
 
 ## Governance Considerations
 
@@ -91,14 +98,14 @@ Human decisions can produce reusable learning, but reuse does not allow the AI t
 
 A repeated approval pattern may justify a proposal for a Governance Policy change, but expanding the AI's authority still requires human authorization.
 
-Previously authorized learning must also be reused within its current scope. A change in context, risk, or governance may make earlier learning no longer applicable or may require renewed approval.
+Previously authorized learning must also be reused within its current scope. A change in context, risk, governance, or evidence may make earlier learning no longer applicable or may require renewed approval.
 
-Persisted learning remains subject to later evidence and reevaluation. The detailed behavior for challenging or superseding prior learning is defined separately from this stage contract.
+Persisted learning remains subject to later evidence and reevaluation. Changes to which learning is treated as current guidance must respect applicable governance requirements.
 
 ## Relationships to Principles
 
 - [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) defines the requirement that persisted learning changes future operation.
-- [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) ensures there is durable learning available to reuse.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md) ensures there is durable learning available to reuse and that it can later be changed when evidence requires it.
 - [Principle 6: Failure Determines Where the System Evolves](../principles/06-evolution-routing.md) helps place learning where it can be reused effectively.
 - [Principle 5: Execution Must Produce Outcome Evidence](../principles/05-outcome-evidence.md) ensures reused improvements continue to be evaluated against actual outcomes.
 - [Principle 1: Autonomy Is Bounded by Human Authority](../principles/01-human-authority.md) prevents improving capability from becoming uncontrolled authority expansion.
@@ -113,6 +120,7 @@ Persisted learning remains subject to later evidence and reevaluation. The detai
 
 - [Reuse Evidence Requirements](../reuse-evidence.md)
 - [Persisted Learning Requirements](../persisted-learning.md)
+- [Learning Supersession Requirements](../learning-supersession.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
 - [Worked Example: Continuous Dependency Maintenance](../../examples/software-maintenance/worked-example.md)

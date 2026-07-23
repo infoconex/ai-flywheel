@@ -40,6 +40,7 @@ The eight principles and eight-stage lifecycle define the current structure, but
 - [Validation Sufficiency Requirements](validation-sufficiency.md) — Defines the minimum evidence conditions required before a candidate improvement or other reusable learning can be treated as sufficiently validated for persistent future use.
 - [Persisted Learning Requirements](persisted-learning.md) — Defines what may count as persisted learning and the minimum properties required for durable future operational use.
 - [Reuse Evidence Requirements](reuse-evidence.md) — Defines the minimum evidence required to demonstrate that relevant persisted learning actually influenced later execution.
+- [Learning Supersession Requirements](learning-supersession.md) — Defines how persisted learning is challenged, revised, superseded, deprecated, invalidated, rolled back, or retired when later evidence changes what should be treated as current guidance.
 - [Conformance](conformance/README.md) — Provides an evidence-based way to determine whether an implementation satisfies the specification.
 - [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Architecture and Diagrams](../architecture/README.md) — Shows the complete operating model, runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
