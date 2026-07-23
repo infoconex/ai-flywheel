@@ -184,7 +184,7 @@ The AI determines that:
 - Existing validation checked project membership but not solution-folder placement
 - The repository did not fully satisfy the target standard
 
-The successful pipeline was therefore not sufficient evidence of complete conformance.
+The successful pipeline was therefore not sufficient evidence of complete conformance to the target repository standard.
 
 ### Classify
 
@@ -564,22 +564,22 @@ Future reuse requires explicit authorization. Human reasoning does not silently 
 
 ## Conformance Mapping
 
-| Conformance Area | How the Example Demonstrates It |
+This mapping illustrates how the scenario relates to the eight canonical principle-aligned assessments. Because this is an explanatory example rather than evidence from a deployed implementation, the mapping does not itself establish conformance.
+
+| Principle-Aligned Assessment | How the Example Illustrates It |
 |---|---|
-| **1. Human Authority** | Governance defines which repository, profile, tool, package, decision-rule, and retirement actions require people |
-| **2. AI Operation** | AI inspects repositories, selects profiles, applies transformations, runs validation, evaluates outcomes, and carries migrations forward |
-| **3. Runtime Responsibilities** | Deterministic tooling, procedural guidance, and AI reasoning have defined and changing responsibilities |
-| **4. Persistent Operational Procedure** | A durable migration SOP defines execution, evidence, exceptions, validation, and escalation |
-| **5. Outcome Evidence** | Repository state, commits, builds, tests, packages, security checks, comparisons, and human decisions establish outcomes |
-| **6. Evaluation and Classification** | Results are compared with target standards and required behavior before weaknesses are classified |
-| **7. Improvement Routing** | Learning is routed to validation, profiles, governance rules, inventory, planning, tooling, or procedure |
-| **8. Governance Enforcement** | Shared executable changes and reusable decision rules require approval, while prohibited changes stop execution |
-| **9. Persistent Learning** | Approved learning changes versioned operational assets available after the originating migration |
-| **10. Compounding Reuse** | Later migrations reuse improved validation, profiles, decisions, dependency planning, and deterministic tooling |
+| **Principle 1: Autonomy Is Bounded by Human Authority** | Governance defines which repository, profile, tool, package, decision-rule, and retirement actions require people, and the scenario shows authorization, judgment, and prohibition affecting operation |
+| **Principle 2: AI Is the Operator, Not Merely the Assistant** | AI inspects repositories, selects profiles, applies transformations, runs validation, evaluates outcomes, and carries migrations forward |
+| **Principle 3: Work Is Distributed Across a Moving Determinism Boundary** | Deterministic tooling, procedural guidance, and AI reasoning have defined responsibilities, and stable repeated procedure moves into deterministic capability when evidence supports it |
+| **Principle 4: The SOP Is an Operational Control Plane** | A durable migration SOP actively directs execution, evidence, exceptions, validation, capability use, and escalation |
+| **Principle 5: Execution Must Produce Outcome Evidence** | Repository state, commits, builds, tests, packages, security checks, comparisons, validation results, and human decisions establish outcomes beyond task or pipeline completion |
+| **Principle 6: Failure Determines Where the System Evolves** | Results are evaluated and classified before learning is routed to validation, profiles, governance rules, inventory, planning, tooling, or procedure |
+| **Principle 7: Learning Must Change a Persistent Operational Asset** | Validated and authorized learning changes versioned profiles, rules, inventory, planning, validation, tooling, and procedure that remain available after the originating migration |
+| **Principle 8: Improvement Must Compound Through Reuse** | Later migrations demonstrably reuse improved validation, profiles, authorized decisions, dependency planning, and deterministic tooling rather than merely storing those changes |
 
 ## What Compounded
 
-| Cycle | Evidence Revealed | Persistent Improvement | Effect on Later Migration |
+| Cycle | Evidence Revealed | Persistent Learning | Effect on Later Migration |
 |---|---|---|---|
 | **Cycle 1** | Solution formats differed despite a successful build | Generator and validation rules gained folder-equivalence checks | Later repositories generated conforming solutions on the first attempt |
 | **Cycle 2** | A legacy dependency prevented the assumed target combination | A validated profile variation captured the reusable pattern | Later matching repositories avoided rediscovery |
@@ -589,13 +589,15 @@ Future reuse requires explicit authorization. Human reasoning does not silently 
 
 The Flywheel effect is not produced merely by migrating repositories, retrying failed commands, saving logs, or changing standards once.
 
-It occurs because migration evidence changes validated and authorized operational assets that later migrations actually reuse.
+It occurs because migration evidence changes validated and authorized operational assets that later migrations actually reuse. A successful no-change cycle could also compound by reinforcing an existing validated migration pattern without manufacturing a new adaptation.
 
 ## Lifecycle Summary
 
-Each complete cycle follows:
+The canonical lifecycle responsibilities are:
 
 **Execute → Observe → Evaluate → Classify → Adapt → Validate → Persist → Reuse**
+
+The five cycles shown here all produce adaptations, but the lifecycle does not require every cycle to create a change. Each responsibility must be resolved for the actual outcome, including successful no-change paths, failure-derived learning, and later supersession of persisted learning.
 
 Human authority and governance apply throughout the lifecycle.
 
@@ -611,4 +613,5 @@ Deterministic capability, procedural guidance, and AI reasoning work together du
 - [Principles](../../specification/principles/README.md)
 - [Lifecycle](../../specification/lifecycle/README.md)
 - [AI Flywheel Conformance](../../specification/conformance/README.md)
+- [Principle-Aligned Conformance Assessments](../../specification/conformance/principle-assessments.md)
 - [Core Operating Model](../../architecture/operating-model.md)
