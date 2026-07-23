@@ -31,7 +31,6 @@ Execute must:
 - Use deterministic capabilities where reliable repeatable behavior is already available and appropriate
 - Keep actions within the current Governance Policy
 - Produce enough operational information for later observation of what actually occurred
-- Preserve enough distinction between retries or re-entered execution attempts to prevent later attempts from erasing material evidence from earlier ones
 
 The three operating mechanisms are not separate lifecycle stages. A single execution may move between AI reasoning and deterministic capabilities many times while following the same procedure.
 
@@ -45,22 +44,19 @@ Execute must produce or preserve an operational record that may include:
 - Errors and exceptions
 - Decisions and escalation events
 - Validation signals generated during operation
-- Retry or re-entry context when multiple execution attempts occur
 - Other raw events needed to determine what actually occurred
 
 ## Completion Conditions
 
 Execute is complete when the current execution attempt has reached an observable point and enough operational information exists for Observe to determine what actually happened.
 
-Task completion, failure, stopping an attempt, or the absence of an exception does not by itself determine whether the lifecycle is complete.
+Task completion, failure, or the absence of an exception does not by itself determine whether the lifecycle is complete.
 
 ## Relationship to Adjacent Stages
 
-Execute begins from the current operating state, including relevant learning made available through [Stage 8: Reuse](08-reuse.md).
+Execute begins from the current operating state, including relevant improvements made available through [Stage 8: Reuse](08-reuse.md).
 
 Its operational record becomes the primary input to [Stage 2: Observe](02-observe.md).
-
-When later lifecycle evidence causes a retry or return to Execute, the new attempt must produce new observable evidence without discarding material evidence from the earlier attempt.
 
 ## Governance Considerations
 
