@@ -2,7 +2,7 @@
 
 ![Infoconex AI Flywheel Specification](../assets/specification.png)
 
-> **Specification Version:** v0.1.3 — Draft
+> **Specification Version:** v0.2.0 — Draft
 
 This section contains the official definition of the Infoconex AI Flywheel methodology. These documents define the model independently of comparisons to other frameworks or prior art.
 
@@ -20,7 +20,7 @@ Architecture pages, examples, and research are explanatory support. They do not 
 
 ## Draft Stability
 
-Version v0.1.3 is a working draft intended for public review, implementation experiments, and further research.
+Version v0.2.0 is a working draft intended for implementation testing, public review, and further research.
 
 Readers should expect that:
 
@@ -52,7 +52,7 @@ The specification separates four ideas that should not be treated as one sequenc
 
 1. **Human authority and governance** define the boundaries within which the Flywheel may operate.
 2. **Procedural guidance, expressed through a Standard Operating Procedure (SOP), AI reasoning, and deterministic capability** work together during execution.
-3. **The Flywheel lifecycle** turns execution evidence into validated and persistent learning.
+3. **The Flywheel lifecycle** turns execution evidence into supported decisions about adaptation, persistent learning, reinforcement of existing validated patterns, and future reuse.
 4. **The Moving Determinism Boundary** determines where learned responsibility should live, while the **Authority Boundary** determines what the AI is allowed to decide or change on its own.
 
 ## Principle Reference Convention
