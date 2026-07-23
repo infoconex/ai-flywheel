@@ -94,12 +94,18 @@ Canonical sources: [Principle 7: Learning Must Change a Persistent Operational A
 
 ## Principle 8: Improvement Must Compound Through Reuse
 
-54. Do later executions inherit and use relevant validated improvements?
-55. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, or human escalation where prior learning applies?
-56. Can a reviewer point to behavior that improved because of learning from earlier executions?
-57. Are successful validated patterns retained and reused rather than rediscovered on every execution?
+54. Do later relevant executions have access to validated and authorized persisted learning from earlier cycles?
+55. Can the implementation distinguish learning that was available from learning that was actually selected, applied, invoked, or enforced?
+56. When reuse is claimed, can a reviewer identify the persisted learning or validated operating pattern involved and why it was applicable?
+57. Is there observable evidence showing how earlier learning influenced the later execution rather than merely existing in storage?
+58. Can validated failure-derived learning cause later execution to avoid a known failure, apply a constraint, select a different strategy, or otherwise improve without promoting the failed adaptation itself?
+59. Can repeated successful operation demonstrate continued reuse of an existing validated operating pattern even when no new adaptation is created?
+60. Does the implementation avoid requiring irrelevant, invalid, superseded, or unauthorized learning to be applied merely to claim reuse?
+61. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, tool exploration, or human escalation where relevant validated learning applies?
+62. Does reused behavior continue to produce outcome evidence so earlier learning can be reevaluated?
+63. Can a reviewer point to later behavior that changed or remained reliably improved because of learning from earlier execution?
 
-Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md) and [Stage 8: Reuse](../lifecycle/08-reuse.md).
+Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md), [Stage 8: Reuse](../lifecycle/08-reuse.md), and [Reuse Evidence Requirements](../reuse-evidence.md).
 
 ## Conformance Decision
 
@@ -115,6 +121,7 @@ This version does not define partial or maturity-based conformance levels.
 - [Non-Conforming Patterns](non-conforming-patterns.md)
 - [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Persisted Learning Requirements](../persisted-learning.md)
+- [Reuse Evidence Requirements](../reuse-evidence.md)
 - [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
