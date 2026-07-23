@@ -18,13 +18,13 @@ See [Infoconex AI Flywheel History and Development](docs/history.md) for the ful
 
 AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
 
-That creates a new question: what should happen when execution succeeds imperfectly, fails unexpectedly, or reveals a better way to perform the work?
+That creates a new question: what should happen when execution succeeds, fails unexpectedly, exposes uncertainty, or reveals a better way to perform the work?
 
-The AI Flywheel treats execution as a source of evidence for improving the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned, adapts the right part of the operating model, validates the improvement, persists it, and reuses it in future execution.
+The AI Flywheel treats execution as a source of evidence for improving or reinforcing the system that performs the work. The AI performs the work, observes what actually happened, evaluates the outcome, classifies what was learned and whether change is justified, adapts the right part of the operating model when needed, validates learning intended for future use, persists supported learning or reinforcing evidence, and reuses the current validated operating state in future execution.
 
-A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, or a proposed governance change. The next execution then begins from the improved operating state rather than starting from the same place again.
+A lesson may become a better deterministic capability, improved procedural guidance, durable reasoning knowledge, stronger validation, a reusable failure rule, an applicability constraint, or a proposed governance change. A successful outcome may instead reinforce an existing validated operating pattern without requiring a new adaptation. Later execution then begins from the current validated operating state rather than starting from the same place again.
 
-That is the flywheel effect: **the output of one cycle improves the system used by the next.**
+That is the flywheel effect: **evidence from one cycle strengthens the operating state used by later execution.**
 
 ## How the Flywheel Works
 
@@ -35,11 +35,11 @@ The lifecycle is:
 - **Execute** the work using procedural guidance, AI reasoning, and deterministic capabilities.
 - **Observe** evidence about what actually happened during execution.
 - **Evaluate** the outcome against the intended result and success criteria.
-- **Classify** what was learned, the source of weakness or uncertainty, and where the learning should live.
-- **Adapt** the procedure, reasoning, deterministic capability, validation, or governance needed to address what was learned.
-- **Validate** the proposed improvement to confirm that it works as intended before trusting it for future use.
-- **Persist** validated and authorized learning in a durable operational asset.
-- **Reuse** the improved operating state in future execution.
+- **Classify** what was learned, whether adaptation is justified, and where any resulting learning should live.
+- **Adapt** by creating a candidate improvement when change is justified or explicitly resolving that no adaptation is required.
+- **Validate** a candidate improvement or determine whether no-change learning intended for persistence is sufficiently supported.
+- **Persist** validated and authorized learning in a durable operational asset, reinforce an existing validated pattern, or explicitly resolve that no new persistent learning is justified.
+- **Reuse** relevant current persisted learning and validated operating patterns in later execution.
 
 Governance applies throughout the cycle. Human-defined authority determines whether actions and changes are authorized, require approval, require human judgment, or are prohibited.
 
@@ -54,11 +54,11 @@ The comparison below follows the AI Flywheel lifecycle so each stage can be eval
 | **Execute** — Performs the work using procedures, reasoning, and deterministic capabilities | Yes | Yes | Required |
 | **Observe** — Captures evidence about what actually happened during execution | Possible, not inherent | Framework-dependent | Required |
 | **Evaluate** — Compares the outcome against the intended result and success criteria | Possible, not inherent | Framework-dependent | Required |
-| **Classify** — Determines what was learned, the source of weakness or uncertainty, and where the learning should live | Not inherent | Framework-dependent | Required |
-| **Adapt** — Changes the procedure, reasoning, deterministic capability, validation, or governance as needed | Release or process-dependent | Framework-dependent | Required |
-| **Validate** — Confirms that the proposed improvement works as intended before future use | Release or process-dependent | Framework-dependent | Required |
-| **Persist** — Stores validated and authorized learning in a durable operational asset | Possible, not inherent | Framework-dependent | Required |
-| **Reuse** — Uses the improved operating state in future execution | Possible, not inherent | Framework-dependent | Required |
+| **Classify** — Determines what was learned, whether adaptation is justified, and where any resulting learning should live | Not inherent | Framework-dependent | Required |
+| **Adapt** — Creates a candidate improvement when justified or explicitly resolves no change | Release or process-dependent | Framework-dependent | Required responsibility |
+| **Validate** — Tests a candidate improvement or assesses support for reusable no-change learning | Release or process-dependent | Framework-dependent | Required responsibility |
+| **Persist** — Retains validated learning, reinforces an existing validated pattern, or resolves that no new persistence is needed | Possible, not inherent | Framework-dependent | Required responsibility |
+| **Reuse** — Applies relevant current persisted learning or continues a validated operating pattern in later execution | Possible, not inherent | Framework-dependent | Required responsibility |
 | **Governance** — Controls what may be executed, changed, or persisted | Usually external | Framework-dependent | Required throughout |
 
 Agent systems vary widely, so this table is a general comparison rather than a claim that all agent frameworks behave the same way. See the [prior-art and comparative research](docs/research/frameworks/prior-art-overview.md) and [framework comparison matrix](docs/research/frameworks/framework-comparison-matrix.md) for the detailed analysis.
