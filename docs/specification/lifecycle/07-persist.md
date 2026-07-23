@@ -6,7 +6,9 @@ The Infoconex AI Flywheel stores validated and authorized learning in a durable 
 
 A lesson does not become operational learning merely because it was observed, discussed, logged, or remembered during one execution.
 
-Persistence changes something that future executions can actually use. On a no-change path, that durable result may be reinforcing evidence associated with an existing validated operating pattern rather than a new adaptation.
+Persistence makes validated learning durably available to future operation. On a no-change path, that durable result may be reinforcing evidence associated with an existing validated operating pattern rather than a new adaptation.
+
+The normative requirements defining what may count as persisted learning and the properties it must have are defined in [Persisted Learning Requirements](../persisted-learning.md).
 
 ## Required Inputs and Preconditions
 
@@ -24,18 +26,22 @@ A candidate adaptation must be validated and authorized for persistence before i
 
 Persist must:
 
+- Apply the [Persisted Learning Requirements](../persisted-learning.md) to any learning retained for future operation
 - Place validated reusable learning in a durable operational asset appropriate to the earlier classification
 - Make the resulting learning identifiable and available for later relevant use
 - Preserve enough context to distinguish where the learning applies
 - Preserve the relationship between the persisted learning and its supporting evidence where required by the operating context
 - Avoid treating raw execution history, unvalidated observations, or an unapplied candidate as persisted operational learning
-- Prevent a failed, unresolved, or unvalidated adaptation from being activated or represented as an approved operational improvement
+- Prevent a failed, unresolved, rejected, or unvalidated adaptation from being activated or represented as an approved operational improvement
+- Allow separately validated learning derived from a failed or rejected attempt to persist without promoting the failed candidate itself
 - When a successful no-change outcome reinforces an existing validated operating pattern, durably associate the reinforcing evidence with that pattern without misrepresenting it as a new adaptation
 - Explicitly resolve when no new persistent learning or durable operational change is justified
 
-A failed adaptation and the learning produced by that failure are separate lifecycle concerns. The failed candidate itself must not be persisted as an approved improvement. A reusable lesson derived from the failure may be persisted only after that lesson has been evaluated, classified, appropriately represented through Adapt, and validated as learning in its own right.
+A failed adaptation and the learning produced by that failure are separate lifecycle concerns. The failed candidate itself must not be persisted as an approved improvement. A reusable lesson derived from the failure may be persisted only after that lesson has been evaluated, classified, appropriately represented through Adapt when required, and validated as learning in its own right.
 
-Persistent learning may exist in different operational assets. The detailed categories and required properties of persisted learning are defined separately from this stage contract.
+Persisted learning may exist in many kinds of operational assets, including deterministic capability, procedural guidance, reasoning knowledge, configuration, constraints, validation, structured knowledge, failure-derived rules, and authorized governance. Reinforcing evidence may also be durably associated with an existing validated pattern without representing a new operational change.
+
+No specific storage technology or artifact type is required.
 
 ## Required Outputs and Evidence
 
@@ -57,19 +63,21 @@ When persistent learning is created, updated, or reinforced, Persist must also p
 
 Persist is complete when the validated learning disposition has been resolved explicitly.
 
-When reusable learning is justified, it must be durably incorporated into or associated with an operational asset and made available for later relevant use.
+When reusable learning is justified, it must satisfy the applicable [Persisted Learning Requirements](../persisted-learning.md), be durably incorporated into or associated with an operational asset, and be made available for later relevant use.
 
 When a successful no-change outcome reinforces an existing validated operating pattern, the reinforcing evidence must remain durably associated with that pattern rather than being discarded merely because no adaptation occurred.
 
 When no new persistent learning is justified, the stage is complete only when that disposition is explicit and supported by the preceding lifecycle evidence.
 
-A log, transcript, archived conversation, or other stored record does not by itself satisfy the stage contract unless it functions as an operational asset that later execution can reliably use.
+A log, transcript, archived conversation, or other stored record does not by itself satisfy the stage contract unless the validated learning represented by it functions as an operational asset that later execution can reliably use.
 
 ## Relationship to Adjacent Stages
 
 Persist consumes validated learning and persistence dispositions produced by [Stage 6: Validate](06-validate.md).
 
 Its durable operating state, persisted learning, reinforced pattern, or explicit no-new-learning result becomes the basis for [Stage 8: Reuse](08-reuse.md).
+
+Persistence makes learning available for future operation. It does not by itself demonstrate that the learning was actually reused; that responsibility belongs to Reuse.
 
 ## Governance Considerations
 
@@ -97,5 +105,7 @@ Persistent does not mean permanently authoritative. The detailed behavior for ch
 
 ## Related Documents
 
+- [Persisted Learning Requirements](../persisted-learning.md)
+- [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Learning Architecture](../../architecture/learning-view.md)
 - [Core Operating Model](../../architecture/operating-model.md)
