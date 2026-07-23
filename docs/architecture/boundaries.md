@@ -68,9 +68,9 @@ The Uncertainty Boundary does not determine where responsibility lives and does 
 The boundaries answer different questions:
 
 > **Moving Determinism Boundary:** Where should this responsibility or learning live?
->
+
 > **Authority Boundary:** Is the AI allowed to make this decision or change on its own?
->
+
 > **Uncertainty Boundary:** Does the AI have enough evidence to decide responsibly?
 
 A learning cycle may decide that a recurring judgment should become deterministic code while governance still requires human approval before that code is created, deployed, or used in a particular context.
