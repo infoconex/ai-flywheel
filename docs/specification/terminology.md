@@ -96,9 +96,9 @@ See [Principle 6: Failure Determines Where the System Evolves](principles/06-evo
 
 ## Validation
 
-**Validation** is the process of using evidence to determine whether a proposed change works well enough to trust in future use. Validation is different from authorization: a change may work but still not be authorized, or it may be authorized but not yet proven to work.
+**Validation** is the evidence-based process of determining whether a candidate improvement or other learning intended for persistent future use is sufficiently supported for a stated claim and scope. Validation must address the intended outcome rather than only technical execution success and remains distinct from authorization.
 
-See [Stage 6: Validate](lifecycle/06-validate.md).
+See [Stage 6: Validate](lifecycle/06-validate.md) and [Validation Sufficiency Requirements](validation-sufficiency.md).
 
 ## Conformance
 
