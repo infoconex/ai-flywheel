@@ -107,11 +107,11 @@ The colors below are representative primary values sampled from the approved cur
 | **Execute** | `#005EBF` | Play triangle | Begin or perform the work |
 | **Observe** | `#009AC1` | Eye | Observe what actually happened |
 | **Evaluate** | `#30AC4C` | Ascending bar chart | Assess evidence and outcome |
-| **Classify** | `#F2AC02` | Tag | Categorize what was learned |
-| **Adapt** | `#F97102` | Horizontal sliders | Adjust the operating model |
-| **Validate** | `#DD3737` | Shield with check | Verify the proposed improvement |
-| **Persist** | `#7C47B3` | Database cylinder | Store validated learning durably |
-| **Reuse** | `#4B46C6` | Circular arrows | Reuse the improved operating state |
+| **Classify** | `#F2AC02` | Tag | Determine what was learned, whether adaptation is justified, and where learning belongs |
+| **Adapt** | `#F97102` | Horizontal sliders | Create a candidate improvement or explicitly resolve no adaptation |
+| **Validate** | `#DD3737` | Shield with check | Validate a candidate or other learning intended for persistence |
+| **Persist** | `#7C47B3` | Database cylinder | Persist validated learning, reinforce a validated pattern, or resolve no new learning |
+| **Reuse** | `#4B46C6` | Circular arrows | Use the current validated operating state in later execution |
 
 ### Lifecycle visual rules
 
@@ -137,9 +137,9 @@ The accent colors below are representative values from the approved Principles b
 | **3. Work Is Distributed Across a Moving Determinism Boundary** | Moving Determinism Boundary | `#34A453` | Adjustable boundary or split controls | Responsibility can move among deterministic capability, procedural guidance, and AI reasoning |
 | **4. The SOP Is an Operational Control Plane** | SOP Control Plane | `#F3A839` | Procedure document with checklist | Persistent operational procedure directs execution |
 | **5. Execution Must Produce Outcome Evidence** | Outcome Evidence | `#F86D09` | Ascending evidence chart | Execution produces observable evidence of outcomes |
-| **6. Failure Determines Where the System Evolves** | Evolution Routing | `#E03036` | Branching route arrows | Failure classification routes where improvement belongs |
-| **7. Learning Must Change a Persistent Operational Asset** | Persistent Learning | `#752DB4` | Database cylinder | Validated learning changes a durable operational asset |
-| **8. Improvement Must Compound Through Reuse** | Compounding Reuse | `#4A46C4` | Circular reuse arrows | Improvements are reused so benefits compound over time |
+| **6. Failure Determines Where the System Evolves** | Evolution Routing | `#E03036` | Branching route arrows | Classify outcomes to decide whether adaptation is justified and where learning belongs |
+| **7. Learning Must Change a Persistent Operational Asset** | Persistent Learning | `#752DB4` | Database cylinder | Reusable learning persists durably, and reinforcing evidence can strengthen validated patterns |
+| **8. Improvement Must Compound Through Reuse** | Compounding Reuse | `#4A46C4` | Circular reuse arrows | Current persisted learning and validated patterns are reused so benefits compound |
 
 ### Principle visual rules
 
@@ -150,6 +150,15 @@ The accent colors below are representative values from the approved Principles b
 - In visuals that show both principles and lifecycle stages, lifecycle stage colors and icons retain their canonical semantic meaning. Principle treatments should be visually secondary or slightly muted when needed to prevent false equivalence.
 - When principles appear in mixed diagrams, preserve their recognizable icons and labels even if neutral or softened containers are used to reduce visual competition with lifecycle semantics.
 - Update this mapping deliberately and consistently if an approved principle icon or accent changes; do not allow competing principle visual systems to remain in authoritative assets.
+
+### Conformance visual rules
+
+- Represent the eight canonical principles as the top-level conformance assessment structure.
+- Treat lifecycle stages as sources of required operational behavior and observable evidence, not as a second set of conformance areas.
+- When a visual explains the assessment flow, preserve the relationship **Requirements → Observable operation evidence → Conformance decision**.
+- Do not imply a one-to-one mapping between principles and lifecycle stages.
+- Do not present percentage scores, maturity levels, or partial conformance as defined outcomes of the current specification.
+- When assessment results are shown, use the current defined outcomes: **Conforms**, **Does Not Conform**, and **Insufficient Evidence**.
 
 ## Documentation Area Visual Mapping
 
