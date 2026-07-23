@@ -38,6 +38,7 @@ The eight principles and eight-stage lifecycle define the current structure, but
 - [Principles](principles/README.md) — Defines the eight principles of the AI Flywheel, with a dedicated page for each principle.
 - [Lifecycle](lifecycle/README.md) — Defines the recurring cycle: Execute, Observe, Evaluate, Classify, Adapt, Validate, Persist, and Reuse, with governance applied throughout.
 - [Validation Sufficiency Requirements](validation-sufficiency.md) — Defines the minimum evidence conditions required before a candidate improvement or other reusable learning can be treated as sufficiently validated for persistent future use.
+- [Persisted Learning Requirements](persisted-learning.md) — Defines what may count as persisted learning and the minimum properties required for durable future operational use.
 - [Conformance](conformance/README.md) — Provides an evidence-based way to determine whether an implementation satisfies the specification.
 - [Terminology](terminology.md) — Defines the standard terms used across the specification.
 - [Architecture and Diagrams](../architecture/README.md) — Shows the complete operating model, runtime model, learning model, governance gates, escalation, and the relationship between the determinism and authority boundaries.
