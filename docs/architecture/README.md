@@ -8,9 +8,9 @@ The diagrams are explanatory views that may evolve with the methodology. They do
 
 ## Table of Contents
 
-- [Core Operating Model](operating-model.md) — Shows human authority, governance, the three runtime mechanisms, the eight-stage lifecycle, learning destinations, persistence, reuse, and the core boundaries in one view.
+- [Core Operating Model](operating-model.md) — Shows human authority, governance, the three runtime mechanisms, the eight-stage lifecycle, learning destinations, no-change resolution, persistence, reuse, and the core boundaries in one view.
 - [Runtime Architecture](runtime-view.md) — Shows how the SOP, AI reasoning, and deterministic capabilities work together inside the Execute stage under human-authorized governance.
-- [Learning Architecture](learning-view.md) — Shows how execution evidence is observed, evaluated, classified, and sent to persistent improvements.
+- [Learning Architecture](learning-view.md) — Shows how execution evidence is observed, evaluated, classified, and used to improve or reinforce future operation.
 - [Governance and Escalation](governance-and-escalation.md) — Defines governance gates, escalation outcomes, authority versus uncertainty, and the role of the Governance Policy.
 - [Core Boundaries](boundaries.md) — Distinguishes the Moving Determinism Boundary from the Authority Boundary and explains how they interact with the Uncertainty Boundary.
 
@@ -18,9 +18,9 @@ The diagrams are explanatory views that may evolve with the methodology. They do
 
 The architecture is easiest to understand through three operating views and two governing concepts:
 
-1. **Complete operating model:** How human authority, execution, evidence, learning, persistence, and reuse form one system.
+1. **Complete operating model:** How human authority, execution, evidence, learning, persistence, reuse, and later reevaluation form one system.
 2. **Runtime:** How authorized work is performed.
-3. **Learning:** How evidence from execution changes future operation.
+3. **Learning:** How evidence from execution can change the operating state, reinforce an existing validated pattern, or challenge earlier learning.
 4. **Governance:** How human-defined authority constrains autonomous action and triggers escalation.
 5. **Boundaries:** How the system determines where responsibility belongs, what the AI may do on its own, and when the evidence is not enough for responsible AI judgment.
 
