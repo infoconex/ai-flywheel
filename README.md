@@ -6,14 +6,6 @@ The **Infoconex AI Flywheel** is an evidence-driven operating model in which AI 
 
 > **A loop repeats. A flywheel compounds.**
 
-## Origin and Formalization
-
-The ideas that became the Infoconex AI Flywheel began developing through practical experimentation in **January 2026** and were refined over the following months. In **July 2026**, those ideas were organized into the named Infoconex AI Flywheel methodology, including its principles, lifecycle, governance model, conformance approach, and supporting documentation.
-
-These dates mark different points in its development: January 2026 marks the beginning of concept development, July 2026 marks the point when the methodology was formally organized, and the `v0.1.0` release marks its first formal public specification release.
-
-See [Infoconex AI Flywheel History and Development](docs/history.md) for the full timeline.
-
 ## Why the AI Flywheel?
 
 AI-assisted work often begins with a human asking AI to create something the human will use: code, a script, a procedure, or an analysis. A more autonomous pattern emerges when the AI begins operating those capabilities itself.
