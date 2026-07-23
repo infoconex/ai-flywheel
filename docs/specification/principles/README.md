@@ -2,7 +2,7 @@
 
 ![Infoconex AI Flywheel Principles](../../assets/principles.png)
 
-These eight principles define the expected behavior of an implementation of the Infoconex AI Flywheel. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, and reuse work as one operating model.
+These eight principles define the expected behavior of an implementation of the Infoconex AI Flywheel. Together they describe how human authority, AI operation, deterministic capability, procedural guidance, evidence, learning, persistence, and reuse work as one operating model.
 
 ## Principle Document Structure
 
@@ -29,15 +29,17 @@ The Requirements section is the source of the actual specification requirements.
 3. [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](03-moving-determinism-boundary.md) — Responsibility is deliberately divided among deterministic capability, procedural guidance, and AI reasoning, and may move as evidence accumulates.
 4. [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) — The Standard Operating Procedure (SOP) provides persistent machine-consumable guidance for execution, capability use, known exceptions, validation, evidence, and escalation.
 5. [Principle 5: Execution Must Produce Outcome Evidence](05-outcome-evidence.md) — The Flywheel learns from observable results rather than relying on AI confidence alone.
-6. [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) — Observed weaknesses are classified and sent to the part of the system best suited to correct them.
-7. [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) — Reusable learning must survive the current execution in a durable asset available to future operation.
-8. [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) — Validated improvements are used by future executions so the operating state becomes more capable over time.
+6. [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) — Outcomes are classified to determine what was learned, whether change is justified, and where resulting learning should live.
+7. [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) — Reusable learning must survive the current execution in a durable asset available to future operation and remain correctable when later evidence changes what should be current.
+8. [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) — Relevant current persisted learning and validated operating patterns are used by later executions so learning compounds rather than being repeatedly rediscovered.
 
 ## How the Principles Fit Together
 
 The principles form one operating model rather than eight independent features:
 
-**Human authority bounds autonomy → AI operates the process → work is divided across code, procedure, and reasoning → execution produces evidence → evidence determines where the system should evolve → validated learning persists → future execution reuses the improved operating state.**
+**Human authority bounds autonomy → AI operates the process → work is divided across deterministic capability, procedure, and reasoning → execution produces evidence → evidence determines what was learned and whether the operating state should change → validated learning persists or existing validated patterns are reinforced → later execution reuses the current validated operating state and produces new evidence.**
+
+The Flywheel therefore compounds through both justified improvement and continued successful reuse. It does not require change for its own sake, and persisted learning remains subject to later challenge and supersession.
 
 ## Related Documents
 
