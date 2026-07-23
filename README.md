@@ -132,9 +132,9 @@ See [Project Policies](POLICIES.md) for ownership, permitted use, naming, contri
 
 ## Project Status and Roadmap
 
-> **Current status:** Infoconex AI Flywheel Specification v0.1.3 — Draft. The initial `v0.1.0` repository release has been published, and the methodology will continue to evolve through implementation, testing, and research.
+> **Current status:** Infoconex AI Flywheel Specification v0.2.0 — Draft. The methodology is ready for implementation testing, further research, and continued refinement.
 
-The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and a complete end-to-end example.
+The current methodology includes a formal definition, eight principles, an eight-stage lifecycle, governance and boundary models, conformance guidance, architecture documentation, and complete end-to-end examples.
 
 Future work may include:
 
