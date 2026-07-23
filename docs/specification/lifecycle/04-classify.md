@@ -40,7 +40,8 @@ Potential improvement destinations may include:
 - Reasoning knowledge
 - Validation
 - Governance
-- A changed placement of responsibility across the Moving Determinism Boundary
+
+Classification may also determine that responsibility should move across the Moving Determinism Boundary when the current placement is no longer appropriate.
 
 Classification does not authorize a governance change or expansion of authority.
 
