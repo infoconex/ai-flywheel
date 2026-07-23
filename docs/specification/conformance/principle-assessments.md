@@ -81,7 +81,7 @@ Evidence should show:
 - Distinguishable use of deterministic capability, procedural guidance, and AI reasoning.
 - A reasoned basis for where significant responsibilities currently live.
 - Classification and adaptation decisions that can move responsibility when evidence shows the current placement is weak or inappropriate.
-- At least one demonstrated operating path by which responsibility can move toward or away from deterministic implementation when justified.
+- Evidence that the operating model can move responsibility toward or away from deterministic implementation when such movement is justified, without requiring that every assessment history contain an actual movement event.
 
 ### Assessment condition
 
