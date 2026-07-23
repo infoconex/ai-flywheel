@@ -3,6 +3,7 @@ description: An evidence-driven operating model for AI systems that learn from e
 url: https://infoconex.github.io
 baseurl: /ai-flywheel
 repository: infoconex/ai-flywheel
+asset_version: "20260723-1"
 
 markdown: kramdown
 highlighter: rouge
