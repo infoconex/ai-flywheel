@@ -71,7 +71,7 @@ This principle applies throughout the lifecycle rather than at one stage.
 - **Execute:** Governance determines which actions may proceed on their own and which require escalation.
 - **Observe and Evaluate:** Human decisions and governance outcomes may become part of the evidence record.
 - **Classify and Adapt:** Learning may identify a governance issue or suggest a change to authority.
-- **Validate and Persist:** Persistent changes are subject to authorization as well as technical validation.
+- **Validate and Persist:** Persistent learning must be sufficiently supported, and governed changes remain subject to authorization. Validation does not grant authority, and approval does not replace validation.
 - **Reuse:** Future execution inherits approved governance changes without allowing the AI to expand its own authority.
 
 ## Evidence of Implementation
@@ -102,7 +102,7 @@ This principle is not satisfied when:
 - [Principle 2: AI Is the Operator, Not Merely the Assistant](02-ai-as-operator.md) depends on bounded authority so the AI can operate independently without implying unlimited autonomy.
 - [Principle 4: The SOP Is an Operational Control Plane](04-sop-control-plane.md) defines procedural guidance that remains subject to governance.
 - [Principle 6: Failure Determines Where the System Evolves](06-evolution-routing.md) may route learning to governance, but governance changes require human authorization.
-- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) requires persistent changes to be both validated and authorized.
+- [Principle 7: Learning Must Change a Persistent Operational Asset](07-persistent-learning.md) requires governed persistent changes to be both sufficiently supported and authorized.
 - [Principle 8: Improvement Must Compound Through Reuse](08-compounding-reuse.md) allows capability to compound without allowing authority to expand on its own.
 
 ## Principle Navigation
@@ -115,4 +115,5 @@ This principle is not satisfied when:
 - [Governance and Escalation](../../architecture/governance-and-escalation.md)
 - [Core Boundaries](../../architecture/boundaries.md)
 - [Lifecycle](../lifecycle/README.md)
+- [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Conformance](../conformance/README.md)
