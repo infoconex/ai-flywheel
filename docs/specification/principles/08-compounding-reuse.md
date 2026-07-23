@@ -6,18 +6,23 @@ The output of one Infoconex AI Flywheel cycle becomes part of the operating stat
 
 Persistent learning creates value only when future execution actually uses it.
 
-The Infoconex AI Flywheel is designed so validated and authorized improvements are inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to improve over time.
+The Infoconex AI Flywheel is designed so validated and authorized learning is inherited by later executions, allowing capability, reliability, efficiency, and appropriately bounded autonomy to improve over time.
 
 ## Requirements
 
 A conforming implementation must satisfy these requirements:
 
-- Later executions inherit relevant validated and authorized improvements from earlier executions.
-- Persisted improvements are actually used rather than merely stored.
+- Later executions inherit relevant validated and authorized learning from earlier executions.
+- Persisted learning is actually used when relevant rather than merely stored or made available.
 - Reuse considers context so lessons are applied only where they remain relevant and authorized.
-- The system can demonstrate that earlier learning changed later behavior.
+- The system can demonstrate with observable evidence that earlier learning influenced later behavior.
+- The implementation can distinguish availability of learning from its selection, application, and resulting influence.
+- Validated failure-derived learning may affect later execution without causing the failed or rejected adaptation itself to become approved behavior.
+- Continued successful use of an existing validated operating pattern may demonstrate reuse even when no new adaptation is created.
 - Repeated execution should reduce unnecessary repeated reasoning, repeated failures, unnecessary tool exploration, or unnecessary human escalation when validated reusable learning already exists.
 - Capability may improve over time, but authority does not expand without human authorization.
+
+The detailed evidence requirements for demonstrating reuse are defined in [Reuse Evidence Requirements](../reuse-evidence.md).
 
 ## Operational Model
 
@@ -53,6 +58,20 @@ A previously successful improvement should be reused only when it applies to the
 
 Compounding depends on **correct reuse**, not using every lesson everywhere.
 
+A persisted learning item that is not relevant, no longer valid, or outside the current governance scope may be correctly unused. The implementation should be able to distinguish justified non-use from a failure to apply relevant learning.
+
+### Failure-Derived Learning Can Compound
+
+A rejected approach can still produce reusable validated learning.
+
+Future execution may improve by avoiding the rejected approach, detecting its failure condition earlier, applying a constraint, selecting a different strategy, or escalating before repeating a known mistake. That is reuse of the validated lesson, not reuse of the failed candidate.
+
+### Stable Success Can Compound Without New Change
+
+Reuse does not require each cycle to create a new adaptation.
+
+When an existing validated operating pattern remains applicable and continues to produce successful outcomes, later executions may demonstrate compounding reuse by continuing to apply that pattern while producing new reinforcing evidence.
+
 ### Governance Must Compound Safely
 
 Repeated human decisions may justify a proposal for increased autonomy, but the system may not grant that authority to itself. New evidence may also justify reducing autonomy or increasing escalation when risk or uncertainty increases.
@@ -61,10 +80,10 @@ Capability can improve over time without allowing authority to expand on its own
 
 ## Lifecycle Relationship
 
-- **Persist:** Validated and authorized improvements become durable operational assets.
-- **Reuse:** Later execution retrieves, invokes, or applies those improvements.
+- **Persist:** Validated and authorized learning becomes durably available to future operation.
+- **Reuse:** Later execution retrieves, selects, invokes, applies, or otherwise incorporates relevant learning and produces evidence of its influence.
 - **Execute:** The improved operating state becomes the new starting point.
-- **Observe through Validate:** Later evidence determines whether reused improvements remain effective and whether more adaptation is justified.
+- **Observe through Validate:** Later evidence determines whether reused learning remains effective and whether more adaptation is justified.
 
 Reuse closes the lifecycle and creates the compounding behavior that gives the AI Flywheel its name.
 
@@ -76,18 +95,22 @@ Evidence supporting this principle may include:
 - Updated Standard Operating Procedure (SOP) guidance being applied in future operation
 - Stronger validation or failure-handling rules affecting later behavior
 - Durable reasoning knowledge being retrieved and used
-- Repeated human decisions being turned into reusable guidance where appropriate
+- Applicability, selection, invocation, or enforcement records showing how persisted learning entered a later execution
+- Later execution avoiding a known failure or selecting a different strategy because of validated failure-derived learning
+- Repeated successful use of an existing validated operating pattern
 - Measurable reductions in repeated failure, reasoning effort, cost, latency, or unnecessary human intervention
-- Concrete examples showing that later behavior changed because of learning from earlier execution
+- Concrete examples showing that later behavior changed or remained reliably improved because of learning from earlier execution
 
 ## Non-Conforming Patterns
 
 This principle is not satisfied when:
 
-- Improvements are persisted but never used
+- Improvements are persisted but never used when relevant
+- Availability or retrieval alone is treated as proof that reuse occurred
 - Each execution starts effectively from zero
 - The system repeatedly solves the same known problem from scratch
 - The same avoidable failure or human escalation recurs despite validated reusable learning
+- A failed or rejected adaptation is treated as approved behavior instead of reusing only the validated lesson derived from it
 - Lessons are reused outside the context where they are valid
 - Capability growth is treated as permission for the AI to expand its own authority
 
@@ -106,6 +129,8 @@ This principle is not satisfied when:
 
 ## Related Documents
 
+- [Reuse Evidence Requirements](../reuse-evidence.md)
+- [Persisted Learning Requirements](../persisted-learning.md)
 - [Lifecycle](../lifecycle/README.md)
 - [Stage 8: Reuse](../lifecycle/08-reuse.md)
 - [Learning Architecture](../../architecture/learning-view.md)
