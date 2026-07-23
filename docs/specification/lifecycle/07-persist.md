@@ -1,6 +1,6 @@
 # Stage 7: Persist
 
-The Infoconex AI Flywheel stores validated and authorized learning in a durable operational asset so it can survive the current execution.
+The Infoconex AI Flywheel resolves validated learning by persisting it in a durable operational asset, reinforcing an existing validated operating pattern, or explicitly determining that no new persistent learning is justified.
 
 ## Purpose
 
