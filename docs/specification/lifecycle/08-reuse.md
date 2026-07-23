@@ -1,26 +1,27 @@
 # Stage 8: Reuse
 
-Future Infoconex AI Flywheel executions begin with the validated operating state and reusable learning produced or reinforced by previous cycles.
+Future Infoconex AI Flywheel execution begins with the validated operating state and relevant persistent learning produced or reinforced by earlier lifecycle operation.
 
 ## Purpose
 
 Reuse is what turns isolated learning into compounding improvement.
 
-Persistence makes validated learning durable. Reuse makes that learning valuable by allowing later execution to inherit and apply what remains relevant, including validated improvements, known-failure knowledge, applicability constraints, and reinforced operating patterns.
+Persistence creates durable operational assets. Reuse makes those assets useful by ensuring later execution can inherit and apply relevant validated and authorized learning.
+
+Reuse is not limited to a new adaptation created by the immediately preceding cycle. A successful no-change cycle may demonstrate continued reuse of an existing validated operating pattern while adding reinforcing evidence about that pattern.
 
 ## Required Inputs and Preconditions
 
 Reuse requires:
 
-- Relevant persisted learning from [Stage 7: Persist](07-persist.md)
-- Existing validated operating patterns that remain applicable
-- The context in which each persisted lesson or pattern is valid
+- Relevant validated and authorized persistent learning from [Stage 7: Persist](07-persist.md)
+- The context in which that learning is valid
 - The current Governance Policy
 - A later authorized execution in which earlier learning may be relevant
 
-Persisted learning must be available to later execution in a form that can influence the operating state when applicable.
+The persisted learning must be available to later execution in a form that can influence the operating state when applicable.
 
-Reuse is not limited to a new improvement created by the immediately preceding cycle. A no-change cycle may demonstrate continued reuse of an earlier validated pattern while adding reinforcing evidence about that pattern.
+A later execution may be the next attempt, experiment, work item, or cycle within the same ongoing process. Reuse does not require waiting for an unrelated future process.
 
 ## Required Responsibilities
 
@@ -29,8 +30,7 @@ Reuse must:
 - Make relevant persisted learning available to later execution
 - Apply persisted learning only where it remains relevant, valid, and authorized
 - Allow later execution to benefit from prior validated learning rather than requiring the same learning to be rediscovered from scratch
-- Continue to use an existing validated operating pattern when current evidence supports that pattern and no adaptation is justified
-- Apply validated failure-derived learning when relevant so later execution can avoid, detect, constrain, or handle known failure conditions differently
+- Continue to use an existing validated operating pattern when it remains applicable and no adaptation is justified
 - Keep reused behavior subject to new outcome evidence and later evaluation
 - Avoid treating persistence alone as proof that compounding reuse occurred
 - Avoid treating a failed or rejected adaptation as reusable approved behavior merely because records of the attempt were retained
@@ -43,7 +43,6 @@ Reusable learning may include:
 - Durable reasoning knowledge
 - Better failure handling
 - Known-failure rules and applicability constraints
-- Reinforcing evidence associated with validated operating patterns
 - Human-authorized governance changes
 
 The detailed evidence required to demonstrate that reuse influenced later execution is defined separately from this stage contract.
@@ -52,26 +51,23 @@ The detailed evidence required to demonstrate that reuse influenced later execut
 
 Reuse must produce:
 
-- An operating state for a later execution that includes applicable persisted learning and validated operating patterns
-- A basis for later determining which persisted learning or existing patterns were available and relevant to that execution
-- Evidence that applicable prior learning influenced execution when reuse occurred
+- An operating state for a later execution that includes applicable persisted learning
+- A basis for later determining which persisted learning or existing validated patterns were available and relevant to that execution
 - A new execution context in which reused learning remains observable through normal lifecycle evidence
 
-A later execution may demonstrate reuse by applying a prior improvement, continuing a validated pattern, avoiding a known failed approach, selecting a different strategy because of a persisted lesson, or applying a previously learned constraint.
+A later execution may demonstrate reuse by applying a prior improvement, continuing a validated operating pattern, avoiding a known failed approach, selecting a different strategy because of persisted learning, or applying a previously learned constraint.
 
 ## Completion Conditions
 
-Reuse is complete for a persisted learning item when a later relevant execution has access to that learning and it influences execution when applicable.
+Reuse is complete for a persisted learning item when a later relevant execution has access to that learning and applies it when applicable.
 
-Reuse of an existing validated pattern may be demonstrated when a later relevant execution continues to apply that pattern and produces evidence showing that it remains effective.
+A no-change cycle does not fail Reuse merely because it created no new adaptation. Continued use of an existing validated operating pattern can demonstrate reuse when later outcome evidence shows that the pattern remains effective.
 
 A stored improvement or lesson that never becomes available to later relevant execution does not satisfy the stage contract for reuse.
 
-A no-change cycle does not fail Reuse merely because it created no new adaptation. The stage may be satisfied through continued application of earlier validated learning and operating patterns when they remain relevant.
-
 ## Relationship to Adjacent Stages
 
-Reuse consumes the durable operating state and persisted learning resolved by [Stage 7: Persist](07-persist.md).
+Reuse consumes the durable operating state and persisted learning produced by [Stage 7: Persist](07-persist.md).
 
 It closes the cycle by supplying applicable persisted learning and validated operating patterns to the operating state used by the next [Stage 1: Execute](01-execute.md).
 
