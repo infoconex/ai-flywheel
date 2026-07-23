@@ -87,25 +87,30 @@ Canonical sources: [Principle 6: Failure Determines Where the System Evolves](..
 49. On a no-change path, can reinforcing evidence be associated with an existing validated operating pattern without manufacturing a candidate adaptation?
 50. Are persisted learning items identifiable and scoped to the conditions supported by their evidence and validation?
 51. Is persisted learning available to the later operating process that needs it rather than merely stored somewhere?
-52. Can persistent assets later be refined, replaced, rolled back, invalidated, or moved when new evidence requires it?
-53. Can a reviewer identify the specific persistent asset changed, learning item retained, or operating pattern reinforced by a learning event?
+52. Can later evidence challenge previously persisted learning through the existing lifecycle?
+53. Can persisted learning be revised, superseded, deprecated, invalidated, rolled back, retired, or moved when evidence requires it?
+54. Can the implementation distinguish current validated guidance from superseded, deprecated, invalidated, retired, or historical learning?
+55. Does the system prevent known-invalid or superseded learning from continuing to be treated as current guidance within the affected scope?
+56. Can a reviewer trace what learning was challenged, what evidence triggered the change, and what resulting state became current where that traceability is required?
+57. Can a reviewer identify the specific persistent asset changed, learning item retained, operating pattern reinforced, or prior learning superseded by a learning event?
 
-Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), [Validation Sufficiency Requirements](../validation-sufficiency.md), [Persisted Learning Requirements](../persisted-learning.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
+Canonical sources: [Principle 7: Learning Must Change a Persistent Operational Asset](../principles/07-persistent-learning.md), [Stage 6: Validate](../lifecycle/06-validate.md), [Validation Sufficiency Requirements](../validation-sufficiency.md), [Persisted Learning Requirements](../persisted-learning.md), [Learning Supersession Requirements](../learning-supersession.md), and [Stage 7: Persist](../lifecycle/07-persist.md).
 
 ## Principle 8: Improvement Must Compound Through Reuse
 
-54. Do later relevant executions have access to validated and authorized persisted learning from earlier cycles?
-55. Can the implementation distinguish learning that was available from learning that was actually selected, applied, invoked, or enforced?
-56. When reuse is claimed, can a reviewer identify the persisted learning or validated operating pattern involved and why it was applicable?
-57. Is there observable evidence showing how earlier learning influenced the later execution rather than merely existing in storage?
-58. Can validated failure-derived learning cause later execution to avoid a known failure, apply a constraint, select a different strategy, or otherwise improve without promoting the failed adaptation itself?
-59. Can repeated successful operation demonstrate continued reuse of an existing validated operating pattern even when no new adaptation is created?
-60. Does the implementation avoid requiring irrelevant, invalid, superseded, or unauthorized learning to be applied merely to claim reuse?
-61. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, tool exploration, or human escalation where relevant validated learning applies?
-62. Does reused behavior continue to produce outcome evidence so earlier learning can be reevaluated?
-63. Can a reviewer point to later behavior that changed or remained reliably improved because of learning from earlier execution?
+58. Do later relevant executions have access to validated and authorized persisted learning from earlier cycles?
+59. Can the implementation distinguish learning that was available from learning that was actually selected, applied, invoked, or enforced?
+60. When reuse is claimed, can a reviewer identify the persisted learning or validated operating pattern involved and why it was applicable?
+61. Is there observable evidence showing how earlier learning influenced the later execution rather than merely existing in storage?
+62. Can validated failure-derived learning cause later execution to avoid a known failure, apply a constraint, select a different strategy, or otherwise improve without promoting the failed adaptation itself?
+63. Can repeated successful operation demonstrate continued reuse of an existing validated operating pattern even when no new adaptation is created?
+64. Does the implementation avoid requiring irrelevant, invalid, superseded, or unauthorized learning to be applied merely to claim reuse?
+65. Does reuse avoid selecting deprecated, superseded, invalidated, retired, or otherwise non-current learning as current guidance where it should no longer apply?
+66. Does repeated execution reduce unnecessary repeated reasoning, repeated failure, tool exploration, or human escalation where relevant validated learning applies?
+67. Does reused behavior continue to produce outcome evidence so earlier learning can be reevaluated?
+68. Can a reviewer point to later behavior that changed or remained reliably improved because of learning from earlier execution?
 
-Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md), [Stage 8: Reuse](../lifecycle/08-reuse.md), and [Reuse Evidence Requirements](../reuse-evidence.md).
+Canonical sources: [Principle 8: Improvement Must Compound Through Reuse](../principles/08-compounding-reuse.md), [Stage 8: Reuse](../lifecycle/08-reuse.md), [Reuse Evidence Requirements](../reuse-evidence.md), and [Learning Supersession Requirements](../learning-supersession.md).
 
 ## Conformance Decision
 
@@ -122,6 +127,7 @@ This version does not define partial or maturity-based conformance levels.
 - [Validation Sufficiency Requirements](../validation-sufficiency.md)
 - [Persisted Learning Requirements](../persisted-learning.md)
 - [Reuse Evidence Requirements](../reuse-evidence.md)
+- [Learning Supersession Requirements](../learning-supersession.md)
 - [Formal Definition](../definition.md)
 - [Principles](../principles/README.md)
 - [Lifecycle](../lifecycle/README.md)
