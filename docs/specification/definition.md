@@ -10,7 +10,7 @@ During execution, the system combines three operating mechanisms:
 
 1. **Deterministic capability** for work that can be performed reliably and repeatably through code or other deterministic tools.
 2. **Procedural guidance, expressed as a Standard Operating Procedure (SOP)**, for defining how work should be performed, how capabilities should be used, how known conditions should be handled, and when escalation is required.
-3. **AI reasoning** for interpretation, orchestration, judgment, adaptation, ambiguity, and conditions that cannot yet be handled reliably through deterministic behavior.
+3. **AI reasoning** for interpretation, orchestration, judgment, problem solving, ambiguity, and conditions that cannot yet be handled reliably through deterministic behavior.
 
 These mechanisms are not sequential lifecycle stages. They work together during execution. After execution produces evidence, the Flywheel evaluates what happened, classifies what was learned, determines whether adaptation is justified, and determines where any resulting reusable learning should live.
 

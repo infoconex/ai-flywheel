@@ -40,9 +40,11 @@ See [Principle 4: The SOP Is an Operational Control Plane](principles/04-sop-con
 
 ## AI Reasoning
 
-**AI reasoning** is the interpretation, judgment, orchestration, problem solving, and adaptation performed by the AI when the correct action cannot or should not be fully predetermined by code or fixed procedure.
+**AI reasoning** is the interpretation, judgment, orchestration, problem solving, and contextual decision-making performed by the AI when the correct action cannot or should not be fully predetermined by code or fixed procedure.
 
-See [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](principles/03-moving-determinism-boundary.md).
+AI reasoning may adjust execution-time behavior as context and intermediate results change. This is distinct from **Stage 5: Adapt**, which resolves a supported classification into a candidate improvement or an explicit determination that no adaptation is required.
+
+See [Principle 3: Work Is Distributed Across a Moving Determinism Boundary](principles/03-moving-determinism-boundary.md) and [Stage 5: Adapt](lifecycle/05-adapt.md).
 
 ## Outcome Evidence
 
